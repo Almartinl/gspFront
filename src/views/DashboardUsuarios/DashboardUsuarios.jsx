@@ -42,7 +42,7 @@ export default function DashboardUsuarios() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://localhost:3000/user/users");
+      const response = await fetch("http://almartindev.online/api/user/users");
       const data = await response.json();
       setUsers(data.slice(1));
       console.log(data);
@@ -53,7 +53,7 @@ export default function DashboardUsuarios() {
   function handleDeleteUser(e, id) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/delete/${id}`, {
+    fetch(`http://almartindev.online/api/user/delete/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -76,7 +76,7 @@ export default function DashboardUsuarios() {
   function activeUser(e, idUser) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${idUser}`, {
+    fetch(`http://almartindev.online/api/user/${idUser}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

@@ -162,7 +162,7 @@ export default function Account() {
     e.preventDefault();
     setStateChange(!stateChange);
 
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newName),
@@ -185,7 +185,7 @@ export default function Account() {
   function registrarApellido(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newApellido),
@@ -208,7 +208,7 @@ export default function Account() {
   function registrarEmail(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newEmail),
@@ -231,7 +231,7 @@ export default function Account() {
   function registrarPassword(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newPassword),
@@ -254,7 +254,7 @@ export default function Account() {
   function registrarDireccion(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newDireccion),
@@ -277,7 +277,7 @@ export default function Account() {
   function registrarTelefono(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/user/${dataToken.id}`, {
+    fetch(`http://almartindev.online/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newTelefono),
@@ -319,7 +319,7 @@ export default function Account() {
   function handleDeleteBungalow(e, id) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`http://localhost:3000/bungalows/delete`, {
+    fetch(`http://almartindev.online/api/bungalows/delete`, {
       method: "DELETE",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({ id: id }),
@@ -357,7 +357,7 @@ export default function Account() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://localhost:3000/user/email", {
+      const response = await fetch("http://almartindev.online/api/user/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -374,7 +374,7 @@ export default function Account() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://localhost:3000/bungalows", {
+      const response = await fetch("http://almartindev.online/api/bungalows", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -393,7 +393,7 @@ export default function Account() {
   function downloadImg(e, url, nombre) {
     e.preventDefault();
 
-    fetch(`http://localhost:3000/${url}`)
+    fetch(`http://almartindev.online/api/${url}`)
       .then((respuesta) => respuesta.blob())
       .then((blob) => {
         const imagenUrl = URL.createObjectURL(blob);
@@ -420,7 +420,7 @@ export default function Account() {
     if (listaPresupuesto.length < 1) {
       return;
     }
-    fetch(`http://localhost:3000/bungalows/addpresupuesto`, {
+    fetch(`http://almartindev.online/api/bungalows/addpresupuesto`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -453,7 +453,7 @@ export default function Account() {
       confirmButtonText: "Si, Borrame !!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/user/delete/${dataToken.id}`, {
+        fetch(`http://almartindev.online/api/user/delete/${dataToken.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",

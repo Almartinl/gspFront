@@ -78,7 +78,9 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/disposicion`);
+      const response = await fetch(
+        `http://almartindev.online/api/config/disposicion`
+      );
       const selector = await response.json();
       setDisposicion(selector);
     }
@@ -87,11 +89,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/orientacion`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ disposicion: disposicionValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/orientacion`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ disposicion: disposicionValue }),
+        }
+      );
       const selector = await response.json();
       setOrientacion(selector);
     }
@@ -102,11 +107,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/modelo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orientacion: orientacionValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/modelo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ orientacion: orientacionValue }),
+        }
+      );
       const selector = await response.json();
       setModelo(selector);
     }
@@ -117,11 +125,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/modelo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orientacion: "3" }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/modelo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ orientacion: "3" }),
+        }
+      );
       const selector = await response.json();
       setModelo(selector);
       setOrientacionValue("3");
@@ -135,11 +146,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/modelo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ orientacion: "4" }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/modelo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ orientacion: "4" }),
+        }
+      );
       const selector = await response.json();
       setModelo(selector);
       setOrientacionValue("4");
@@ -153,11 +167,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/tipo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelo: modeloValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/tipo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ modelo: modeloValue }),
+        }
+      );
       const selector = await response.json();
       setTipo(selector);
     }
@@ -168,11 +185,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/tipo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelo: "4" }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/tipo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ modelo: "4" }),
+        }
+      );
       const selector = await response.json();
       setTipo(selector);
       setModeloValue("4");
@@ -186,11 +206,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/bungalowa`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tipo: tipoValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/bungalowa`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ tipo: tipoValue }),
+        }
+      );
       const selector = await response.json();
       setBungalowa(selector);
     }
@@ -201,11 +224,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/bungalowb`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bungalowa: bungalowaValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/bungalowb`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ bungalowa: bungalowaValue }),
+        }
+      );
       const selector = await response.json();
       setBungalowb(selector);
     }
@@ -216,11 +242,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/bungalowc`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bungalowb: bungalowbValue }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/bungalowc`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ bungalowb: bungalowbValue }),
+        }
+      );
       const selector = await response.json();
       setBungalowc(selector);
     }
@@ -232,7 +261,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `http://localhost:3000/config/modelosimple`,
+        `http://almartindev.online/api/config/modelosimple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -256,18 +285,21 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`http://localhost:3000/config/modelodoble`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          disposicion: disposicionValue,
-          orientacion: orientacionValue,
-          modelo: modeloValue,
-          tipo: tipoValue,
-          bungalowa: bungalowaValue,
-          bungalowb: bungalowbValue,
-        }),
-      });
+      const response = await fetch(
+        `http://almartindev.online/api/config/modelodoble`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            disposicion: disposicionValue,
+            orientacion: orientacionValue,
+            modelo: modeloValue,
+            tipo: tipoValue,
+            bungalowa: bungalowaValue,
+            bungalowb: bungalowbValue,
+          }),
+        }
+      );
       const selector = await response.json();
       setPlanta(selector);
       setModelo3d(selector[0].modelo3d);
@@ -281,7 +313,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `http://localhost:3000/config/modelotriple`,
+        `http://almartindev.online/api/config/modelotriple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -336,7 +368,7 @@ export default function Configurador() {
 
   function handleSubmitGuardar(event) {
     event.preventDefault();
-    fetch("http://localhost:3000/bungalows/save", {
+    fetch("http://almartindev.online/api/bungalows/save", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({
@@ -495,7 +527,10 @@ export default function Configurador() {
 
   function View3d() {
     const Model = () => {
-      const gltf = useLoader(GLTFLoader, `http://localhost:3000/${modelo3d}`);
+      const gltf = useLoader(
+        GLTFLoader,
+        `http://almartindev.online/api/${modelo3d}`
+      );
       return (
         <>
           <primitive object={gltf.scene} scale={4} />
@@ -801,14 +836,14 @@ export default function Configurador() {
                 justifyContent: "center",
                 height: "70vh",
                 objectFit: "cover",
-                backgroundImage: `url(${`http://localhost:3000/${planta[0].planta}`})`,
+                backgroundImage: `url(${`http://almartindev.online/api/${planta[0].planta}`})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: { xs: "center center", md: "top center" },
                 backgroundSize: "contain",
               }}
             >
               {/* <img
-                src={`http://localhost:3000/${planta[0].planta}`}
+                src={`http://almartindev.online/api/${planta[0].planta}`}
                 alt="foto"
                 style={{
                   maxWidth: "100%",

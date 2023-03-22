@@ -39,7 +39,7 @@ export default function FormRegister({ vista, estado }) {
   function registrar(e) {
     e.preventDefault();
 
-    fetch("http://localhost:3000/user", {
+    fetch("http://almartindev.online/api/user", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newUsuario),

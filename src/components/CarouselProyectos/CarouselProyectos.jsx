@@ -16,7 +16,7 @@ export default function CarouselProyectos({ fotos }) {
       <div className="carousel-inner sin">
         <div className="carousel-item active">
           <img
-            src={`http://localhost:3000/${firstImage}`}
+            src={`http://almartindev.online/api/${firstImage}`}
             className="d-block w-100"
             alt="carrusel"
             height="550px"
@@ -26,7 +26,7 @@ export default function CarouselProyectos({ fotos }) {
         {rest.map((item, index) => (
           <div key={index} className="carousel-item">
             <img
-              src={`http://localhost:3000/${item}`}
+              src={`http://almartindev.online/api/${item}`}
               className="d-block w-100 "
               alt="carrusel"
               height="550px"
