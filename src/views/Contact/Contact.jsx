@@ -46,7 +46,7 @@ export default function Contact() {
   function registrar(e) {
     e.preventDefault();
 
-    fetch("http://almartindev.online/api/user/contact", {
+    fetch("https://almartindev.online/api/user/contact", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newContact),

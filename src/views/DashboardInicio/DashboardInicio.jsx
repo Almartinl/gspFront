@@ -23,7 +23,7 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://almartindev.online/api/user/count");
+      const response = await fetch("https://almartindev.online/api/user/count");
       const data = await response.json();
       setCountUser(data);
       console.log(data);
@@ -33,7 +33,7 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://almartindev.online/api/config/");
+      const response = await fetch("https://almartindev.online/api/config/");
       const data = await response.json();
       setCountModels(data);
       console.log(data);
@@ -44,7 +44,7 @@ export default function DashboardInicio() {
   useEffect(() => {
     async function fetchCount() {
       const response = await fetch(
-        "http://almartindev.online/api/user/count/contact"
+        "https://almartindev.online/api/user/count/contact"
       );
       const data = await response.json();
       setCountFormContact(data);
@@ -56,7 +56,7 @@ export default function DashboardInicio() {
   useEffect(() => {
     async function fetchCount() {
       const response = await fetch(
-        "http://almartindev.online/api/bungalows/count/presupuestos"
+        "https://almartindev.online/api/bungalows/count/presupuestos"
       );
       const data = await response.json();
       setCountPresupuestos(data);
@@ -67,7 +67,9 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("http://almartindev.online/api/obras/count");
+      const response = await fetch(
+        "https://almartindev.online/api/obras/count"
+      );
       const data = await response.json();
       setCountObras(data);
     }

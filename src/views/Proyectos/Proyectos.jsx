@@ -34,7 +34,7 @@ export default function Proyectos() {
   }
   useEffect(() => {
     async function fetchObras() {
-      const response = await fetch(`http://almartindev.online/api/obras`);
+      const response = await fetch(`https://almartindev.online/api/obras`);
       const data = await response.json();
       setObras(data);
     }
@@ -63,7 +63,7 @@ export default function Proyectos() {
                     <CardMedia
                       component="img"
                       height="400"
-                      image={`http://almartindev.online/api/${obra.imagen}`}
+                      image={`https://almartindev.online/api/${obra.imagen}`}
                       alt="img"
                     />
                     <CardContent>

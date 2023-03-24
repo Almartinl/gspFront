@@ -111,7 +111,7 @@ function DashboardContent() {
             >
               {nombrePanel}
             </Typography>
-            <img src="../../../public/logonuevo.png" height="60px" />
+            <img src="../../public/logonuevo.png" height="60px" />
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
