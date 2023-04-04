@@ -448,6 +448,7 @@ export default function Productos() {
                 }
                 onClick={naveClick}
               >
+                {" "}
                 Naves Industriales
               </Button>
             </Grid>
