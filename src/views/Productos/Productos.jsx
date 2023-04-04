@@ -38,6 +38,8 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function Productos() {
+  document.title = "Productos";
+
   const [expandedCard, setExpandedCard] = useState(false);
   const [vistaInicio, setVistaInicio] = useState(true);
   const [vistaBungalowsObras, setVistaBungalowsObras] = useState(false);

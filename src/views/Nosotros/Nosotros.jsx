@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 
 export default function Nosotros() {
+  document.title = "Sobre Nosotros";
   return (
     <Container maxWidth="md">
       <Grid>

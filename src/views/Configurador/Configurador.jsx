@@ -15,6 +15,7 @@ import {
   TextField,
   DialogActions,
   CircularProgress,
+  OutlinedInput,
 } from "@mui/material";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { useEffect, useState, Suspense } from "react";
@@ -28,7 +29,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 export default function Configurador() {
-  document.title = "configurador";
+  document.title = "Configurador";
 
   const { dataToken } = useAuthContext();
 
@@ -611,14 +612,17 @@ export default function Configurador() {
             <Grid item xs={12}>
               <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
-                  <InputLabel id="disposicion" color="success">
-                    Elige tu disposicion
+                  <InputLabel id="cantidadBungalows" color="success">
+                    Elige la Cantidad de Bungalows
                   </InputLabel>
                   <Select
-                    labelId="demo-simple-select-label"
+                    input={
+                      <OutlinedInput label="Elige la Cantidad de Bungalows" />
+                    }
+                    labelId="cantidadBungalows"
                     id="demo-simple-select"
                     value={disposicionValue}
-                    label="demo-simple-select-label"
+                    label="cantidadBungalows"
                     onChange={handleChangeDisposicion}
                     color="success"
                   >
@@ -639,6 +643,7 @@ export default function Configurador() {
                       Elige la orientacion
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Elige la orientacion" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={orientacionValue}
@@ -664,6 +669,7 @@ export default function Configurador() {
                       Elige El Modelo
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Elige El Modelo" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={modeloValue}
@@ -689,6 +695,7 @@ export default function Configurador() {
                       Elige El Tipo
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Elige El Tipo" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={tipoValue}
@@ -714,6 +721,7 @@ export default function Configurador() {
                       Bungalow-A
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Bungalow-A" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={bungalowaValue}
@@ -739,6 +747,7 @@ export default function Configurador() {
                       Bungalow-B
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Bungalow-B" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={bungalowbValue}
@@ -764,6 +773,7 @@ export default function Configurador() {
                       Bungalow-C
                     </InputLabel>
                     <Select
+                      input={<OutlinedInput label="Bungalow-C" />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={bungalowcValue}

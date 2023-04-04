@@ -16,6 +16,8 @@ import { useEffect, useState } from "react";
 import CarouselProyectos from "../../components/CarouselProyectos/CarouselProyectos";
 
 export default function Proyectos() {
+  document.title = "Nuestros Proyectos";
+
   const [obras, setObras] = useState([]);
   const [arrayCarousel, setArrayCarousel] = useState([]);
   const [nombreObra, setNombreObra] = useState("");
