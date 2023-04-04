@@ -52,6 +52,7 @@ export default function Productos() {
   const [vistaEdificios, setVistaEdificios] = useState(false);
   const [vistaNaves, setVistaNaves] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [clickBungalowsObras, setClickBungalowsObras] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -63,6 +64,7 @@ export default function Productos() {
 
   function bungalowObraClick(e) {
     e.preventDefault();
+    setClickBungalowsObras(true);
     setVistaBungalowsObras(true);
     setVistaInicio(false);
     setVistaBungalowAlmacen(false);
@@ -78,6 +80,7 @@ export default function Productos() {
   function bungalowAlmacenClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(true);
     setVistaBungalowCaseta(false);
@@ -89,6 +92,7 @@ export default function Productos() {
   function bungalowCasetaClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(true);
@@ -100,6 +104,7 @@ export default function Productos() {
   function bungalowOficinaClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -111,6 +116,7 @@ export default function Productos() {
   function bungalowWcClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -122,6 +128,7 @@ export default function Productos() {
   function bungalowVestuarioClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -133,6 +140,7 @@ export default function Productos() {
   function volverInicioClick(e) {
     e.preventDefault();
     setVistaInicio(true);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -144,6 +152,7 @@ export default function Productos() {
   function estructuraClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -158,6 +167,7 @@ export default function Productos() {
   function edificioClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -172,6 +182,7 @@ export default function Productos() {
   function naveClick(e) {
     e.preventDefault();
     setVistaInicio(false);
+    setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
     setVistaBungalowCaseta(false);
@@ -202,7 +213,8 @@ export default function Productos() {
   return (
     <Container maxWidth="xl" sx={{ my: 4 }}>
       <Grid container>
-        {vistaBungalowAlmacen ||
+        {clickBungalowsObras ||
+        vistaBungalowAlmacen ||
         vistaBungalowCaseta ||
         vistaBungalowDiafano ||
         vistaBungalowWc ||
@@ -477,11 +489,10 @@ export default function Productos() {
                       color="darkgreen"
                       fontWeight="bold"
                     >
-                      Tenemos varios tipos de bungalows de obras Despliega aqui
-                      abajo
+                      Tenemos varios tipos de bungalows de obras
                     </Typography>
                   </CardContent>
-                  <CardActions
+                  {/* <CardActions
                     sx={{ display: "flex", justifyContent: "center" }}
                   >
                     <ExpandMore
@@ -536,7 +547,7 @@ export default function Productos() {
                         Vestuarios
                       </Button>
                     </CardContent>
-                  </Collapse>
+                  </Collapse> */}
                 </Card>
               </Grid>
             </Grid>
