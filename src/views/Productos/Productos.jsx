@@ -254,6 +254,40 @@ export default function Productos() {
               >
                 Almacen
               </Button>
+              <Collapse in={vistaBungalowAlmacen}>
+                <Grid container gap={2}>
+                  <Button
+                    variant="text"
+                    fullWidth
+                    color="success"
+                    sx={{
+                      color: "darkgreen",
+                      borderColor: "darkgreen",
+                      fontWeight: "bold",
+                    }}
+                    //{
+                    //   vistaBungalowAlmacen
+                    //     ? {
+                    //         color: "white",
+                    //         fontWeight: "bold",
+                    //         backgroundColor: "darkgreen",
+                    //       }
+                    //     : {
+                    //         color: "darkgreen",
+                    //         borderColor: "darkgreen",
+                    //         fontWeight: "bold",
+                    //       }
+                    // }
+                    // onClick={bungalowAlmacenClick}
+                  >
+                    tipo 1
+                  </Button>
+                </Grid>
+                {/* {vistaBungalowAlmacen && (
+                 
+                )} */}
+              </Collapse>
+
               <Button
                 variant={vistaBungalowCaseta ? "contained" : "outlined"}
                 fullWidth
