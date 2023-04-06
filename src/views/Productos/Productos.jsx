@@ -307,8 +307,47 @@ export default function Productos() {
                 }
                 onClick={bungalowCasetaClick}
               >
-                Caseta de vigilancia
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>Caseta de vigilancia</Typography>
+                </AccordionSummary>
               </Button>
+              <Collapse in={vistaBungalowAlmacen}>
+                <Grid container gap={2}>
+                  <Button
+                    variant="text"
+                    fullWidth
+                    color="success"
+                    sx={{
+                      color: "darkgreen",
+                      borderColor: "darkgreen",
+                      fontWeight: "bold",
+                    }}
+                    //{
+                    //   vistaBungalowAlmacen
+                    //     ? {
+                    //         color: "white",
+                    //         fontWeight: "bold",
+                    //         backgroundColor: "darkgreen",
+                    //       }
+                    //     : {
+                    //         color: "darkgreen",
+                    //         borderColor: "darkgreen",
+                    //         fontWeight: "bold",
+                    //       }
+                    // }
+                    // onClick={bungalowAlmacenClick}
+                  >
+                    tipo 1
+                  </Button>
+                </Grid>
+                {/* {vistaBungalowAlmacen && (
+                 
+                )} */}
+              </Collapse>
               <Button
                 variant={vistaBungalowDiafano ? "contained" : "outlined"}
                 fullWidth
