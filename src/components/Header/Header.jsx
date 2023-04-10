@@ -11,6 +11,7 @@ export default function Header() {
           sx={{
             display: { xs: "none", md: "flex" },
             position: { xs: "absolute", md: "relative" },
+            mt: 2,
           }}
         >
           <Link to="/">
@@ -21,10 +22,11 @@ export default function Header() {
           sx={{
             display: { md: "none" },
             position: { xs: "absolute", md: "relative" },
+            mt: 0.2,
           }}
         >
           <Link to="/">
-            <img src="../../globallogo.png" width="200px" alt="foto" />
+            <img src="../../globallogo.png" width="180px" alt="foto" />
           </Link>
         </Grid>
       </Grid>
