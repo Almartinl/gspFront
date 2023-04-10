@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../../../contexts/AuthContext";
 import { Grid } from "@mui/material";
 import { deepOrange, yellow } from "@mui/material/colors";
+import { useState } from "react";
 
 const pages = [
   { nombre: "Inicio", ruta: "/" },
@@ -30,8 +31,8 @@ const settingsAdmin = [{ nombre: "Dashboard", ruta: "/dashboard" }];
 export default function AppBarMenu() {
   const { authorization, dataToken, logout } = useAuthContext();
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -124,6 +125,7 @@ export default function AppBarMenu() {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
+              justifyContent: "center",
             }}
           >
             {pages.map((page, index) => (
@@ -146,108 +148,106 @@ export default function AppBarMenu() {
                 </Button>
               </Link>
             ))}
+            {authorization ? (
+              <Box sx={{ flexGrow: 0 }}>
+                <Tooltip title="Abrir Opciones">
+                  <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <Avatar
+                      alt={dataToken.email.toUpperCase()}
+                      src={"/"}
+                      sx={{ bgcolor: "#d3b72a" }}
+                    />
+                  </IconButton>
+                </Tooltip>
+                {dataToken.role == 1 ? (
+                  <Menu
+                    id="menu-appbar"
+                    anchorEl={anchorElUser}
+                    anchorOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    keepMounted
+                    transformOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    open={Boolean(anchorElUser)}
+                    onClose={handleCloseUserMenu}
+                    sx={{ mt: "45px" }}
+                  >
+                    {settingsAdmin.map((page, index) => (
+                      <Link
+                        key={index}
+                        to={page.ruta}
+                        style={{ textDecoration: "none" }}
+                      >
+                        <MenuItem key={index} onClick={handleCloseUserMenu}>
+                          <Typography textAlign="center" color="text.primary">
+                            {page.nombre}
+                          </Typography>
+                        </MenuItem>
+                      </Link>
+                    ))}
+                    <MenuItem key="Logout" onClick={handleLogout}>
+                      <Typography textAlign="center">Logout</Typography>
+                    </MenuItem>
+                  </Menu>
+                ) : (
+                  <Menu
+                    sx={{ mt: "45px" }}
+                    id="menu-appbar"
+                    anchorEl={anchorElUser}
+                    anchorOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    keepMounted
+                    transformOrigin={{
+                      vertical: "top",
+                      horizontal: "right",
+                    }}
+                    open={Boolean(anchorElUser)}
+                    onClose={handleCloseUserMenu}
+                  >
+                    {settings.map((page, index) => (
+                      <Link
+                        key={index}
+                        to={page.ruta}
+                        style={{ textDecoration: "none" }}
+                      >
+                        <MenuItem key={index} onClick={handleCloseUserMenu}>
+                          <Typography textAlign="center" color="text.primary">
+                            {page.nombre}
+                          </Typography>
+                        </MenuItem>
+                      </Link>
+                    ))}
+                    <MenuItem key="Logout" onClick={handleLogout}>
+                      <Typography textAlign="center">Logout</Typography>
+                    </MenuItem>
+                  </Menu>
+                )}
+              </Box>
+            ) : (
+              <Grid sx={{ display: { xs: "none", md: "inline" } }}>
+                <Link to="/login" style={{ textDecoration: "none" }}>
+                  <Button
+                    key={7}
+                    onClick={handleCloseNavMenu}
+                    sx={{
+                      my: 2,
+                      display: "block",
+                      color: "darkgreen",
+                      ":hover": { bgcolor: "darkgreen", color: "white" },
+                    }}
+                  >
+                    <Typography fontWeight="bold"> Login / Register</Typography>
+                  </Button>
+                </Link>
+              </Grid>
+            )}
           </Box>
-
-          {authorization ? (
-            <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Abrir Opciones">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar
-                    alt={dataToken.email.toUpperCase()}
-                    src={"/"}
-                    sx={{ bgcolor: "#d3b72a" }}
-                  />
-                </IconButton>
-              </Tooltip>
-              {dataToken.role == 1 ? (
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorElUser}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  open={Boolean(anchorElUser)}
-                  onClose={handleCloseUserMenu}
-                  sx={{ mt: "45px" }}
-                >
-                  {settingsAdmin.map((page, index) => (
-                    <Link
-                      key={index}
-                      to={page.ruta}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <MenuItem key={index} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center" color="text.primary">
-                          {page.nombre}
-                        </Typography>
-                      </MenuItem>
-                    </Link>
-                  ))}
-                  <MenuItem key="Logout" onClick={handleLogout}>
-                    <Typography textAlign="center">Logout</Typography>
-                  </MenuItem>
-                </Menu>
-              ) : (
-                <Menu
-                  sx={{ mt: "45px" }}
-                  id="menu-appbar"
-                  anchorEl={anchorElUser}
-                  anchorOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "right",
-                  }}
-                  open={Boolean(anchorElUser)}
-                  onClose={handleCloseUserMenu}
-                >
-                  {settings.map((page, index) => (
-                    <Link
-                      key={index}
-                      to={page.ruta}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <MenuItem key={index} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center" color="text.primary">
-                          {page.nombre}
-                        </Typography>
-                      </MenuItem>
-                    </Link>
-                  ))}
-                  <MenuItem key="Logout" onClick={handleLogout}>
-                    <Typography textAlign="center">Logout</Typography>
-                  </MenuItem>
-                </Menu>
-              )}
-            </Box>
-          ) : (
-            <Grid sx={{ display: { xs: "none", md: "inline" } }}>
-              <Link to="/login" style={{ textDecoration: "none" }}>
-                <Button
-                  key={7}
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    my: 2,
-                    display: "block",
-                    border: 1,
-                    color: "darkgreen",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Login / Register
-                </Button>
-              </Link>
-            </Grid>
-          )}
         </Toolbar>
       </Container>
     </AppBar>
