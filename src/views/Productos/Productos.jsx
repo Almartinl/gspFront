@@ -280,7 +280,7 @@ export default function Productos() {
                     // }
                     // onClick={bungalowAlmacenClick}
                   >
-                    tipo 1
+                    subcategoria 1
                   </Button>
                 </Grid>
                 {/* {vistaBungalowAlmacen && (
@@ -307,15 +307,9 @@ export default function Productos() {
                 }
                 onClick={bungalowCasetaClick}
               >
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <Typography>Caseta de vigilancia</Typography>
-                </AccordionSummary>
+                Caseta de vigilancia
               </Button>
-              <Collapse in={vistaBungalowAlmacen}>
+              <Collapse in={vistaBungalowCaseta}>
                 <Grid container gap={2}>
                   <Button
                     variant="text"
@@ -341,7 +335,7 @@ export default function Productos() {
                     // }
                     // onClick={bungalowAlmacenClick}
                   >
-                    tipo 1
+                    subcategoria 1
                   </Button>
                 </Grid>
                 {/* {vistaBungalowAlmacen && (
