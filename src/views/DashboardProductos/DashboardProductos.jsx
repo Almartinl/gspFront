@@ -136,12 +136,6 @@ export default function DashboardProductos() {
               color="success"
             />
           </Grid>
-          <Grid item xs={12}>
-            <FormControlLabel
-              control={<Checkbox value="allowExtraEmails" color="success" />}
-              label="Quiero recibir inspiración, promociones de marketing y actualizaciones por Email."
-            />
-          </Grid>
         </Grid>
         <Button
           type="submit"
@@ -149,19 +143,8 @@ export default function DashboardProductos() {
           variant="contained"
           sx={{ mt: 3, mb: 2, backgroundColor: "darkgreen" }}
         >
-          Registrate
+          Añadir Producto
         </Button>
-        <Grid container justifyContent="flex-end">
-          <Grid item>
-            <Link
-              variant="body2"
-              sx={{ cursor: "pointer" }}
-              //onClick={() => handleChange()}
-            >
-              ¿Ya tienes cuenta? Inicia sesion
-            </Link>
-          </Grid>
-        </Grid>
       </Box>
     </Container>
   );
