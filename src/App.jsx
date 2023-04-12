@@ -21,6 +21,7 @@ import Productos from "./views/Productos/Productos";
 import DashboardContacto from "./views/DashboardContacto/DashboardContacto";
 import Proyectos from "./views/Proyectos/Proyectos";
 import Nosotros from "./views/Nosotros/Nosotros";
+import DashboardProductos from "./views/DashboardProductos/DashboardProductos";
 
 function App() {
   return (
@@ -47,6 +48,10 @@ function App() {
               element={<DashboardPresupuestos />}
             />
             <Route path="/dashboard/contacto" element={<DashboardContacto />} />
+            <Route
+              path="/dashboard/productos"
+              element={<DashboardProductos />}
+            />
           </Route>
           <Route path="/login" element={<Layout />}>
             <Route index element={<Login />} />
