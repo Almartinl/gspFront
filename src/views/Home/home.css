@@ -51,7 +51,7 @@
 .epilepsy-button {
   animation: epilepsy 1.5s infinite forwards;
   background-color: darkgreen;
-  border: 1px solid blue;
+  border: 1px solid darkgreen;
   color: white;
   letter-spacing: 1px;
   padding: 20px 40px;
@@ -59,6 +59,8 @@
   text-decoration: none;
   font-size: xx-large;
   font-weight: bold;
+  border-radius: 24px;
+  
 }
 
 @keyframes epilepsy {
@@ -66,4 +68,8 @@
     background-color: #d3b73d;
     color: darkgreen;
   }
+}
+
+.epilepsy-button:hover{
+  color: white;
 }

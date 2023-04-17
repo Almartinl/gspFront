@@ -323,7 +323,7 @@ export default function Home() {
             </Typography>
             <Grid md={0} xs={12} mt={8}>
               <Link className="epilepsy-button" to="/contacto">
-                Pincha Aqui
+                Click Aquí
               </Link>
             </Grid>
           </Grid>
