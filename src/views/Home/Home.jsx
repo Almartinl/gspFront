@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import CarouselPrincipal from "../../components/CarouselPrincipal/CarouselPrincipal";
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 export default function Home() {
   document.title = "Inicio";
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <Grid marginTop={4}>
       <CarouselPrincipal />
+
       <Container
         maxWidth="xl"
         sx={{
@@ -106,6 +108,22 @@ export default function Home() {
           flexDirection={{ xs: "column", md: "row" }}
           alignItems={{ xs: "center", md: "flex-start" }}
         >
+          <Grid
+            item
+            textAlign="center"
+            md
+            display={{ xs: "block", md: "none" }}
+          >
+            <Typography
+              variant="h3"
+              color="Darkgreen"
+              fontWeight="bold"
+              sx={{ paddingLeft: { xs: 0, md: 4 } }}
+            >
+              Nuestros
+              <br /> Beneficios
+            </Typography>
+          </Grid>
           <Grid
             item
             bgcolor="darkgreen"
@@ -278,6 +296,7 @@ export default function Home() {
           />
         </Grid>
       </Container>
+      <ScrollToTopButton />
     </Grid>
   );
 }

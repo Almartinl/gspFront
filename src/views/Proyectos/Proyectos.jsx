@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import CarouselProyectos from "../../components/CarouselProyectos/CarouselProyectos";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 export default function Proyectos() {
   document.title = "Nuestros Proyectos";
@@ -106,6 +107,7 @@ export default function Proyectos() {
           </Grid>
         )}
       </Container>
+      <ScrollToTopButton />
     </Grid>
   );
 }

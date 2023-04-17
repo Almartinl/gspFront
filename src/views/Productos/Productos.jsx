@@ -26,6 +26,7 @@ import { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import CarouselProductos from "../../components/CarouselProductos/CarouselProductos";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -2160,6 +2161,7 @@ export default function Productos() {
           )}
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </Container>
   );
 }

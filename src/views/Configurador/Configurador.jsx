@@ -27,6 +27,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useAuthContext } from "../../contexts/AuthContext";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 export default function Configurador() {
   document.title = "Configurador";
@@ -958,6 +959,7 @@ export default function Configurador() {
           </Dialog>
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </Container>
   );
 }

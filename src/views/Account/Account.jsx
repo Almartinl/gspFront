@@ -39,6 +39,7 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import { useEffect } from "react";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -1075,6 +1076,7 @@ export default function Account() {
           </Paper>
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </Container>
   );
 }

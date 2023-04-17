@@ -1,4 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 export default function Nosotros() {
   document.title = "Sobre Nosotros";
@@ -55,6 +56,7 @@ export default function Nosotros() {
           />
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </Container>
   );
 }

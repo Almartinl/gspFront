@@ -18,15 +18,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 
 const initialContactState = {
   nombre: "",
   apellidos: "",
   email: "",
-  pais: "",
-  direccion: "",
+  // pais: "",
+  // direccion: "",
+  // ciudad: "",
   telefono: "",
-  ciudad: "",
   descripcion: "",
 };
 
@@ -226,7 +227,7 @@ export default function Contact() {
                     color="success"
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     required
                     fullWidth
@@ -264,7 +265,7 @@ export default function Contact() {
                     onChange={handleInput}
                     color="success"
                   />
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12} sm={8}>
                   <TextField
                     required
@@ -347,6 +348,7 @@ export default function Contact() {
           ></iframe>
         </Grid>
       </Grid>
+      <ScrollToTopButton />
     </Container>
   );
 }
