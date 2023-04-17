@@ -36,7 +36,9 @@ export default function CarouselPrincipal() {
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-2 fw-bold">BIENVENIDO</h3>
             <h4 className="shadow-text fw-bold">
-              Bungalows y Edificios prefabricados
+              Mejore su imagen de marca con nuestras instalaciones prefabricadas
+              cómodas, fiables y garantizadas.
+              {/* Bungalows y Edificios prefabricados */}
             </h4>
           </div>
         </div>

@@ -19,6 +19,68 @@ export default function Home() {
         maxWidth="xl"
         sx={{
           marginTop: "24px",
+          px: { xs: 0, md: 3 },
+          paddingTop: 10,
+          paddingBottom: 0,
+        }}
+      >
+        <Grid
+          container
+          spacing={{ xs: 0, md: 2 }}
+          flexDirection={{ xs: "column", md: "row" }}
+          alignItems={{ xs: "center", md: "flex-start" }}
+        >
+          <Grid item xs={12} textAlign="start" md>
+            <Typography
+              variant="h3"
+              color="Darkgreen"
+              fontWeight="bold"
+              sx={{ paddingLeft: { xs: 0, md: 4 } }}
+            >
+              Nuestras
+              <br /> Ventajas
+            </Typography>
+          </Grid>
+
+          <Grid
+            item
+            bgcolor="darkgreen"
+            md={8}
+            xs={12}
+            marginRight={{ xs: 0, md: 6 }}
+            boxShadow="3px 4px 5px 2px #727272"
+            marginTop={{ xs: 5, md: 0 }}
+          >
+            <Typography color="white" p={4}>
+              Apoyamos a empresas de construcción, construcción, ingeniería
+              civil, contratistas, microempresas (pymes y VSEs) y particulares
+              ofreciéndoles instalaciones prefabricadas llave en mano y a
+              medida, permitiéndoles alojar a sus equipos técnicos en óptimas
+              condiciones de confort y trabajo para alcanzar sus objetivos
+              estratégicos.
+              <br />
+              <br />{" "}
+              <Typography fontWeight="bold">
+                Nuestras instalaciones prefabricadas le permiten:
+              </Typography>
+              <br />
+              <li>
+                Mejorar la imagen de marca de su empresa a los ojos de sus
+                clientes.
+              </li>
+              <li>
+                Aumente la productividad de sus equipos técnicos en sus diversos
+                proyectos poniéndolos en condiciones óptimas de trabajo y
+                comodidad.
+              </li>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
+      <Container
+        maxWidth="xl"
+        sx={{
+          marginTop: "24px",
         }}
       >
         <Grid container spacing={2}>
@@ -151,60 +213,6 @@ export default function Home() {
             sx={{ border: "1px solid darkgreen" }}
           />
         </Grid>
-        <Container
-          maxWidth="xl"
-          sx={{
-            marginTop: "24px",
-            px: { xs: 0, md: 3 },
-            paddingTop: 10,
-            paddingBottom: 0,
-          }}
-        >
-          <Grid
-            container
-            spacing={{ xs: 0, md: 2 }}
-            flexDirection={{ xs: "column", md: "row" }}
-            alignItems={{ xs: "center", md: "flex-start" }}
-          >
-            <Grid item xs={12} textAlign="start" md>
-              <Typography
-                variant="h3"
-                color="Darkgreen"
-                fontWeight="bold"
-                sx={{ paddingLeft: { xs: 0, md: 4 } }}
-              >
-                Nuestras
-                <br /> Ventajas
-              </Typography>
-            </Grid>
-
-            <Grid
-              item
-              bgcolor="darkgreen"
-              md={8}
-              xs={12}
-              marginRight={{ xs: 0, md: 6 }}
-              boxShadow="3px 4px 5px 2px #727272"
-              marginTop={{ xs: 5, md: 0 }}
-            >
-              <Typography color="white" p={4}>
-                Si está cansado del bajo rendimiento de sus equipos, los
-                retrasos y otras sanciones a pagar por el incumplimiento de los
-                plazos de sus sitios: o de tratar con personas poco o nada
-                organizadas, que no tienen control sobre sus actividades. que no
-                son nada profesionales, y lo que es peor, te ofrecen soluciones
-                prefabricadas de mierda: con problemas de estanqueidad,
-                manillas, cerraduras, calidad del servicio postventa, etc.
-                <br />
-                <br /> Entonces está en la página web correcta, así es como: Las
-                soluciones modulares y prefabricadas que le ofrecemos en GSP
-                definitivamente resolverán sus problemas en sus sitios y tendrán
-                un impacto real y poderoso en sus resultados y en la
-                productividad de sus equipos. .
-              </Typography>
-            </Grid>
-          </Grid>
-        </Container>
       </Container>
     </Grid>
   );
