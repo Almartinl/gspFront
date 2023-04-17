@@ -6,6 +6,7 @@ import {
   Grid,
   Paper,
   Typography,
+  duration,
 } from "@mui/material";
 import CarouselPrincipal from "../../components/CarouselPrincipal/CarouselPrincipal";
 import { Link } from "react-router-dom";
@@ -294,6 +295,38 @@ export default function Home() {
             orientation="horizontal"
             sx={{ border: "1px solid darkgreen" }}
           />
+        </Grid>
+      </Container>
+      <Container
+        maxWidth="xl"
+        sx={{
+          marginTop: "24px",
+          px: { xs: 0, md: 3 },
+          paddingTop: 10,
+          paddingBottom: 0,
+        }}
+      >
+        <Grid
+          container
+          spacing={{ xs: 0, md: 2 }}
+          flexDirection={{ xs: "column", md: "row" }}
+          alignItems={{ xs: "center", md: "flex-start" }}
+        >
+          <Grid item textAlign="center" md>
+            <Typography
+              variant="h3"
+              color="Darkgreen"
+              fontWeight="bold"
+              sx={{ paddingLeft: { xs: 0, md: 4 } }}
+            >
+              Contacta con Nosotros y solicita un Presupuesto!!!
+            </Typography>
+            <Grid md={0} xs={12} mt={4}>
+              <Link className="epilepsy-button" to="/contacto">
+                Pincha Aqui
+              </Link>
+            </Grid>
+          </Grid>
         </Grid>
       </Container>
       <ScrollToTopButton />

@@ -47,3 +47,23 @@
     object-fit: cover;
   }
 }
+
+.epilepsy-button {
+  animation: epilepsy 1.5s infinite forwards;
+  background-color: darkgreen;
+  border: 1px solid blue;
+  color: white;
+  letter-spacing: 1px;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@keyframes epilepsy {
+  50% {
+    background-color: #d3b73d;
+    color: white;
+  }
+}
