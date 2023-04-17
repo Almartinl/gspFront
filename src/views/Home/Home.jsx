@@ -321,7 +321,7 @@ export default function Home() {
             >
               Contacta con Nosotros y solicita un Presupuesto!!!
             </Typography>
-            <Grid md={0} xs={12} mt={4}>
+            <Grid md={0} xs={12} mt={8}>
               <Link className="epilepsy-button" to="/contacto">
                 Pincha Aqui
               </Link>
