@@ -12,6 +12,20 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   document.title = "Inicio";
+
+  const beneficios = [
+    "La velocidad de montaje",
+    "Plazos de entrega muy cortos",
+    "Facilidad de instalación",
+    "Los acabados perfectos",
+    " El uso óptimo y racional de cada espacio",
+    "Aislamiento térmico y acústico",
+    "Fiabilidad",
+    "Comodidad",
+    " Ahorro energético",
+    "Soluciones probadas y aprobadas internamente",
+  ];
+
   return (
     <Grid marginTop={4}>
       <CarouselPrincipal />
@@ -73,6 +87,56 @@ export default function Home() {
                 proyectos poniéndolos en condiciones óptimas de trabajo y
                 comodidad.
               </li>
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
+      <Container
+        maxWidth="xl"
+        sx={{
+          marginTop: "24px",
+          px: { xs: 0, md: 3 },
+          paddingTop: 10,
+          paddingBottom: 0,
+        }}
+      >
+        <Grid
+          container
+          spacing={{ xs: 0, md: 2 }}
+          flexDirection={{ xs: "column", md: "row" }}
+          alignItems={{ xs: "center", md: "flex-start" }}
+        >
+          <Grid
+            item
+            bgcolor="darkgreen"
+            md={8}
+            xs={12}
+            marginRight={{ xs: 0, md: 6 }}
+            boxShadow="3px 4px 5px 2px #727272"
+            marginTop={{ xs: 5, md: 0 }}
+          >
+            <Typography color="white" p={4}>
+              <ol>
+                {beneficios.map((beneficio) => (
+                  <li>{beneficio}</li>
+                ))}
+              </ol>
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            textAlign="center"
+            md
+            display={{ xs: "none", md: "block" }}
+          >
+            <Typography
+              variant="h3"
+              color="Darkgreen"
+              fontWeight="bold"
+              sx={{ paddingLeft: { xs: 0, md: 4 } }}
+            >
+              Nuestros
+              <br /> Beneficios
             </Typography>
           </Grid>
         </Grid>
