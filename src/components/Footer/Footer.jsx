@@ -28,14 +28,15 @@ export default function Footer() {
         sx={{
           borderTop: (theme) => `1px solid ${theme.palette.divider}`,
           mt: 10,
-          py: 5,
+          py: 2,
         }}
       >
         <Grid
           container
           spacing={2}
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems="center"
+          mt={0}
         >
           <Copyright />
           <Grid>

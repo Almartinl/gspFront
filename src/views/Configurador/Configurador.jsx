@@ -28,6 +28,7 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import cors from "cors";
 
 export default function Configurador() {
   document.title = "Configurador";
@@ -601,6 +602,7 @@ export default function Configurador() {
           </Typography>
         </Grid>
         <Grid container item xs={12}>
+          {/* <Grid md={4}></Grid> */}
           <Grid
             container
             item
@@ -837,6 +839,7 @@ export default function Configurador() {
               </Button>
             </Grid>
           </Grid>
+          {/* <Grid md={4}></Grid> */}
           {planta.length > 0 ? (
             <Grid
               item
@@ -845,11 +848,14 @@ export default function Configurador() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                height: "70vh",
+                height: "120vh",
                 objectFit: "cover",
                 backgroundImage: `url(${`https://almartindev.online/api/${planta[0].planta}`})`,
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: { xs: "center center", md: "top center" },
+                backgroundPosition: {
+                  xs: "center center",
+                  md: "top center",
+                },
                 backgroundSize: "contain",
               }}
             >
