@@ -54,6 +54,7 @@ export default function Productos() {
   const [vistaNaves, setVistaNaves] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [clickBungalowsObras, setClickBungalowsObras] = useState(false);
+  const [bungalowObras, setBungalowObras] = useState([]);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -65,6 +66,22 @@ export default function Productos() {
 
   function bungalowObraClick(e) {
     e.preventDefault();
+    async function fetchProducto() {
+      const response = await fetch(
+        "https://almartindev.online/api/product/category",
+        {
+          method: "POST",
+          headers: { "content-Type": "application/json" },
+          body: JSON.stringify({
+            categoria: "bungalowObras",
+          }),
+        }
+      );
+      const data = await response.json();
+      setBungalowObras(data);
+    }
+    fetchProducto();
+
     setClickBungalowsObras(true);
     setVistaBungalowsObras(true);
     setVistaInicio(false);
@@ -539,7 +556,7 @@ export default function Productos() {
               <Grid item sm={12}>
                 <Card>
                   <CardHeader
-                    title="Bungalows de obras"
+                    title={bungalowObras[0].nombre}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "right",
@@ -558,7 +575,9 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      Tenemos varios tipos de bungalows de obras
+                      {bungalowObras.length > 0 &&
+                        bungalowObras[0].descripcioncorta}
+                      {/* Tenemos varios tipos de bungalows de obras */}
                     </Typography>
                   </CardContent>
                   {/* <CardActions
