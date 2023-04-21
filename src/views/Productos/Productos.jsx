@@ -555,14 +555,17 @@ export default function Productos() {
             <Grid container item xs={12} spacing={2} p={3}>
               <Grid item sm={12}>
                 <Card>
-                  <CardHeader
-                    title={bungalowObras[0].nombre}
-                    titleTypographyProps={{
-                      color: "#3b8f1e",
-                      align: "right",
-                      fontWeight: "bold",
-                    }}
-                  />
+                  {bungalowObras.length > 0 && (
+                    <CardHeader
+                      title={bungalowObras[0].nombre}
+                      titleTypographyProps={{
+                        color: "#3b8f1e",
+                        align: "right",
+                        fontWeight: "bold",
+                      }}
+                    />
+                  )}
+
                   <CardMedia
                     component="img"
                     height="500"
