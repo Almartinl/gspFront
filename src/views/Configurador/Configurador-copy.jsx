@@ -185,7 +185,7 @@ export default function Configurador() {
         >
           <Typography
             variant="h1"
-            color="darkgreen"
+            color="#3b8f1e"
             sx={{ my: "48px", fontWeight: "bold" }}
           >
             Crea tu Bungalow en un Click
@@ -201,7 +201,7 @@ export default function Configurador() {
         >
           <Typography
             variant="h3"
-            color="darkgreen"
+            color="#3b8f1e"
             sx={{ my: "48px", fontWeight: "bold" }}
           >
             Crea tu Bungalow en un Click
@@ -783,7 +783,7 @@ export default function Configurador() {
             <Button
               variant="contained"
               color="success"
-              sx={{ backgroundColor: "darkgreen" }}
+              sx={{ backgroundColor: "#3b8f1e" }}
               disabled={disableButton}
               onClick={saveBungalowFinal}
             >
@@ -792,7 +792,7 @@ export default function Configurador() {
             <Button
               variant="contained"
               color="primary"
-              sx={{ backgroundColor: "darkgreen" }}
+              sx={{ backgroundColor: "#3b8f1e" }}
               disabled={disableButton}
               onClick={handleView3d}
             >
@@ -851,7 +851,7 @@ export default function Configurador() {
               <Typography
                 variant="h2"
                 fontWeight="bold"
-                sx={{ textAlign: "center", color: "darkgreen" }}
+                sx={{ textAlign: "center", color: "#3b8f1e" }}
               >
                 Vista 3d
               </Typography>

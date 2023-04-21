@@ -50,7 +50,7 @@ export default function Home() {
           <Grid item xs={12} textAlign="start" md>
             <Typography
               variant="h3"
-              color="Darkgreen"
+              color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
             >
@@ -61,7 +61,7 @@ export default function Home() {
 
           <Grid
             item
-            bgcolor="darkgreen"
+            bgcolor="#3b8f1e"
             md={8}
             xs={12}
             marginRight={{ xs: 0, md: 6 }}
@@ -117,7 +117,7 @@ export default function Home() {
           >
             <Typography
               variant="h3"
-              color="Darkgreen"
+              color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
             >
@@ -127,7 +127,7 @@ export default function Home() {
           </Grid>
           <Grid
             item
-            bgcolor="darkgreen"
+            bgcolor="#3b8f1e"
             md={8}
             xs={12}
             marginRight={{ xs: 0, md: 6 }}
@@ -150,7 +150,7 @@ export default function Home() {
           >
             <Typography
               variant="h3"
-              color="Darkgreen"
+              color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
             >
@@ -177,7 +177,7 @@ export default function Home() {
           >
             <Typography
               variant="h2"
-              color="darkgreen"
+              color="#3b8f1e"
               sx={{ marginTop: "40px", fontWeight: "bold" }}
             >
               Servicios
@@ -194,7 +194,7 @@ export default function Home() {
           >
             <Typography
               variant="h2"
-              color="darkgreen"
+              color="#3b8f1e"
               sx={{ my: "48px", fontWeight: "bold" }}
             >
               Servicios
@@ -203,7 +203,7 @@ export default function Home() {
           <Grid item xs={12}>
             <Divider
               orientation="horizontal"
-              sx={{ border: "1px solid darkgreen" }}
+              sx={{ border: "1px solid #3b8f1e" }}
             />
           </Grid>
           <Grid item md={4}>
@@ -221,7 +221,7 @@ export default function Home() {
                 sx={{
                   height: "100%",
                   color: "#d3b73d",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
@@ -256,7 +256,7 @@ export default function Home() {
                 sx={{
                   height: "100%",
                   color: "#d3b73d",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
@@ -280,7 +280,7 @@ export default function Home() {
                 sx={{
                   height: "100%",
                   color: "#d3b73d",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
@@ -293,7 +293,7 @@ export default function Home() {
         <Grid item xs={12} marginTop={8}>
           <Divider
             orientation="horizontal"
-            sx={{ border: "1px solid darkgreen" }}
+            sx={{ border: "1px solid #3b8f1e" }}
           />
         </Grid>
       </Container>
@@ -315,7 +315,7 @@ export default function Home() {
           <Grid item textAlign="center" md>
             <Typography
               variant="h3"
-              color="Darkgreen"
+              color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
             >

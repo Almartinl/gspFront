@@ -94,7 +94,7 @@ export default function Contact() {
           height="100vh"
           sx={{ py: { xs: 1, md: 10 }, paddingLeft: { xs: 1, md: 10 } }}
         >
-          <Grid container item xs={12} bgcolor="darkgreen" boxShadow="10px">
+          <Grid container item xs={12} bgcolor="#3b8f1e" boxShadow="10px">
             <Grid container flexDirection="column" gap={10}>
               <Typography
                 variant="h4"
@@ -186,7 +186,7 @@ export default function Contact() {
             paddingLeft: { xs: 1 },
           }}
         >
-          <Grid item xs={12} py={5} border="4px solid darkgreen ">
+          <Grid item xs={12} py={5} border="4px solid #3b8f1e ">
             <Typography variant="h4" fontWeight="800" px={6} paddingTop={5}>
               Formulario de <br />
               Contacto
@@ -323,7 +323,7 @@ export default function Contact() {
                 fullWidth
                 variant="contained"
                 color="success"
-                sx={{ mt: 3, mb: 2, backgroundColor: "darkgreen" }}
+                sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               >
                 Enviar Formulario
               </Button>
@@ -337,7 +337,7 @@ export default function Contact() {
           sx={{ marginTop: { xs: 60, md: 10 } }}
           gap={4}
         >
-          <Typography variant="h4" fontWeight="800" color="darkgreen">
+          <Typography variant="h4" fontWeight="800" color="#3b8f1e">
             Nuestra Localizacion
           </Typography>
           <iframe

@@ -6,12 +6,7 @@ export default function Nosotros() {
   return (
     <Container maxWidth="md">
       <Grid>
-        <Typography
-          variant="h2"
-          fontWeight="bold"
-          color="darkgreen"
-          marginY={5}
-        >
+        <Typography variant="h2" fontWeight="bold" color="#3b8f1e" marginY={5}>
           Sobre Nosotros
         </Typography>
         <Grid container spacing={2}>

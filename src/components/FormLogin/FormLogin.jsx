@@ -52,10 +52,10 @@ export default function FormLogin({ estado, vista }) {
             flexDirection: "column",
             alignItems: "center",
             p: 7,
-            border: "1px solid darkgreen",
+            border: "1px solid #3b8f1e",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "darkgreen" }}>
+          <Avatar sx={{ m: 1, bgcolor: "#3b8f1e" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
@@ -101,7 +101,7 @@ export default function FormLogin({ estado, vista }) {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2, backgroundColor: "darkgreen" }}
+              sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               color="success"
             >
               Iniciar Sesion

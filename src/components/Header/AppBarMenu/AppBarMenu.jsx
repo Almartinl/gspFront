@@ -101,9 +101,9 @@ export default function AppBarMenu() {
                   <MenuItem
                     key={index}
                     onClick={handleCloseNavMenu}
-                    sx={{ ":hover": { bgcolor: "darkgreen", color: "white" } }}
+                    sx={{ ":hover": { bgcolor: "#3b8f1e", color: "white" } }}
                   >
-                    <Typography textAlign="center" color="darkgreen">
+                    <Typography textAlign="center" color="#3b8f1e">
                       {page.nombre}
                     </Typography>
                   </MenuItem>
@@ -139,9 +139,9 @@ export default function AppBarMenu() {
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,
-                    color: "darkgreen",
+                    color: "#3b8f1e",
                     display: "block",
-                    ":hover": { bgcolor: "darkgreen", color: "white" },
+                    ":hover": { bgcolor: "#3b8f1e", color: "white" },
                   }}
                 >
                   <Typography fontWeight="bold">{page.nombre}</Typography>
@@ -238,8 +238,8 @@ export default function AppBarMenu() {
                     sx={{
                       my: 2,
                       display: "block",
-                      color: "darkgreen",
-                      ":hover": { bgcolor: "darkgreen", color: "white" },
+                      color: "#3b8f1e",
+                      ":hover": { bgcolor: "#3b8f1e", color: "white" },
                     }}
                   >
                     <Typography fontWeight="bold"> Login / Register</Typography>

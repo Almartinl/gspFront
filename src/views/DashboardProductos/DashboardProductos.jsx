@@ -141,7 +141,7 @@ export default function DashboardProductos() {
           type="submit"
           fullWidth
           variant="contained"
-          sx={{ mt: 3, mb: 2, backgroundColor: "darkgreen" }}
+          sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
         >
           Añadir Producto
         </Button>

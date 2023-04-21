@@ -94,7 +94,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Usuarios
               </Typography>
 
@@ -131,7 +131,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Modelos del Configurador
               </Typography>
 
@@ -168,7 +168,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Presupuestos Pendientes
               </Typography>
 
@@ -206,7 +206,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Formularios Pendientes
               </Typography>
 
@@ -243,7 +243,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Productos
               </Typography>
 
@@ -279,7 +279,7 @@ export default function DashboardInicio() {
               flexDirection="column"
               gap="56px"
             >
-              <Typography variant="h4" color="darkgreen">
+              <Typography variant="h4" color="#3b8f1e">
                 Nuestras Obras
               </Typography>
 

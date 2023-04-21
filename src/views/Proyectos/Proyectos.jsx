@@ -49,7 +49,7 @@ export default function Proyectos() {
     <Grid marginY={10}>
       <Container maxWidth="xl">
         <Grid item xs={12} my={5} p={2}>
-          <Typography variant="h2" fontWeight="bold" color="darkgreen">
+          <Typography variant="h2" fontWeight="bold" color="#3b8f1e">
             Nuestros Proyectos
           </Typography>
         </Grid>

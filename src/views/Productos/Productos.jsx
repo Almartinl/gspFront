@@ -230,7 +230,7 @@ export default function Productos() {
             p={5}
             alignContent="flex-start"
           >
-            <Typography variant="h4" fontWeight="800" color="darkgreen">
+            <Typography variant="h4" fontWeight="800" color="#3b8f1e">
               Tipos de Bungalows de Obras
             </Typography>
             <Grid container gap={2}>
@@ -243,11 +243,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -262,8 +262,8 @@ export default function Productos() {
                     fullWidth
                     color="success"
                     sx={{
-                      color: "darkgreen",
-                      borderColor: "darkgreen",
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
                       fontWeight: "bold",
                     }}
                     //{
@@ -271,11 +271,11 @@ export default function Productos() {
                     //     ? {
                     //         color: "white",
                     //         fontWeight: "bold",
-                    //         backgroundColor: "darkgreen",
+                    //         backgroundColor: "#3b8f1e",
                     //       }
                     //     : {
-                    //         color: "darkgreen",
-                    //         borderColor: "darkgreen",
+                    //         color: "#3b8f1e",
+                    //         borderColor: "#3b8f1e",
                     //         fontWeight: "bold",
                     //       }
                     // }
@@ -298,11 +298,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -317,8 +317,8 @@ export default function Productos() {
                     fullWidth
                     color="success"
                     sx={{
-                      color: "darkgreen",
-                      borderColor: "darkgreen",
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
                       fontWeight: "bold",
                     }}
                     //{
@@ -326,11 +326,11 @@ export default function Productos() {
                     //     ? {
                     //         color: "white",
                     //         fontWeight: "bold",
-                    //         backgroundColor: "darkgreen",
+                    //         backgroundColor: "#3b8f1e",
                     //       }
                     //     : {
-                    //         color: "darkgreen",
-                    //         borderColor: "darkgreen",
+                    //         color: "#3b8f1e",
+                    //         borderColor: "#3b8f1e",
                     //         fontWeight: "bold",
                     //       }
                     // }
@@ -352,11 +352,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -373,11 +373,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -394,11 +394,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -430,7 +430,7 @@ export default function Productos() {
             p={5}
             alignContent="flex-start"
           >
-            <Typography variant="h4" fontWeight="800" color="darkgreen">
+            <Typography variant="h4" fontWeight="800" color="#3b8f1e">
               Categorias de Productos
             </Typography>
             <Grid container gap={2}>
@@ -443,11 +443,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -464,11 +464,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -485,11 +485,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -506,11 +506,11 @@ export default function Productos() {
                     ? {
                         color: "white",
                         fontWeight: "bold",
-                        backgroundColor: "darkgreen",
+                        backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "darkgreen",
-                        borderColor: "darkgreen",
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
                         fontWeight: "bold",
                       }
                 }
@@ -541,7 +541,7 @@ export default function Productos() {
                   <CardHeader
                     title="Bungalows de obras"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -555,7 +555,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       Tenemos varios tipos de bungalows de obras
@@ -571,7 +571,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -629,7 +629,7 @@ export default function Productos() {
                   <CardHeader
                     title="Almacen"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -643,7 +643,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       Este bungalow es perfecto para poder almacenar todo tipo
@@ -660,7 +660,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -671,7 +671,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -891,7 +891,7 @@ export default function Productos() {
                   <CardHeader
                     title="Caseta de Vigilancia"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -905,7 +905,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       La caseta de vigilancia perfecta
@@ -921,7 +921,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -932,7 +932,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -1152,7 +1152,7 @@ export default function Productos() {
                   <CardHeader
                     title="Oficina Multiusos"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -1166,7 +1166,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       La oficina que simpre has querido
@@ -1182,7 +1182,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -1193,7 +1193,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -1413,7 +1413,7 @@ export default function Productos() {
                   <CardHeader
                     title="Sanitarios"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -1427,7 +1427,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       El sanitario ideal para tus empleados
@@ -1443,7 +1443,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -1454,7 +1454,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -1674,7 +1674,7 @@ export default function Productos() {
                   <CardHeader
                     title="Vestuarios"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -1688,7 +1688,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       El Vestuario idoneo para poder Cambiarse en tus proyectos
@@ -1704,7 +1704,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -1715,7 +1715,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -1935,7 +1935,7 @@ export default function Productos() {
                   <CardHeader
                     title="Estructuras Metalicas"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -1949,7 +1949,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       La estructura es lo mas importante de toda obra
@@ -1965,7 +1965,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -1976,7 +1976,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -2011,7 +2011,7 @@ export default function Productos() {
                   <CardHeader
                     title="Edificios Prefabricados"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -2025,7 +2025,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       Edificios especiales prefabricados
@@ -2041,7 +2041,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -2052,7 +2052,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >
@@ -2091,7 +2091,7 @@ export default function Productos() {
                   <CardHeader
                     title="Naves Industriales"
                     titleTypographyProps={{
-                      color: "darkgreen",
+                      color: "#3b8f1e",
                       align: "right",
                       fontWeight: "bold",
                     }}
@@ -2105,7 +2105,7 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="darkgreen"
+                      color="#3b8f1e"
                       fontWeight="bold"
                     >
                       Naves Industriales y Hangares
@@ -2121,7 +2121,7 @@ export default function Productos() {
                       aria-label="show more"
                     >
                       <ExpandMoreIcon
-                        sx={{ color: "darkgreen" }}
+                        sx={{ color: "#3b8f1e" }}
                         fontSize="large"
                       />
                     </ExpandMore>
@@ -2132,7 +2132,7 @@ export default function Productos() {
                     >
                       <Typography
                         variant="h4"
-                        bgcolor="darkgreen"
+                        bgcolor="#3b8f1e"
                         color="white"
                         p={1}
                       >

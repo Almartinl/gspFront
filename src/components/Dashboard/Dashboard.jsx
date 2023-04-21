@@ -124,7 +124,7 @@ function DashboardContent() {
               px: [1],
             }}
           >
-            <Typography variant="h5" textAlign="center" color="darkgreen">
+            <Typography variant="h5" textAlign="center" color="#3b8f1e">
               Menu
             </Typography>
             <IconButton onClick={toggleDrawer}>
@@ -138,8 +138,8 @@ function DashboardContent() {
                 color="primary"
                 sx={{
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard", "Panel");
@@ -151,8 +151,8 @@ function DashboardContent() {
                 color="primary"
                 sx={{
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/usuarios", "Usuarios");
@@ -164,8 +164,8 @@ function DashboardContent() {
                 color="primary"
                 sx={{
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/presupuestos", "Presupuestos");
@@ -177,8 +177,8 @@ function DashboardContent() {
                 color="primary"
                 sx={{
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/contacto", "Formulario");
@@ -190,8 +190,8 @@ function DashboardContent() {
                 color="primary"
                 sx={{
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/productos", "Productos");
@@ -223,8 +223,8 @@ function DashboardContent() {
                   justifyContent: "flex-start",
                   gap: "20%",
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard", "Panel");
@@ -242,8 +242,8 @@ function DashboardContent() {
                   justifyContent: "flex-start",
                   gap: "20%",
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/usuarios", "Usuarios");
@@ -260,8 +260,8 @@ function DashboardContent() {
                   justifyContent: "flex-start",
                   gap: "20%",
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/presupuestos", "Presupuestos");
@@ -278,8 +278,8 @@ function DashboardContent() {
                   justifyContent: "flex-start",
                   gap: "20%",
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/contacto", "Formularios");
@@ -297,8 +297,8 @@ function DashboardContent() {
                   justifyContent: "flex-start",
                   gap: "20%",
                   py: "16px",
-                  color: "darkgreen",
-                  ":hover": { bgcolor: "darkgreen", color: "white" },
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
                   Linkto("/dashboard/productos", "Productos");

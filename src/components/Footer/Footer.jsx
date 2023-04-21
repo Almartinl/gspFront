@@ -21,7 +21,7 @@ export default function Footer() {
   }
 
   return (
-    <Grid bgcolor="darkgreen">
+    <Grid bgcolor="#3b8f1e">
       <Container
         maxWidth="xl"
         component="footer"

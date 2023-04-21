@@ -520,7 +520,7 @@ export default function Configurador() {
     return (
       <Html center scale={5}>
         <Grid width="100%">
-          <Typography variant="h4" textAlign="center" color="darkgreen">
+          <Typography variant="h4" textAlign="center" color="#3b8f1e">
             {Math.floor(progress * 1)} % Cargado
           </Typography>
         </Grid>
@@ -579,7 +579,7 @@ export default function Configurador() {
         >
           <Typography
             variant="h1"
-            color="darkgreen"
+            color="#3b8f1e"
             sx={{ my: "48px", fontWeight: "bold" }}
           >
             Crea tu Bungalow en unos Clicks
@@ -595,7 +595,7 @@ export default function Configurador() {
         >
           <Typography
             variant="h3"
-            color="darkgreen"
+            color="#3b8f1e"
             sx={{ my: "48px", fontWeight: "bold" }}
           >
             Crea tu Bungalow en unos Clicks
@@ -808,7 +808,7 @@ export default function Configurador() {
                 variant="contained"
                 color="success"
                 sx={{
-                  backgroundColor: "darkgreen",
+                  backgroundColor: "#3b8f1e",
                   fontSize: { xs: "small", md: "large" },
                 }}
                 disabled={disableButton}
@@ -821,7 +821,7 @@ export default function Configurador() {
                 variant="contained"
                 color="success"
                 sx={{
-                  backgroundColor: "darkgreen",
+                  backgroundColor: "#3b8f1e",
                   fontSize: { xs: "small", md: "large" },
                 }}
                 disabled={disableButton}
