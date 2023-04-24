@@ -7,39 +7,57 @@ export default function Nosotros() {
     <Container maxWidth="md">
       <Grid>
         <Typography variant="h2" fontWeight="bold" color="#3b8f1e" marginY={5}>
-          Sobre Nosotros
+          QUI SOMME-NOUS
         </Typography>
         <Grid container spacing={2}>
           <Grid container gap={2} item md={12}>
-            <Typography textAlign="left" variant="h5">
-              Global Solutions Prefabriquees es una empresa líder en el mercado
-              de construcción modular y prefabricada a nivel global. Con más de
-              10 años de experiencia, nuestro equipo de expertos en diseño y
-              construcción trabaja en estrecha colaboración con clientes de todo
-              el mundo para ofrecer soluciones de construcción innovadoras y
-              personalizadas que satisfacen las necesidades específicas de cada
-              proyecto.
+            <Typography textAlign="left" variant="p">
+              Entreprise spécialisée dans la construction, préfabriquée,
+              métallique et modulaire, Basée à Abidjan en Côte d'Ivoire, GSP a
+              été fondée en 2020 lors de la crise de la COVID-19 pour répondre
+              au besoin croissant de bâtiments préfabriqués sur le marché.
+              <br />
+              <br /> Depuis lors, nous avons réalisé avec succès plus de 3500m2
+              de modules, bungalows et bâtiments préfabriqués, entièrement
+              personnalisés et sur mesure, pour les plus grandes entreprises de
+              BTP et Génie civil en Afrique.
+              <br />
+              <br /> Nous avons réalisé plus de 75 projets dans divers secteurs
+              d'activités tels que des installations de chantiers pour les
+              constructeurs, des extensions de bureaux, des boutiques et des
+              points de vente pour les particuliers, les ONG, les organismes
+              internationaux et d'autres institutions ivoiriennes.
+              <br />
+              <br />
+              Nous avons également réalisé des hangars de stockage d'agrégats,
+              des entrepôts industriels et des charpentes métalliques pour les
+              grands projets de développement de la Côte d'Ivoire tels que la
+              Tour F en cours de réalisation, le Parc d'Exposition de l'Aéroport
+              PHB, l'échangeur du grand Rond-point d'Abobo, l'Esplanade du
+              Palais Présidentiel, etc.
             </Typography>
-            <Typography textAlign="left" variant="h6">
-              Nos enorgullece ofrecer un enfoque integral para la construcción
-              modular, que incluye la planificación, el diseño, la fabricación y
-              la instalación de estructuras prefabricadas para diversos
-              sectores, incluyendo viviendas, oficinas, comercios, hospitales,
-              hoteles, escuelas y muchos más.
+            <Typography
+              textAlign="left"
+              color="#833f42"
+              fontWeight="bold"
+              variant="h4"
+            >
+              NOTRE VISION
             </Typography>
-            <Typography textAlign="left" variant="h6">
-              Nuestra pasión por la innovación y la sostenibilidad es una parte
-              fundamental de nuestra filosofía empresarial. Utilizamos
-              tecnología de vanguardia y materiales de alta calidad para
-              garantizar la máxima eficiencia energética y la reducción del
-              impacto ambiental en cada proyecto. Además, nuestro compromiso con
-              la excelencia y la atención al cliente se refleja en nuestra
-              política de garantía de satisfacción del 100%. En Global Solutions
-              Prefabriquees, nos esforzamos por hacer que la construcción
-              modular sea accesible y asequible para todos, sin comprometer la
-              calidad o la estética. Esperamos poder trabajar con usted en su
-              próximo proyecto de construcción modular y hacer realidad su
-              visión de manera eficiente y rentable.
+            <Typography textAlign="left" variant="p">
+              Vulgariser et rendre totalement accessible toutes les techniques
+              et systèmes de construction préfabriquées d’abord en Côte
+              D’ivoire, ensuite au Sénégal et enfin en Afrique de l’Ouest,
+              Participer à la formation et à l’emploi des jeunes en Afrique.
+              Notre ambition est de devenir d’ici 2025 le LEADER de la
+              construction Préfabriquée et Métallique en Afrique de l’Ouest, et
+              surtout en Côte d’Ivoire ou nous comptons ouvrir d’autres ateliers
+              de fabrication de nos installations préfabriquées comme celle que
+              nous avons actuellement à Abidjan. Notre équipe est principalement
+              composée de Jeune Ivoiriens et Africains et nous faisons tout
+              notre possible pour leurs transmettre le savoir-faire nécessaire,
+              et le Mindset pour qu’ils puissent participer demain au
+              développement et au rayonnement de l’Afrique.
             </Typography>
           </Grid>
         </Grid>

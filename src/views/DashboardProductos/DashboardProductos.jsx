@@ -25,7 +25,42 @@ export default function DashboardProductos() {
   function handleChangeCategoria(e) {
     setCategoria(e.target.value);
   }
-  console.log(selectedFile);
+
+  const [file, setFile] = useState(null);
+  const [text, setText] = useState("");
+  const [responseText, setResponseText] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append("imagenPrincipal", file);
+    formData.append("nombre", text);
+    async function fetchUpload() {
+      const response = await fetch(
+        "https://almartindev.online/api/product/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      if (response.ok) {
+        const responseText = await response.text();
+        setResponseText(responseText);
+      } else {
+        setResponseText("Error al enviar el formulario");
+      }
+    }
+    fetchUpload();
+  }
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+  };
+
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Box component="form" noValidate /*onSubmit={""}*/ sx={{ mt: 3 }}>
@@ -145,6 +180,13 @@ export default function DashboardProductos() {
         >
           Añadir Producto
         </Button>
+
+        <input type="file" onChange={handleFileChange} />
+        <input type="text" onChange={handleTextChange} />
+        <button type="submit" onClick={handleSubmit}>
+          Enviar
+        </button>
+        <p>{responseText}</p>
       </Box>
     </Container>
   );
