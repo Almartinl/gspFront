@@ -16,6 +16,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import TableViewIcon from "@mui/icons-material/TableView";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import CategoryIcon from "@mui/icons-material/Category";
+import ConstructionIcon from "@mui/icons-material/Construction";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
@@ -199,6 +200,19 @@ function DashboardContent() {
               >
                 <CategoryIcon />
               </Button>
+              <Button
+                color="primary"
+                sx={{
+                  py: "16px",
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
+                }}
+                onClick={() => {
+                  Linkto("/dashboard/proyectos", "Proyectos");
+                }}
+              >
+                <ConstructionIcon />
+              </Button>
 
               <Button
                 color="error"
@@ -306,6 +320,24 @@ function DashboardContent() {
               >
                 <CategoryIcon />
                 Productos
+              </Button>
+              <Button
+                color="primary"
+                size="large"
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  gap: "20%",
+                  py: "16px",
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
+                }}
+                onClick={() => {
+                  Linkto("/dashboard/proyectos", "Proyectos");
+                }}
+              >
+                <ConstructionIcon />
+                Proyectos
               </Button>
 
               <Button

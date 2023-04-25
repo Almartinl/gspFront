@@ -22,6 +22,7 @@ import DashboardContacto from "./views/DashboardContacto/DashboardContacto";
 import Proyectos from "./views/Proyectos/Proyectos";
 import Nosotros from "./views/Nosotros/Nosotros";
 import DashboardProductos from "./views/DashboardProductos/DashboardProductos";
+import DashboardProyectos from "./views/DashboardProyectos/DashboardProyectos";
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
             <Route
               path="/dashboard/productos"
               element={<DashboardProductos />}
+            />
+            <Route
+              path="/dashboard/proyectos"
+              element={<DashboardProyectos />}
             />
           </Route>
           <Route path="/login" element={<Layout />}>
