@@ -3,7 +3,7 @@ import { Box, Button, Container, Grid, TextField } from "@mui/material";
 export default function DashboardProyectos() {
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
-      <Box>
+      <Box component="form" noValidate /*onSubmit={""}*/ sx={{ mt: 3 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <TextField
@@ -27,7 +27,14 @@ export default function DashboardProyectos() {
             flexDirection="column"
             justifyContent="center"
           >
-            <Button variant="contained" component="label">
+            <Button
+              variant="contained"
+              component="label"
+              sx={{
+                bgcolor: "#3b8f1e",
+                ":hover": { bgcolor: "darkgreen", color: "white" },
+              }}
+            >
               Subir Imagen Portada
               <input hidden multiple type="file" />
             </Button>
@@ -40,7 +47,14 @@ export default function DashboardProyectos() {
             flexDirection="column"
             justifyContent="center"
           >
-            <Button variant="contained" component="label">
+            <Button
+              variant="contained"
+              component="label"
+              sx={{
+                bgcolor: "#3b8f1e",
+                ":hover": { bgcolor: "darkgreen", color: "white" },
+              }}
+            >
               subir Imagenes del carousel
               <input hidden multiple type="file" />
             </Button>
