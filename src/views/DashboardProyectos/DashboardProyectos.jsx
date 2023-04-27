@@ -3,13 +3,47 @@ import {
   Button,
   Container,
   Grid,
+  Table,
+  TableBody,
+  TableContainer,
+  TableHead,
+  TableRow,
   TextField,
   Typography,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
 } from "@mui/material";
-import { useState } from "react";
+import Paper from "@mui/material/Paper";
+import { useEffect, useState } from "react";
+import { styled } from "@mui/material/styles";
+import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { Link } from "react-router-dom";
 
 export default function DashboardProyectos() {
+  const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+      fontSize: 14,
+    },
+  }));
+
+  const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    "&:nth-of-type(odd)": {
+      backgroundColor: theme.palette.action.hover,
+    },
+    // hide last border
+    "&:last-child td, &:last-child th": {
+      border: 0,
+    },
+  }));
+
   const [portada, setPortada] = useState(null);
   const [vistaPortada, setVistaPortada] = useState(false);
   const [carouselUno, setCarouselUno] = useState(undefined);
@@ -28,6 +62,8 @@ export default function DashboardProyectos() {
   const [vistaCarouselSeis, setVistaCarouselSeis] = useState(false);
   const [vistaCarouselSiete, setVistaCarouselSiete] = useState(false);
   const [vistaCarouselOcho, setVistaCarouselOcho] = useState(false);
+  const [stateProyecto, setStateProyecto] = useState(false);
+  const [proyectos, setProyectos] = useState([]);
   const [text, setText] = useState("");
 
   function handlePortada(e) {
@@ -134,12 +170,23 @@ export default function DashboardProyectos() {
         setVistaCarouselSiete(false);
         setVistaCarouselOcho(false);
         setText("");
+        setStateProyecto(!stateProyecto);
       } else {
         alert("Error al enviar el formulario");
       }
     }
     fetchUpload();
   }
+
+  useEffect(() => {
+    async function fetchProyectos() {
+      const response = await fetch("https://almartindev.online/api/obras/");
+      const data = await response.json();
+      setProyectos(data);
+      console.log(data);
+    }
+    fetchProyectos();
+  }, [stateProyecto]);
 
   console.log(portada);
   console.log(vistaPortada);
@@ -582,6 +629,62 @@ export default function DashboardProyectos() {
           </Grid>
         </Box>
       </Container>
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+          <TableHead>
+            <TableRow>
+              <StyledTableCell>Nombre</StyledTableCell>
+              <StyledTableCell align="left">Imagen Portada</StyledTableCell>
+              <StyledTableCell align="left">
+                Imagenes del Carousel
+              </StyledTableCell>
+              <StyledTableCell align="center">Acciones</StyledTableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {proyectos.map((row) => (
+              <StyledTableRow key={row.id}>
+                <StyledTableCell component="th" scope="row">
+                  <Typography fontWeight="bold">{row.nombre}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="left">
+                  <Link
+                    target="_blank"
+                    to={"https://almartindev.online/api/" + row.imagen}
+                  >
+                    <ListItemText primary={row.imagen.split("/").pop()} />
+                  </Link>
+                </StyledTableCell>
+                <StyledTableCell
+                  align="left"
+                  sx={{ display: "flex", justifyContent: "left" }}
+                >
+                  <List dense>
+                    {row.imagenes.map((img, index) => (
+                      <ListItem key={index}>
+                        <Link
+                          target="_blank"
+                          to={"https://almartindev.online/api/" + img}
+                        >
+                          <ListItemText primary={img.split("/").pop()} />
+                        </Link>
+                      </ListItem>
+                    ))}
+                  </List>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <IconButton
+                    color="error"
+                    //onClick={(e) => deleteFormulario(e, row.id)}
+                  >
+                    <DeleteIcon />
+                  </IconButton>
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </Container>
   );
 }

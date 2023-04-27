@@ -182,7 +182,7 @@ function DashboardContent() {
                   ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
-                  Linkto("/dashboard/contacto", "Formulario");
+                  Linkto("/dashboard/contacto", "Formulario de Contacto");
                 }}
               >
                 <ReceiptLongIcon />
@@ -296,11 +296,11 @@ function DashboardContent() {
                   ":hover": { bgcolor: "#3b8f1e", color: "white" },
                 }}
                 onClick={() => {
-                  Linkto("/dashboard/contacto", "Formularios");
+                  Linkto("/dashboard/contacto", "Formulario de Contacto");
                 }}
               >
                 <ReceiptLongIcon />
-                Formularios
+                F. Contacto
               </Button>
 
               <Button
