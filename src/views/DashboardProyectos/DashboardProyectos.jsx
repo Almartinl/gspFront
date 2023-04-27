@@ -133,6 +133,7 @@ export default function DashboardProyectos() {
         setVistaCarouselSeis(false);
         setVistaCarouselSiete(false);
         setVistaCarouselOcho(false);
+        setText("");
       } else {
         alert("Error al enviar el formulario");
       }
@@ -163,6 +164,7 @@ export default function DashboardProyectos() {
                 size="small"
                 onChange={handleTextChange}
                 color="success"
+                inputProps={{ maxlength: "28" }}
               />
             </Grid>
             <Grid
@@ -205,6 +207,9 @@ export default function DashboardProyectos() {
               justifyContent={{ sm: "center" }}
               gap={{ sm: 2 }}
             >
+              <Typography variant="subtitle2" fontWeight="bold" color="#07004e">
+                Agregar fotos al carousel (Maximo 8 fotos)
+              </Typography>
               <Grid
                 item
                 display="flex"
@@ -239,7 +244,6 @@ export default function DashboardProyectos() {
                   </Typography>
                 )}
               </Grid>
-
               {vistaCarouselUno && (
                 <>
                   <Grid
@@ -549,7 +553,7 @@ export default function DashboardProyectos() {
               flexDirection="column"
               justifyContent="center"
             >
-              {portada ? (
+              {portada && text ? (
                 <Button
                   variant="contained"
                   component="label"

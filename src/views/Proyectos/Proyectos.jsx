@@ -80,7 +80,6 @@ export default function Proyectos() {
             ))}
             {arrayCarousel.length > 0 && (
               <Dialog
-                maxWidth="lg"
                 fullWidth
                 open={openCarousel}
                 onClose={handleCloseCarousel}
