@@ -123,19 +123,14 @@ export default function Contact() {
                 >
                   <PhoneIcon fontSize="large" sx={{ color: "white" }} />
                   <Grid>
-                    <Typography
-                      variant="body1"
-                      textAlign="center"
-                      color="white"
-                    >
-                      Teléfono 1: +225 79 10 88 02
+                    <Typography variant="h5" textAlign="center" color="white">
+                      Movil: +225 07 79 10 88 02
                     </Typography>
-                    <Typography
-                      variant="body1"
-                      textAlign="center"
-                      color="white"
-                    >
-                      Teléfono 2: +225 70 89 49 77
+                    <Typography variant="h5" textAlign="center" color="white">
+                      Fijo: +225 27 21 38 19 58
+                    </Typography>
+                    <Typography variant="h5" textAlign="center" color="white">
+                      WhatsApp: +221 77 226 05 77
                     </Typography>
                   </Grid>
                 </Grid>
@@ -147,7 +142,20 @@ export default function Contact() {
                   marginTop={4}
                 >
                   <EmailIcon fontSize="large" sx={{ color: "white" }} />
-                  <Typography variant="body1" textAlign="center" color="white">
+                  <Typography
+                    display={{ lg: "none" }}
+                    variant="body1"
+                    textAlign="center"
+                    color="white"
+                  >
+                    globalsolutionsprefabriquees@gmail.com
+                  </Typography>
+                  <Typography
+                    display={{ xs: "none", lg: "block" }}
+                    variant="h6"
+                    textAlign="center"
+                    color="white"
+                  >
                     globalsolutionsprefabriquees@gmail.com
                   </Typography>
                 </Grid>

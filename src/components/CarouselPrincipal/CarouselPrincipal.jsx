@@ -48,6 +48,9 @@ export default function CarouselPrincipal() {
             <h4 className="shadow-text display-4 fw-bold">
               Bungalows a Medida
             </h4>
+            <h4 className="shadow-text fw-bold">
+              Le entregamos sus instalaciones prefabricas en plazos muy cortos!
+            </h4>
           </div>
         </div>
         <div className="carousel-item">
