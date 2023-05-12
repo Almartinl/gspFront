@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import "./DashboardProductos.css";
 
 export default function DashboardProductos() {
   const [portada, setPortada] = useState(null);
@@ -153,8 +154,9 @@ export default function DashboardProductos() {
                 color="success"
               />
             </Grid>
-
+            {/* grid de medidas */}
             <Grid item xs={12} sm={6}>
+              {/* grid de largo */}
               <Grid item xs={12} mb={2}>
                 <TextField
                   size="small"
@@ -169,6 +171,7 @@ export default function DashboardProductos() {
                   color="success"
                 />
               </Grid>
+              {/* grid de ancho */}
               <Grid item xs={12} mb={2}>
                 <TextField
                   size="small"
@@ -183,6 +186,7 @@ export default function DashboardProductos() {
                   color="success"
                 />
               </Grid>
+              {/* grid de alto */}
               <Grid item xs={12} mb={2}>
                 <TextField
                   size="small"
@@ -197,6 +201,7 @@ export default function DashboardProductos() {
                   color="success"
                 />
               </Grid>
+              {/* grid de peso */}
               <Grid item xs={12} mb={2}>
                 <TextField
                   size="small"
@@ -212,6 +217,7 @@ export default function DashboardProductos() {
                 />
               </Grid>
             </Grid>
+            {/* grid de fotos */}
             <Grid
               container
               item
@@ -277,9 +283,12 @@ export default function DashboardProductos() {
                 )}
               </Grid>
             </Grid>
+            {/* grid de estructura */}
             <Grid item xs={12}>
               <TextField
-                size="normal"
+                size="small"
+                multiline
+                rows={2}
                 autoComplete="estructura"
                 name="estructura"
                 fullWidth
@@ -291,9 +300,12 @@ export default function DashboardProductos() {
                 color="success"
               />
             </Grid>
+            {/* grid de paneles */}
             <Grid item xs={12}>
               <TextField
-                size="normal"
+                size="small"
+                multiline
+                rows={2}
                 autoComplete="paneles"
                 name="paneles"
                 fullWidth
@@ -305,9 +317,12 @@ export default function DashboardProductos() {
                 color="success"
               />
             </Grid>
+            {/* grid de cubierta */}
             <Grid item xs={12}>
               <TextField
-                size="normal"
+                size="small"
+                multiline
+                rows={2}
                 autoComplete="cubierta"
                 name="cubierta"
                 fullWidth
@@ -319,9 +334,12 @@ export default function DashboardProductos() {
                 color="success"
               />
             </Grid>
+            {/* grid de suelo */}
             <Grid item xs={12}>
               <TextField
-                size="normal"
+                size="small"
+                multiline
+                rows={2}
                 autoComplete="suelo"
                 name="suelo"
                 fullWidth
@@ -333,6 +351,7 @@ export default function DashboardProductos() {
                 color="success"
               />
             </Grid>
+            {/* grid de puertas */}
             <Grid item xs={12}>
               <Typography variant="h5" fontWeight="bold" color="#07004e">
                 Puertas
@@ -347,9 +366,9 @@ export default function DashboardProductos() {
                   xs={4}
                 >
                   <label for="puerta70">Puerta 70: </label>
-                  <Grid xs={4}>
+                  <Grid xs={12} sm={4}>
                     <TextField
-                      size="normal"
+                      size="small"
                       type="number"
                       autoComplete="puerta70"
                       name="puerta70"
@@ -371,9 +390,9 @@ export default function DashboardProductos() {
                   xs={4}
                 >
                   <label for="puerta 85">Puerta 85: </label>
-                  <Grid xs={4}>
+                  <Grid xs={12} sm={4}>
                     <TextField
-                      size="normal"
+                      size="small"
                       type="number"
                       autoComplete="puerta 85"
                       name="puerta 85"
@@ -395,13 +414,93 @@ export default function DashboardProductos() {
                   xs={4}
                 >
                   <label for="puerta 140">Puerta 140: </label>
-                  <Grid xs={4}>
+                  <Grid xs={12} sm={4}>
                     <TextField
-                      size="normal"
+                      size="small"
                       type="number"
                       autoComplete="puerta 140"
                       name="puerta 140"
                       id="puerta 140"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+            {/* grid de ventanas */}
+            <Grid item xs={12}>
+              <Typography variant="h5" fontWeight="bold" color="#07004e">
+                Ventanas
+              </Typography>
+              <Grid container item xs={12}>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="ventana 100x100">Ventana 100x100: </label>
+                  <Grid xs={12} sm={4}>
+                    <TextField
+                      size="small"
+                      type="number"
+                      autoComplete="ventana 100x100"
+                      name="ventana 100x100"
+                      id="ventana 100x100"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="ventana 40x40">Ventana 40x40: </label>
+                  <Grid xs={12} sm={4}>
+                    <TextField
+                      size="small"
+                      type="number"
+                      autoComplete="ventana 40x40"
+                      name="ventana 40x40"
+                      id="ventana 40x40"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="ventana 100x80">Ventana 100x80: </label>
+                  <Grid xs={12} sm={4}>
+                    <TextField
+                      size="small"
+                      type="number"
+                      autoComplete="ventana 100x80"
+                      name="ventana 100x80"
+                      id="ventana 100x80"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
                       autoFocus
                       //   value={newUsuario.nombre}
