@@ -15,10 +15,26 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 
 export default function DashboardProductos() {
+  const [portada, setPortada] = useState(null);
+  const [vistaPortada, setVistaPortada] = useState(false);
+  const [plano, setPlano] = useState(null);
+  const [vistaPlano, setVistaPlano] = useState(false);
   const [categoria, setCategoria] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
+
+  function handlePortada(e) {
+    setPortada(e.target.files[0]);
+    setVistaPortada(true);
+  }
+
+  function handlePlano(e) {
+    setPlano(e.target.files[0]);
+    setVistaPlano(true);
+  }
+
   function handleFileInputChange(event) {
     setSelectedFile(event.target.files[0].name);
   }
@@ -63,136 +79,362 @@ export default function DashboardProductos() {
 
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
-      <Box component="form" noValidate /*onSubmit={""}*/ sx={{ mt: 3 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              autoComplete="given-name"
-              name="nombre"
-              required
-              fullWidth
-              id="firstName"
-              label="Nombre del Producto"
-              autoFocus
-              //   value={newUsuario.nombre}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              required
-              fullWidth
-              id="ref"
-              label="Referencia"
-              name="ref"
-              autoComplete="family-name"
-              //   value={newUsuario.apellidos}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <FormControl fullWidth>
-              <InputLabel id="categoriaDashboard" color="success">
-                Categoria
-              </InputLabel>
-              <Select
-                input={<OutlinedInput label="Categoria" />}
-                labelId="demo-simple-select-label"
-                id="textCategoriaDashboard"
-                value={categoria}
-                label="demo-simple-select-label"
-                onChange={handleChangeCategoria}
+      <Container maxWidth="md">
+        <Box component="form" noValidate /*onSubmit={""}*/ sx={{ mt: 3 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                size="small"
+                autoComplete="given-name"
+                name="nombre"
+                required
+                fullWidth
+                id="firstName"
+                label="Nombre del Producto"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
                 color="success"
-              >
-                <MenuItem value={"obra"}>Bungalows de obras</MenuItem>
-                <MenuItem value={"estructuras"}>Estructuras metalicas</MenuItem>
-                <MenuItem value={"edificios"}>Edificios prefabricados</MenuItem>
-                <MenuItem value={"naves"}>
-                  Naves industruliales y hangares
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <input type="file" onChange={handleFileInputChange} />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              required
-              fullWidth
-              id="largo"
-              label="Largo del bungalow"
-              name="largo"
-              autoComplete="largo"
-              //   value={newUsuario.direccion}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              required
-              fullWidth
-              id="telefono"
-              label="Telefono"
-              name="telefono"
-              autoComplete="telefono"
-              //   value={newUsuario.telefono}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              required
-              fullWidth
-              id="email"
-              label="Email"
-              name="email"
-              autoComplete="email"
-              //   value={newUsuario.email}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="new-password"
-              //   value={newUsuario.password}
-              //   onChange={handleInput}
-              color="success"
-            />
-          </Grid>
-        </Grid>
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{
-            mt: 3,
-            mb: 2,
-            bgcolor: "#3b8f1e",
-            ":hover": { bgcolor: "darkgreen", color: "white" },
-          }}
-        >
-          Añadir Producto
-        </Button>
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                size="small"
+                required
+                fullWidth
+                id="ref"
+                label="Referencia"
+                name="ref"
+                autoComplete="family-name"
+                //   value={newUsuario.apellidos}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <FormControl fullWidth size="small">
+                <InputLabel id="categoriaDashboard" color="success">
+                  Categoria
+                </InputLabel>
+                <Select
+                  input={<OutlinedInput label="Categoria" />}
+                  labelId="demo-simple-select-label"
+                  id="textCategoriaDashboard"
+                  value={categoria}
+                  label="demo-simple-select-label"
+                  onChange={handleChangeCategoria}
+                  color="success"
+                >
+                  <MenuItem value={"obra"}>Bungalows de obras</MenuItem>
+                  <MenuItem value={"estructuras"}>
+                    Estructuras metalicas
+                  </MenuItem>
+                  <MenuItem value={"edificios"}>
+                    Edificios prefabricados
+                  </MenuItem>
+                  <MenuItem value={"naves"}>
+                    Naves industruliales y hangares
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                size="small"
+                autoComplete="descripcion"
+                name="descripcion"
+                required
+                fullWidth
+                id="descripcion"
+                label="Descripcion del producto"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
 
-        <input type="file" onChange={handleFileChange} />
-        <input type="text" onChange={handleTextChange} />
-        <button type="submit" onClick={handleSubmit}>
-          Enviar
-        </button>
-        <p>{responseText}</p>
-      </Box>
+            <Grid item xs={12} sm={6}>
+              <Grid item xs={12} mb={2}>
+                <TextField
+                  size="small"
+                  required
+                  fullWidth
+                  id="largo"
+                  label="Largo del bungalow"
+                  name="largo"
+                  autoComplete="largo"
+                  //   value={newUsuario.direccion}
+                  //   onChange={handleInput}
+                  color="success"
+                />
+              </Grid>
+              <Grid item xs={12} mb={2}>
+                <TextField
+                  size="small"
+                  required
+                  fullWidth
+                  id="ancho"
+                  label="Ancho"
+                  name="ancho"
+                  autoComplete="ancho"
+                  //   value={newUsuario.telefono}
+                  //   onChange={handleInput}
+                  color="success"
+                />
+              </Grid>
+              <Grid item xs={12} mb={2}>
+                <TextField
+                  size="small"
+                  required
+                  fullWidth
+                  id="alto"
+                  label="Alto"
+                  name="alto"
+                  autoComplete="alto"
+                  //   value={newUsuario.email}
+                  //   onChange={handleInput}
+                  color="success"
+                />
+              </Grid>
+              <Grid item xs={12} mb={2}>
+                <TextField
+                  size="small"
+                  required
+                  fullWidth
+                  name="peso"
+                  label="Peso"
+                  id="peso"
+                  autoComplete="peso"
+                  //   value={newUsuario.password}
+                  //   onChange={handleInput}
+                  color="success"
+                />
+              </Grid>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={12}
+              md={6}
+              alignContent="flex-start"
+              gap={2}
+            >
+              <Grid
+                container
+                gap={{ sm: 2 }}
+                flexDirection={{ xs: "column", sm: "row" }}
+                alignItems={{ sm: "flex-start" }}
+                justifyContent={{ sm: "flex-start" }}
+              >
+                <Button
+                  variant="contained"
+                  component="label"
+                  sx={{
+                    gap: 0.5,
+                    bgcolor: "#3b8f1e",
+                    ":hover": { bgcolor: "darkgreen", color: "white" },
+                  }}
+                >
+                  <AddAPhotoIcon />
+                  Portada
+                  <input hidden multiple onChange={handlePortada} type="file" />
+                </Button>
+                {vistaPortada && portada ? (
+                  <Typography variant="button">{portada.name}</Typography>
+                ) : (
+                  <Typography variant="button">
+                    No hay foto seleccionada
+                  </Typography>
+                )}
+              </Grid>
+              <Grid
+                container
+                gap={{ sm: 2 }}
+                flexDirection={{ xs: "column", sm: "row" }}
+                alignItems={{ sm: "flex-start" }}
+                justifyContent={{ sm: "flex-start" }}
+              >
+                <Button
+                  variant="contained"
+                  component="label"
+                  sx={{
+                    gap: 0.5,
+                    bgcolor: "#3b8f1e",
+                    ":hover": { bgcolor: "darkgreen", color: "white" },
+                  }}
+                >
+                  <AddAPhotoIcon />
+                  Planta
+                  <input hidden multiple onChange={handlePlano} type="file" />
+                </Button>
+                {vistaPlano && plano ? (
+                  <Typography variant="button">{plano.name}</Typography>
+                ) : (
+                  <Typography variant="button">
+                    No hay foto seleccionada
+                  </Typography>
+                )}
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                size="normal"
+                autoComplete="estructura"
+                name="estructura"
+                fullWidth
+                id="estructura"
+                label="Estructura"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                size="normal"
+                autoComplete="paneles"
+                name="paneles"
+                fullWidth
+                id="paneles"
+                label="Paneles"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                size="normal"
+                autoComplete="cubierta"
+                name="cubierta"
+                fullWidth
+                id="cubierta"
+                label="Cubierta"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                size="normal"
+                autoComplete="suelo"
+                name="suelo"
+                fullWidth
+                id="suelo"
+                label="Suelo"
+                autoFocus
+                //   value={newUsuario.nombre}
+                //   onChange={handleInput}
+                color="success"
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h5" fontWeight="bold" color="#07004e">
+                Puertas
+              </Typography>
+              <Grid container item xs={12}>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="puerta70">Puerta 70: </label>
+                  <Grid xs={4}>
+                    <TextField
+                      size="normal"
+                      type="number"
+                      autoComplete="puerta70"
+                      name="puerta70"
+                      id="puerta70"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="puerta 85">Puerta 85: </label>
+                  <Grid xs={4}>
+                    <TextField
+                      size="normal"
+                      type="number"
+                      autoComplete="puerta 85"
+                      name="puerta 85"
+                      id="puerta 85"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+                <Grid
+                  container
+                  item
+                  alignItems="center"
+                  justifyContent="center"
+                  gap={1}
+                  xs={4}
+                >
+                  <label for="puerta 140">Puerta 140: </label>
+                  <Grid xs={4}>
+                    <TextField
+                      size="normal"
+                      type="number"
+                      autoComplete="puerta 140"
+                      name="puerta 140"
+                      id="puerta 140"
+                      inputProps={{ min: 0, max: 10, defaultValue: 0 }}
+                      autoFocus
+                      //   value={newUsuario.nombre}
+                      //   onChange={handleInput}
+                      color="success"
+                    />
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{
+              mt: 3,
+              mb: 2,
+              bgcolor: "#3b8f1e",
+              ":hover": { bgcolor: "darkgreen", color: "white" },
+            }}
+          >
+            Añadir Producto
+          </Button>
+
+          <input type="file" onChange={handleFileChange} />
+          <input type="text" onChange={handleTextChange} />
+          <button type="submit" onClick={handleSubmit}>
+            Enviar
+          </button>
+          <p>{responseText}</p>
+        </Box>
+      </Container>
     </Container>
   );
 }
