@@ -18,6 +18,7 @@ import {
 import { useState } from "react";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import "./DashboardProductos.css";
+import Swal from "sweetalert2";
 
 export default function DashboardProductos() {
   const [portada, setPortada] = useState(null);
@@ -25,7 +26,6 @@ export default function DashboardProductos() {
   const [plano, setPlano] = useState(null);
   const [vistaPlano, setVistaPlano] = useState(false);
   const [categoria, setCategoria] = useState("");
-  const [selectedFile, setSelectedFile] = useState(null);
   const [clima, setClima] = useState(false);
   const [superposable, setSuperposable] = useState(false);
   const [sanitario, setSanitario] = useState(false);
@@ -46,7 +46,7 @@ export default function DashboardProductos() {
   const [puerta140, setPuerta140] = useState("");
   const [ventana100x100, setVentana100x100] = useState("");
   const [ventana40x40, setVentana40x40] = useState("");
-  const [centana100x80, setVentana100x80] = useState("");
+  const [ventana100x80, setVentana100x80] = useState("");
   const [lavabo, setLavabo] = useState("");
   const [wc, setWc] = useState("");
   const [urinario, setUrinario] = useState("");
@@ -62,10 +62,6 @@ export default function DashboardProductos() {
     setPlano(e.target.files[0]);
     setVistaPlano(true);
   }
-
-  function handleFileInputChange(event) {
-    setSelectedFile(event.target.files[0].name);
-  }
   function handleChangeCategoria(e) {
     setCategoria(e.target.value);
   }
@@ -79,45 +75,175 @@ export default function DashboardProductos() {
   function handleSanitario(e) {
     setSanitario(e.target.checked);
   }
+  function handleNombre(e) {
+    setNombre(e.target.value);
+  }
+  function handleDescripcion(e) {
+    setDescripcion(e.target.value);
+  }
+  function handleRef(e) {
+    setRef(e.target.value);
+  }
+  function handleLargo(e) {
+    setLargo(e.target.value);
+  }
+  function handleAncho(e) {
+    setAncho(e.target.value);
+  }
+  function handleAlto(e) {
+    setAlto(e.target.value);
+  }
+  function handlePeso(e) {
+    setPeso(e.target.value);
+  }
+  function handlePaneles(e) {
+    setPaneles(e.target.value);
+  }
+  function handleCubierta(e) {
+    setCubierta(e.target.value);
+  }
+  function handleEstructura(e) {
+    setEstructura(e.target.value);
+  }
+  function handleSuelo(e) {
+    setSuelo(e.target.value);
+  }
 
-  const [file, setFile] = useState(null);
-  const [text, setText] = useState("");
-  const [responseText, setResponseText] = useState("");
+  function handleElectricidad(e) {
+    setElectricidad(e.target.value);
+  }
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handlePuerta70(e) {
+    setPuerta70(e.target.value);
+  }
+
+  function handlePuerta85(e) {
+    setPuerta85(e.target.value);
+  }
+
+  function handlePuerta140(e) {
+    setPuerta140(e.target.value);
+  }
+
+  function handleVentana100x100(e) {
+    setVentana100x100(e.target.value);
+  }
+
+  function handleVentana40x40(e) {
+    setVentana40x40(e.target.value);
+  }
+
+  function handleVentana100x80(e) {
+    setVentana100x80(e.target.value);
+  }
+
+  function handleLavabo(e) {
+    setLavabo(e.target.value);
+  }
+
+  function handleWc(e) {
+    setWc(e.target.value);
+  }
+
+  function handleUrinario(e) {
+    setUrinario(e.target.value);
+  }
+
+  function handleDuchas(e) {
+    setDuchas(e.target.value);
+  }
+
+  function handleOtros(e) {
+    setOtros(e.target.value);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
     const formData = new FormData();
-    formData.append("imagenPrincipal", file);
-    formData.append("nombre", text);
+    formData.append("imagenPrincipal", portada);
+    formData.append("plano", plano);
+    formData.append("categoria", categoria);
+    formData.append("clima", clima ? "Si" : "No");
+    formData.append("apilable", superposable ? "Si" : "No");
+    formData.append("nombre", nombre);
+    formData.append("ref", ref);
+    formData.append("descripcion", descripcion);
+    formData.append("largo", largo);
+    formData.append("ancho", ancho);
+    formData.append("alto", alto);
+    formData.append("peso", peso);
+    formData.append("estructura", estructura);
+    formData.append("paneles", paneles);
+    formData.append("cubierta", cubierta);
+    formData.append("suelo", suelo);
+    formData.append("electricidad", electricidad);
+    formData.append("puerta70", puerta70);
+    formData.append("puerta85", puerta85);
+    formData.append("puerta140", puerta140);
+    formData.append("ventana100x100", ventana100x100);
+    formData.append("ventana40x40", ventana40x40);
+    formData.append("ventana100x80", ventana100x80);
+    formData.append("lavabo", lavabo);
+    formData.append("wc", wc);
+    formData.append("urinario", urinario);
+    formData.append("duchas", duchas);
+    formData.append("otros", otros);
     async function fetchUpload() {
-      const response = await fetch(
-        "https://almartindev.online/api/product/upload",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      const response = await fetch("http://127.0.0.1:3000/api/product/upload", {
+        method: "POST",
+        body: formData,
+      });
       if (response.ok) {
-        const responseText = await response.text();
-        setResponseText(responseText);
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Producto creado correctamente",
+        });
+        setPortada(null);
+        setVistaPortada(false);
+        setPlano(null);
+        setVistaPlano(false);
+        setCategoria("");
+        setClima(false);
+        setSuperposable(false);
+        setSanitario(false);
+        setNombre("");
+        setRef("");
+        setDescripcion("");
+        setLargo("");
+        setAncho("");
+        setAlto("");
+        setPeso("");
+        setEstructura("");
+        setPaneles("");
+        setCubierta("");
+        setSuelo("");
+        setElectricidad("");
+        setPuerta70("");
+        setPuerta85("");
+        setPuerta140("");
+        setVentana100x100("");
+        setVentana40x40("");
+        setVentana100x80("");
+        setLavabo("");
+        setWc("");
+        setUrinario("");
+        setDuchas("");
+        setOtros("");
       } else {
-        setResponseText("Error al enviar el formulario");
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Error al crear el Producto",
+        });
       }
     }
     fetchUpload();
   }
-
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
-
-  const handleTextChange = (event) => {
-    setText(event.target.value);
-  };
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Container maxWidth="md">
-        <Box component="form" noValidate /*onSubmit={""}*/ sx={{ mt: 3 }}>
+        <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Grid container spacing={2}>
             {/* grid de nombre */}
             <Grid item xs={12} sm={6}>
@@ -129,9 +255,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="firstName"
                 label="Nombre del Producto"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleNombre}
                 color="success"
               />
             </Grid>
@@ -145,8 +269,7 @@ export default function DashboardProductos() {
                 label="Referencia"
                 name="ref"
                 autoComplete="family-name"
-                //   value={newUsuario.apellidos}
-                //   onChange={handleInput}
+                onChange={handleRef}
                 color="success"
               />
             </Grid>
@@ -175,6 +298,9 @@ export default function DashboardProductos() {
                   <MenuItem value={"naves"}>
                     Naves industruliales y hangares
                   </MenuItem>
+                  <MenuItem value={"maritimos"}>
+                    Contenedores maritimos
+                  </MenuItem>
                 </Select>
               </FormControl>
             </Grid>
@@ -188,9 +314,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="descripcion"
                 label="Descripcion del producto"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleDescripcion}
                 color="success"
               />
             </Grid>
@@ -206,8 +330,7 @@ export default function DashboardProductos() {
                   label="Largo del bungalow"
                   name="largo"
                   autoComplete="largo"
-                  //   value={newUsuario.direccion}
-                  //   onChange={handleInput}
+                  onChange={handleLargo}
                   color="success"
                 />
               </Grid>
@@ -221,8 +344,7 @@ export default function DashboardProductos() {
                   label="Ancho"
                   name="ancho"
                   autoComplete="ancho"
-                  //   value={newUsuario.telefono}
-                  //   onChange={handleInput}
+                  onChange={handleAncho}
                   color="success"
                 />
               </Grid>
@@ -236,8 +358,7 @@ export default function DashboardProductos() {
                   label="Alto"
                   name="alto"
                   autoComplete="alto"
-                  //   value={newUsuario.email}
-                  //   onChange={handleInput}
+                  onChange={handleAlto}
                   color="success"
                 />
               </Grid>
@@ -251,8 +372,7 @@ export default function DashboardProductos() {
                   label="Peso"
                   id="peso"
                   autoComplete="peso"
-                  //   value={newUsuario.password}
-                  //   onChange={handleInput}
+                  onChange={handlePeso}
                   color="success"
                 />
               </Grid>
@@ -334,9 +454,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="estructura"
                 label="Estructura"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleEstructura}
                 color="success"
               />
             </Grid>
@@ -351,9 +469,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="paneles"
                 label="Paneles"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handlePaneles}
                 color="success"
               />
             </Grid>
@@ -368,9 +484,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="cubierta"
                 label="Cubierta"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleCubierta}
                 color="success"
               />
             </Grid>
@@ -385,9 +499,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="suelo"
                 label="Suelo"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleSuelo}
                 color="success"
               />
             </Grid>
@@ -402,9 +514,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="electricidad"
                 label="Instalacion electrica"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleElectricidad}
                 color="success"
               />
             </Grid>
@@ -431,9 +541,7 @@ export default function DashboardProductos() {
                       name="puerta70"
                       id="puerta70"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handlePuerta70}
                       color="success"
                     />
                   </Grid>
@@ -455,9 +563,7 @@ export default function DashboardProductos() {
                       name="puerta 85"
                       id="puerta 85"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handlePuerta85}
                       color="success"
                     />
                   </Grid>
@@ -479,9 +585,7 @@ export default function DashboardProductos() {
                       name="puerta 140"
                       id="puerta 140"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handlePuerta140}
                       color="success"
                     />
                   </Grid>
@@ -511,9 +615,7 @@ export default function DashboardProductos() {
                       name="ventana 100x100"
                       id="ventana 100x100"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handleVentana100x100}
                       color="success"
                     />
                   </Grid>
@@ -535,9 +637,7 @@ export default function DashboardProductos() {
                       name="ventana 40x40"
                       id="ventana 40x40"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handleVentana40x40}
                       color="success"
                     />
                   </Grid>
@@ -559,9 +659,7 @@ export default function DashboardProductos() {
                       name="ventana 100x80"
                       id="ventana 100x80"
                       inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                      autoFocus
-                      //   value={newUsuario.nombre}
-                      //   onChange={handleInput}
+                      onChange={handleVentana100x80}
                       color="success"
                     />
                   </Grid>
@@ -622,9 +720,7 @@ export default function DashboardProductos() {
                         name="lavabo"
                         id="lavabo"
                         inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                        autoFocus
-                        //   value={newUsuario.nombre}
-                        //   onChange={handleInput}
+                        onChange={handleLavabo}
                         color="success"
                       />
                     </Grid>
@@ -646,9 +742,7 @@ export default function DashboardProductos() {
                         name="wc"
                         id="wc"
                         inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                        autoFocus
-                        //   value={newUsuario.nombre}
-                        //   onChange={handleInput}
+                        onChange={handleWc}
                         color="success"
                       />
                     </Grid>
@@ -670,9 +764,7 @@ export default function DashboardProductos() {
                         name="urinario"
                         id="urinario"
                         inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                        autoFocus
-                        //   value={newUsuario.nombre}
-                        //   onChange={handleInput}
+                        onChange={handleUrinario}
                         color="success"
                       />
                     </Grid>
@@ -694,9 +786,7 @@ export default function DashboardProductos() {
                         name="duchas"
                         id="duchas"
                         inputProps={{ min: 0, max: 10, defaultValue: 0 }}
-                        autoFocus
-                        //   value={newUsuario.nombre}
-                        //   onChange={handleInput}
+                        onChange={handleDuchas}
                         color="success"
                       />
                     </Grid>
@@ -716,9 +806,7 @@ export default function DashboardProductos() {
                 fullWidth
                 id="otros"
                 label="Otros Componentes"
-                autoFocus
-                //   value={newUsuario.nombre}
-                //   onChange={handleInput}
+                onChange={handleOtros}
                 color="success"
               />
             </Grid>
@@ -737,13 +825,6 @@ export default function DashboardProductos() {
           >
             Añadir Producto
           </Button>
-
-          <input type="file" onChange={handleFileChange} />
-          <input type="text" onChange={handleTextChange} />
-          <button type="submit" onClick={handleSubmit}>
-            Enviar
-          </button>
-          <p>{responseText}</p>
         </Box>
       </Container>
     </Container>
