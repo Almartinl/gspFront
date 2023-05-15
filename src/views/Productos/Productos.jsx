@@ -1977,50 +1977,33 @@ export default function Productos() {
                       La estructura es lo mas importante de toda obra
                     </Typography>
                   </CardContent>
-                  <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
-                    <ExpandMore
-                      expand={expandedCard}
-                      onClick={handleExpandClick}
-                      aria-expanded={expandedCard}
-                      aria-label="show more"
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
                     >
-                      <ExpandMoreIcon
-                        sx={{ color: "#3b8f1e" }}
-                        fontSize="large"
-                      />
-                    </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Typography
-                        variant="h4"
-                        bgcolor="#3b8f1e"
-                        color="white"
-                        p={1}
-                      >
-                        Descripcion
-                      </Typography>
-                      <Grid container>
-                        <Grid item xs={12}>
-                          <Typography variant="body1" p={1}>
-                            Nuestras estructuras metálicas, hangares, naves
-                            industriales son de muy alta calidad, y son
-                            personalizables según sus necesidades, el tamaño y
-                            el alcance del sitio a precios imbatibles.
-                          </Typography>
-                          <Typography variant="body1" p={1}>
-                            Es decir, podemos realizar sus proyectos llave en
-                            mano a medida para cubrir perfectamente todas sus
-                            necesidades y objetivos estratégicos.
-                          </Typography>
-                        </Grid>
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestras estructuras metálicas, hangares, naves
+                          industriales son de muy alta calidad, y son
+                          personalizables según sus necesidades, el tamaño y el
+                          alcance del sitio a precios imbatibles.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Es decir, podemos realizar sus proyectos llave en mano
+                          a medida para cubrir perfectamente todas sus
+                          necesidades y objetivos estratégicos.
+                        </Typography>
                       </Grid>
-                    </CardContent>
-                  </Collapse>
+                    </Grid>
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>
@@ -2053,54 +2036,36 @@ export default function Productos() {
                       Edificios especiales prefabricados
                     </Typography>
                   </CardContent>
-                  <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
-                    <ExpandMore
-                      expand={expandedCard}
-                      onClick={handleExpandClick}
-                      aria-expanded={expandedCard}
-                      aria-label="show more"
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
                     >
-                      <ExpandMoreIcon
-                        sx={{ color: "#3b8f1e" }}
-                        fontSize="large"
-                      />
-                    </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Typography
-                        variant="h4"
-                        bgcolor="#3b8f1e"
-                        color="white"
-                        p={1}
-                      >
-                        Descripcion
-                      </Typography>
-                      <Grid container>
-                        <Grid item xs={12}>
-                          <Typography variant="body1" p={1}>
-                            Nuestras naves prefabricadas están compuestas por
-                            estructuras ligeras de acero galvanizado, las
-                            paredes y la cubierta son de paneles sándwich de
-                            varios espesores según el proyecto con espuma de
-                            poliuretano expandido como aislante, a esto se suman
-                            las escaleras, los pasillos de las naves
-                            prefabricadas.
-                          </Typography>
-                          <Typography variant="body1" p={1}>
-                            Su montaje no requiere cimentaciones especiales, en
-                            la mayoría de los casos una losa de 15 o 20 cm es
-                            suficiente para instalar los postes y accesorios de
-                            montaje de los paneles sándwich.
-                          </Typography>
-                        </Grid>
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestras naves prefabricadas están compuestas por
+                          estructuras ligeras de acero galvanizado, las paredes
+                          y la cubierta son de paneles sándwich de varios
+                          espesores según el proyecto con espuma de poliuretano
+                          expandido como aislante, a esto se suman las
+                          escaleras, los pasillos de las naves prefabricadas.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Su montaje no requiere cimentaciones especiales, en la
+                          mayoría de los casos una losa de 15 o 20 cm es
+                          suficiente para instalar los postes y accesorios de
+                          montaje de los paneles sándwich.
+                        </Typography>
                       </Grid>
-                    </CardContent>
-                  </Collapse>
+                    </Grid>
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>
@@ -2133,50 +2098,33 @@ export default function Productos() {
                       Naves Industriales y Hangares
                     </Typography>
                   </CardContent>
-                  <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
-                    <ExpandMore
-                      expand={expandedCard}
-                      onClick={handleExpandClick}
-                      aria-expanded={expandedCard}
-                      aria-label="show more"
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
                     >
-                      <ExpandMoreIcon
-                        sx={{ color: "#3b8f1e" }}
-                        fontSize="large"
-                      />
-                    </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Typography
-                        variant="h4"
-                        bgcolor="#3b8f1e"
-                        color="white"
-                        p={1}
-                      >
-                        Descripcion
-                      </Typography>
-                      <Grid container>
-                        <Grid item xs={12}>
-                          <Typography variant="body1" p={1}>
-                            Nuestras estructuras metálicas, hangares, naves
-                            industriales son de muy alta calidad, y son
-                            personalizables según sus necesidades, el tamaño y
-                            el alcance del sitio a precios imbatibles.
-                          </Typography>
-                          <Typography variant="body1" p={1}>
-                            Es decir, podemos realizar sus proyectos llave en
-                            mano a medida para cubrir perfectamente todas sus
-                            necesidades y objetivos estratégicos.
-                          </Typography>
-                        </Grid>
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestras estructuras metálicas, hangares, naves
+                          industriales son de muy alta calidad, y son
+                          personalizables según sus necesidades, el tamaño y el
+                          alcance del sitio a precios imbatibles.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Es decir, podemos realizar sus proyectos llave en mano
+                          a medida para cubrir perfectamente todas sus
+                          necesidades y objetivos estratégicos.
+                        </Typography>
                       </Grid>
-                    </CardContent>
-                  </Collapse>
+                    </Grid>
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>

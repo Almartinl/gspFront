@@ -904,6 +904,12 @@ export default function Configurador() {
             <DialogContent>
               <Grid item xs={12} width="100%" height="70vh" marginTop="24px">
                 <View3d />
+                {/* <iframe
+                  src="http://localhost:8000/showRoomGsp.html"
+                  title="My External Content"
+                  width="100%"
+                  height="100%"
+                /> */}
               </Grid>
             </DialogContent>
             <DialogActions>
