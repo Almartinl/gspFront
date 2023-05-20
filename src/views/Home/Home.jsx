@@ -11,21 +11,24 @@ import {
 import CarouselPrincipal from "../../components/CarouselPrincipal/CarouselPrincipal";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   document.title = "Inicio";
 
+  const { t } = useTranslation();
+
   const beneficios = [
-    "La velocidad de montaje",
-    "Plazos de entrega muy cortos",
-    "Facilidad de instalación",
-    "Los acabados perfectos",
-    " El uso óptimo y racional de cada espacio",
-    "Aislamiento térmico y acústico",
-    "Fiabilidad",
-    "Comodidad",
-    " Ahorro energético",
-    "Soluciones probadas y aprobadas internamente",
+    t("contentTextBen1"),
+    t("contentTextBen2"),
+    t("contentTextBen3"),
+    t("contentTextBen4"),
+    t("contentTextBen5"),
+    t("contentTextBen6"),
+    t("contentTextBen7"),
+    t("contentTextBen8"),
+    t("contentTextBen9"),
+    t("contentTextBen10"),
   ];
 
   return (
@@ -53,10 +56,8 @@ export default function Home() {
               color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
-            >
-              Nuestras
-              <br /> Ventajas
-            </Typography>
+              dangerouslySetInnerHTML={{ __html: t("textTittleVent") }}
+            ></Typography>
           </Grid>
 
           <Grid
@@ -69,27 +70,13 @@ export default function Home() {
             marginTop={{ xs: 5, md: 0 }}
           >
             <Typography color="white" p={4}>
-              Apoyamos a empresas de construcción, construcción, ingeniería
-              civil, contratistas, microempresas (pymes y VSEs) y particulares
-              ofreciéndoles instalaciones prefabricadas llave en mano y a
-              medida, permitiéndoles alojar a sus equipos técnicos en óptimas
-              condiciones de confort y trabajo para alcanzar sus objetivos
-              estratégicos.
+              {t("contentTextVent")}
               <br />
               <br />{" "}
-              <Typography fontWeight="bold">
-                Nuestras instalaciones prefabricadas le permiten:
-              </Typography>
+              <Typography fontWeight="bold">{t("contentTextVent2")}</Typography>
               <br />
-              <li>
-                Mejorar la imagen de marca de su empresa a los ojos de sus
-                clientes.
-              </li>
-              <li>
-                Aumente la productividad de sus equipos técnicos en sus diversos
-                proyectos poniéndolos en condiciones óptimas de trabajo y
-                comodidad.
-              </li>
+              <li>{t("contentTextVent3")}</li>
+              <li>{t("contentTextVent4")}</li>
             </Typography>
           </Grid>
         </Grid>
@@ -120,10 +107,8 @@ export default function Home() {
               color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
-            >
-              Nuestros
-              <br /> Beneficios
-            </Typography>
+              dangerouslySetInnerHTML={{ __html: t("textTittleBen") }}
+            ></Typography>
           </Grid>
           <Grid
             item
@@ -153,10 +138,8 @@ export default function Home() {
               color="#3b8f1e"
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
-            >
-              Nuestros
-              <br /> Beneficios
-            </Typography>
+              dangerouslySetInnerHTML={{ __html: t("textTittleBen") }}
+            ></Typography>
           </Grid>
         </Grid>
       </Container>
@@ -180,7 +163,7 @@ export default function Home() {
               color="#3b8f1e"
               sx={{ marginTop: "40px", fontWeight: "bold" }}
             >
-              Servicios
+              {t("textTittleServ")}
             </Typography>
           </Grid>
 
@@ -197,7 +180,7 @@ export default function Home() {
               color="#3b8f1e"
               sx={{ my: "48px", fontWeight: "bold" }}
             >
-              Servicios
+              {t("textTittleServ")}
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -225,7 +208,7 @@ export default function Home() {
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-                  Diseña tu bungalow
+                  {t("contentTextServ1")}
                 </Typography>
               </Button>
             </Link>
@@ -260,7 +243,7 @@ export default function Home() {
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-                  Productos
+                  {t("contentTextServ2")}
                 </Typography>
               </Button>
             </Link>
@@ -270,7 +253,6 @@ export default function Home() {
               <img src="../../exp1.jpg" width="100%" alt="img" />
             </Grid>
           </Grid>
-
           <Grid container item md={4} textAlign="center" alignItems="center">
             <Link
               to="/proyectos"
@@ -284,7 +266,7 @@ export default function Home() {
                 }}
               >
                 <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-                  Proyectos realizados
+                  {t("contentTextServ3")}
                 </Typography>
               </Button>
             </Link>
@@ -319,11 +301,11 @@ export default function Home() {
               fontWeight="bold"
               sx={{ paddingLeft: { xs: 0, md: 4 } }}
             >
-              Contacta con Nosotros y solicita un Presupuesto!!!
+              {t("textTittleContact")}
             </Typography>
             <Grid md={0} xs={12} mt={8}>
               <Link className="epilepsy-button" to="/contacto">
-                Click Aquí
+                {t("textButtonClick")}
               </Link>
             </Grid>
           </Grid>
