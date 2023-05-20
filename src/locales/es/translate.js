@@ -6,6 +6,7 @@ export const translateEs = {
   buttonProy: "Nuestros Proyectos",
   buttonContact: "Contacto",
   buttonAbout: "Sobre nosotros",
+  buttonProfile: "Perfil",
 
   //Home
   tittleCarousel: "Bienvenido",

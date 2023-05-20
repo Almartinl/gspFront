@@ -19,10 +19,12 @@
     background-image:url('https://i.ibb.co/0Q2jMPC/fr.png');
   }
 .button.es{
+   
     background-image:url('../../../../icono-espanol.png');
   }
 
 .button.en{
+    background-size: 75%;
     background-image:url('https://i.ibb.co/6JMwR5j/en.png');
   }
 .button.ru{

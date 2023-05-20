@@ -5,6 +5,7 @@ import Backend from "i18next-http-backend";
 
 import { translateEs } from "./locales/es/translate.js";
 import { translateFr } from "./locales/fr/translate.js";
+import { translateEn } from "./locales/en/translate.js";
 
 i18n
   .use(Backend)
@@ -18,6 +19,9 @@ i18n
       },
       fr: {
         translation: translateFr,
+      },
+      en: {
+        translation: translateEn,
       },
     },
   });

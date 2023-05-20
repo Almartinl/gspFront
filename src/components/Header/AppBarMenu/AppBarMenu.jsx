@@ -34,7 +34,7 @@ export default function AppBarMenu() {
     { nombre: t("buttonAbout"), ruta: "/nosotros" },
     { nombre: t("buttonContact"), ruta: "/contacto" },
   ];
-  const settings = [{ nombre: "Perfil", ruta: "/account" }];
+  const settings = [{ nombre: t("buttonProfile"), ruta: "/account" }];
   const settingsAdmin = [{ nombre: "Dashboard", ruta: "/dashboard" }];
 
   const handleOpenNavMenu = (event) => {
@@ -63,6 +63,10 @@ export default function AppBarMenu() {
 
   function changeLanguageEs() {
     i18n.changeLanguage("es");
+  }
+
+  function changeLanguageEn() {
+    i18n.changeLanguage("en");
   }
 
   return (
@@ -131,6 +135,43 @@ export default function AppBarMenu() {
                   </MenuItem>
                 </Link>
               )}
+              <Grid
+                sx={{
+                  display: {
+                    xs: "flex",
+                    md: "none",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 10,
+                  },
+                  ml: 2,
+                }}
+              >
+                <Grid>
+                  <IconButton
+                    key={9}
+                    size="large"
+                    className="button fr is-large"
+                    onClick={changeLanguageFr}
+                  ></IconButton>
+                </Grid>
+                <Grid>
+                  <IconButton
+                    size="large"
+                    key={10}
+                    className="button es is-large"
+                    onClick={changeLanguageEs}
+                  ></IconButton>
+                </Grid>
+                <Grid>
+                  <IconButton
+                    size="large"
+                    key={10}
+                    className="button en is-large"
+                    onClick={changeLanguageEn}
+                  ></IconButton>
+                </Grid>
+              </Grid>
             </Menu>
             {authorization ? (
               <Box sx={{ flexGrow: 0, mt: 1 }}>
@@ -383,11 +424,6 @@ export default function AppBarMenu() {
                   size="large"
                   className="button fr is-large"
                   onClick={changeLanguageFr}
-                  // sx={{
-                  //   my: 2,
-                  //   display: "block",
-                  //   color: "#3b8f1e",
-                  // }}
                 ></IconButton>
               </Grid>
               <Grid>
@@ -396,11 +432,14 @@ export default function AppBarMenu() {
                   key={10}
                   className="button es is-large"
                   onClick={changeLanguageEs}
-                  // sx={{
-                  //   my: 2,
-                  //   display: "block",
-                  //   color: "#3b8f1e",
-                  // }}
+                ></IconButton>
+              </Grid>
+              <Grid>
+                <IconButton
+                  size="large"
+                  key={10}
+                  className="button en is-large"
+                  onClick={changeLanguageEn}
                 ></IconButton>
               </Grid>
             </Grid>
