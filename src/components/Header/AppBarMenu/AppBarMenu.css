@@ -1,0 +1,31 @@
+.button{
+    filter: grayscale(50%);
+    background-size:120%;
+    background-position:center;
+    transition: all 100ms ease-in-out;
+  }
+.button:hover {
+    background-size:120%;
+    filter: grayscale(0%);
+  }
+.button .icon {
+    opacity:1;
+    transition: opacity 100ms ease-in-out;
+  }
+.button:hover .icon {
+    opacity:0
+  }
+.button.fr{
+    background-image:url('https://i.ibb.co/0Q2jMPC/fr.png');
+  }
+.button.es{
+    background-image:url('../../../../icono-espanol.png');
+  }
+
+.button.en{
+    background-image:url('https://i.ibb.co/6JMwR5j/en.png');
+  }
+.button.ru{
+    background-image:url('https://i.ibb.co/hRm2d44/ru.png');
+  }
+  

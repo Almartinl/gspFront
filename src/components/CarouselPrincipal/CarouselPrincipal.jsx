@@ -1,6 +1,8 @@
 import { Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function CarouselPrincipal() {
+  const { t, i18n } = useTranslation("translation");
   return (
     <div
       id="carouselExampleCaptions"
@@ -34,10 +36,11 @@ export default function CarouselPrincipal() {
         <div className="carousel-item active">
           <img src="../../22.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
-            <h3 className="shadow-text display-2 fw-bold">BIENVENIDO</h3>
+            <h3 className="shadow-text display-2 fw-bold">
+              {t("tittleCarousel")}
+            </h3>
             <h4 className="shadow-text fw-bold">
-              Mejore su imagen de marca con nuestras instalaciones prefabricadas
-              cómodas, fiables y garantizadas.
+              {t("subTittleCarousel")}
               {/* Bungalows y Edificios prefabricados */}
             </h4>
           </div>
@@ -46,18 +49,16 @@ export default function CarouselPrincipal() {
           <img src="../../44.jpg" className="d-block w-100 " alt="carrusel" />
           <div className="carousel-caption carousel-text">
             <h4 className="shadow-text display-4 fw-bold">
-              Bungalows a Medida
+              {t("tittle2Carousel")}
             </h4>
-            <h4 className="shadow-text fw-bold">
-              Le entregamos sus instalaciones prefabricas en plazos muy cortos!
-            </h4>
+            <h4 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h4>
           </div>
         </div>
         <div className="carousel-item">
           <img src="../../16box.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
             <h4 className="shadow-text display-4 fw-bold">
-              Estructuras Metálicas
+              {t("tittle3Carousel")}
             </h4>
           </div>
         </div>
