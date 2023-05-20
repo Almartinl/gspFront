@@ -29,9 +29,12 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import cors from "cors";
+import { useTranslation } from "react-i18next";
 
 export default function Configurador() {
   document.title = "Configurador";
+
+  const { t } = useTranslation();
 
   const { dataToken } = useAuthContext();
 
@@ -552,6 +555,7 @@ export default function Configurador() {
       </Canvas>
     );
   }
+  console.log(bungalowa);
   console.log(disposicionValue);
   console.log(orientacionValue);
   console.log(modeloValue);
@@ -580,9 +584,9 @@ export default function Configurador() {
           <Typography
             variant="h1"
             color="#3b8f1e"
-            sx={{ my: "48px", fontWeight: "bold" }}
+            sx={{ my: "48px", fontWeight: "bold", fontSize: "5rem" }}
           >
-            Crea tu Bungalow en unos Clicks
+            {t("textTittleConfig")}
           </Typography>
         </Grid>
         <Grid
@@ -598,7 +602,7 @@ export default function Configurador() {
             color="#3b8f1e"
             sx={{ my: "48px", fontWeight: "bold" }}
           >
-            Crea tu Bungalow en unos Clicks
+            {t("textTittleConfig")}
           </Typography>
         </Grid>
         <Grid container item xs={12}>
@@ -616,11 +620,11 @@ export default function Configurador() {
               <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth>
                   <InputLabel id="cantidadBungalows" color="success">
-                    Elige la Cantidad de Bungalows
+                    {t("labelCantidadBungalows")}
                   </InputLabel>
                   <Select
                     input={
-                      <OutlinedInput label="Elige la Cantidad de Bungalows" />
+                      <OutlinedInput label={t("labelCantidadBungalows")} />
                     }
                     labelId="cantidadBungalows"
                     id="demo-simple-select"
@@ -643,10 +647,10 @@ export default function Configurador() {
                 <Box sx={{ minWidth: 120 }}>
                   <FormControl fullWidth>
                     <InputLabel id="orientacion" color="success">
-                      Elige la orientacion
+                      {t("labelOrientacion")}
                     </InputLabel>
                     <Select
-                      input={<OutlinedInput label="Elige la orientacion" />}
+                      input={<OutlinedInput label={t("labelOrientacion")} />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={orientacionValue}
@@ -656,7 +660,7 @@ export default function Configurador() {
                     >
                       {orientacion.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.orientacion}
+                          {t(`orientacion.${item.orientacion}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -669,10 +673,10 @@ export default function Configurador() {
                 <Box sx={{ minWidth: 120 }}>
                   <FormControl fullWidth>
                     <InputLabel id="modelo" color="success">
-                      Elige El Modelo
+                      {t("labelModelo")}
                     </InputLabel>
                     <Select
-                      input={<OutlinedInput label="Elige El Modelo" />}
+                      input={<OutlinedInput label={t("labelModelo")} />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={modeloValue}
@@ -682,7 +686,7 @@ export default function Configurador() {
                     >
                       {modelo.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.modelo}
+                          {t(`modelo.${item.modelo}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -695,10 +699,10 @@ export default function Configurador() {
                 <Box sx={{ minWidth: 120 }}>
                   <FormControl fullWidth>
                     <InputLabel id="tipo" color="success">
-                      Elige El Tipo
+                      {t("labelTipo")}
                     </InputLabel>
                     <Select
-                      input={<OutlinedInput label="Elige El Tipo" />}
+                      input={<OutlinedInput label={t("labelTipo")} />}
                       labelId="demo-simple-select-label"
                       id="demo-simple-select"
                       value={tipoValue}
@@ -708,7 +712,7 @@ export default function Configurador() {
                     >
                       {tipo.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.tipo}
+                          {t(`tipo.${item.tipo}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -734,7 +738,7 @@ export default function Configurador() {
                     >
                       {bungalowa.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.bungalowa}
+                          {t(`bungalowa.${item.bungalowa}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -760,7 +764,7 @@ export default function Configurador() {
                     >
                       {bungalowb.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.bungalowb}
+                          {t(`bungalowb.${item.bungalowb}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -786,7 +790,7 @@ export default function Configurador() {
                     >
                       {bungalowc.map((item) => (
                         <MenuItem key={item.id} value={item.id}>
-                          {item.bungalowc}
+                          {t(`bungalowc.${item.bungalowc}`)}
                         </MenuItem>
                       ))}
                     </Select>
@@ -814,7 +818,7 @@ export default function Configurador() {
                 disabled={disableButton}
                 onClick={handleClickOpen}
               >
-                Guardar
+                {t("buttonGuardar")}
               </Button>
 
               <Button
@@ -827,7 +831,7 @@ export default function Configurador() {
                 disabled={disableButton}
                 onClick={handleClickOpenView3d}
               >
-                vista 3d
+                {t("button3d")}
               </Button>
               <Button
                 variant="contained"
@@ -900,7 +904,7 @@ export default function Configurador() {
             open={open3d}
             onClose={handleCloseView3d}
           >
-            <DialogTitle>Vista 3d</DialogTitle>
+            <DialogTitle>{t("button3d")}</DialogTitle>
             <DialogContent>
               <Grid item xs={12} width="100%" height="70vh" marginTop="24px">
                 <View3d />
@@ -914,7 +918,7 @@ export default function Configurador() {
             </DialogContent>
             <DialogActions>
               <Button onClick={handleCloseView3d} variant="contained">
-                Cerrar
+                {t("buttonCerrar")}
               </Button>
             </DialogActions>
           </Dialog>
@@ -942,21 +946,19 @@ export default function Configurador() {
             </DialogContent>
             <DialogActions>
               <Button onClick={handleCloseInfo} variant="contained">
-                Cerrar
+                {t("buttonCerrar")}
               </Button>
             </DialogActions>
           </Dialog>
           <Dialog open={open} onClose={handleClose}>
-            <DialogTitle>Guardar Modelo</DialogTitle>
+            <DialogTitle>{t("dialogTittleGuardar")}</DialogTitle>
             <DialogContent>
-              <DialogContentText>
-                Escribe el Nombre para guardar el modelo
-              </DialogContentText>
+              <DialogContentText>{t("dialogContentGuardar")}</DialogContentText>
               <TextField
                 autoFocus
                 margin="dense"
                 id="name"
-                label="Nombre"
+                label={t("dialogTextFieldGuardar")}
                 type="text"
                 fullWidth
                 variant="standard"
@@ -966,7 +968,9 @@ export default function Configurador() {
             </DialogContent>
             <DialogActions>
               <Button onClick={handleClose}>Cancel</Button>
-              <Button onClick={handleSubmitGuardar}>Guardar</Button>
+              <Button onClick={handleSubmitGuardar}>
+                {t("buttonGuardar")}
+              </Button>
             </DialogActions>
           </Dialog>
         </Grid>

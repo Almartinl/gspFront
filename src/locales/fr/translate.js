@@ -1,4 +1,8 @@
 export const translateFr = {
+  //Generales
+  buttonCerrar: "Fermer",
+  buttonGuardar: "Enregistrer",
+  button3d: "Vue 3D",
   //NavBar
   buttonIni: "Accueil",
   buttonProduct: "Produits",
@@ -43,4 +47,56 @@ export const translateFr = {
   contentTextServ3: "Projets réalisés",
   textTittleContact: "Contactez-nous et demandez un budget!!!",
   textButtonClick: "Cliquez ici",
+
+  //Products
+
+  //Config
+  textTittleConfig: "Créez votre bungalow en quelques clics",
+  labelCantidadBungalows: "Choisissez le nombre de bungalows",
+  labelOrientacion: "Choisissez l'orientation",
+  orientacion: {
+    vertical: "Vertical",
+    horizontal: "Horizontal",
+  },
+  labelModelo: "Choisissez le modèle",
+  modelo: {
+    "1 puerta y 1 ventana": "1 porte et 1 fenêtre",
+    "1 puerta y 2 ventanas": "1 porte et 2 fenêtres",
+  },
+  labelTipo: "choisir le type",
+  tipo: {
+    diafano: "ouvert",
+    duchas: "douches",
+    mixto: "mixte",
+    wc: "toilettes",
+    almacen: "stockage",
+  },
+  bungalowa: {
+    oficina: "bureau",
+    diafano: "ouvert",
+    duchas: "douches",
+    mixto: "mixte",
+    vestuario: "vestiaire",
+    almacen: "stockage",
+  },
+  bungalowb: {
+    diafano: "ouvert",
+    duchas: "douches",
+    mixto: "mixte",
+    wc: "toilettes",
+    vestuario: "vestiaire",
+    almacen: "stockage",
+  },
+  bungalowc: {
+    diafano: "ouvert",
+    duchas: "douches",
+    mixto: "mixte",
+    wc: "toilettes",
+    vestuario: "vestiaire",
+    almacen: "stockage",
+    oficina: "bureau",
+  },
+  dialogTittleGuardar: "Enregistrer le modèle",
+  dialogContentGuardar: "Entrez le nom pour enregistrer le modèle",
+  dialogTextFieldGuardar: "Nom",
 };
