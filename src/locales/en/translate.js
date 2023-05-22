@@ -99,4 +99,15 @@ export const translateEn = {
   dialogTittleGuardar: "Save Model",
   dialogContentGuardar: "Enter the Name to save the model",
   dialogTextFieldGuardar: "Name",
+
+  //Projects
+  tittleTextProjects: "Our Projects",
+
+  //Nosotros
+  tittleTextNosotros: "ABOUT US",
+  textNosotros:
+    "Company specialized in prefabricated, metal, and modular construction, based in Abidjan, Ivory Coast. GSP was founded in 2020 during the COVID-19 crisis to meet the growing demand for prefabricated buildings in the market.<br /><br />Since then, we have successfully completed over 3500m2 of fully customized and tailored modules, bungalows, and prefabricated buildings for major construction and civil engineering companies in Africa.<br /><br />We have completed more than 75 projects in various sectors of activity, including construction site facilities for builders, office expansions, shops, and retail outlets for individuals, NGOs, international organizations, and other Ivorian institutions.<br /><br />We have also built aggregate storage hangars, industrial warehouses, and metal structures for major development projects in Ivory Coast, such as the ongoing construction of Tower F, the PHB Airport Exhibition Park, the Abobo Grand Roundabout Interchange, and the Presidential Palace Esplanade, among others.",
+  tittleTextVision: "Our Vision",
+  textVision:
+    "To popularize and make fully accessible all prefabricated construction techniques and systems, first in Ivory Coast, then in Senegal, and finally in West Africa. To contribute to the training and employment of youth in Africa. Our ambition is to become the LEADER in Prefabricated and Metal Construction in West Africa by 2025, especially in Ivory Coast where we plan to open additional workshops for the production of our prefabricated facilities, similar to the one we currently have in Abidjan. Our team is primarily composed of young Ivorians and Africans, and we strive to provide them with the necessary know-how and mindset so that they can actively contribute to the development and progress of Africa.",
 };

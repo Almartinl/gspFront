@@ -98,4 +98,15 @@ export const translateEs = {
   dialogTittleGuardar: "Guardar Modelo",
   dialogContentGuardar: "Escribe el Nombre para guardar el modelo",
   dialogTextFieldGuardar: "Nombre",
+
+  //Projects
+  tittleTextProjects: "Nuestros Proyectos",
+
+  //Nosotros
+  tittleTextNosotros: "QUIÉNES SOMOS",
+  textNosotros:
+    "Empresa especializada en construcción prefabricada, metálica y modular, con sede en Abidjan, Costa de Marfil. GSP fue fundada en 2020 durante la crisis de la COVID-19 para satisfacer la creciente demanda de edificios prefabricados en el mercado.<br /><br />Desde entonces, hemos completado con éxito más de 3500m2 de módulos, bungalows y edificios prefabricados, completamente personalizados y a medida, para las principales empresas de construcción y obras civiles en África.<br /><br />Hemos realizado más de 75 proyectos en diversos sectores de actividad, como instalaciones de obra para constructores, ampliaciones de oficinas, tiendas y puntos de venta para particulares, ONG, organismos internacionales y otras instituciones en Costa de Marfil.<br /><br />También hemos construido hangares de almacenamiento de áridos, almacenes industriales y estructuras metálicas para grandes proyectos de desarrollo en Costa de Marfil, como la Torre F en construcción, el Parque de Exposiciones del Aeropuerto PHB, el intercambiador de la gran rotonda de Abobo y la Esplanade del Palacio Presidencial, entre otros.",
+  tittleTextVision: "Nuestra Vision",
+  textVision:
+    "Popularizar y hacer completamente accesibles todas las técnicas y sistemas de construcción prefabricada, primero en Costa de Marfil, luego en Senegal y finalmente en África Occidental. Contribuir a la formación y empleo de jóvenes en África. Nuestra ambición es convertirnos en LÍDER de la construcción prefabricada y metálica en África Occidental para el año 2025, especialmente en Costa de Marfil, donde planeamos abrir más talleres para la fabricación de nuestras instalaciones prefabricadas, como el que tenemos actualmente en Abidjan. Nuestro equipo está compuesto principalmente por jóvenes de Costa de Marfil y África, y hacemos todo lo posible para transmitirles los conocimientos y la mentalidad necesarios para que puedan contribuir al desarrollo y al éxito de África en el futuro.",
 };

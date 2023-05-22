@@ -15,6 +15,7 @@ import {
 import { useEffect, useState } from "react";
 import CarouselProyectos from "../../components/CarouselProyectos/CarouselProyectos";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import { useTranslation } from "react-i18next";
 
 export default function Proyectos() {
   document.title = "Nuestros Proyectos";
@@ -23,6 +24,8 @@ export default function Proyectos() {
   const [arrayCarousel, setArrayCarousel] = useState([]);
   const [nombreObra, setNombreObra] = useState("");
   const [openCarousel, setOpenCarousel] = useState(false);
+
+  const { t } = useTranslation();
 
   function handleCloseCarousel() {
     setOpenCarousel(false);
@@ -50,7 +53,7 @@ export default function Proyectos() {
       <Container maxWidth="xl">
         <Grid item xs={12} my={5} p={2}>
           <Typography variant="h2" fontWeight="bold" color="#3b8f1e">
-            Nuestros Proyectos
+            {t("tittleTextProjects")}
           </Typography>
         </Grid>
         {obras.length > 0 && (
@@ -98,7 +101,7 @@ export default function Proyectos() {
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleCloseCarousel} variant="contained">
-                    Cerrar
+                    {t("buttonCerrar")}
                   </Button>
                 </DialogActions>
               </Dialog>
