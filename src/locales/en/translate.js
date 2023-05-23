@@ -110,4 +110,20 @@ export const translateEn = {
   tittleTextVision: "Our Vision",
   textVision:
     "To popularize and make fully accessible all prefabricated construction techniques and systems, first in Ivory Coast, then in Senegal, and finally in West Africa. To contribute to the training and employment of youth in Africa. Our ambition is to become the LEADER in Prefabricated and Metal Construction in West Africa by 2025, especially in Ivory Coast where we plan to open additional workshops for the production of our prefabricated facilities, similar to the one we currently have in Abidjan. Our team is primarily composed of young Ivorians and Africans, and we strive to provide them with the necessary know-how and mindset so that they can actively contribute to the development and progress of Africa.",
+
+  //Contact
+  tittleTextDatosContacto: "Contact Information",
+  textMovil: "Mobile",
+  textFijo: "Landline",
+  textContactRedes: "Follow Us",
+  tittleTextFormContact: "Contact <br /> Form",
+  textContactNombre: "First Name",
+  textContactApellido: "Last Name",
+  textContactEmail: "Email",
+  textContactTelefono: "Phone",
+  textContactMensaje: "Message",
+  textContactPolicity:
+    "I have read and accept the Privacy Policy and Legal Notice",
+  textContactEnviar: "Send Form",
+  textLocalization: "Our Location",
 };

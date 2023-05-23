@@ -19,6 +19,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import { useTranslation } from "react-i18next";
 
 const initialContactState = {
   nombre: "",
@@ -33,6 +34,8 @@ const initialContactState = {
 
 export default function Contact() {
   document.title = "Contacto";
+
+  const { t } = useTranslation();
 
   const [newContact, setNewContact] = useState(initialContactState);
 
@@ -103,7 +106,7 @@ export default function Contact() {
                 px={6}
                 paddingTop={5}
               >
-                Datos de Contacto
+                {t("tittleTextDatosContacto")}
               </Typography>
               <Grid
                 container
@@ -124,10 +127,10 @@ export default function Contact() {
                   <PhoneIcon fontSize="large" sx={{ color: "white" }} />
                   <Grid>
                     <Typography variant="h5" textAlign="center" color="white">
-                      Movil: +225 07 79 10 88 02
+                      {t("textMovil")}: +225 07 79 10 88 02
                     </Typography>
                     <Typography variant="h5" textAlign="center" color="white">
-                      Fijo: +225 27 21 38 19 58
+                      {t("textFijo")}: +225 27 21 38 19 58
                     </Typography>
                     <Typography variant="h5" textAlign="center" color="white">
                       WhatsApp: +221 77 226 05 77
@@ -162,7 +165,7 @@ export default function Contact() {
               </Grid>
               <Grid container flexDirection="column" gap={4}>
                 <Typography variant="h4" fontWeight="800" color="white" px={6}>
-                  Siguenos
+                  {t("textContactRedes")}
                 </Typography>
                 <Grid container flexDirection="row" justifyContent="center">
                   <IconButton href="https://www.linkedin.com/company/global-solutions-pr%C3%A9fabriqu%C3%A9es/">
@@ -195,10 +198,13 @@ export default function Contact() {
           }}
         >
           <Grid item xs={12} py={5} border="4px solid #3b8f1e ">
-            <Typography variant="h4" fontWeight="800" px={6} paddingTop={5}>
-              Formulario de <br />
-              Contacto
-            </Typography>
+            <Typography
+              variant="h4"
+              fontWeight="800"
+              px={6}
+              paddingTop={5}
+              dangerouslySetInnerHTML={{ __html: t("tittleTextFormContact") }}
+            ></Typography>
             <Box
               component="form"
               noValidate
@@ -215,8 +221,7 @@ export default function Contact() {
                     required
                     fullWidth
                     id="firstName"
-                    label="Nombre"
-                    autoFocus
+                    label={t("textContactNombre")}
                     value={newContact.nombre}
                     onChange={handleInput}
                     color="success"
@@ -227,7 +232,7 @@ export default function Contact() {
                     required
                     fullWidth
                     id="lastName"
-                    label="Apellidos"
+                    label={t("textContactApellido")}
                     name="apellidos"
                     autoComplete="family-name"
                     value={newContact.apellidos}
@@ -279,7 +284,7 @@ export default function Contact() {
                     required
                     fullWidth
                     id="email"
-                    label="Email"
+                    label={t("textContactEmail")}
                     name="email"
                     autoComplete="email"
                     value={newContact.email}
@@ -292,7 +297,7 @@ export default function Contact() {
                     required
                     fullWidth
                     id="telefono"
-                    label="Telefono"
+                    label={t("textContactTelefono")}
                     name="telefono"
                     autoComplete="telefono"
                     value={newContact.telefono}
@@ -306,7 +311,7 @@ export default function Contact() {
                     required
                     fullWidth
                     name="descripcion"
-                    label="Descrpcion"
+                    label={t("textContactMensaje")}
                     type="descripcion"
                     id="descripcion"
                     autoComplete="new-descripcion"
@@ -322,7 +327,7 @@ export default function Contact() {
                     control={
                       <Checkbox value="allowExtraEmails" color="primary" />
                     }
-                    label="He leido y acepto la Politica de Privacidad y el Aviso Legal"
+                    label={t("textContactPolicity")}
                   />
                 </Grid>
               </Grid>
@@ -333,7 +338,7 @@ export default function Contact() {
                 color="success"
                 sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               >
-                Enviar Formulario
+                {t("textContactEnviar")}
               </Button>
               <Grid container justifyContent="flex-end"></Grid>
             </Box>
@@ -346,7 +351,7 @@ export default function Contact() {
           gap={4}
         >
           <Typography variant="h4" fontWeight="800" color="#3b8f1e">
-            Nuestra Localizacion
+            {t("textLocalization")}
           </Typography>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3972.2402432196845!2d-3.9340390000000003!3d5.380298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ed12e1c981bb%3A0x58f4717241c5dfd4!2sGlobal%20Solutions%20Pr%C3%A9fabriqu%C3%A9es%20(GSP)!5e0!3m2!1sen!2sus!4v1677359850171!5m2!1sen!2sus"

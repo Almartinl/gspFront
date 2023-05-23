@@ -109,4 +109,20 @@ export const translateEs = {
   tittleTextVision: "Nuestra Vision",
   textVision:
     "Popularizar y hacer completamente accesibles todas las técnicas y sistemas de construcción prefabricada, primero en Costa de Marfil, luego en Senegal y finalmente en África Occidental. Contribuir a la formación y empleo de jóvenes en África. Nuestra ambición es convertirnos en LÍDER de la construcción prefabricada y metálica en África Occidental para el año 2025, especialmente en Costa de Marfil, donde planeamos abrir más talleres para la fabricación de nuestras instalaciones prefabricadas, como el que tenemos actualmente en Abidjan. Nuestro equipo está compuesto principalmente por jóvenes de Costa de Marfil y África, y hacemos todo lo posible para transmitirles los conocimientos y la mentalidad necesarios para que puedan contribuir al desarrollo y al éxito de África en el futuro.",
+
+  //Contact
+  tittleTextDatosContacto: "Datos de Contacto",
+  textMovil: "Movil",
+  textFijo: "Fijo",
+  textContactRedes: "Siguenos",
+  tittleTextFormContact: "Formulario de <br /> Contacto",
+  textContactNombre: "Nombre",
+  textContactApellido: "Apellidos",
+  textContactEmail: "Email",
+  textContactTelefono: "Teléfono",
+  textContactMensaje: "Descripción",
+  textContactPolicity:
+    "He leido y acepto la Politica de Privacidad y el Aviso Legal",
+  textContactEnviar: "Enviar Formulario",
+  textLocalization: "Nuestra Localización",
 };

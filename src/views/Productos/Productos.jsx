@@ -272,39 +272,6 @@ export default function Productos() {
               >
                 Almacen
               </Button>
-              <Collapse in={vistaBungalowAlmacen}>
-                <Grid container gap={2}>
-                  <Button
-                    variant="text"
-                    fullWidth
-                    color="success"
-                    sx={{
-                      color: "#3b8f1e",
-                      borderColor: "#3b8f1e",
-                      fontWeight: "bold",
-                    }}
-                    //{
-                    //   vistaBungalowAlmacen
-                    //     ? {
-                    //         color: "white",
-                    //         fontWeight: "bold",
-                    //         backgroundColor: "#3b8f1e",
-                    //       }
-                    //     : {
-                    //         color: "#3b8f1e",
-                    //         borderColor: "#3b8f1e",
-                    //         fontWeight: "bold",
-                    //       }
-                    // }
-                    // onClick={bungalowAlmacenClick}
-                  >
-                    subcategoria 1
-                  </Button>
-                </Grid>
-                {/* {vistaBungalowAlmacen && (
-                 
-                )} */}
-              </Collapse>
 
               <Button
                 variant={vistaBungalowCaseta ? "contained" : "outlined"}
@@ -327,39 +294,6 @@ export default function Productos() {
               >
                 Caseta de vigilancia
               </Button>
-              <Collapse in={vistaBungalowCaseta}>
-                <Grid container gap={2}>
-                  <Button
-                    variant="text"
-                    fullWidth
-                    color="success"
-                    sx={{
-                      color: "#3b8f1e",
-                      borderColor: "#3b8f1e",
-                      fontWeight: "bold",
-                    }}
-                    //{
-                    //   vistaBungalowAlmacen
-                    //     ? {
-                    //         color: "white",
-                    //         fontWeight: "bold",
-                    //         backgroundColor: "#3b8f1e",
-                    //       }
-                    //     : {
-                    //         color: "#3b8f1e",
-                    //         borderColor: "#3b8f1e",
-                    //         fontWeight: "bold",
-                    //       }
-                    // }
-                    // onClick={bungalowAlmacenClick}
-                  >
-                    subcategoria 1
-                  </Button>
-                </Grid>
-                {/* {vistaBungalowAlmacen && (
-                 
-                )} */}
-              </Collapse>
               <Button
                 variant={vistaBungalowDiafano ? "contained" : "outlined"}
                 fullWidth
