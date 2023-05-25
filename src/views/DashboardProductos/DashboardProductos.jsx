@@ -10,10 +10,18 @@ import {
   Link,
   MenuItem,
   OutlinedInput,
+  Paper,
   Select,
   Switch,
+  Table,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   TextField,
   Typography,
+  styled,
+  tableCellClasses,
 } from "@mui/material";
 import { useState } from "react";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
@@ -21,6 +29,26 @@ import "./DashboardProductos.css";
 import Swal from "sweetalert2";
 
 export default function DashboardProductos() {
+  const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+      fontSize: 14,
+    },
+  }));
+
+  const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    "&:nth-of-type(odd)": {
+      backgroundColor: theme.palette.action.hover,
+    },
+    // hide last border
+    "&:last-child td, &:last-child th": {
+      border: 0,
+    },
+  }));
+
   const [portada, setPortada] = useState(null);
   const [vistaPortada, setVistaPortada] = useState(false);
   const [plano, setPlano] = useState(null);
@@ -532,8 +560,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="puerta70">Puerta 70: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="puerta70">Puerta 70: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -554,8 +582,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="puerta 85">Puerta 85: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="puerta 85">Puerta 85: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -576,8 +604,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="puerta 140">Puerta 140: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="puerta 140">Puerta 140: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -606,8 +634,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="ventana 100x100">Ventana 100x100: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="ventana 100x100">Ventana 100x100: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -628,8 +656,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="ventana 40x40">Ventana 40x40: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="ventana 40x40">Ventana 40x40: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -650,8 +678,8 @@ export default function DashboardProductos() {
                   gap={1}
                   xs={4}
                 >
-                  <label for="ventana 100x80">Ventana 100x80: </label>
-                  <Grid xs={12} sm={4}>
+                  <label htmlFor="ventana 100x80">Ventana 100x80: </label>
+                  <Grid item xs={12} sm={4}>
                     <TextField
                       size="small"
                       type="number"
@@ -711,7 +739,7 @@ export default function DashboardProductos() {
                     gap={1}
                     xs={3}
                   >
-                    <label for="lavabo">Lavabo: </label>
+                    <label htmlFor="lavabo">Lavabo: </label>
                     <Grid item xs={12} sm={4}>
                       <TextField
                         size="small"
@@ -733,7 +761,7 @@ export default function DashboardProductos() {
                     gap={1}
                     xs={3}
                   >
-                    <label for="wc">Wc: </label>
+                    <label htmlFor="wc">Wc: </label>
                     <Grid item xs={12} sm={4}>
                       <TextField
                         size="small"
@@ -755,7 +783,7 @@ export default function DashboardProductos() {
                     gap={1}
                     xs={3}
                   >
-                    <label for="urinario">Urinario: </label>
+                    <label htmlFor="urinario">Urinario: </label>
                     <Grid item xs={12} sm={4}>
                       <TextField
                         size="small"
@@ -777,7 +805,7 @@ export default function DashboardProductos() {
                     gap={1}
                     xs={3}
                   >
-                    <label for="duchas">Duchas: </label>
+                    <label htmlFor="duchas">Duchas: </label>
                     <Grid item xs={12} sm={4}>
                       <TextField
                         size="small"
@@ -827,6 +855,21 @@ export default function DashboardProductos() {
           </Button>
         </Box>
       </Container>
+      {/* tabla de productos */}
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+          <TableHead>
+            <TableRow>
+              <StyledTableCell>Nombre</StyledTableCell>
+              <StyledTableCell align="left">Imagen Portada</StyledTableCell>
+              <StyledTableCell align="left">
+                Imagenes del Carousel
+              </StyledTableCell>
+              <StyledTableCell align="center">Acciones</StyledTableCell>
+            </TableRow>
+          </TableHead>
+        </Table>
+      </TableContainer>
     </Container>
   );
 }
