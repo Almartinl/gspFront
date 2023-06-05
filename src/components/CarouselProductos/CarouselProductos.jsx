@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-
 export default function CarouselProductos() {
   return (
     <div
@@ -34,6 +32,12 @@ export default function CarouselProductos() {
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="3"
           aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
         ></button>
       </div>
       <div className="carousel-inner con">
@@ -80,6 +84,18 @@ export default function CarouselProductos() {
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
               Naves Industriales
+            </h3>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img
+            src="../../contenedor-maritimo.jpg"
+            className="d-block w-100"
+            alt="carrusel"
+          />
+          <div className="carousel-caption carousel-text">
+            <h3 className="shadow-text display-4 fw-bold">
+              Contenedores Maritimos
             </h3>
           </div>
         </div>
