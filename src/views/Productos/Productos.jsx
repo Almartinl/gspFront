@@ -21,12 +21,12 @@ import {
   TableCell,
   TableFooter,
 } from "@mui/material";
-import { CardActionArea } from "@mui/material";
 import { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import CarouselProductos from "../../components/CarouselProductos/CarouselProductos";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import { alignProperty } from "@mui/material/styles/cssUtils";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -227,7 +227,7 @@ export default function Productos() {
     vistaEstructuras,
     vistaNaves,
   ]);
-
+  console.log(bungalowObras);
   return (
     <Container maxWidth="xl" sx={{ my: 4 }}>
       <Grid container>
@@ -490,89 +490,41 @@ export default function Productos() {
               <Grid item sm={12}>
                 <Card>
                   {bungalowObras.length > 0 && (
-                    <CardHeader
-                      title={bungalowObras[0].nombre}
-                      titleTypographyProps={{
-                        color: "#3b8f1e",
-                        align: "right",
-                        fontWeight: "bold",
-                      }}
-                    />
-                  )}
-
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../bungalowobra.jpg"
-                    alt="img"
-                  />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {bungalowObras.length > 0 &&
-                        bungalowObras[0].descripcioncorta}
-                      {/* Tenemos varios tipos de bungalows de obras */}
-                    </Typography>
-                  </CardContent>
-                  {/* <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <ExpandMore
-                      expand={expandedCard}
-                      onClick={handleExpandClick}
-                      aria-expanded={expandedCard}
-                      aria-label="show more"
-                    >
-                      <ExpandMoreIcon
-                        sx={{ color: "#3b8f1e" }}
-                        fontSize="large"
+                    <>
+                      <CardHeader
+                        action={
+                          <Typography
+                            color="#3b8f1e"
+                            fontWeight="bold"
+                            variant="h6"
+                          >
+                            Ref: 123
+                          </Typography>
+                        }
+                        title={`${bungalowObras[0].nombre}`}
+                        titleTypographyProps={{
+                          color: "#3b8f1e",
+                          align: "left",
+                          fontWeight: "bold",
+                        }}
                       />
-                    </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Button
-                        variant="outlined"
-                        color="success"
-                        onClick={bungalowAlmacenClick}
-                      >
-                        Almacen
-                      </Button>
-                      <Button
-                        variant="outlined"
-                        color="success"
-                        onClick={bungalowCasetaClick}
-                      >
-                        Caseta de Vigilancia
-                      </Button>
-                      <Button
-                        variant="outlined"
-                        color="success"
-                        onClick={bungalowOficinaClick}
-                      >
-                        Oficina Multiusos
-                      </Button>
-                      <Button
-                        variant="outlined"
-                        color="success"
-                        onClick={bungalowWcClick}
-                      >
-                        Sanitarios
-                      </Button>
-                      <Button
-                        variant="outlined"
-                        color="success"
-                        onClick={bungalowVestuarioClick}
-                      >
-                        Vestuarios
-                      </Button>
-                    </CardContent>
-                  </Collapse> */}
+                      <CardMedia
+                        component="img"
+                        height="500"
+                        image={`https://almartindev.online/api${bungalowObras[0].foto}`}
+                        alt="img"
+                      />
+                      <CardContent>
+                        <Typography
+                          variant="body2"
+                          color="#3b8f1e"
+                          fontWeight="bold"
+                        >
+                          {bungalowObras[0].descripcioncorta}
+                        </Typography>
+                      </CardContent>
+                    </>
+                  )}
                 </Card>
               </Grid>
             </Grid>
@@ -580,13 +532,13 @@ export default function Productos() {
 
           {vistaBungalowAlmacen && (
             <Grid container item xs={12} spacing={2} p={3}>
-              <Grid item sm={12}>
+              <Grid item xs={12}>
                 <Card>
                   <CardHeader
                     title="Almacen"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -606,7 +558,7 @@ export default function Productos() {
                       de utensilios y materiales
                     </Typography>
                   </CardContent>
-                  <CardActions
+                  {/* <CardActions
                     sx={{ display: "flex", justifyContent: "center" }}
                   >
                     <ExpandMore
@@ -620,221 +572,221 @@ export default function Productos() {
                         fontSize="large"
                       />
                     </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  </CardActions> */}
+                  {/* <Collapse in={expandedCard} timeout="auto" unmountOnExit> */}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
                     >
-                      <Typography
-                        variant="h4"
-                        bgcolor="#3b8f1e"
-                        color="white"
-                        p={1}
-                      >
-                        Descripcion
-                      </Typography>
-                      <Grid container>
-                        <Grid item xs={12} md={4}>
-                          <Typography variant="body1" p={1}>
-                            Nuestros bungalows de sitio para uso como Almacenes
-                            están perfectamente adaptados para servir como
-                            Almacen en su campamento base, proyectos militares o
-                            civiles con el fin de poner a sus equipos técnicos
-                            en condiciones óptimas de comodidad y trabajo, para
-                            una mejor tasa de productividad y desempeño diario.
-                          </Typography>
-                          <Typography variant="body1" p={1}>
-                            Están diseñadas con unas dimensiones estándar de
-                            6,00 X 2,40 m con una altura exterior de 2,60 m, o
-                            12 X 2,40 m entre las muchas ventajas que tienen
-                            tienes: el hecho de que se pueden personalizar según
-                            los colores y las necesidades del cliente en cuanto
-                            a de dimensiones y tabiques interiores.
-                          </Typography>
-                        </Grid>
-                        <Grid item xs={12} md={8}>
-                          <Accordion
-                            expanded={expanded === "panel1"}
-                            onChange={handleChange("panel1")}
-                          >
-                            <AccordionSummary
-                              expandIcon={<ExpandMoreIcon />}
-                              aria-controls="panel1bh-content"
-                              id="panel1bh-header"
-                            >
-                              <Typography
-                                variant="h5"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                Caracteristicas Tecnicas
-                              </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                              <TableContainer component={Paper}>
-                                <Table
-                                  sx={{ minWidth: 500 }}
-                                  aria-label="custom pagination table"
-                                >
-                                  <TableBody>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        longitud exterior
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        6036 mm - disponible en 4835 mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        ancho exterior
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2435mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Altura del techo
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2500mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        altura total
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2935mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        revestimiento
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Paneles sándwich de espuma de
-                                        poliuretano de 40 mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Piso
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Suelo de aglomerado hidrófugo de 22 mm
-                                        (CTBH)
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Calefacción
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        1 convector de 2000 W
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        electricidad
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2x2 fluorescentes 36W - 2 uds 16A
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Carpintería
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Ventana de PVC - doble acristalamiento
-                                        4-15-4 con persiana enrollable
-                                      </TableCell>
-                                    </TableRow>
-                                  </TableBody>
-                                  <TableFooter></TableFooter>
-                                </Table>
-                              </TableContainer>
-                            </AccordionDetails>
-                          </Accordion>
-                          <Accordion
-                            expanded={expanded === "panel2"}
-                            onChange={handleChange("panel2")}
-                          >
-                            <AccordionSummary
-                              expandIcon={<ExpandMoreIcon />}
-                              aria-controls="panel2bh-content"
-                              id="panel2bh-header"
-                            >
-                              <Typography
-                                variant="h5"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                Dimensiones
-                              </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                              <img src="../../PLANTA.jpg" width="100%"></img>
-                            </AccordionDetails>
-                          </Accordion>
-                        </Grid>
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
                       </Grid>
-                    </CardContent>
-                  </Collapse>
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      longitud exterior
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      6036 mm - disponible en 4835 mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      ancho exterior
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2435mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura del techo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2500mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      altura total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2935mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      revestimiento
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Paneles sándwich de espuma de poliuretano
+                                      de 40 mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Piso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo de aglomerado hidrófugo de 22 mm
+                                      (CTBH)
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Calefacción
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 convector de 2000 W
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2x2 fluorescentes 36W - 2 uds 16A
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Carpintería
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ventana de PVC - doble acristalamiento
+                                      4-15-4 con persiana enrollable
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <img src="../../PLANTA.jpg" width="100%"></img>
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                  {/* </Collapse> */}
                 </Card>
               </Grid>
             </Grid>
@@ -842,13 +794,13 @@ export default function Productos() {
 
           {vistaBungalowCaseta && (
             <Grid container item xs={12} spacing={2} p={3}>
-              <Grid item sm={12}>
+              <Grid item xs={12}>
                 <Card>
                   <CardHeader
                     title="Caseta de Vigilancia"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -867,235 +819,218 @@ export default function Productos() {
                       La caseta de vigilancia perfecta
                     </Typography>
                   </CardContent>
-                  <CardActions
-                    sx={{ display: "flex", justifyContent: "center" }}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
-                    <ExpandMore
-                      expand={expandedCard}
-                      onClick={handleExpandClick}
-                      aria-expanded={expandedCard}
-                      aria-label="show more"
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
                     >
-                      <ExpandMoreIcon
-                        sx={{ color: "#3b8f1e" }}
-                        fontSize="large"
-                      />
-                    </ExpandMore>
-                  </CardActions>
-                  <Collapse in={expandedCard} timeout="auto" unmountOnExit>
-                    <CardContent
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Typography
-                        variant="h4"
-                        bgcolor="#3b8f1e"
-                        color="white"
-                        p={1}
-                      >
-                        Descripcion
-                      </Typography>
-                      <Grid container>
-                        <Grid item xs={12} md={4}>
-                          <Typography variant="body1" p={1}>
-                            Nuestros bungalows de sitio para uso como Almacenes
-                            están perfectamente adaptados para servir como
-                            Almacen en su campamento base, proyectos militares o
-                            civiles con el fin de poner a sus equipos técnicos
-                            en condiciones óptimas de comodidad y trabajo, para
-                            una mejor tasa de productividad y desempeño diario.
-                          </Typography>
-                          <Typography variant="body1" p={1}>
-                            Están diseñadas con unas dimensiones estándar de
-                            6,00 X 2,40 m con una altura exterior de 2,60 m, o
-                            12 X 2,40 m entre las muchas ventajas que tienen
-                            tienes: el hecho de que se pueden personalizar según
-                            los colores y las necesidades del cliente en cuanto
-                            a de dimensiones y tabiques interiores.
-                          </Typography>
-                        </Grid>
-                        <Grid item xs={12} md={8}>
-                          <Accordion
-                            expanded={expanded === "panel1"}
-                            onChange={handleChange("panel1")}
-                          >
-                            <AccordionSummary
-                              expandIcon={<ExpandMoreIcon />}
-                              aria-controls="panel1bh-content"
-                              id="panel1bh-header"
-                            >
-                              <Typography
-                                variant="h5"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                Caracteristicas Tecnicas
-                              </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                              <TableContainer component={Paper}>
-                                <Table
-                                  sx={{ minWidth: 500 }}
-                                  aria-label="custom pagination table"
-                                >
-                                  <TableBody>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        longitud exterior
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        6036 mm - disponible en 4835 mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        ancho exterior
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2435mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Altura del techo
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2500mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        altura total
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2935mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        revestimiento
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Paneles sándwich de espuma de
-                                        poliuretano de 40 mm
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Piso
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Suelo de aglomerado hidrófugo de 22 mm
-                                        (CTBH)
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Calefacción
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        1 convector de 2000 W
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        electricidad
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        2x2 fluorescentes 36W - 2 uds 16A
-                                      </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                      <TableCell
-                                        style={{ width: "25%" }}
-                                        align="left"
-                                      >
-                                        Carpintería
-                                      </TableCell>
-                                      <TableCell
-                                        style={{ maxWidth: "75%" }}
-                                        align="left"
-                                      >
-                                        Ventana de PVC - doble acristalamiento
-                                        4-15-4 con persiana enrollable
-                                      </TableCell>
-                                    </TableRow>
-                                  </TableBody>
-                                  <TableFooter></TableFooter>
-                                </Table>
-                              </TableContainer>
-                            </AccordionDetails>
-                          </Accordion>
-                          <Accordion
-                            expanded={expanded === "panel2"}
-                            onChange={handleChange("panel2")}
-                          >
-                            <AccordionSummary
-                              expandIcon={<ExpandMoreIcon />}
-                              aria-controls="panel2bh-content"
-                              id="panel2bh-header"
-                            >
-                              <Typography
-                                variant="h5"
-                                sx={{ textDecoration: "underline" }}
-                              >
-                                Dimensiones
-                              </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                              <img src="../../PLANTA.jpg" width="100%"></img>
-                            </AccordionDetails>
-                          </Accordion>
-                        </Grid>
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
                       </Grid>
-                    </CardContent>
-                  </Collapse>
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      longitud exterior
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      6036 mm - disponible en 4835 mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      ancho exterior
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2435mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura del techo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2500mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      altura total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2935mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      revestimiento
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Paneles sándwich de espuma de poliuretano
+                                      de 40 mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Piso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo de aglomerado hidrófugo de 22 mm
+                                      (CTBH)
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Calefacción
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 convector de 2000 W
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2x2 fluorescentes 36W - 2 uds 16A
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Carpintería
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ventana de PVC - doble acristalamiento
+                                      4-15-4 con persiana enrollable
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <img src="../../PLANTA.jpg" width="100%"></img>
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>
@@ -1109,7 +1044,7 @@ export default function Productos() {
                     title="Oficina Multiusos"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -1370,7 +1305,7 @@ export default function Productos() {
                     title="Sanitarios"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -1631,7 +1566,7 @@ export default function Productos() {
                     title="Vestuarios"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -1892,7 +1827,7 @@ export default function Productos() {
                     title="Estructuras Metalicas"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -1951,7 +1886,7 @@ export default function Productos() {
                     title="Edificios Prefabricados"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
@@ -2013,7 +1948,7 @@ export default function Productos() {
                     title="Naves Industriales"
                     titleTypographyProps={{
                       color: "#3b8f1e",
-                      align: "right",
+                      align: "left",
                       fontWeight: "bold",
                     }}
                   />
