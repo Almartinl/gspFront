@@ -62,6 +62,11 @@ export const translateFr = {
   textButtonSanitario: "Sanitaires",
   textButtonVestuarios: "Vestiaires",
   textButtonVolverCat: "Retour aux catégories",
+  textContentProductObras: { "Bungalows de Obras": "Bungalows de chantier" },
+  textContentProductObrasDesc: {
+    "La solución perfecta para sus despliegues de obras":
+      "La solution parfaite pour vos déploiements de chantier",
+  },
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

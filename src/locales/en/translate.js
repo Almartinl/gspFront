@@ -61,6 +61,11 @@ export const translateEn = {
   textButtonSanitario: "Sanitary",
   textButtonVestuarios: "Changing Rooms",
   textButtonVolverCat: "Back to Categories",
+  textContentProductObras: { "Bungalows de Obras": "Construction Bungalows" },
+  textContentProductObrasDesc: {
+    "La solución perfecta para sus despliegues de obras":
+      "The perfect solution for your construction deployments",
+  },
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

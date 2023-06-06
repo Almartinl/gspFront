@@ -538,16 +538,18 @@ export default function Productos() {
                   {bungalowObras.length > 0 && (
                     <>
                       <CardHeader
-                        action={
-                          <Typography
-                            color="#3b8f1e"
-                            fontWeight="bold"
-                            variant="h6"
-                          >
-                            Ref: 123
-                          </Typography>
-                        }
-                        title={`${bungalowObras[0].nombre}`}
+                        // action={
+                        //   <Typography
+                        //     color="#3b8f1e"
+                        //     fontWeight="bold"
+                        //     variant="h6"
+                        //   >
+                        //     Ref: 123
+                        //   </Typography>
+                        // }
+                        title={t(
+                          `textContentProductObras.${bungalowObras[0].nombre}`
+                        )}
                         titleTypographyProps={{
                           color: "#3b8f1e",
                           align: "left",
@@ -566,7 +568,9 @@ export default function Productos() {
                           color="#3b8f1e"
                           fontWeight="bold"
                         >
-                          {bungalowObras[0].descripcioncorta}
+                          {t(
+                            `textContentProductObrasDesc.${bungalowObras[0].descripcioncorta}`
+                          )}
                         </Typography>
                       </CardContent>
                     </>
