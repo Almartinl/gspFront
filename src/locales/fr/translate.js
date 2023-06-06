@@ -49,6 +49,19 @@ export const translateFr = {
   textButtonClick: "Cliquez ici",
 
   //Products
+  textCarouselObras: "Bungalows de Chantier",
+  textCarouselEstructura: "Structures Métalliques",
+  textCarouselEdificios: "Bâtiments Préfabriqués",
+  textCarouselNaves: "Entrepôts Industriels",
+  textCarouselContenedores: "Conteneurs Maritimes",
+  textTittleProductos: "Catégories de Produits",
+  textTittleTipos: "Types de Bungalows de Chantier",
+  textButtonAlmacen: "Stockage",
+  textButtonCaseta: "Guérite de Surveillance",
+  textButtonOficina: "Bungalow Polyvalent",
+  textButtonSanitario: "Sanitaires",
+  textButtonVestuarios: "Vestiaires",
+  textButtonVolverCat: "Retour aux catégories",
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

@@ -48,6 +48,19 @@ export const translateEs = {
   textButtonClick: "Click Aquí",
 
   //Products
+  textCarouselObras: "Bungalows de Obras",
+  textCarouselEstructura: "Estructuras Metálicas",
+  textCarouselEdificios: "Edificios Prefabricados",
+  textCarouselNaves: "Naves Industriales",
+  textCarouselContenedores: "Contenedores marítimos",
+  textTittleProductos: "Categorias de Productos",
+  textTittleTipos: "Tipos de Bungalows de Obras",
+  textButtonAlmacen: "Almacen",
+  textButtonCaseta: "Caseta de vigilancia",
+  textButtonOficina: "Oficina Multiusos",
+  textButtonSanitario: "Sanitarios",
+  textButtonVestuarios: "Vestuarios",
+  textButtonVolverCat: "Volver A las Categorias",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",

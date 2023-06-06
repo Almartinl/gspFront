@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function CarouselProductos() {
+  const { t } = useTranslation();
   return (
     <div
       id="carouselExampleCaptions"
@@ -50,7 +53,7 @@ export default function CarouselProductos() {
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
-              Bungalows de Obras
+              {t("textCarouselObras")}
             </h3>
           </div>
         </div>
@@ -63,7 +66,7 @@ export default function CarouselProductos() {
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
-              Estructuras Metalicas
+              {t("textCarouselEstructura")}
             </h3>
           </div>
         </div>
@@ -71,7 +74,7 @@ export default function CarouselProductos() {
           <img src="../../44.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
-              Edificios Prefabricados
+              {t("textCarouselEdificios")}
             </h3>
           </div>
         </div>
@@ -83,7 +86,7 @@ export default function CarouselProductos() {
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
-              Naves Industriales
+              {t("textCarouselNaves")}
             </h3>
           </div>
         </div>
@@ -95,7 +98,7 @@ export default function CarouselProductos() {
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
-              Contenedores Maritimos
+              {t("textCarouselContenedores")}
             </h3>
           </div>
         </div>

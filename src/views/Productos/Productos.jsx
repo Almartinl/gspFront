@@ -27,6 +27,7 @@ import { styled } from "@mui/material/styles";
 import CarouselProductos from "../../components/CarouselProductos/CarouselProductos";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { alignProperty } from "@mui/material/styles/cssUtils";
+import { useTranslation } from "react-i18next";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -40,6 +41,8 @@ const ExpandMore = styled((props) => {
 
 export default function Productos() {
   document.title = "Productos";
+
+  const { t } = useTranslation();
 
   const [expandedCard, setExpandedCard] = useState(false);
   const [vistaInicio, setVistaInicio] = useState(true);
@@ -248,7 +251,7 @@ export default function Productos() {
     vistaEstructuras,
     vistaNaves,
   ]);
-  console.log(bungalowObras);
+
   return (
     <Container maxWidth="xl" sx={{ my: 4 }}>
       <Grid container>
@@ -269,7 +272,7 @@ export default function Productos() {
             alignContent="flex-start"
           >
             <Typography variant="h4" fontWeight="800" color="#3b8f1e">
-              Tipos de Bungalows de Obras
+              {t("textTittleTipos")}
             </Typography>
             <Grid container gap={2}>
               <Button
@@ -291,7 +294,7 @@ export default function Productos() {
                 }
                 onClick={bungalowAlmacenClick}
               >
-                Almacen
+                {t("textButtonAlmacen")}
               </Button>
 
               <Button
@@ -313,7 +316,7 @@ export default function Productos() {
                 }
                 onClick={bungalowCasetaClick}
               >
-                Caseta de vigilancia
+                {t("textButtonCaseta")}
               </Button>
               <Button
                 variant={vistaBungalowDiafano ? "contained" : "outlined"}
@@ -334,7 +337,7 @@ export default function Productos() {
                 }
                 onClick={bungalowOficinaClick}
               >
-                Oficina Multiusos
+                {t("textButtonOficina")}
               </Button>
               <Button
                 variant={vistaBungalowWc ? "contained" : "outlined"}
@@ -355,7 +358,7 @@ export default function Productos() {
                 }
                 onClick={bungalowWcClick}
               >
-                Sanitarios
+                {t("textButtonSanitario")}
               </Button>
               <Button
                 variant={vistaBungalowVestuario ? "contained" : "outlined"}
@@ -376,7 +379,7 @@ export default function Productos() {
                 }
                 onClick={bungalowVestuarioClick}
               >
-                Vestuarios
+                {t("textButtonVestuarios")}
               </Button>
               <Button
                 variant="outlined"
@@ -387,7 +390,7 @@ export default function Productos() {
                 }}
                 onClick={volverInicioClick}
               >
-                Volver a las Categorias
+                {t("textButtonVolverCat")}
               </Button>
             </Grid>
           </Grid>
@@ -403,7 +406,7 @@ export default function Productos() {
             alignContent="flex-start"
           >
             <Typography variant="h4" fontWeight="800" color="#3b8f1e">
-              Categorias de Productos
+              {t("textTittleProductos")}
             </Typography>
             <Grid container gap={2}>
               <Button
@@ -425,7 +428,7 @@ export default function Productos() {
                 }
                 onClick={bungalowObraClick}
               >
-                Bungalows de Obras
+                {t("textCarouselObras")}
               </Button>
               <Button
                 variant={vistaEstructuras ? "contained" : "outlined"}
@@ -446,7 +449,7 @@ export default function Productos() {
                 }
                 onClick={estructuraClick}
               >
-                Estructuras Metalicas
+                {t("textCarouselEstructura")}
               </Button>
               <Button
                 variant={vistaEdificios ? "contained" : "outlined"}
@@ -467,7 +470,7 @@ export default function Productos() {
                 }
                 onClick={edificioClick}
               >
-                Edificios Prefabricados
+                {t("textCarouselEdificios")}
               </Button>
               <Button
                 variant={vistaNaves ? "contained" : "outlined"}
@@ -489,7 +492,7 @@ export default function Productos() {
                 onClick={naveClick}
               >
                 {" "}
-                Naves Industriales
+                {t("textCarouselNaves")}
               </Button>
               <Button
                 variant={vistaMaritimos ? "contained" : "outlined"}
@@ -511,7 +514,7 @@ export default function Productos() {
                 onClick={maritimoClick}
               >
                 {" "}
-                Contenedores Maritimos
+                {t("textCarouselContenedores")}
               </Button>
             </Grid>
           </Grid>
