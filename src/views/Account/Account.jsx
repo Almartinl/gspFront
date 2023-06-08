@@ -40,6 +40,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import { useTranslation } from "react-i18next";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -63,6 +64,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function Account() {
   document.title = "Perfil";
+
+  const { t } = useTranslation();
 
   const { dataToken, logout } = useAuthContext();
 
@@ -175,7 +178,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Nombre Registrado Correctamente",
+          title: t(`textAlertCambioNombreCuenta`),
         });
         setNewName({ nombre: "" });
       } else if (response.status == 409) {
@@ -198,7 +201,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Apellidos Registrado Correctamente",
+          title: t("textAlertCambioApellidosCuenta"),
         });
         setNewApellido({ apellidos: "" });
       } else if (response.status == 409) {
@@ -221,7 +224,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Email Registrado Correctamente",
+          title: t("textAlertCambioEmailCuenta"),
         });
         setNewApellido({ apellido: "" });
       } else if (response.status == 409) {
@@ -244,7 +247,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Contraseña Registrado Correctamente",
+          title: t("textAlertCambioPassCuenta"),
         });
         setNewPassword({ password: "" });
       } else if (response.status == 409) {
@@ -267,7 +270,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Direccion Registrado Correctamente",
+          title: t("textAlertCambioDirCuenta"),
         });
         setNewDireccion({ direccion: "" });
       } else if (response.status == 409) {
@@ -290,7 +293,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Cambio de Telefono Registrado Correctamente",
+          title: t("textAlertCambioTelCuenta"),
         });
         setNewTelefono({ telefono: "" });
       } else if (response.status == 409) {
@@ -448,13 +451,13 @@ export default function Account() {
 
   function deleteAccount() {
     Swal.fire({
-      title: "¿Seguro que quieres borrar tu cuenta?",
-      text: "Recuerda que luego si quieres volver a ver tu perfil tendras que solicitar al administrador permisos",
+      title: t("textAlertTittleBorrarCuenta"),
+      text: t("textAlertSubtittleBorrarCuenta"),
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#d33",
       cancelButtonColor: "#3085d6",
-      confirmButtonText: "Si, Borrame !!",
+      confirmButtonText: t("textAlertButtonYesBorrarCuenta"),
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(`https://almartindev.online/api/user/delete/${dataToken.id}`, {
@@ -466,7 +469,11 @@ export default function Account() {
           if (response.status == 400) {
             alert("error al recibir el body");
           } else if (response.status == 200) {
-            Swal.fire("Borrado!", "Tu cuenta ha sido inabilitada", "success");
+            Swal.fire(
+              t("textAlertConfirmYesBorrarCuenta"),
+              t("textAlertConfirmYesSubtittleBorrarCuenta"),
+              "success"
+            );
             logout();
           } else if (response.status == 409) {
             alert("usuario ya registrado");
@@ -482,7 +489,7 @@ export default function Account() {
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h2" fontWeight="bold" component="h1" gutterBottom>
-        Cuenta
+        {t("tittleTextAccount")}
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12}>
@@ -498,7 +505,9 @@ export default function Account() {
             {user.length > 0 && (
               <Grid container spacing={2}>
                 <Grid item xs={12} md={2}>
-                  <Typography variant="h5">Detalles del usuario</Typography>
+                  <Typography variant="h5">
+                    {t("tittleTextDetallesCuenta")}
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} md={10}>
                   <Grid container spacing={2}>
@@ -514,7 +523,7 @@ export default function Account() {
                     >
                       <BadgeIcon />
                       <Typography variant="h6">
-                        Nombre: {user[0].nombre}
+                        {t("textDetallesNombreCuenta")} {user[0].nombre}
                       </Typography>
                       <Button onClick={handleEditNombre}>
                         <EditIcon />
@@ -532,19 +541,19 @@ export default function Account() {
                     >
                       <TextField
                         id="outlined-basic"
-                        label="Nombre"
+                        label={t("textDetallesNombreCuenta")}
                         name="nombre"
                         variant="outlined"
                         value={newName.nombre}
                         onChange={handleInputName}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewName({ nombre: "" })}
@@ -567,7 +576,7 @@ export default function Account() {
                     >
                       <BadgeIcon />
                       <Typography variant="h6">
-                        Apellidos: {user[0].apellidos}
+                        {t("textDetallesApellidosCuenta")} {user[0].apellidos}
                       </Typography>
                       <Button onClick={handleEditApellido}>
                         <EditIcon />
@@ -585,19 +594,19 @@ export default function Account() {
                     >
                       <TextField
                         id="outlined-basic"
-                        label="Apellidos"
+                        label={t("textDetallesApellidosCuenta")}
                         name="apellidos"
                         variant="outlined"
                         value={newApellido.apellidos}
                         onChange={handleInputApellido}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewApellido({ apellido: "" })}
@@ -645,12 +654,12 @@ export default function Account() {
                         onChange={handleInputEmail}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewEmail({ email: "" })}
@@ -673,7 +682,7 @@ export default function Account() {
                     >
                       <LocalPhoneIcon />
                       <Typography variant="h6">
-                        Telefono: {user[0].telefono}
+                        {t("textDetallesTelCuenta")} {user[0].telefono}
                       </Typography>
                       <Button onClick={handleEditTelefono}>
                         <EditIcon />
@@ -691,19 +700,19 @@ export default function Account() {
                     >
                       <TextField
                         id="outlined-basic"
-                        label="Telefono"
+                        label={t("textDetallesTelCuenta")}
                         name="telefono"
                         variant="outlined"
                         value={newTelefono.telefono}
                         onChange={handleInputTelefono}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewTelefono({ telefono: "" })}
@@ -726,7 +735,7 @@ export default function Account() {
                     >
                       <LocationOnIcon />
                       <Typography variant="h6">
-                        Direccion: {user[0].direccion}
+                        {t("textDetallesDireccionCuenta")} {user[0].direccion}
                       </Typography>
                       <Button onClick={handleEditDireccion}>
                         <EditIcon />
@@ -744,19 +753,19 @@ export default function Account() {
                     >
                       <TextField
                         id="outlined-basic"
-                        label="Direccion"
+                        label={t("textDetallesDireccionCuenta")}
                         name="direccion"
                         variant="outlined"
                         value={newDireccion.direccion}
                         onChange={handleInputDireccion}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewDireccion({ direccion: "" })}
@@ -779,7 +788,7 @@ export default function Account() {
                     >
                       <PasswordIcon />
                       <Typography variant="h6">
-                        Contraseña: ***********
+                        {t("textDetallesPassCuenta")} ***********
                       </Typography>
                       <Button onClick={handleEditPassword}>
                         <EditIcon />
@@ -797,19 +806,19 @@ export default function Account() {
                     >
                       <TextField
                         id="outlined-basic"
-                        label="Contraseña"
+                        label={t("textDetallesPassCuenta")}
                         name="password"
                         variant="outlined"
                         value={newPassword.password}
                         onChange={handleInputPassword}
                         color="success"
                       />
-                      <Tooltip title="Guardar">
+                      <Tooltip title={t("buttonGuardar")}>
                         <IconButton color="success" type="submit">
                           <SaveIcon />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip title="Borrar campo">
+                      <Tooltip title={t("buttonBorrarCampo")}>
                         <IconButton
                           color="error"
                           onClick={() => setNewPassword({ password: "" })}
@@ -835,7 +844,9 @@ export default function Account() {
             {user.length > 0 && (
               <Grid container spacing={2}>
                 <Grid item xs={12} md={2}>
-                  <Typography variant="h5">Modelos del configurador</Typography>
+                  <Typography variant="h5">
+                    {t("tittleTextModeloCuenta")}
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} md={8}>
                   <Grid container spacing={2}>
@@ -858,13 +869,13 @@ export default function Account() {
                             <TableHead>
                               <TableRow>
                                 <StyledTableCell>
-                                  Nombre del modelo
+                                  {t("textModeloNombreCuenta")}
                                 </StyledTableCell>
-                                <StyledTableCell align="left">
+                                {/* <StyledTableCell align="left">
                                   Nombre del Bungalow
-                                </StyledTableCell>
+                                </StyledTableCell> */}
                                 <StyledTableCell align="left">
-                                  Acciones
+                                  {t("textModeloAccionesCuenta")}
                                 </StyledTableCell>
                               </TableRow>
                             </TableHead>
@@ -874,12 +885,16 @@ export default function Account() {
                                   <StyledTableCell component="th" scope="row">
                                     {row.nombre}
                                   </StyledTableCell>
-                                  <StyledTableCell align="left">
+                                  {/* <StyledTableCell align="left">
                                     {row.nombrebungalow}
-                                  </StyledTableCell>
+                                  </StyledTableCell> */}
                                   <StyledTableCell align="left">
                                     <Grid container wrap="nowrap">
-                                      <Tooltip title="Descargar Modelo">
+                                      <Tooltip
+                                        title={t(
+                                          "textModeloButtonDescargarCuenta"
+                                        )}
+                                      >
                                         <IconButton
                                           onClick={(e) =>
                                             downloadImg(
@@ -893,7 +908,11 @@ export default function Account() {
                                           <DownloadIcon />
                                         </IconButton>
                                       </Tooltip>
-                                      <Tooltip title="Borrar modelo">
+                                      <Tooltip
+                                        title={t(
+                                          "textModeloButtonBorrarCuenta"
+                                        )}
+                                      >
                                         <IconButton
                                           onClick={(e) =>
                                             handleDeleteBungalow(e, row.id)
@@ -903,7 +922,11 @@ export default function Account() {
                                           <DeleteIcon />
                                         </IconButton>
                                       </Tooltip>
-                                      <Tooltip title="Añadir a Presupuesto">
+                                      <Tooltip
+                                        title={t(
+                                          "textModeloButtonAñadirCuenta"
+                                        )}
+                                      >
                                         <IconButton
                                           onClick={(e) =>
                                             addPresupuesto(
@@ -953,7 +976,9 @@ export default function Account() {
             {user.length > 0 && (
               <Grid container spacing={2}>
                 <Grid item xs={12} md={2}>
-                  <Typography variant="h5">Solicitud de Presupuesto</Typography>
+                  <Typography variant="h5">
+                    {t("tittleTextPresupuestoCuenta")}
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} md={10}>
                   <Grid container spacing={2}>
@@ -1001,7 +1026,7 @@ export default function Account() {
                                 </List>
                               ) : (
                                 <Typography variant="h5">
-                                  No hay modelos añadidos al presupuesto
+                                  {t("textPresupuestoCuenta")}
                                 </Typography>
                               )}
                             </Box>
@@ -1014,7 +1039,7 @@ export default function Account() {
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
                           >
-                            Mandar solicitud
+                            {t("textPresupuestoButtonMandarCuenta")}
                           </Button>
                         ) : (
                           <Button
@@ -1024,7 +1049,7 @@ export default function Account() {
                             sx={{ mt: 3, mb: 2 }}
                             disabled
                           >
-                            Mandar solicitud
+                            {t("textPresupuestoButtonMandarCuenta")}
                           </Button>
                         )}
                       </Box>
@@ -1046,7 +1071,9 @@ export default function Account() {
             {user.length > 0 && (
               <Grid container spacing={2}>
                 <Grid item xs={12} md={2}>
-                  <Typography variant="h5">Borrar Cuenta</Typography>
+                  <Typography variant="h5">
+                    {t("tittleTextBorrarCuenta")}
+                  </Typography>
                 </Grid>
                 <Grid item xs={12} md={10}>
                   <Grid container spacing={2}>
@@ -1066,7 +1093,9 @@ export default function Account() {
                         onClick={deleteAccount}
                       >
                         <HighlightOffIcon />
-                        <Typography variant="h5">Borrar Cuenta</Typography>
+                        <Typography variant="h5">
+                          {t("tittleTextBorrarCuenta")}
+                        </Typography>
                       </Button>
                     </Grid>
                   </Grid>

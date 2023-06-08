@@ -3,6 +3,8 @@ export const translateFr = {
   buttonCerrar: "Fermer",
   buttonGuardar: "Enregistrer",
   button3d: "Vue 3D",
+  buttonBorrarCampo: "Supprimer le Champ",
+
   //NavBar
   buttonIni: "Accueil",
   buttonProduct: "Produits",
@@ -143,4 +145,39 @@ export const translateFr = {
     "J'ai lu et j'accepte la Politique de confidentialité et les Mentions légales",
   textContactEnviar: "Envoyer le formulaire",
   textLocalization: "Notre Emplacement",
+
+  //Account
+  tittleTextAccount: "Mon Compte",
+  tittleTextDetallesCuenta: "Détails de l'utilisateur",
+  textDetallesNombreCuenta: "Nom:",
+  textDetallesApellidosCuenta: "Prénom:",
+  textDetallesTelCuenta: "Téléphone:",
+  textDetallesDireccionCuenta: "Adresse:",
+  textDetallesPassCuenta: "Mot de passe:",
+  textAlertCambioNombreCuenta: "Changement de Nom Enregistré avec Succès",
+  textAlertCambioApellidosCuenta:
+    "Changement de Nom de Famille Enregistré avec Succès",
+  textAlertCambioEmailCuenta: "Changement d'Email Enregistré avec Succès",
+  textAlertCambioTelCuenta:
+    "Changement de Numéro de Téléphone Enregistré avec Succès",
+  textAlertCambioDirCuenta: "Changement d'Adresse Enregistré avec Succès",
+  textAlertCambioPassCuenta:
+    "Changement de Mot de Passe Enregistré avec Succès",
+  tittleTextModeloCuenta: "Modèles du Configurateur",
+  textModeloNombreCuenta: "Nom du Modèle Enregistré",
+  textModeloAccionesCuenta: "Actions",
+  textModeloButtonDescargarCuenta: "Télécharger le Modèle",
+  textModeloButtonBorrarCuenta: "Supprimer le Modèle",
+  textModeloButtonAñadirCuenta: "Ajouter au Budget",
+  tittleTextPresupuestoCuenta: "Demande de Devis",
+  textPresupuestoCuenta: "Aucun modèle ajouté au devis",
+  textPresupuestoButtonMandarCuenta: "Envoyer la demande",
+  tittleTextBorrarCuenta: "Supprimer le compte",
+  textAlertTittleBorrarCuenta:
+    "Êtes-vous sûr de vouloir supprimer votre compte ?",
+  textAlertSubtittleBorrarCuenta:
+    "N'oubliez pas que si vous souhaitez afficher à nouveau votre profil, vous devrez demander les autorisations à l'administrateur",
+  textAlertButtonYesBorrarCuenta: "Oui, Supprimez-moi !!",
+  textAlertConfirmYesBorrarCuenta: "Supprimé !",
+  textAlertConfirmYesSubtittleBorrarCuenta: "Votre compte a été désactivé",
 };

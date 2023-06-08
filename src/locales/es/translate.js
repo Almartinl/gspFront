@@ -3,6 +3,8 @@ export const translateEs = {
   buttonCerrar: "Cerrar",
   buttonGuardar: "Guardar",
   button3d: "Vista 3d",
+  buttonBorrarCampo: "Borrar Campo",
+
   //NavBar
   buttonIni: "Inicio",
   buttonProduct: "Productos",
@@ -143,4 +145,37 @@ export const translateEs = {
     "He leido y acepto la Politica de Privacidad y el Aviso Legal",
   textContactEnviar: "Enviar Formulario",
   textLocalization: "Nuestra Localización",
+
+  //Account
+  tittleTextAccount: "Mi Cuenta",
+  tittleTextDetallesCuenta: "Detalles del usuario",
+  textDetallesNombreCuenta: "Nombre:",
+  textDetallesApellidosCuenta: "Apellidos:",
+  textDetallesTelCuenta: "Telefono:",
+  textDetallesDireccionCuenta: "Direccion:",
+  textDetallesPassCuenta: "Contraseña:",
+  textAlertCambioNombreCuenta: "Cambio de Nombre Registrado Correctamente",
+  textAlertCambioApellidosCuenta:
+    "Cambio de Apellidos Registrado Correctamente",
+  textAlertCambioEmailCuenta: "Cambio de Email Registrado Correctamente",
+  textAlertCambioTelCuenta: "Cambio de Telefono Registrado Correctamente",
+  textAlertCambioDirCuenta: "Cambio de Direccion Registrado Correctamente",
+  textAlertCambioPassCuenta: "Cambio de Contraseña Registrado Correctamente",
+  tittleTextModeloCuenta: "Modelos del Configurador",
+  textModeloNombreCuenta: "Nombre del Modelo Guardado",
+  textModeloAccionesCuenta: "Acciones",
+  textModeloButtonDescargarCuenta: "Descargar Modelo",
+  textModeloButtonBorrarCuenta: "Borrar Modelo",
+  textModeloButtonAñadirCuenta: "Añadir a Presupuesto",
+  textAlertModeloBorrarCuenta: "Modelo Borrado Correctamente",
+  tittleTextPresupuestoCuenta: "Solicitud de Presupuesto",
+  textPresupuestoCuenta: "No hay modelos añadidos al presupuesto",
+  textPresupuestoButtonMandarCuenta: "Mandar Solicitud",
+  tittleTextBorrarCuenta: "Borrar Cuenta",
+  textAlertTittleBorrarCuenta: "¿Seguro que quieres borrar tu cuenta?",
+  textAlertSubtittleBorrarCuenta:
+    "Recuerda que luego si quieres volver a ver tu perfil tendras que solicitar al administrador permisos",
+  textAlertButtonYesBorrarCuenta: "Si, Borrame !!",
+  textAlertConfirmYesBorrarCuenta: "Borrado!",
+  textAlertConfirmYesSubtittleBorrarCuenta: "Tu cuenta ha sido inabilitada",
 };
