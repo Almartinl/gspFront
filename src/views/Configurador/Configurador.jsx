@@ -387,24 +387,23 @@ export default function Configurador() {
       console.log(response.status);
       if (response.status == 400) {
         Swal.fire({
-          title: "¿Estas Registrado?",
-          text: "Registrate o inicia sesion para poder guardar el modelo en tu cuenta",
+          title: t("tittleTextAlertLoginConfig"),
+          text: t("textSubtittleAlertLoginConfig"),
           icon: "warning",
           showCancelButton: true,
           confirmButtonColor: "#d33",
           cancelButtonColor: "#3085d6",
-          confirmButtonText: "Ir al login/Register",
+          confirmButtonText: t("textButtonAlertLoginConfig"),
         }).then((result) => {
           if (result.isConfirmed) {
             navigate("/login");
           }
         });
       } else if (response.status == 200) {
-        // alert("Modelo guardado correctamente");
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Modelo Guardado Correctamente",
+          title: t("tittleTextAlertConfig"),
         });
         setNombreProyecto("");
       } else if (response.status == 409) {

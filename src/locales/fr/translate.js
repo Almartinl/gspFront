@@ -119,6 +119,11 @@ export const translateFr = {
   dialogTittleGuardar: "Enregistrer le modèle",
   dialogContentGuardar: "Entrez le nom pour enregistrer le modèle",
   dialogTextFieldGuardar: "Nom",
+  tittleTextAlertLoginConfig: "Êtes-vous enregistré ?",
+  textSubtittleAlertLoginConfig:
+    "Inscrivez-vous ou connectez-vous pour enregistrer le modèle dans votre compte",
+  textButtonAlertLoginConfig: "Aller à la Login/Register",
+  tittleTextAlertConfig: "Modèle enregistré avec succès",
 
   //Projects
   tittleTextProjects: "Nos Projets",
@@ -145,6 +150,10 @@ export const translateFr = {
     "J'ai lu et j'accepte la Politique de confidentialité et les Mentions légales",
   textContactEnviar: "Envoyer le formulaire",
   textLocalization: "Notre Emplacement",
+  textAlertError1Contact: "Veuillez remplir tous les champs",
+  tittleTextAlertOkContact: "Enregistré",
+  textAlertOkContact: "Formulaire enregistré avec succès",
+  textAlertError2Contact: "Formulaire déjà enregistré",
 
   //Account
   tittleTextAccount: "Mon Compte",
@@ -169,6 +178,8 @@ export const translateFr = {
   textModeloButtonDescargarCuenta: "Télécharger le Modèle",
   textModeloButtonBorrarCuenta: "Supprimer le Modèle",
   textModeloButtonAñadirCuenta: "Ajouter au Budget",
+  textAlertModeloBorrarCuenta: "Modèle supprimé avec succès",
+  textNoModeloCuenta: "Aucun modèle enregistré",
   tittleTextPresupuestoCuenta: "Demande de Devis",
   textPresupuestoCuenta: "Aucun modèle ajouté au devis",
   textPresupuestoButtonMandarCuenta: "Envoyer la demande",

@@ -119,6 +119,11 @@ export const translateEn = {
   dialogTittleGuardar: "Save Model",
   dialogContentGuardar: "Enter the Name to save the model",
   dialogTextFieldGuardar: "Name",
+  tittleTextAlertLoginConfig: "Are You Registered?",
+  textSubtittleAlertLoginConfig:
+    "Register or log in to save the model to your account",
+  textButtonAlertLoginConfig: "Go to Login/Register",
+  tittleTextAlertConfig: "Model Saved Successfully",
 
   //Projects
   tittleTextProjects: "Our Projects",
@@ -146,6 +151,10 @@ export const translateEn = {
     "I have read and accept the Privacy Policy and Legal Notice",
   textContactEnviar: "Send Form",
   textLocalization: "Our Location",
+  textAlertError1Contact: "Please fill in all the fields",
+  tittleTextAlertOkContact: "Registered",
+  textAlertOkContact: "Form submitted successfully",
+  textAlertError2Contact: "Form already submitted",
 
   //Account
   tittleTextAccount: "My Account",
@@ -167,6 +176,8 @@ export const translateEn = {
   textModeloButtonDescargarCuenta: "Download Model",
   textModeloButtonBorrarCuenta: "Delete Model",
   textModeloButtonAñadirCuenta: "Add to Budget",
+  textAlertModeloBorrarCuenta: "Model Deleted Successfully",
+  textNoModeloCuenta: "No Saved Models",
   tittleTextPresupuestoCuenta: "Request for Budget",
   textPresupuestoCuenta: "No models added to the budget",
   textPresupuestoButtonMandarCuenta: "Send Request",

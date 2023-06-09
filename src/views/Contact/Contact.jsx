@@ -60,12 +60,12 @@ export default function Contact() {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "Rellena todos los campos",
+          title: t("textAlertError1Contact"),
         });
       } else if (response.status == 200) {
         Swal.fire(
-          "Registrado",
-          "Formulario registrado correctamente",
+          t("titttleTextAlertokContact"),
+          t("textAlertOkContact"),
           "success"
         );
         setNewContact(initialContactState);
@@ -73,7 +73,7 @@ export default function Contact() {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "Formulario ya registrado",
+          title: t("textAlertError2Contact"),
         });
       }
     });
@@ -168,18 +168,28 @@ export default function Contact() {
                   {t("textContactRedes")}
                 </Typography>
                 <Grid container flexDirection="row" justifyContent="center">
-                  <IconButton href="https://www.linkedin.com/company/global-solutions-pr%C3%A9fabriqu%C3%A9es/">
+                  <IconButton
+                    target="_blank"
+                    href="https://www.linkedin.com/company/global-solutions-pr%C3%A9fabriqu%C3%A9es/"
+                  >
                     <LinkedInIcon fontSize="large" sx={{ color: "white" }} />
                   </IconButton>
-                  <IconButton href="https://www.facebook.com/Global-Solutions-Pr%C3%A9fabriqu%C3%A9es-115355516956606">
+                  <IconButton
+                    target="_blank"
+                    href="https://www.facebook.com/Global-Solutions-Pr%C3%A9fabriqu%C3%A9es-115355516956606"
+                  >
                     <FacebookOutlinedIcon
                       fontSize="large"
                       sx={{ color: "white" }}
                     />
                   </IconButton>
-                  <IconButton>
+                  <IconButton
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=221772260577&text=Bonjour%20GLOBAL%20SOLUTIONS%20PREFABRIQUEES.%20Je%20suis%20un/une%20interess%C3%A9(e)."
+                  >
                     <WhatsAppIcon fontSize="large" sx={{ color: "white" }} />
                   </IconButton>
+                  <a href=""></a>
                 </Grid>
               </Grid>
             </Grid>

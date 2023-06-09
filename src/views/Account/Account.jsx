@@ -335,7 +335,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Modelo Borrado Correctamente",
+          title: t("textAlertModeloBorrarCuenta"),
         });
       }
     });
@@ -954,7 +954,7 @@ export default function Account() {
                       ) : (
                         <Grid item xs={12} md={10}>
                           <Typography variant="h5">
-                            No Hay Modelos Guardados
+                            {t("textNoModeloCuenta")}
                           </Typography>
                         </Grid>
                       )}

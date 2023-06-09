@@ -118,6 +118,11 @@ export const translateEs = {
   dialogTittleGuardar: "Guardar Modelo",
   dialogContentGuardar: "Escribe el Nombre para guardar el modelo",
   dialogTextFieldGuardar: "Nombre",
+  tittleTextAlertLoginConfig: "¿Estas Registrado?",
+  textSubtittleAlertLoginConfig:
+    "Registrate o inicia sesion para poder guardar el modelo en tu cuenta",
+  textButtonAlertLoginConfig: "Ir al login/Register",
+  tittleTextAlertConfig: "Model Guardado Correctamente",
 
   //Projects
   tittleTextProjects: "Nuestros Proyectos",
@@ -145,6 +150,10 @@ export const translateEs = {
     "He leido y acepto la Politica de Privacidad y el Aviso Legal",
   textContactEnviar: "Enviar Formulario",
   textLocalization: "Nuestra Localización",
+  textAlertError1Contact: "Rellena todos los campos",
+  tittleTextAlertOkContact: "Registrado",
+  textAlertOkContact: "Formulario registrado correctamente",
+  textAlertError2Contact: "Formulario ya registrado",
 
   //Account
   tittleTextAccount: "Mi Cuenta",
@@ -168,6 +177,7 @@ export const translateEs = {
   textModeloButtonBorrarCuenta: "Borrar Modelo",
   textModeloButtonAñadirCuenta: "Añadir a Presupuesto",
   textAlertModeloBorrarCuenta: "Modelo Borrado Correctamente",
+  textNoModeloCuenta: "No Hay Modelos Guardados",
   tittleTextPresupuestoCuenta: "Solicitud de Presupuesto",
   textPresupuestoCuenta: "No hay modelos añadidos al presupuesto",
   textPresupuestoButtonMandarCuenta: "Mandar Solicitud",
