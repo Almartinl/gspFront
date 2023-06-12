@@ -50,7 +50,7 @@ export default function Contact() {
   function registrar(e) {
     e.preventDefault();
 
-    fetch("https://almartindev.online/api/user/contact", {
+    fetch("http://localhost:3000/api/user/contact", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newContact),
@@ -64,7 +64,7 @@ export default function Contact() {
         });
       } else if (response.status == 200) {
         Swal.fire(
-          t("titttleTextAlertokContact"),
+          t("tittleTextAlertOkContact"),
           t("textAlertOkContact"),
           "success"
         );
