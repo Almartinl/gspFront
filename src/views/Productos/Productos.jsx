@@ -20,6 +20,7 @@ import {
   TableRow,
   TableCell,
   TableFooter,
+  Divider,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -49,7 +50,14 @@ export default function Productos() {
   const [vistaBungalowsObras, setVistaBungalowsObras] = useState(false);
   const [vistaBungalowAlmacen, setVistaBungalowAlmacen] = useState(false);
   const [vistaBungalowCaseta, setVistaBungalowCaseta] = useState(false);
+  const [buttonCaseta, setButtonCaseta] = useState(false);
+  const [vistaGarita1, setVistaGarita1] = useState(false);
+  const [vistaGarita2, setVistaGarita2] = useState(false);
   const [vistaBungalowDiafano, setVistaBungalowDiafano] = useState(false);
+  const [buttonDiafano, setButtonDiafano] = useState(false);
+  const [vistaDiafano1, setVistaDiafano1] = useState(false);
+  const [vistaDiafano2, setVistaDiafano2] = useState(false);
+  const [vistaDiafano3, setVistaDiafano3] = useState(false);
   const [vistaBungalowWc, setVistaBungalowWc] = useState(false);
   const [vistaBungalowVestuario, setVistaBungalowVestuario] = useState(false);
   const [vistaEstructuras, setVistaEstructuras] = useState(false);
@@ -59,6 +67,7 @@ export default function Productos() {
   const [expanded, setExpanded] = useState(false);
   const [clickBungalowsObras, setClickBungalowsObras] = useState(false);
   const [bungalowObras, setBungalowObras] = useState([]);
+  const [fotoSeleccionada, setFotoSeleccionada] = useState("");
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -98,6 +107,14 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function bungalowAlmacenClick(e) {
@@ -110,6 +127,14 @@ export default function Productos() {
     setVistaBungalowDiafano(false);
     setVistaBungalowVestuario(false);
     setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function bungalowCasetaClick(e) {
@@ -122,6 +147,54 @@ export default function Productos() {
     setVistaBungalowDiafano(false);
     setVistaBungalowVestuario(false);
     setVistaBungalowWc(false);
+    setButtonCaseta(true);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
+  }
+
+  function garita1Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(true);
+    setVistaBungalowDiafano(false);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(true);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
+  }
+
+  function garita2Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(true);
+    setVistaBungalowDiafano(false);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(true);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function bungalowOficinaClick(e) {
@@ -134,6 +207,74 @@ export default function Productos() {
     setVistaBungalowDiafano(true);
     setVistaBungalowVestuario(false);
     setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(true);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
+  }
+
+  function Oficina1Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(true);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(true);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
+  }
+
+  function Oficina2Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(true);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(true);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
+  }
+
+  function Oficina3Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(true);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(true);
+    setFotoSeleccionada("");
   }
 
   function bungalowWcClick(e) {
@@ -146,6 +287,14 @@ export default function Productos() {
     setVistaBungalowDiafano(false);
     setVistaBungalowVestuario(false);
     setVistaBungalowWc(true);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function bungalowVestuarioClick(e) {
@@ -158,6 +307,14 @@ export default function Productos() {
     setVistaBungalowDiafano(false);
     setVistaBungalowVestuario(true);
     setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function volverInicioClick(e) {
@@ -170,6 +327,14 @@ export default function Productos() {
     setVistaBungalowDiafano(false);
     setVistaBungalowVestuario(false);
     setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function estructuraClick(e) {
@@ -186,6 +351,14 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function edificioClick(e) {
@@ -202,6 +375,14 @@ export default function Productos() {
     setVistaEdificios(true);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function naveClick(e) {
@@ -218,6 +399,14 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(true);
     setVistaMaritimos(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   function maritimoClick(e) {
@@ -234,6 +423,14 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(true);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setFotoSeleccionada("");
   }
 
   useEffect(() => {
@@ -250,6 +447,8 @@ export default function Productos() {
     vistaEdificios,
     vistaEstructuras,
     vistaNaves,
+    vistaGarita1,
+    vistaGarita2,
   ]);
 
   return (
@@ -261,6 +460,7 @@ export default function Productos() {
         vistaBungalowDiafano ||
         vistaBungalowWc ||
         vistaBungalowVestuario ? (
+          // Grid de tipos de bungalows de obras
           <Grid
             container
             item
@@ -275,6 +475,7 @@ export default function Productos() {
               {t("textTittleTipos")}
             </Typography>
             <Grid container gap={2}>
+              {/* Boton de Almacen */}
               <Button
                 variant={vistaBungalowAlmacen ? "contained" : "outlined"}
                 fullWidth
@@ -296,70 +497,324 @@ export default function Productos() {
               >
                 {t("textButtonAlmacen")}
               </Button>
+              {/* Boton desplegado de Caseta */}
+              {vistaBungalowCaseta ? (
+                <Accordion
+                  expanded
+                  sx={
+                    vistaBungalowCaseta && {
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
+                      fontWeight: "bold",
+                      backgroundColor: "#d3b72a",
+                      border: 1,
+                    }
+                  }
+                >
+                  <AccordionSummary
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      color: "white",
+                      fontWeight: "bold",
+                      backgroundColor: "#3b8f1e",
+                    }}
+                  >
+                    <Typography textTransform="uppercase" fontWeight="bold">
+                      {t("textButtonCaseta")}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ textAlign: "center" }}>
+                    <Button
+                      variant={vistaGarita1 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaGarita1
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
+                      }
+                      onClick={garita1Click}
+                    >
+                      Garita de (1.5m x 1.1m)
+                    </Button>
+                    <Button
+                      variant={vistaGarita2 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaGarita2
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
+                      }
+                      onClick={garita2Click}
+                    >
+                      Garita de (2.5m x 2.0m)
+                    </Button>
+                  </AccordionDetails>
+                </Accordion>
+              ) : (
+                //Boton sin desplegar de Caseta
+                <Button
+                  variant={vistaBungalowCaseta ? "contained" : "outlined"}
+                  fullWidth
+                  color="success"
+                  endIcon={<ExpandMoreIcon />}
+                  sx={
+                    vistaBungalowCaseta
+                      ? {
+                          color: "white",
+                          fontWeight: "bold",
+                          backgroundColor: "#3b8f1e",
+                        }
+                      : {
+                          color: "#3b8f1e",
+                          borderColor: "#3b8f1e",
+                          fontWeight: "bold",
+                        }
+                  }
+                  onClick={bungalowCasetaClick}
+                >
+                  {t("textButtonCaseta")}
+                </Button>
+              )}
 
-              <Button
-                variant={vistaBungalowCaseta ? "contained" : "outlined"}
-                fullWidth
-                color="success"
-                sx={
-                  vistaBungalowCaseta
-                    ? {
-                        color: "white",
-                        fontWeight: "bold",
-                        backgroundColor: "#3b8f1e",
+              {/* Boton desplegado de Oficinas */}
+
+              {vistaBungalowDiafano ? (
+                <Accordion
+                  expanded
+                  sx={
+                    vistaBungalowDiafano && {
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
+                      fontWeight: "bold",
+                      backgroundColor: "#d3b72a",
+                      border: 1,
+                    }
+                  }
+                >
+                  <AccordionSummary
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      color: "white",
+                      fontWeight: "bold",
+                      backgroundColor: "#3b8f1e",
+                    }}
+                  >
+                    <Typography textTransform="uppercase" fontWeight="bold">
+                      {t("textButtonOficina")}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ textAlign: "center" }}>
+                    <Button
+                      variant={vistaDiafano1 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaDiafano1
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
                       }
-                    : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
-                        fontWeight: "bold",
+                      onClick={Oficina1Click}
+                    >
+                      Bungalow Polivalente
+                    </Button>
+                    <Button
+                      variant={vistaDiafano2 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaDiafano2
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
                       }
-                }
-                onClick={bungalowCasetaClick}
-              >
-                {t("textButtonCaseta")}
-              </Button>
-              <Button
-                variant={vistaBungalowDiafano ? "contained" : "outlined"}
-                fullWidth
-                color="success"
-                sx={
-                  vistaBungalowDiafano
-                    ? {
-                        color: "white",
-                        fontWeight: "bold",
-                        backgroundColor: "#3b8f1e",
+                      onClick={Oficina2Click}
+                    >
+                      Sala de Reunion doble
+                    </Button>
+                    <Button
+                      variant={vistaDiafano3 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaDiafano3
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
                       }
-                    : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
-                        fontWeight: "bold",
-                      }
-                }
-                onClick={bungalowOficinaClick}
-              >
-                {t("textButtonOficina")}
-              </Button>
-              <Button
-                variant={vistaBungalowWc ? "contained" : "outlined"}
-                fullWidth
-                color="success"
-                sx={
-                  vistaBungalowWc
-                    ? {
-                        color: "white",
-                        fontWeight: "bold",
-                        backgroundColor: "#3b8f1e",
-                      }
-                    : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
-                        fontWeight: "bold",
-                      }
-                }
-                onClick={bungalowWcClick}
-              >
-                {t("textButtonSanitario")}
-              </Button>
+                      onClick={Oficina3Click}
+                    >
+                      Sala de Reunion triple
+                    </Button>
+                  </AccordionDetails>
+                </Accordion>
+              ) : (
+                // Boton sin desplegar Oficina
+                <Button
+                  variant={vistaBungalowDiafano ? "contained" : "outlined"}
+                  fullWidth
+                  color="success"
+                  endIcon={<ExpandMoreIcon />}
+                  sx={
+                    vistaBungalowDiafano
+                      ? {
+                          color: "white",
+                          fontWeight: "bold",
+                          backgroundColor: "#3b8f1e",
+                        }
+                      : {
+                          color: "#3b8f1e",
+                          borderColor: "#3b8f1e",
+                          fontWeight: "bold",
+                        }
+                  }
+                  onClick={bungalowOficinaClick}
+                >
+                  {t("textButtonOficina")}
+                </Button>
+              )}
+              {/* Boton desplegado de Sanitarios */}
+              {vistaBungalowWc ? (
+                <Accordion
+                  expanded
+                  sx={
+                    vistaBungalowWc && {
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
+                      fontWeight: "bold",
+                      backgroundColor: "#d3b72a",
+                      border: 1,
+                    }
+                  }
+                >
+                  <AccordionSummary
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      color: "white",
+                      fontWeight: "bold",
+                      backgroundColor: "#3b8f1e",
+                    }}
+                  >
+                    <Typography textTransform="uppercase" fontWeight="bold">
+                      {t("textButtonSanitario")}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Button
+                      fullWidth
+                      color="success"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      Sanitario 1
+                    </Button>
+                    <Button
+                      fullWidth
+                      color="success"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      Sanitario 2
+                    </Button>
+                    <Button
+                      fullWidth
+                      color="success"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      Sanitario 3
+                    </Button>
+                    <Button
+                      fullWidth
+                      color="success"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      Sanitario 4
+                    </Button>
+                    <Button
+                      fullWidth
+                      color="success"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      Sanitario 5
+                    </Button>
+                  </AccordionDetails>
+                </Accordion>
+              ) : (
+                // Boton sin desplegar Sanitario
+                <Button
+                  variant={vistaBungalowWc ? "contained" : "outlined"}
+                  fullWidth
+                  color="success"
+                  endIcon={<ExpandMoreIcon />}
+                  sx={
+                    vistaBungalowWc
+                      ? {
+                          color: "white",
+                          fontWeight: "bold",
+                          backgroundColor: "#3b8f1e",
+                        }
+                      : {
+                          color: "#3b8f1e",
+                          borderColor: "#3b8f1e",
+                          fontWeight: "bold",
+                        }
+                  }
+                  onClick={bungalowWcClick}
+                >
+                  {t("textButtonSanitario")}
+                </Button>
+              )}
+              {/* Boton Vestuarios */}
               <Button
                 variant={vistaBungalowVestuario ? "contained" : "outlined"}
                 fullWidth
@@ -381,6 +836,7 @@ export default function Productos() {
               >
                 {t("textButtonVestuarios")}
               </Button>
+              {/* Boton Volver */}
               <Button
                 variant="outlined"
                 fullWidth
@@ -395,6 +851,7 @@ export default function Productos() {
             </Grid>
           </Grid>
         ) : (
+          // Grid de categoria de productos
           <Grid
             container
             item
@@ -519,7 +976,7 @@ export default function Productos() {
             </Grid>
           </Grid>
         )}
-
+        {/* Grid de las vistas de los productos */}
         <Grid
           container
           item
@@ -842,7 +1299,7 @@ export default function Productos() {
             </Grid>
           )}
 
-          {vistaBungalowCaseta && (
+          {vistaBungalowCaseta && buttonCaseta && (
             <Grid container item xs={12} spacing={2} p={3}>
               <Grid item xs={12}>
                 <Card>
@@ -871,6 +1328,88 @@ export default function Productos() {
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  ></CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaGarita1 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Garita de (1.5m x 1.1m)"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada ? fotoSeleccionada : "../../garita1.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../garita1.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../garita1.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../garita3.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../garita3.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
                     <Typography
                       variant="h4"
@@ -881,7 +1420,7 @@ export default function Productos() {
                       Descripcion
                     </Typography>
                     <Grid container>
-                      <Grid item xs={12}>
+                      {/* <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
                           Nuestros bungalows de sitio para uso como Almacenes
                           están perfectamente adaptados para servir como Almacen
@@ -898,7 +1437,7 @@ export default function Productos() {
                           y las necesidades del cliente en cuanto a de
                           dimensiones y tabiques interiores.
                         </Typography>
-                      </Grid>
+                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -928,13 +1467,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      longitud exterior
+                                      Longitud
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      6036 mm - disponible en 4835 mm
+                                      150.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -942,13 +1481,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      ancho exterior
+                                      Ancho
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2435mm
+                                      120.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -956,13 +1495,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura del techo
+                                      Altura Total
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2500mm
+                                      280.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -970,13 +1509,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      altura total
+                                      Altura
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2935mm
+                                      250.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -984,14 +1523,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      revestimiento
+                                      Peso
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Paneles sándwich de espuma de poliuretano
-                                      de 40 mm
+                                      120 kg
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -999,14 +1537,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Piso
+                                      Estructura
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo de aglomerado hidrófugo de 22 mm
-                                      (CTBH)
+                                      Estructura de metal galvanizado
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1014,13 +1551,15 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Calefacción
+                                      Paneles
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 convector de 2000 W
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1028,13 +1567,14 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      electricidad
+                                      Suelo
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2x2 fluorescentes 36W - 2 uds 16A
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1042,14 +1582,59 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Carpintería
+                                      Puertas
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ventana de PVC - doble acristalamiento
-                                      4-15-4 con persiana enrollable
+                                      1 Puerta de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Ventana de aluminio de 100x100cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -1075,7 +1660,13 @@ export default function Productos() {
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <img src="../../PLANTA.jpg" width="100%"></img>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-garita1.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
                           </AccordionDetails>
                         </Accordion>
                       </Grid>
@@ -1086,7 +1677,364 @@ export default function Productos() {
             </Grid>
           )}
 
-          {vistaBungalowDiafano && (
+          {vistaGarita2 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Garita de (2.5m x 2.0m)"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada ? fotoSeleccionada : "../../caseta.jpg"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../caseta.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../caseta.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../garita2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../garita2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      220.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      800 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2 Ventanas de aluminio de 100x100cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Si
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-garita2.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaBungalowDiafano && buttonDiafano && (
             <Grid container item xs={12} spacing={2} p={3}>
               <Grid item xs={12}>
                 <Card>
@@ -1115,6 +2063,90 @@ export default function Productos() {
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  ></CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaDiafano1 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Bungalow Polivalente"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../bungalow-polivalente.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalow-polivalente.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../bungalow-polivalente.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalow-polivalente1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../bungalow-polivalente1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
                     <Typography
                       variant="h4"
@@ -1125,7 +2157,7 @@ export default function Productos() {
                       Descripcion
                     </Typography>
                     <Grid container>
-                      <Grid item xs={12}>
+                      {/* <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
                           Nuestros bungalows de sitio para uso como Almacenes
                           están perfectamente adaptados para servir como Almacen
@@ -1142,7 +2174,7 @@ export default function Productos() {
                           y las necesidades del cliente en cuanto a de
                           dimensiones y tabiques interiores.
                         </Typography>
-                      </Grid>
+                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -1172,13 +2204,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      longitud exterior
+                                      Longitud
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      6036 mm - disponible en 4835 mm
+                                      594.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1186,13 +2218,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      ancho exterior
+                                      Ancho
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2435mm
+                                      240.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1200,13 +2232,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura del techo
+                                      Altura Total
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2500mm
+                                      280.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1214,13 +2246,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      altura total
+                                      Altura
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2935mm
+                                      250.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1228,14 +2260,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      revestimiento
+                                      Peso
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Paneles sándwich de espuma de poliuretano
-                                      de 40 mm
+                                      1300 kg
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1243,14 +2274,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Piso
+                                      Estructura
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo de aglomerado hidrófugo de 22 mm
-                                      (CTBH)
+                                      Estructura de metal galvanizado
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1258,13 +2288,15 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Calefacción
+                                      Paneles
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 convector de 2000 W
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1272,13 +2304,14 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      electricidad
+                                      Suelo
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2x2 fluorescentes 36W - 2 uds 16A
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1286,14 +2319,74 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Carpintería
+                                      Puertas
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ventana de PVC - doble acristalamiento
-                                      4-15-4 con persiana enrollable
+                                      1 Puerta de aluminio de 85 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Ventana de aluminio de 100x100cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado de 1.5 cv
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo, Suministro e instalación de mesa
+                                      fregadero metálica y grifería.
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -1319,7 +2412,733 @@ export default function Productos() {
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <img src="../../PLANTA.jpg" width="100%"></img>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-polivalente.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaDiafano2 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sala de Reunion doble"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../bungalow-polivalente.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalow-polivalente.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../bungalow-polivalente.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalow-polivalente1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../bungalow-polivalente1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      590.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      480.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1200 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta doble hoja no vidriada 130 x 200
+                                      cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      3 Ventana de aluminio de 100x100cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado de 1.5 cv
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo, Apilable en R+1, R+2
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-sala-doble.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaDiafano3 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sala de Reunion triple"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../triple-diafano.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../triple-diafano.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../triple-diafano.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../triple-diafano2.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../triple-diafano2.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      590.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      720.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1800 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta doble hoja no vidriada 130 x 200
+                                      cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      5 Ventanas de aluminio de 100x100cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado de 1.5 cv
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo, Apilable en R+1, R+2
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-sala-triple.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
                           </AccordionDetails>
                         </Accordion>
                       </Grid>
@@ -1997,6 +3816,7 @@ export default function Productos() {
               </Grid>
             </Grid>
           )}
+
           {vistaMaritimos && (
             <Grid container item xs={12} spacing={2} p={3}>
               <Grid item xs={12}>
