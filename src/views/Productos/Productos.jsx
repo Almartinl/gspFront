@@ -2077,7 +2077,7 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../caseta.jpg"
+                      fotoSeleccionada ? fotoSeleccionada : "../../caseta1.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -2103,10 +2103,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../caseta.jpg"
+                      image="../../caseta1.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../caseta.jpg");
+                        setFotoSeleccionada("../../caseta1.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -3563,6 +3563,1621 @@ export default function Productos() {
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   ></CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaWcDoble && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sanitario Doble"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../bungalow-sanitario-doble.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalow-sanitario-doble.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada(
+                          "../../bungalow-sanitario-doble.png"
+                        );
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc-doble2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc-doble2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc-doble1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc-doble1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      216.5 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      116.5 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      600 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2 Puertas de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2 Ventanas de aluminio de 40x40cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Equipamiento Sanitario
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2 Váter , 2 Lavabos.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      No
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo.
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-wc-doble.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaWc1 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sanitario Tipo 1"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo1.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc-tipo1.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc-tipo1.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc1-tipo1.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc1-tipo1.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc2-tipo1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc2-tipo1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      594.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      240.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1600 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta de aluminio de 85 x 200 cm, 6
+                                      Puertas de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Ventana de aluminio de 80x100cm, 6
+                                      Ventanas de aluminio de 40 x 40 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Equipamiento Sanitario
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      6 Duchas, Accesorios y jaboneras
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      No
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01 doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo.
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-wc-tipo1.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaWc2 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sanitario Tipo 2"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo2.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc-tipo2.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc-tipo2.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../caseta.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../caseta.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc2-tipo2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc2-tipo2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc1-tipo2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc1-tipo2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      300.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      240.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1300 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta de aluminio de 85 x 200 cm, 2
+                                      Puertas de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Ventana de aluminio de 80x90cm, 2
+                                      Ventanas de aluminio de 35 x 33.5 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Equipamiento Sanitario
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      2 Váter, 1 Urinario , 1 Lavabo, Accesorios
+                                      y jaboneras
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      No
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 1 tira Led de 120.01, doble
+                                      interruptor de encendido y globo
+                                      impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo.
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-wc-tipo1.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaWc3 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title="Sanitario Tipo 3"
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo3.png"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc-tipo3.png"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc-tipo3.png");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc1-tipo3.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc1-tipo3.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc2-tipo2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc2-tipo2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc2-tipo3.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc2-tipo3.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../wc2-tipo1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../wc2-tipo1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      Descripcion
+                    </Typography>
+                    <Grid container>
+                      {/* <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          Nuestros bungalows de sitio para uso como Almacenes
+                          están perfectamente adaptados para servir como Almacen
+                          en su campamento base, proyectos militares o civiles
+                          con el fin de poner a sus equipos técnicos en
+                          condiciones óptimas de comodidad y trabajo, para una
+                          mejor tasa de productividad y desempeño diario.
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          Están diseñadas con unas dimensiones estándar de 6,00
+                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
+                          2,40 m entre las muchas ventajas que tienen tienes: el
+                          hecho de que se pueden personalizar según los colores
+                          y las necesidades del cliente en cuanto a de
+                          dimensiones y tabiques interiores.
+                        </Typography>
+                      </Grid> */}
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Caracteristicas Tecnicas
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Longitud
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      594.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ancho
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      240.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura Total
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Altura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Peso
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1600 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Estructura
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Estructura de metal galvanizado
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Paneles
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Cerramiento en paneles sándwich
+                                      Galvanizados con espuma de poliuretano
+                                      expandido de 50mm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Suelo
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Suelo contrachapado repelente al agua,
+                                      revestimiento de alfombra de PVC Gerflex
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Puertas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Puerta de aluminio de 85 x 200 cm, 6
+                                      Puertas de aluminio de 70 x 200 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Ventanas
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1 Ventana de aluminio de 80x100cm, 6
+                                      Ventanas de aluminio de 40 x 40 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Equipamiento Sanitario
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      4 Váter, 4 Urinarios , 2 Lavabos, 2
+                                      Duchas, Accesorios y jaboneras
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Aire Acondicionado
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      No
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Electricidad
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Instalación eléctrica completa: caja de
+                                      seguridad, 4 enchufes, 1 tira Led de
+                                      120.01, doble interruptor de encendido y
+                                      globo impermeable exterior e interior.
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      Otros Componentes
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      Ganchos de elevación en cada extremo del
+                                      techo.
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              Dimensiones
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-wc-tipo3.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>
