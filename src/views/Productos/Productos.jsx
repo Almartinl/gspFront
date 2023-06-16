@@ -2831,7 +2831,7 @@ export default function Productos() {
                     image={
                       fotoSeleccionada
                         ? fotoSeleccionada
-                        : "../../bungalow-polivalente.png"
+                        : "../../sala-doble1.png"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -2857,10 +2857,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../bungalow-polivalente.png"
+                      image="../../sala-doble1.png"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../bungalow-polivalente.png");
+                        setFotoSeleccionada("../../sala-doble1.png");
                       }}
                       alt="img"
                       sx={{
@@ -2874,10 +2874,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../bungalow-polivalente1.jpeg"
+                      image="../../sala-doble2.png"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../bungalow-polivalente1.jpeg");
+                        setFotoSeleccionada("../../sala-doble2.png");
                       }}
                       alt="img"
                       sx={{
