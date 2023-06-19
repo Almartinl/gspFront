@@ -1756,6 +1756,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -2099,6 +2100,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -2493,6 +2495,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -2853,6 +2856,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -3213,6 +3217,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -3608,6 +3613,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -3998,6 +4004,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -4388,6 +4395,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -4796,6 +4804,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -5221,6 +5230,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
@@ -5630,6 +5640,7 @@ export default function Productos() {
                       display: "flex",
                       justifyContent: "center",
                       gap: 1,
+                      flexWrap: "wrap",
                     }}
                   >
                     <CardMedia
