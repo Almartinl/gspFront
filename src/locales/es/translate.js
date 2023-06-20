@@ -68,6 +68,58 @@ export const translateEs = {
     "La solución perfecta para sus despliegues de obras":
       "La solución perfecta para sus despliegues de obras",
   },
+  textButtonGarita1: "Garita de (1.5m x 1.1m)",
+  textButtonGarita2: "Garita de (2.5m x 2.0m)",
+  textButtonOficina1: "Bungalow Polivalente",
+  textButtonOficina2: "Sala de Reunion doble",
+  textButtonOficina3: "Sala de Reunion triple",
+  textButtonSanitarioDoble: "Sanitario Doble",
+  textButtonSanitario1: "Sanitario tipo 1",
+  textButtonSanitario2: "Sanitario tipo 2",
+  textButtonSanitario3: "Sanitario tipo 3",
+  textButtonSanitario4: "Sanitario tipo 4",
+  textButtonSanitario5: "Sanitario tipo 5",
+  textTittleDescripcion: "Descripcion",
+  textTittleCaracteristicas: "Carasteristicas Tecnicas",
+  textLongitud: "Longitud",
+  textAncho: "Ancho",
+  textAlturaTotal: "Altura Total",
+  textAltura: "Altura",
+  textPeso: "Peso",
+  textEstructura: "Estructura",
+  textPaneles: "Paneles",
+  textSuelo: "Suelo",
+  textPuertas: "Puertas",
+  textVentanas: "Ventanas",
+  textElectricidad: "Electricidad",
+  textOtros: "Otros Componentes",
+  textTittleDimensiones: "Dimensiones",
+  textAire: "Aire Acondicionado",
+  textEqSanitario: "Equipamiento Sanitario",
+  textAlmacenDescripcionCorta:
+    "Este bungalow es perfecto para poder almacenar todo tipo de utensilios y materiales",
+  textAlmacenDescripcion1:
+    "Nuestros bungalows de sitio para uso como Almacenes están perfectamente adaptados para servir como Almacen en su campamento base, proyectos militares o civiles con el fin de poner a sus equipos técnicos en condiciones óptimas de comodidad y trabajo, para una mejor tasa de productividad y desempeño diario",
+  textAlmacenDescripcion2:
+    "Están diseñadas con unas dimensiones estándar de 6,00 X 2,40 m con una altura exterior de 2,60 m, o 12 X 2,40 m entre las muchas ventajas que tienen tienes: el hecho de que se pueden personalizar según los colores y las necesidades del cliente en cuanto a dimensiones y tabiques interiores.",
+  textCasetaDescripcionCorta: "La Caseta Ideal para tus Proyectos",
+  textEstructuraGeneral: "Estructura de metal galvanizado",
+  textPanelesGeneral:
+    "Cerramiento en paneles sándwich Galvanizados con espuma de poliuretano expandido de 50mm",
+  textSuelosGeneral:
+    "Suelo contrachapado repelente al agua, revestimiento de alfombra de PVC Gerflex",
+  textPuertasGarita1: "1 Puerta de aluminio de 70 x 200 cm",
+  textVentanasGarita1: "1 Ventana de aluminio de 100 x 100 cm",
+  textElectricidadGeneral:
+    "Instalación eléctrica completa: caja de seguridad, 4 enchufes, 1 tira Led de 120.01 doble interruptor de encendido y globo impermeable exterior e interior.",
+  textOtrosGeneral: "Ganchos de elevación en cada extremo del techo",
+  textVentanasGarita2: "2 Ventanas de aluminio de 100 x 100 cm",
+  textAireGeneral1: "Si",
+  textAireGeneral2: "No",
+  textOficinaDescripcionCorta: "El Bungalow adaptable a tus necesidades",
+  textPuertasOficina1: "1 Puerta de aluminio de 85 x 200 cm",
+  textOtrosOficina1:
+    "Ganchos de elevación en cada extremo del techo, Opcional (Suministro e instalación de mesa fregadero metálica y grifería.)",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",
