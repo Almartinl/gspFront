@@ -118,6 +118,42 @@ export const translateFr = {
   textAireGeneral1: "Oui",
   textAireGeneral2: "Non",
   textOficinaDescripcionCorta: "Le Bungalow adaptable à vos besoins",
+  textPuertasOficina1: "1 Porte en aluminium de 85 x 200 cm",
+  textOtrosOficina1:
+    "Crochets de levage à chaque extrémité du toit, Optionnel (Fourniture et installation d'un évier métallique et d'un robinet)",
+  textPuertasOficina2: "1 Porte à deux battants non vitrée de 130 x 200 cm",
+  textVentanasOficina2: "3 Fenêtres en aluminium de 100 x 100 cm",
+  textOtrosOficina2:
+    "Crochets de levage à chaque extrémité du toit, Empilable en R+1, R+2",
+  textVentanasOficina3: "5 Fenêtres en aluminium de 100 x 100 cm",
+  textWcDescripcionCorta: "La solution sanitaire idéale pour vos déploiements",
+  textPuertasWcDoble: "2 Portes en aluminium de 70 x 200 cm",
+  textVentanasWcDoble: "2 Fenêtres en aluminium de 40 x 40 cm",
+  textEqSanitarioWcDoble: "2 Toilettes, 2 Lavabos",
+  textPuertasWc1:
+    "1 Porte en aluminium de 85 x 200 cm, 6 Portes en aluminium de 70 x 200 cm",
+  textVentanasWc1:
+    "1 Fenêtre en aluminium de 80x100cm, 6 Fenêtres en aluminium de 40 x 40 cm",
+  textEqSanitarioWc1: "6 Douches, Accessoires et distributeurs de savon",
+  textPuertasWc2:
+    "1 Porte en aluminium de 85 x 200 cm, 2 Portes en aluminium de 70 x 200 cm",
+  textVentanasWc2:
+    "1 Fenêtre en aluminium de 80x90cm, 2 Fenêtres en aluminium de 35 x 33.5 cm",
+  textEqSanitarioWc2:
+    "2 Toilettes, 1 Urinoir, 1 Lavabo, Accessoires et distributeurs de savon",
+  textEqSanitarioWc3:
+    "4 Toilettes, 4 Urinoirs, 2 Lavabos, 2 Douches, Accessoires et distributeurs de savon",
+  textPuertasWc4:
+    "1 Porte en aluminium de 85 x 200 cm, 5 Portes en aluminium de 70 x 200 cm",
+  textVentanasWc4:
+    "2 Fenêtres en aluminium de 80x100cm, 5 Fenêtres en aluminium de 35 x 33.5 cm",
+  textEqSanitarioWc4:
+    "5 Toilettes, 1 Lavabo, Accessoires et distributeurs de savon",
+  textElectricidadWc4:
+    "Installation électrique complète : boîte de sécurité, 1 bande LED de 120.01, 6 interrupteurs marche/arrêt et 5 ampoules étanches extérieures et intérieures",
+  textEquipamiento: "Équipement",
+  textEqVestuario:
+    "36 Étagères en bois et contreplaqué, bancs en bois, porte-manteaux en bois",
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

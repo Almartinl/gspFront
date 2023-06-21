@@ -117,6 +117,41 @@ export const translateEn = {
   textAireGeneral1: "Yes",
   textAireGeneral2: "No",
   textOficinaDescripcionCorta: "The Bungalow adaptable to your needs",
+  textPuertasOficina1: "1 Aluminum door of 85 x 200 cm",
+  textOtrosOficina1:
+    "Lifting hooks at each end of the roof, Optional (Supply and installation of metal sink table and faucet.)",
+  textPuertasOficina2: "1 Non-glazed double leaf door of 130 x 200 cm",
+  textVentanasOficina2: "3 Aluminum windows of 100 x 100 cm",
+  textOtrosOficina2:
+    "Lifting hooks at each end of the roof, Stackable in R+1, R+2",
+  textVentanasOficina3: "5 Aluminum windows of 100 x 100 cm",
+  textWcDescripcionCorta: "The ideal sanitary solution for your deployments",
+  textPuertasWcDoble: "2 Aluminum doors of 70 x 200 cm",
+  textVentanasWcDoble: "2 Aluminum windows of 40 x 40 cm",
+  textEqSanitarioWcDoble: "2 Toilets, 2 Washbasins",
+  textPuertasWc1:
+    "1 Aluminum door of 85 x 200 cm, 6 Aluminum doors of 70 x 200 cm",
+  textVentanasWc1:
+    "1 Aluminum window of 80x100cm, 6 Aluminum windows of 40 x 40 cm",
+  textEqSanitarioWc1: "6 Showers, Accessories and soap dispensers",
+  textPuertasWc2:
+    "1 Aluminum door of 85 x 200 cm, 2 Aluminum doors of 70 x 200 cm",
+  textVentanasWc2:
+    "1 Aluminum window of 80x90cm, 2 Aluminum windows of 35 x 33.5 cm",
+  textEqSanitarioWc2:
+    "2 Toilets, 1 Urinal, 1 Washbasin, Accessories and soap dispensers",
+  textEqSanitarioWc3:
+    "4 Toilets, 4 Urinals, 2 Washbasins, 2 Showers, Accessories and soap dispensers",
+  textPuertasWc4:
+    "1 Aluminum door of 85 x 200 cm, 5 Aluminum doors of 70 x 200 cm",
+  textVentanasWc4:
+    "2 Aluminum windows of 80x100cm, 5 Aluminum windows of 35 x 33.5 cm",
+  textEqSanitarioWc4: "5 Toilets, 1 Washbasin, Accessories and soap dispensers",
+  textElectricidadWc4:
+    "Complete electrical installation: safety box, 1 LED strip of 120.01, 6 on/off switches, and 5 waterproof exterior and interior bulbs",
+  textEquipamiento: "Equipment",
+  textEqVestuario:
+    "36 Wooden and plywood shelves, wooden benches, wooden coat racks",
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

@@ -2772,7 +2772,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sala de Reunion doble"
+                    title={t("textButtonOficina2")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -2853,7 +2853,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -2888,7 +2888,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -2903,7 +2903,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -2917,7 +2917,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -2931,7 +2931,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -2945,7 +2945,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -2959,7 +2959,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -2973,13 +2973,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -2987,15 +2987,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3003,14 +3001,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3018,14 +3015,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta doble hoja no vidriada 130 x 200
-                                      cm
+                                      {t("textPuertasOficina2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3033,13 +3029,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      3 Ventana de aluminio de 100x100cm
+                                      {t("textVentanasOficina2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3047,13 +3043,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado de 1.5 cv
+                                      {t("textAireGeneral1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3061,16 +3057,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 1 tira Led de
-                                      120.01 doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3078,14 +3071,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo, Apilable en R+1, R+2
+                                      {t("textOtrosOficina2")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -3107,7 +3099,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -3133,7 +3125,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sala de Reunion triple"
+                    title={t("textButtonOficina3")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -3214,7 +3206,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -3249,7 +3241,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -3264,7 +3256,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3278,7 +3270,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3292,7 +3284,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3306,7 +3298,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3320,7 +3312,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3334,13 +3326,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3348,15 +3340,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3364,14 +3354,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3379,14 +3368,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta doble hoja no vidriada 130 x 200
-                                      cm
+                                      {t("textPuertasOficina2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3394,13 +3382,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      5 Ventanas de aluminio de 100x100cm
+                                      {t("textVentanasOficina3")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3408,13 +3396,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado de 1.5 cv
+                                      {t("textAireGeneral1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3422,16 +3410,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 1 tira Led de
-                                      120.01 doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3439,14 +3424,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo, Apilable en R+1, R+2
+                                      {t("textOtrosOficina2")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -3468,7 +3452,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -3494,7 +3478,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitarios"
+                    title={t("textButtonSanitario")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -3513,7 +3497,7 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      El sanitario ideal para tus empleados
+                      {t("textWcDescripcionCorta")}
                     </Typography>
                   </CardContent>
                   <CardContent
@@ -3529,7 +3513,16 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitario Doble"
+                    // action={
+                    //   <Typography
+                    //     color="#3b8f1e"
+                    //     fontWeight="bold"
+                    //     variant="h6"
+                    //   >
+                    //     Ref: GSPSANXX
+                    //   </Typography>
+                    // }
+                    title={t("textButtonSanitarioDoble")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -3629,7 +3622,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -3664,7 +3657,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -3679,7 +3672,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3693,7 +3686,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3707,7 +3700,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3721,7 +3714,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3735,7 +3728,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -3749,13 +3742,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3763,15 +3756,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3779,14 +3770,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3794,13 +3784,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2 Puertas de aluminio de 70 x 200 cm
+                                      {t("textPuertasWcDoble")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3808,13 +3798,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2 Ventanas de aluminio de 40x40cm
+                                      {t("textVentanasWcDoble")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3822,13 +3812,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento Sanitario
+                                      {t("textEqSanitario")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2 Váter , 2 Lavabos.
+                                      {t("textEqSanitarioWcDoble")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3836,13 +3826,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      No
+                                      {t("textAireGeneral2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3850,16 +3840,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 1 tira Led de
-                                      120.01 doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -3867,14 +3854,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo.
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -3896,7 +3882,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -3922,7 +3908,16 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitario Tipo 1"
+                    action={
+                      <Typography
+                        color="#3b8f1e"
+                        fontWeight="bold"
+                        variant="h6"
+                      >
+                        Ref: GSPSAN01
+                      </Typography>
+                    }
+                    title={t("textButtonSanitario1")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -4018,7 +4013,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -4053,7 +4048,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -4068,7 +4063,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4082,7 +4077,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4096,7 +4091,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4110,7 +4105,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4124,7 +4119,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4138,13 +4133,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4152,15 +4147,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4168,14 +4161,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4183,14 +4175,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta de aluminio de 85 x 200 cm, 6
-                                      Puertas de aluminio de 70 x 200 cm
+                                      {t("textPuertasWc1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4198,14 +4189,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Ventana de aluminio de 80x100cm, 6
-                                      Ventanas de aluminio de 40 x 40 cm
+                                      {t("textVentanasWc1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4213,13 +4203,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento Sanitario
+                                      {t("textEqSanitario")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      6 Duchas, Accesorios y jaboneras
+                                      {t("textEqSanitarioWc1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4227,13 +4217,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      No
+                                      {t("textAireGeneral2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4241,16 +4231,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 1 tira Led de
-                                      120.01 doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4258,14 +4245,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo.
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -4287,7 +4273,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -4313,7 +4299,16 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitario Tipo 2"
+                    action={
+                      <Typography
+                        color="#3b8f1e"
+                        fontWeight="bold"
+                        variant="h6"
+                      >
+                        Ref: GSPSAN02
+                      </Typography>
+                    }
+                    title={t("textButtonSanitario2")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -4426,7 +4421,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -4461,7 +4456,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -4476,7 +4471,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4490,7 +4485,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4504,7 +4499,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4518,7 +4513,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4532,7 +4527,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4546,13 +4541,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4560,15 +4555,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4576,14 +4569,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4591,14 +4583,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta de aluminio de 85 x 200 cm, 2
-                                      Puertas de aluminio de 70 x 200 cm
+                                      {t("textPuertasWc2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4606,14 +4597,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Ventana de aluminio de 80x90cm, 2
-                                      Ventanas de aluminio de 35 x 33.5 cm
+                                      {t("textVentanasWc2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4621,14 +4611,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento Sanitario
+                                      {t("textEqSanitario")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2 Váter, 1 Urinario , 1 Lavabo, Accesorios
-                                      y jaboneras
+                                      {t("textEqSanitarioWc2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4636,13 +4625,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      No
+                                      {t("textAireGeneral2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4650,16 +4639,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 1 tira Led de 120.01, doble
-                                      interruptor de encendido y globo
-                                      impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4667,14 +4653,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo.
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -4696,7 +4681,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -4722,7 +4707,16 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitario Tipo 3"
+                    action={
+                      <Typography
+                        color="#3b8f1e"
+                        fontWeight="bold"
+                        variant="h6"
+                      >
+                        Ref: GSPSAN03
+                      </Typography>
+                    }
+                    title={t("textButtonSanitario3")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -4852,7 +4846,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -4887,7 +4881,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -4902,7 +4896,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4916,7 +4910,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4930,7 +4924,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4944,7 +4938,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4958,7 +4952,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -4972,13 +4966,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -4986,15 +4980,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5002,14 +4994,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5017,14 +5008,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta de aluminio de 85 x 200 cm, 6
-                                      Puertas de aluminio de 70 x 200 cm
+                                      {t("textPuertasWc1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5032,14 +5022,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Ventana de aluminio de 80x100cm, 6
-                                      Ventanas de aluminio de 40 x 40 cm
+                                      {t("textVentanasWc1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5047,14 +5036,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento Sanitario
+                                      {t("textEqSanitario")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      4 Váter, 4 Urinarios , 2 Lavabos, 2
-                                      Duchas, Accesorios y jaboneras
+                                      {t("textEqSanitarioWc3")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5062,13 +5050,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      No
+                                      {t("textAireGeneral2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5076,16 +5064,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 1 tira Led de
-                                      120.01, doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5093,14 +5078,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo.
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -5122,7 +5106,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -5148,7 +5132,16 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Sanitario Tipo 4"
+                    action={
+                      <Typography
+                        color="#3b8f1e"
+                        fontWeight="bold"
+                        variant="h6"
+                      >
+                        Ref: GSPSAN04
+                      </Typography>
+                    }
+                    title={t("textButtonSanitario4")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -5261,7 +5254,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -5296,7 +5289,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -5311,7 +5304,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5325,7 +5318,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5339,7 +5332,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5353,7 +5346,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5367,7 +5360,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5381,13 +5374,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5395,15 +5388,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5411,14 +5402,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5426,14 +5416,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta de aluminio de 85 x 200 cm, 5
-                                      Puertas de aluminio de 70 x 200 cm
+                                      {t("textPuertasWc4")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5441,14 +5430,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2 Ventanas de aluminio de 80x100cm, 5
-                                      Ventanas de aluminio de 35 x 33.5 cm
+                                      {t("textVentanasWc4")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5456,13 +5444,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento Sanitario
+                                      {t("textEqSanitario")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      5 Váter, 1 Lavabo, Accesorios y jaboneras
+                                      {t("textEqSanitarioWc4")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5470,13 +5458,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Aire Acondicionado
+                                      {t("textAire")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      No
+                                      {t("textAireGeneral2")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5484,16 +5472,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 1 tira Led de 120.01, 6
-                                      interruptores de encendido y 5 globos
-                                      impermeable exterior e interior.
+                                      {t("textElectricidadWc4")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5501,14 +5486,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo.
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -5530,7 +5514,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -5556,7 +5540,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Vestuarios"
+                    title={t("textButtonVestuarios")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -5688,7 +5672,7 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       {/* <Grid item xs={12}>
@@ -5723,7 +5707,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Caracteristicas Tecnicas
+                              {t("textTittleCaracteristicas")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
@@ -5738,7 +5722,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Longitud
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5752,7 +5736,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ancho
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5766,7 +5750,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura Total
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5780,7 +5764,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5794,7 +5778,7 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Peso
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
@@ -5808,13 +5792,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Estructura
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Estructura de metal galvanizado
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5822,15 +5806,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Paneles
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Cerramiento en paneles sándwich
-                                      Galvanizados con espuma de poliuretano
-                                      expandido de 50mm
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5838,14 +5820,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Suelo
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo contrachapado repelente al agua,
-                                      revestimiento de alfombra de PVC Gerflex
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5853,13 +5834,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Puertas
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Puerta de aluminio de 85 x 200 cm
+                                      {t("textPuertasOficina1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5867,13 +5848,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Ventanas
+                                      {t("textVentanas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 Ventana de aluminio de 100x100cm
+                                      {t("textVentanasGarita1")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5881,14 +5862,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Equipamiento
+                                      {t("textEquipamiento")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      36 Estantes de madera y contrachapado,
-                                      bancos de madera, percheros de madera
+                                      {t("textEqVestuario")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5896,16 +5876,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Electricidad
+                                      {t("textElectricidad")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Instalación eléctrica completa: caja de
-                                      seguridad, 4 enchufes, 4 tiras Led de
-                                      120.01 doble interruptor de encendido y
-                                      globo impermeable exterior e interior.
+                                      {t("textElectricidadGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -5913,14 +5890,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Otros Componentes
+                                      {t("textOtros")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ganchos de elevación en cada extremo del
-                                      techo
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -5942,7 +5918,7 @@ export default function Productos() {
                               variant="h5"
                               sx={{ textDecoration: "underline" }}
                             >
-                              Dimensiones
+                              {t("textTittleDimensiones")}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>

@@ -120,6 +120,37 @@ export const translateEs = {
   textPuertasOficina1: "1 Puerta de aluminio de 85 x 200 cm",
   textOtrosOficina1:
     "Ganchos de elevación en cada extremo del techo, Opcional (Suministro e instalación de mesa fregadero metálica y grifería.)",
+  textPuertasOficina2: "1 Puerta doble hoja no vidriada 130 x 200 cm",
+  textVentanasOficina2: "3 Ventana de aluminio de 100 x 100 cm",
+  textOtrosOficina2:
+    "Ganchos de elevación en cada extremo del techo, Apilable en R+1, R+2",
+  textVentanasOficina3: "5 Ventanas de aluminio de 100 x 100 cm",
+  textWcDescripcionCorta: "El sanitario ideal para tus despliegues",
+  textPuertasWcDoble: "2 Puertas de aluminio de 70 x 200 cm",
+  textVentanasWcDoble: "2 Ventanas de aluminio de 40 x 40 cm",
+  textEqSanitarioWcDoble: "2 Váter , 2 Lavabos",
+  textPuertasWc1:
+    "1 Puerta de aluminio de 85 x 200 cm, 6 Puertas de aluminio de 70 x 200 cm",
+  textVentanasWc1:
+    "1 Ventana de aluminio de 80x100cm, 6 Ventanas de aluminio de 40 x 40 cm",
+  textEqSanitarioWc1: "6 Duchas, Accesorios y jaboneras",
+  textPuertasWc2:
+    "1 Puerta de aluminio de 85 x 200 cm, 2 Puertas de aluminio de 70 x 200 cm",
+  textVentanasWc2:
+    "1 Ventana de aluminio de 80x90cm, 2 Ventanas de aluminio de 35 x 33.5 cm",
+  textEqSanitarioWc2: "2 Váter, 1 Urinario , 1 Lavabo, Accesorios y jaboneras",
+  textEqSanitarioWc3:
+    "4 Váter, 4 Urinarios , 2 Lavabos, 2 Duchas, Accesorios y jaboneras",
+  textPuertasWc4:
+    "1 Puerta de aluminio de 85 x 200 cm, 5 Puertas de aluminio de 70 x 200 cm",
+  textVentanasWc4:
+    "2 Ventanas de aluminio de 80x100cm, 5 Ventanas de aluminio de 35 x 33.5 cm",
+  textEqSanitarioWc4: "5 Váter, 1 Lavabo, Accesorios y jaboneras",
+  textElectricidadWc4:
+    "Instalación eléctrica completa: caja de seguridad, 1 tira Led de 120.01, 6 interruptores de encendido y 5 globos impermeable exterior e interior.",
+  textEquipamiento: "Equipamiento",
+  textEqVestuario:
+    "36 Estantes de madera y contrachapado, bancos de madera, percheros de madera",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",
