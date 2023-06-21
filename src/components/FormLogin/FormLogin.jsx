@@ -16,10 +16,12 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const theme = createTheme();
 
 export default function FormLogin({ estado, vista }) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { login, authorization } = useAuthContext();
   const [user, setUser] = useState({
@@ -59,7 +61,7 @@ export default function FormLogin({ estado, vista }) {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Iniciar Sesion
+            {t("textTittleLogin")}
           </Typography>
           <Box
             component="form"
@@ -93,10 +95,10 @@ export default function FormLogin({ estado, vista }) {
               value={user.password}
               color="success"
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={<Checkbox value="remember" color="success" />}
               label="Recuerdame"
-            />
+            /> */}
             <Button
               type="submit"
               fullWidth
@@ -104,12 +106,12 @@ export default function FormLogin({ estado, vista }) {
               sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               color="success"
             >
-              Iniciar Sesion
+              {t("textTittleLogin")}
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  ¿Has perdido la contraseña?
+                  {t("textRecPass")}
                 </Link>
               </Grid>
               <Grid item>
@@ -118,7 +120,7 @@ export default function FormLogin({ estado, vista }) {
                   sx={{ cursor: "pointer" }}
                   onClick={() => handleChange()}
                 >
-                  {"¿No tienes Cuenta? Registrate"}
+                  {t("textSinRegister")}
                 </Link>
               </Grid>
             </Grid>

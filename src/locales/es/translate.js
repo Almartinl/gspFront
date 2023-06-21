@@ -271,4 +271,18 @@ export const translateEs = {
   textAlertButtonYesBorrarCuenta: "Si, Borrame !!",
   textAlertConfirmYesBorrarCuenta: "Borrado!",
   textAlertConfirmYesSubtittleBorrarCuenta: "Tu cuenta ha sido inabilitada",
+
+  //Login/Register
+  textTittleLogin: "Iniciar Sesion",
+  textSinRegister: "¿No tienes Cuenta? Registrate",
+  textRecPass: "¿Has perdido la contraseña?",
+  textTittleRegister: "Registrate",
+  textNombreRegister: "Nombre",
+  textApellidosRegister: "Apellidos",
+  textDirRegister: "Direccion",
+  textTelRegister: "Teléfono",
+  textConLogin: "¿Ya tienes cuenta? Inicia sesion",
+  textAlertRegisterOk: "Registrado",
+  textAlertRegisterOk2: "Usuario registrado correctamente",
+  textAlertRegisterError: "Usuario ya registrado",
 };

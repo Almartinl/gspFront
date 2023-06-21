@@ -14,6 +14,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { t } from "i18next";
 
 const initialUserState = {
   nombre: "",
@@ -52,13 +53,17 @@ export default function FormRegister({ vista, estado }) {
           title: "Rellena todos los campos",
         });
       } else if (response.status == 200) {
-        Swal.fire("Registrado", "Usuario registrado correctamente", "success");
+        Swal.fire(
+          t("textAlertRegisterOk"),
+          t("textAlertRegisterOk2"),
+          "success"
+        );
         setNewUsuario(initialUserState);
       } else if (response.status == 409) {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "Usuario ya registrado",
+          title: t("textAlertRegisterError"),
         });
       }
     });
@@ -86,7 +91,7 @@ export default function FormRegister({ vista, estado }) {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Registrate
+            {t("textTittleRegister")}
           </Typography>
           <Box component="form" noValidate onSubmit={registrar} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -97,7 +102,7 @@ export default function FormRegister({ vista, estado }) {
                   required
                   fullWidth
                   id="firstName"
-                  label="Nombre"
+                  label={t("textNombreRegister")}
                   autoFocus
                   value={newUsuario.nombre}
                   onChange={handleInput}
@@ -109,7 +114,7 @@ export default function FormRegister({ vista, estado }) {
                   required
                   fullWidth
                   id="lastName"
-                  label="Apellidos"
+                  label={t("textApellidosRegister")}
                   name="apellidos"
                   autoComplete="family-name"
                   value={newUsuario.apellidos}
@@ -122,7 +127,7 @@ export default function FormRegister({ vista, estado }) {
                   required
                   fullWidth
                   id="direccion"
-                  label="Direccion"
+                  label={t("textDirRegister")}
                   name="direccion"
                   autoComplete="direccion"
                   value={newUsuario.direccion}
@@ -135,7 +140,7 @@ export default function FormRegister({ vista, estado }) {
                   required
                   fullWidth
                   id="telefono"
-                  label="Telefono"
+                  label={t("textTelRegister")}
                   name="telefono"
                   autoComplete="telefono"
                   value={newUsuario.telefono}
@@ -171,12 +176,12 @@ export default function FormRegister({ vista, estado }) {
                 />
               </Grid>
               <Grid item xs={12}>
-                <FormControlLabel
+                {/* <FormControlLabel
                   control={
                     <Checkbox value="allowExtraEmails" color="success" />
                   }
                   label="Quiero recibir inspiración, promociones de marketing y actualizaciones por Email."
-                />
+                /> */}
               </Grid>
             </Grid>
             <Button
@@ -185,7 +190,7 @@ export default function FormRegister({ vista, estado }) {
               variant="contained"
               sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
             >
-              Registrate
+              {t("textTittleRegister")}
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
@@ -194,7 +199,7 @@ export default function FormRegister({ vista, estado }) {
                   sx={{ cursor: "pointer" }}
                   onClick={() => handleChange()}
                 >
-                  ¿Ya tienes cuenta? Inicia sesion
+                  {t("textConLogin")}
                 </Link>
               </Grid>
             </Grid>

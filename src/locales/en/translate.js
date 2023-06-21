@@ -272,4 +272,18 @@ export const translateEn = {
   textAlertButtonYesBorrarCuenta: "Yes, Delete Me!!",
   textAlertConfirmYesBorrarCuenta: "Deleted!",
   textAlertConfirmYesSubtittleBorrarCuenta: "Your account has been disabled",
+
+  //Login/Register
+  textTittleLogin: "Login",
+  textSinRegister: "Don't have an account? Register",
+  textRecPass: "Forgot password?",
+  textTittleRegister: "Register",
+  textNombreRegister: "Name",
+  textApellidosRegister: "Last Name",
+  textDirRegister: "Address",
+  textTelRegister: "Phone",
+  textConLogin: "Already have an account? Login",
+  textAlertRegisterOk: "Registered",
+  textAlertRegisterOk2: "User registered successfully",
+  textAlertRegisterError: "User already registered",
 };

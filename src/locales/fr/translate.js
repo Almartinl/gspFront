@@ -276,4 +276,18 @@ export const translateFr = {
   textAlertButtonYesBorrarCuenta: "Oui, Supprimez-moi !!",
   textAlertConfirmYesBorrarCuenta: "Supprimé !",
   textAlertConfirmYesSubtittleBorrarCuenta: "Votre compte a été désactivé",
+
+  //Login/Register
+  textTittleLogin: "Connexion",
+  textSinRegister: "Vous n'avez pas de compte? Inscrivez-vous",
+  textRecPass: "Mot de passe oublié ?",
+  textTittleRegister: "Inscription",
+  textNombreRegister: "Nom",
+  textApellidosRegister: "Noms de famille",
+  textDirRegister: "Adresse",
+  textTelRegister: "Téléphone",
+  textConLogin: "Vous avez déjà un compte ? Connectez-vous",
+  textAlertRegisterOk: "Inscrit",
+  textAlertRegisterOk2: "Utilisateur inscrit avec succès",
+  textAlertRegisterError: "Utilisateur déjà inscrit",
 };
