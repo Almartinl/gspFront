@@ -154,6 +154,24 @@ export const translateFr = {
   textEquipamiento: "Équipement",
   textEqVestuario:
     "36 Étagères en bois et contreplaqué, bancs en bois, porte-manteaux en bois",
+  textEstructuraDescripcionCorta:
+    "La structure est la partie la plus importante de toute construction",
+  textEstructuraDescripcion1:
+    "Nos structures métalliques, hangars et bâtiments industriels sont de très haute qualité et peuvent être personnalisés selon vos besoins, la taille du site et l'envergure à des prix imbattables.",
+  textEstructuraDescripcion2:
+    "En d'autres termes, nous pouvons réaliser des projets clé en main sur mesure pour répondre parfaitement à tous vos besoins et objectifs stratégiques.",
+  textEdificiosDescripcionCorta: "Bâtiments spéciaux préfabriqués",
+  textEdificiosDescripcion1:
+    "Nos bâtiments préfabriqués sont composés de structures légères en acier galvanisé, avec des parois et un toit en panneaux sandwich d'épaisseurs variables selon le projet, avec de la mousse de polyuréthane expansé comme isolant. Ils comprennent également des escaliers et des couloirs pour les bâtiments préfabriqués.",
+  textEdificiosDescripcion2:
+    "Leur montage ne nécessite pas de fondations spéciales ; dans la plupart des cas, une dalle de 15 ou 20 cm suffit pour installer les poteaux et les accessoires d'assemblage des panneaux sandwich.",
+  textNavesDescripcionCorta: "Bâtiments industriels et hangars",
+  textNavesDescripcion1:
+    "Nos structures métalliques, hangars et bâtiments industriels sont de très haute qualité et peuvent être personnalisés selon vos besoins, la taille du site et l'envergure à des prix imbattables.",
+  textContenedoresDescripcion1:
+    "Nos conteneurs maritimes équipés sont capables de résister à toutes les conditions difficiles de vos chantiers les plus éloignés. Ils vous permettent de placer votre équipement et votre équipe dans un endroit sûr, protégé contre le vol, l'incendie et les intempéries.",
+  textContenedoresDescripcion2:
+    "Nous vous aidons à prendre le contrôle de votre projet grâce à des solutions préfabriquées efficaces et innovantes qui ont un impact significatif sur votre performance quotidienne.",
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

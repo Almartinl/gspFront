@@ -152,6 +152,24 @@ export const translateEn = {
   textEquipamiento: "Equipment",
   textEqVestuario:
     "36 Wooden and plywood shelves, wooden benches, wooden coat racks",
+  textEstructuraDescripcionCorta:
+    "Structure is the most important part of any construction",
+  textEstructuraDescripcion1:
+    "Our metal structures, hangars, and industrial buildings are of very high quality and can be customized according to your needs, site size, and scope at unbeatable prices.",
+  textEstructuraDescripcion2:
+    "In other words, we can provide tailor-made turnkey projects to perfectly meet all your needs and strategic objectives.",
+  textEdificiosDescripcionCorta: "Prefabricated Special Buildings",
+  textEdificiosDescripcion1:
+    "Our prefabricated buildings are made of lightweight galvanized steel structures, with walls and roof made of sandwich panels of various thicknesses depending on the project, with expanded polyurethane foam as insulation. They also include stairs and corridors for the prefabricated buildings.",
+  textEdificiosDescripcion2:
+    "Their assembly does not require special foundations; in most cases, a 15 or 20 cm slab is sufficient to install the posts and assembly accessories of the sandwich panels.",
+  textNavesDescripcionCorta: "Industrial Buildings and Hangars",
+  textNavesDescripcion1:
+    "Our metal structures, hangars, and industrial buildings are of very high quality and can be customized according to your needs, site size, and scope at unbeatable prices.",
+  textContenedoresDescripcion1:
+    "Our equipped shipping containers are capable of withstanding all the harsh conditions of your most remote construction sites. They allow you to place your equipment and team in a safe place, protected from theft, fire, and bad weather.",
+  textContenedoresDescripcion2:
+    "We help you take control of your project with efficient and innovative prefabricated solutions that significantly impact your daily performance.",
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

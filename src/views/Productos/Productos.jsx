@@ -1498,13 +1498,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      longitud exterior
+                                      {t("textLongitud")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      6036 mm - disponible en 4835 mm
+                                      594.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1512,13 +1512,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      ancho exterior
+                                      {t("textAncho")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2435mm
+                                      240.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1526,13 +1526,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Altura del techo
+                                      {t("textAlturaTotal")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2500mm
+                                      280.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1540,13 +1540,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      altura total
+                                      {t("textAltura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2935mm
+                                      250.0 cm
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1554,14 +1554,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      revestimiento
+                                      {t("textPeso")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Paneles sándwich de espuma de poliuretano
-                                      de 40 mm
+                                      1200 kg
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1569,14 +1568,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Piso
+                                      {t("textEstructura")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Suelo de aglomerado hidrófugo de 22 mm
-                                      (CTBH)
+                                      {t("textEstructuraGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1584,13 +1582,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Calefacción
+                                      {t("textPaneles")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      1 convector de 2000 W
+                                      {t("textPanelesGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1598,13 +1596,13 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      electricidad
+                                      {t("textSuelo")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      2x2 fluorescentes 36W - 2 uds 16A
+                                      {t("textSuelosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                   <TableRow>
@@ -1612,14 +1610,69 @@ export default function Productos() {
                                       style={{ width: "25%" }}
                                       align="left"
                                     >
-                                      Carpintería
+                                      {t("textPuertas")}
                                     </TableCell>
                                     <TableCell
                                       style={{ maxWidth: "75%" }}
                                       align="left"
                                     >
-                                      Ventana de PVC - doble acristalamiento
-                                      4-15-4 con persiana enrollable
+                                      {t("textPuertasOficina1")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textVentanas")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textVentanasGarita1")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textEquipamiento")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textEqVestuario")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textElectricidad")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textElectricidadGeneral")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textOtros")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textOtrosGeneral")}
                                     </TableCell>
                                   </TableRow>
                                 </TableBody>
@@ -1645,7 +1698,13 @@ export default function Productos() {
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <img src="../../PLANTA.jpg" width="100%"></img>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-vestuario.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
                           </AccordionDetails>
                         </Accordion>
                       </Grid>
@@ -5944,7 +6003,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Estructuras Metalicas"
+                    title={t("textCarouselEstructura")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -5963,7 +6022,7 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      La estructura es lo mas importante de toda obra
+                      {t("textEstructuraDescripcionCorta")}
                     </Typography>
                   </CardContent>
                   <CardContent
@@ -5975,20 +6034,15 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
-                          Nuestras estructuras metálicas, hangares, naves
-                          industriales son de muy alta calidad, y son
-                          personalizables según sus necesidades, el tamaño y el
-                          alcance del sitio a precios imbatibles.
+                          {t("textEstructuraDescripcion1")}
                         </Typography>
                         <Typography variant="body1" p={1}>
-                          Es decir, podemos realizar sus proyectos llave en mano
-                          a medida para cubrir perfectamente todas sus
-                          necesidades y objetivos estratégicos.
+                          {t("textEstructuraDescripcion2")}
                         </Typography>
                       </Grid>
                     </Grid>
@@ -6003,7 +6057,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Edificios Prefabricados"
+                    title={t("textCarouselEdificios")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -6022,7 +6076,7 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      Edificios especiales prefabricados
+                      {t("textEdificiosDescripcionCorta")}
                     </Typography>
                   </CardContent>
                   <CardContent
@@ -6034,23 +6088,15 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
-                          Nuestras naves prefabricadas están compuestas por
-                          estructuras ligeras de acero galvanizado, las paredes
-                          y la cubierta son de paneles sándwich de varios
-                          espesores según el proyecto con espuma de poliuretano
-                          expandido como aislante, a esto se suman las
-                          escaleras, los pasillos de las naves prefabricadas.
+                          {t("textEdificiosDescripcion1")}
                         </Typography>
                         <Typography variant="body1" p={1}>
-                          Su montaje no requiere cimentaciones especiales, en la
-                          mayoría de los casos una losa de 15 o 20 cm es
-                          suficiente para instalar los postes y accesorios de
-                          montaje de los paneles sándwich.
+                          {t("textEdificiosDescripcion2")}
                         </Typography>
                       </Grid>
                     </Grid>
@@ -6065,7 +6111,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Naves Industriales"
+                    title={t("textCarouselNaves")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -6084,7 +6130,7 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      Naves Industriales y Hangares
+                      {t("textNavesDescripcionCorta")}
                     </Typography>
                   </CardContent>
                   <CardContent
@@ -6096,20 +6142,15 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
-                          Nuestras estructuras metálicas, hangares, naves
-                          industriales son de muy alta calidad, y son
-                          personalizables según sus necesidades, el tamaño y el
-                          alcance del sitio a precios imbatibles.
+                          {t("textNavesDescripcion1")}.
                         </Typography>
                         <Typography variant="body1" p={1}>
-                          Es decir, podemos realizar sus proyectos llave en mano
-                          a medida para cubrir perfectamente todas sus
-                          necesidades y objetivos estratégicos.
+                          {t("textEstructuraDescripcion2")}.
                         </Typography>
                       </Grid>
                     </Grid>
@@ -6124,7 +6165,7 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    title="Contenedores Maritimos"
+                    title={t("textCarouselContenedores")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
                       align: "left",
@@ -6143,7 +6184,7 @@ export default function Productos() {
                       color="#3b8f1e"
                       fontWeight="bold"
                     >
-                      Contenedores Maritimos
+                      {t("textCarouselContenedores")}
                     </Typography>
                   </CardContent>
                   <CardContent
@@ -6155,20 +6196,15 @@ export default function Productos() {
                       color="white"
                       p={1}
                     >
-                      Descripcion
+                      {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
                         <Typography variant="body1" p={1}>
-                          Nuestras estructuras metálicas, hangares, naves
-                          industriales son de muy alta calidad, y son
-                          personalizables según sus necesidades, el tamaño y el
-                          alcance del sitio a precios imbatibles.
+                          {t("textContenedoresDescripcion1")}
                         </Typography>
                         <Typography variant="body1" p={1}>
-                          Es decir, podemos realizar sus proyectos llave en mano
-                          a medida para cubrir perfectamente todas sus
-                          necesidades y objetivos estratégicos.
+                          {t("textContenedoresDescripcion2")}
                         </Typography>
                       </Grid>
                     </Grid>

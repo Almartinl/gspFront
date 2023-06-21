@@ -851,8 +851,8 @@ export default function Configurador() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                height: "120vh",
-                objectFit: "cover",
+                height: "70vh",
+                objectFit: "contain",
                 backgroundImage: `url(${`https://almartindev.online/api/${planta[0].planta}`})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: {
@@ -881,7 +881,7 @@ export default function Configurador() {
                 justifyContent: "center",
                 height: "60vh",
                 objectFit: "cover",
-                backgroundImage: `url(../../intro.png)`,
+                backgroundImage: `url(../../introConf.png)`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top center",
                 backgroundSize: "contain",

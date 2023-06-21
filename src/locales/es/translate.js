@@ -151,6 +151,24 @@ export const translateEs = {
   textEquipamiento: "Equipamiento",
   textEqVestuario:
     "36 Estantes de madera y contrachapado, bancos de madera, percheros de madera",
+  textEstructuraDescripcionCorta:
+    "La estructura es lo mas importante de toda obra",
+  textEstructuraDescripcion1:
+    "Nuestras estructuras metálicas, hangares, naves industriales son de muy alta calidad, y son personalizables según sus necesidades, el tamaño y el alcance del sitio a precios imbatibles.",
+  textEstructuraDescripcion2:
+    "Es decir, podemos realizar sus proyectos llave en mano a medida para cubrir perfectamente todas sus necesidades y objetivos estratégicos.",
+  textEdificiosDescripcionCorta: "Edificios especiales prefabricados",
+  textEdificiosDescripcion1:
+    "Nuestras naves prefabricadas están compuestas por estructuras ligeras de acero galvanizado, las paredes y la cubierta son de paneles sándwich de varios espesores según el proyecto con espuma de poliuretano expandido como aislante, a esto se suman las escaleras, los pasillos de las naves prefabricadas.",
+  textEdificiosDescripcion2:
+    "Su montaje no requiere cimentaciones especiales, en la mayoría de los casos una losa de 15 o 20 cm es suficiente para instalar los postes y accesorios de montaje de los paneles sándwich.",
+  textNavesDescripcionCorta: "Naves Industriales y Hangares",
+  textNavesDescripcion1:
+    "Nuestras estructuras metálicas, hangares, naves industriales son de muy alta calidad, y son personalizables según sus necesidades, el tamaño y el alcance del sitio a precios imbatibles.",
+  textContenedoresDescripcion1:
+    "Nuestros contenedores marítimos equipados son capaces de soportar todas las difíciles condiciones de sus sitios de construcción más remotos, además, le permiten colocar sus equipos y su equipo en un lugar seguro, por lo tanto, protegido de robos, incendios y mal tiempo.",
+  textContenedoresDescripcion2:
+    "Te ayudamos a tomar el control de tu proyecto: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",
