@@ -257,6 +257,7 @@ export const translateEn = {
   tittleTextAlertOkContact: "Registered",
   textAlertOkContact: "Form submitted successfully",
   textAlertError2Contact: "Form already submitted",
+  textContactFoto: "NO PHOTO SELECTED",
 
   //Account
   tittleTextAccount: "My Account",

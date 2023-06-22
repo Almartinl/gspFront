@@ -1437,17 +1437,84 @@ export default function Productos() {
                   <CardMedia
                     component="img"
                     height="500"
-                    image="../../bungalowsalmacen.jpeg"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../bungalowsalmacen.jpeg"
+                    }
                     alt="img"
+                    sx={{ objectFit: "contain" }}
                   />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {t("textAlmacenDescripcionCorta")}
-                    </Typography>
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../bungalowsalmacen.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../bungalowsalmacen.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../almacen1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../almacen1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../almacen2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../almacen2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -1701,7 +1768,7 @@ export default function Productos() {
                             <CardMedia
                               component="img"
                               height="500"
-                              image="../../plano-vestuario.png"
+                              image="../../plano-almacen.png"
                               alt="img"
                               sx={{ objectFit: "contain" }}
                             />
@@ -6013,7 +6080,7 @@ export default function Productos() {
                   <CardMedia
                     component="img"
                     height="500"
-                    image="../../estructuras.jpg"
+                    image="../../32.jpg"
                     alt="img"
                   />
                   <CardContent>

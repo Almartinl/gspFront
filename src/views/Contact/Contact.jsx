@@ -20,6 +20,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 
 const initialContactState = {
   nombre: "",
@@ -38,6 +39,11 @@ export default function Contact() {
   const { t } = useTranslation();
 
   const [newContact, setNewContact] = useState(initialContactState);
+  const [photo, setPhoto] = useState("");
+
+  function handlePhoto(e) {
+    setPhoto(e.target.files[0]);
+  }
 
   function handleInput(e) {
     const newRegistro = {
@@ -49,27 +55,35 @@ export default function Contact() {
 
   function registrar(e) {
     e.preventDefault();
-
+    const formData = new FormData();
+    if (photo) {
+      formData.append("foto", photo);
+    }
+    formData.append("nombre", newContact.nombre);
+    formData.append("email", newContact.email);
+    formData.append("descripcion", newContact.descripcion);
+    formData.append("apellidos", newContact.apellidos);
+    formData.append("telefono", newContact.telefono);
     fetch("http://localhost:3000/api/user/contact", {
       method: "POST",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify(newContact),
+      body: formData,
     }).then((response) => {
       console.log(response.status);
-      if (response.status == 400) {
+      if (response.status === 400) {
         Swal.fire({
           position: "center",
           icon: "error",
           title: t("textAlertError1Contact"),
         });
-      } else if (response.status == 200) {
+      } else if (response.status === 200) {
         Swal.fire(
           t("tittleTextAlertOkContact"),
           t("textAlertOkContact"),
           "success"
         );
         setNewContact(initialContactState);
-      } else if (response.status == 409) {
+        setPhoto("");
+      } else if (response.status === 409) {
         Swal.fire({
           position: "center",
           icon: "error",
@@ -78,6 +92,7 @@ export default function Contact() {
       }
     });
   }
+
   return (
     <Container maxWidth="xl">
       <Grid
@@ -332,13 +347,41 @@ export default function Contact() {
                     color="success"
                   />
                 </Grid>
-                <Grid item xs={12}>
-                  <FormControlLabel
+                <Grid
+                  item
+                  xs={12}
+                  display="flex"
+                  flexDirection={{ xs: "column", sm: "row" }}
+                  alignItems={{ sm: "center" }}
+                  justifyContent={{ sm: "flex-start" }}
+                  gap={{ sm: 2 }}
+                >
+                  {/* <FormControlLabel
                     control={
                       <Checkbox value="allowExtraEmails" color="primary" />
                     }
                     label={t("textContactPolicity")}
-                  />
+                  /> */}
+                  <Button
+                    variant="contained"
+                    component="label"
+                    sx={{
+                      gap: 0.5,
+                      bgcolor: "#3b8f1e",
+                      ":hover": { bgcolor: "darkgreen", color: "white" },
+                    }}
+                  >
+                    <AddAPhotoIcon />
+                    Photo
+                    <input hidden multiple onChange={handlePhoto} type="file" />
+                  </Button>
+                  {photo ? (
+                    <Typography variant="button">{photo.name}</Typography>
+                  ) : (
+                    <Typography variant="button">
+                      {t("textContactFoto")}
+                    </Typography>
+                  )}
                 </Grid>
               </Grid>
               <Button
