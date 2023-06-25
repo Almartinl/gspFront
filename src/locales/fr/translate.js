@@ -295,6 +295,7 @@ export const translateFr = {
   textAlertButtonYesBorrarCuenta: "Oui, Supprimez-moi !!",
   textAlertConfirmYesBorrarCuenta: "Supprimé !",
   textAlertConfirmYesSubtittleBorrarCuenta: "Votre compte a été désactivé",
+  textAlertPresupuestoCuenta: "Budget envoyé correctement",
 
   //Login/Register
   textTittleLogin: "Connexion",
@@ -309,4 +310,5 @@ export const translateFr = {
   textAlertRegisterOk: "Inscrit",
   textAlertRegisterOk2: "Utilisateur inscrit avec succès",
   textAlertRegisterError: "Utilisateur déjà inscrit",
+  textAlertRegisterError2: "Vérifier tous les champs",
 };

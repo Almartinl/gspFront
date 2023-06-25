@@ -40,7 +40,7 @@ export default function FormRegister({ vista, estado }) {
   function registrar(e) {
     e.preventDefault();
 
-    fetch("https://almartindev.online/api/user/", {
+    fetch("http://localhost:3000/api/user/", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newUsuario),
@@ -50,7 +50,7 @@ export default function FormRegister({ vista, estado }) {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "Rellena todos los campos",
+          title: t("textAlertRegisterError2"),
         });
       } else if (response.status == 200) {
         Swal.fire(

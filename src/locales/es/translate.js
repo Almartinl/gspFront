@@ -290,6 +290,7 @@ export const translateEs = {
   textAlertButtonYesBorrarCuenta: "Si, Borrame !!",
   textAlertConfirmYesBorrarCuenta: "Borrado!",
   textAlertConfirmYesSubtittleBorrarCuenta: "Tu cuenta ha sido inabilitada",
+  textAlertPresupuestoCuenta: "Presupuesto Enviado Correctamente",
 
   //Login/Register
   textTittleLogin: "Iniciar Sesion",
@@ -304,4 +305,5 @@ export const translateEs = {
   textAlertRegisterOk: "Registrado",
   textAlertRegisterOk2: "Usuario registrado correctamente",
   textAlertRegisterError: "Usuario ya registrado",
+  textAlertRegisterError2: "Verifica todos los campos",
 };

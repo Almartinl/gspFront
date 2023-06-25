@@ -81,6 +81,7 @@ export default function Account() {
   const [listaPresupuesto, setListaPresupuesto] = useState([]);
   const presupuesto = {
     usuario: dataToken.id,
+    email: dataToken.email,
     descripcion: listaPresupuesto,
   };
   const [disableButton, setDisableButton] = useState([]);
@@ -427,7 +428,7 @@ export default function Account() {
     if (listaPresupuesto.length < 1) {
       return;
     }
-    fetch(`https://almartindev.online/api/bungalows/addpresupuesto`, {
+    fetch(`http://localhost:3000/api/bungalows/addpresupuesto`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -441,7 +442,7 @@ export default function Account() {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Presupuesto Enviado Correctamente",
+          title: t("textAlertPresupuestoCuenta"),
         });
         setListaPresupuesto([]);
       }
