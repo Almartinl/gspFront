@@ -4,6 +4,7 @@ export const translateEn = {
   buttonGuardar: "Save",
   button3d: "3D View",
   buttonBorrarCampo: "Delete Field",
+  buttonAceptar: "Accept",
 
   //NavBar
   buttonIni: "Home",
@@ -307,4 +308,65 @@ export const translateEn = {
   textAlertRegisterOk2: "User registered successfully",
   textAlertRegisterError: "User already registered",
   textAlertRegisterError2: "Check all fields",
+
+  //Cookies
+  textCookies:
+    "We use cookies to enhance your experience on our website. By continuing to browse, you accept our cookie policy.",
+  buttonTextPolicity: "View Policies",
+
+  //Policity
+  textTittlePolicity: "Privacy Policy",
+  textPolicity: `<p>At Global Solutions Prefabriquees, we are committed to protecting the privacy and personal data of our users and visitors to our website. This Privacy Policy describes how we collect, use, disclose, and protect the personal information we obtain through our website.</p>
+
+  <p>Collection of Information</p>
+
+  <p>When you visit our website, we may collect personally identifiable information, such as your name, email address, phone number, and any other information you voluntarily provide to us through contact forms or registrations on our website.</p>
+
+  <p>In addition, we may automatically collect non-personally identifiable information, such as IP address, browser type, internet service provider, referring/exit pages, viewed files on our website, operating system, date/time, and clickstream data.</p>
+
+  <p>Use of Information</p>
+
+  <p>We use the collected information for the following purposes:</p>
+
+  <ol>
+    <li>To provide and improve our products and services.</li>
+    <li>To respond to your inquiries, questions, and requests.</li>
+    <li>To send communications related to our products, services, and updates.</li>
+    <li>To personalize and enhance your experience on our website.</li>
+    <li>To conduct internal analysis and studies to improve our products and services.</li>
+    <li>To comply with applicable legal and regulatory obligations.</li>
+    <li>To protect our rights, property, and safety, as well as the rights, property, and safety of our users and third parties.</li>
+  </ol>
+
+  <p>Disclosure of Information</p>
+
+  <p>We may share your personal information with third parties under the following circumstances:</p>
+
+  <ul>
+    <li>With service providers who assist us in operating our website and providing our products and services.</li>
+    <li>With legal authorities, government agencies, or other parties when necessary to comply with applicable laws, regulations, legal processes, or government requests.</li>
+    <li>In connection with a merger, acquisition, sale of assets, or any other business transaction, in which your personal information may be transferred as a business asset.</li>
+    <li>With your consent or as permitted by law.</li>
+  </ul>
+
+  <p>Information Security</p>
+
+  <p>We take reasonable measures to protect personal information from loss, misuse, unauthorized access, disclosure, alteration, and destruction. We implement appropriate technical, administrative, and physical safeguards to protect the personal information we collect and maintain.</p>
+
+  <p>Links to Third-Party Websites</p>
+
+  <p>Our website may contain links to other websites that are not operated by us. We are not responsible for the privacy practices or content of these third-party websites. We recommend that you review the privacy policies of these websites before providing them with your personal information.</p>
+
+  <p>Changes to this Privacy Policy</p>
+
+  <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the updated version on our website or through other appropriate means. We recommend that you review this Privacy Policy periodically to stay informed about how we protect your personal information.</p>
+
+  <p>Contact</p>
+
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, you can contact us through the means provided on our website.</p>
+
+  <p>Conclusion</p>
+
+  <p>At Global Solutions Prefabriquees, we value your privacy and strive to responsibly protect your personal data. By using our website, you agree to the terms of this Privacy Policy.</p>
+`,
 };

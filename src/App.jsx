@@ -23,8 +23,21 @@ import Proyectos from "./views/Proyectos/Proyectos";
 import Nosotros from "./views/Nosotros/Nosotros";
 import DashboardProductos from "./views/DashboardProductos/DashboardProductos";
 import DashboardProyectos from "./views/DashboardProyectos/DashboardProyectos";
+import Cookies from "./components/Cookies/Cookies";
+import Policity from "./views/policity/Policity";
 
 function App() {
+  const [showCookieNotification, setShowCookieNotification] = useState(
+    !localStorage.getItem("cookiesAccepted")
+  );
+
+  const handleCookieAccept = () => {
+    localStorage.setItem("cookiesAccepted", true);
+    setShowCookieNotification(false);
+  };
+  const handleCookieClose = () => {
+    setShowCookieNotification(false);
+  };
   return (
     <AuthContextProvider>
       <BrowserRouter>
@@ -61,8 +74,15 @@ function App() {
           <Route path="/login" element={<Layout />}>
             <Route index element={<Login />} />
           </Route>
+
+          <Route path="/policity" element={<Layout />}>
+            <Route index element={<Policity />} />
+          </Route>
         </Routes>
       </BrowserRouter>
+      {showCookieNotification && (
+        <Cookies onAccept={handleCookieAccept} onClose={handleCookieClose} />
+      )}
     </AuthContextProvider>
   );
 }

@@ -4,6 +4,7 @@ export const translateEs = {
   buttonGuardar: "Guardar",
   button3d: "Vista 3d",
   buttonBorrarCampo: "Borrar Campo",
+  buttonAceptar: "Aceptar",
 
   //NavBar
   buttonIni: "Inicio",
@@ -306,4 +307,65 @@ export const translateEs = {
   textAlertRegisterOk2: "Usuario registrado correctamente",
   textAlertRegisterError: "Usuario ya registrado",
   textAlertRegisterError2: "Verifica todos los campos",
+
+  //Cookies
+  textCookies:
+    "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra política de cookie.",
+  buttonTextPolicity: "Ver Politicas",
+
+  //Policity
+  textTittlePolicity: "Política de Privacidad",
+  textPolicity: `<p>En Global Solutions Prefabriquees, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios y visitantes de nuestro sitio web. Esta Política de Privacidad describe cómo recopilamos, utilizamos, divulgamos y protegemos la información personal que obtenemos a través de nuestro sitio web.</p>
+
+  <p>Recopilación de información</p>
+
+  <p>Cuando visitas nuestro sitio web, es posible que recopilemos información personal identificable, como tu nombre, dirección de correo electrónico, número de teléfono y cualquier otra información que nos proporciones voluntariamente a través de formularios de contacto o registros en nuestro sitio web.</p>
+
+  <p>Además, podemos recopilar información no personal identificable automáticamente, como la dirección IP, tipo de navegador, proveedor de servicios de Internet, páginas de referencia/salida, archivos visualizados en nuestro sitio web, sistema operativo, fecha/hora y datos de clics.</p>
+
+  <p>Uso de la información</p>
+
+  <p>Utilizamos la información recopilada para los siguientes propósitos:</p>
+
+  <ol>
+    <li>Proporcionar y mejorar nuestros productos y servicios.</li>
+    <li>Responder a tus consultas, preguntas y solicitudes.</li>
+    <li>Enviar comunicaciones relacionadas con nuestros productos, servicios y actualizaciones.</li>
+    <li>Personalizar y mejorar tu experiencia en nuestro sitio web.</li>
+    <li>Realizar análisis y estudios internos para mejorar nuestros productos y servicios.</li>
+    <li>Cumplir con las obligaciones legales y reglamentarias aplicables.</li>
+    <li>Proteger nuestros derechos, propiedad y seguridad, así como los derechos, propiedad y seguridad de nuestros usuarios y terceros.</li>
+  </ol>
+
+  <p>Divulgación de la información</p>
+
+  <p>Podemos compartir tu información personal con terceros en las siguientes circunstancias:</p>
+
+  <ul>
+    <li>Con proveedores de servicios que nos ayudan a operar nuestro sitio web y brindar nuestros productos y servicios.</li>
+    <li>Con autoridades legales, organismos gubernamentales u otras partes cuando sea necesario para cumplir con las leyes, regulaciones, procesos legales o solicitudes gubernamentales aplicables.</li>
+    <li>En relación con una fusión, adquisición, venta de activos o cualquier otra transacción empresarial, en la cual tu información personal pueda ser transferida como un activo comercial.</li>
+    <li>Con tu consentimiento o según lo permitido por ley.</li>
+  </ul>
+
+  <p>Seguridad de la información</p>
+
+  <p>Tomamos medidas razonables para proteger la información personal de pérdida, uso indebido, acceso no autorizado, divulgación, alteración y destrucción. Implementamos medidas técnicas, administrativas y físicas apropiadas para proteger la información personal que recopilamos y mantenemos.</p>
+
+  <p>Enlaces a sitios web de terceros</p>
+
+  <p>Nuestro sitio web puede contener enlaces a otros sitios web que no son operados por nosotros. No somos responsables de las prácticas de privacidad o el contenido de estos sitios web de terceros. Te recomendamos que revises las políticas de privacidad de estos sitios web antes de proporcionarles tu información personal.</p>
+
+  <p>Cambios a esta Política de Privacidad</p>
+
+  <p>Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio significativo publicando la versión actualizada en nuestro sitio web o mediante otros medios apropiados. Te recomendamos que revises esta Política de Privacidad periódicamente para estar informado sobre cómo protegemos tu información personal.</p>
+
+  <p>Contacto</p>
+
+  <p>Si tienes alguna pregunta, inquietud o solicitud relacionada con esta Política de Privacidad o el manejo de tu información personal, puedes contactarnos a través de los medios proporcionados en nuestro sitio web.</p>
+
+  <p>Conclusión</p>
+
+  <p>En Global Solutions Prefabriquees, valoramos tu privacidad y nos esforzamos por proteger tus datos personales de manera responsable. Al utilizar nuestro sitio web, aceptas los términos de esta Política de Privacidad.</p>
+`,
 };
