@@ -304,7 +304,8 @@ export const translateEs = {
   textTelRegister: "Teléfono",
   textConLogin: "¿Ya tienes cuenta? Inicia sesion",
   textAlertRegisterOk: "Registrado",
-  textAlertRegisterOk2: "Usuario registrado correctamente",
+  textAlertRegisterOk2:
+    "En breve le llegara un correo con el enlace de verificacion, Recuerde que sin verificar no podra acceder a su cuenta.",
   textAlertRegisterError: "Usuario ya registrado",
   textAlertRegisterError2: "Verifica todos los campos",
 

@@ -305,7 +305,8 @@ export const translateEn = {
   textTelRegister: "Phone",
   textConLogin: "Already have an account? Login",
   textAlertRegisterOk: "Registered",
-  textAlertRegisterOk2: "User registered successfully",
+  textAlertRegisterOk2:
+    "You will shortly receive an e-mail with the verification link. Remember that without verifying you will not be able to access your account.",
   textAlertRegisterError: "User already registered",
   textAlertRegisterError2: "Check all fields",
 
