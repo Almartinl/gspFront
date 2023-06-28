@@ -1400,9 +1400,10 @@ export default function Productos() {
                       />
                       <CardMedia
                         component="img"
-                        height="500"
+                        height={{ xs: "200", md: "500" }}
                         image={`https://almartindev.online/api${bungalowObras[0].foto}`}
                         alt="img"
+                        sx={{ objectFit: { xs: "contain", md: "cover" } }}
                       />
                       <CardContent>
                         <Typography
@@ -1443,7 +1444,7 @@ export default function Productos() {
                         : "../../bungalowsalmacen.jpeg"
                     }
                     alt="img"
-                    sx={{ objectFit: "contain" }}
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <Container xs={12}>
                     <Divider
@@ -1799,6 +1800,7 @@ export default function Productos() {
                     height="500"
                     image="../../caseta.jpg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -2522,6 +2524,7 @@ export default function Productos() {
                     height="500"
                     image="../../oficina.jpeg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -3616,6 +3619,7 @@ export default function Productos() {
                     height="500"
                     image="../../wc.jpeg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -6082,6 +6086,7 @@ export default function Productos() {
                     height="500"
                     image="../../32.jpg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -6136,6 +6141,7 @@ export default function Productos() {
                     height="500"
                     image="../../edificio.jpeg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -6190,6 +6196,7 @@ export default function Productos() {
                     height="500"
                     image="../../hangar2.jpg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography
@@ -6244,6 +6251,7 @@ export default function Productos() {
                     height="500"
                     image="../../contenedor-maritimo.jpg"
                     alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
                   <CardContent>
                     <Typography

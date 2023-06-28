@@ -400,7 +400,7 @@ export default function Contact() {
         <Grid
           container
           justifyContent="center"
-          sx={{ marginTop: { xs: 60, md: 10 } }}
+          sx={{ marginTop: { xs: 25, md: 10 } }}
           gap={4}
         >
           <Typography variant="h4" fontWeight="800" color="#3b8f1e">
