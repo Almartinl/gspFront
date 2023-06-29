@@ -25,6 +25,7 @@ import DashboardProductos from "./views/DashboardProductos/DashboardProductos";
 import DashboardProyectos from "./views/DashboardProyectos/DashboardProyectos";
 import Cookies from "./components/Cookies/Cookies";
 import Policity from "./views/policity/Policity";
+import DashboardOfertas from "./views/DashboardOfertas/DashboardOfertas";
 
 function App() {
   const [showCookieNotification, setShowCookieNotification] = useState(
@@ -62,10 +63,11 @@ function App() {
               element={<DashboardPresupuestos />}
             />
             <Route path="/dashboard/contacto" element={<DashboardContacto />} />
-            <Route
+            {/* <Route
               path="/dashboard/productos"
               element={<DashboardProductos />}
-            />
+            /> */}
+            <Route path="/dashboard/publi" element={<DashboardOfertas />} />
             <Route
               path="/dashboard/proyectos"
               element={<DashboardProyectos />}

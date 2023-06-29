@@ -9,6 +9,7 @@ import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import CategoryIcon from "@mui/icons-material/Category";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import TableViewIcon from "@mui/icons-material/TableView";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -244,7 +245,7 @@ export default function DashboardInicio() {
               gap="56px"
             >
               <Typography variant="h4" color="#3b8f1e">
-                Productos
+                Ofertas
               </Typography>
 
               <Typography
@@ -259,7 +260,7 @@ export default function DashboardInicio() {
                   gap: "5%",
                 }}
               >
-                <CategoryIcon fontSize="large" />8
+                <LocalOfferIcon fontSize="large" />0
               </Typography>
             </Grid>
           </Paper>

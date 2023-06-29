@@ -1,5 +1,6 @@
 import jwtDecode from "jwt-decode";
 import { createContext, useContext, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
 const AuthContext = createContext({
@@ -23,6 +24,7 @@ export function AuthContextProvider({ children }) {
   const [authorization, setAuthorization] = useState(
     window.localStorage.getItem(MY_AUTH_APP) ?? null
   );
+  const { t } = useTranslation();
   const [dataToken, setDataToken] = useState(
     JSON.parse(window.localStorage.getItem(MY_AUTH_APP_DATA)) ?? {
       email: null,
@@ -32,7 +34,7 @@ export function AuthContextProvider({ children }) {
   );
   async function login(e, user) {
     e.preventDefault();
-    console.log(user);
+    // console.log(user);
 
     await fetch("https://almartindev.online/api/user/login", {
       method: "POST",
@@ -45,7 +47,7 @@ export function AuthContextProvider({ children }) {
           Swal.fire({
             position: "center",
             icon: "error",
-            title: "Introduce un Email correcto",
+            title: t("textAlertLoginError1"),
           });
         } else if (response.status == 200) {
           return response.json();
@@ -53,13 +55,13 @@ export function AuthContextProvider({ children }) {
           Swal.fire({
             position: "center",
             icon: "error",
-            title: "Usuario o contraseña erronea",
+            title: t("textAlertLoginError2"),
           });
         } else if (response.status == 403) {
           Swal.fire({
             position: "center",
             icon: "error",
-            title: "Usuario Inactivo, Por favor contacte con el administrador",
+            title: t("textAlertLoginError3"),
           });
         }
       })
@@ -71,10 +73,10 @@ export function AuthContextProvider({ children }) {
           JSON.stringify(jwtDecode(data.jwt))
         );
         window.localStorage.setItem(MY_AUTH_APP, data.jwt);
-        console.log(data.jwt);
+        // console.log(data.jwt);
       });
   }
-  console.log(localStorage.getItem(MY_AUTH_APP));
+  // console.log(localStorage.getItem(MY_AUTH_APP));
 
   function logout() {
     window.localStorage.removeItem(MY_AUTH_APP);

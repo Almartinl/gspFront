@@ -20,6 +20,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
 const drawerWidth = 240;
 
@@ -197,8 +198,22 @@ function DashboardContent() {
                 onClick={() => {
                   Linkto("/dashboard/productos", "Productos");
                 }}
+                disabled
               >
                 <CategoryIcon />
+              </Button>
+              <Button
+                color="primary"
+                sx={{
+                  py: "16px",
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
+                }}
+                onClick={() => {
+                  Linkto("/dashboard/publi", "Ofertas");
+                }}
+              >
+                <LocalOfferIcon />
               </Button>
               <Button
                 color="primary"
@@ -317,9 +332,28 @@ function DashboardContent() {
                 onClick={() => {
                   Linkto("/dashboard/productos", "Productos");
                 }}
+                disabled
               >
                 <CategoryIcon />
                 Productos
+              </Button>
+              <Button
+                color="primary"
+                size="large"
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  gap: "20%",
+                  py: "16px",
+                  color: "#3b8f1e",
+                  ":hover": { bgcolor: "#3b8f1e", color: "white" },
+                }}
+                onClick={() => {
+                  Linkto("/dashboard/publi", "Ofertas");
+                }}
+              >
+                <LocalOfferIcon />
+                Ofertas
               </Button>
               <Button
                 color="primary"

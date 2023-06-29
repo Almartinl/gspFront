@@ -52,7 +52,6 @@ export default function DashboardUsuarios() {
 
   function handleDeleteUser(e, id) {
     e.preventDefault();
-    setStateChange(!stateChange);
     fetch(`https://almartindev.online/api/user/delete/${id}`, {
       method: "PATCH",
       headers: {
@@ -67,6 +66,7 @@ export default function DashboardUsuarios() {
           icon: "success",
           title: "Usuario Borrado Correctamente",
         });
+        setStateChange(!stateChange);
       } else if (response.status == 409) {
         alert("usuario ya registrado");
       }
@@ -75,7 +75,7 @@ export default function DashboardUsuarios() {
 
   function activeUser(e, idUser) {
     e.preventDefault();
-    setStateChange(!stateChange);
+
     fetch(`https://almartindev.online/api/user/${idUser}`, {
       method: "PATCH",
       headers: {
@@ -93,6 +93,7 @@ export default function DashboardUsuarios() {
           icon: "success",
           title: "Usuario Activado Correctamente",
         });
+        setStateChange(!stateChange);
       } else if (response.status == 409) {
         alert("usuario ya registrado");
       }

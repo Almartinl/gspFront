@@ -308,6 +308,10 @@ export const translateEs = {
     "En breve le llegara un correo con el enlace de verificacion, Recuerde que sin verificar no podra acceder a su cuenta.",
   textAlertRegisterError: "Usuario ya registrado",
   textAlertRegisterError2: "Verifica todos los campos",
+  textAlertLoginError1: "Introduce un Email correcto",
+  textAlertLoginError2: "Email o Contraseña incorrecta",
+  textAlertLoginError3:
+    "Usuario Inactivo, Por favor contacte con el administrador",
 
   //Cookies
   textCookies:

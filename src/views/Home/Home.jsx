@@ -1,6 +1,8 @@
 import "./home.css";
 import {
   Button,
+  Card,
+  CardMedia,
   Container,
   Divider,
   Grid,
@@ -12,11 +14,13 @@ import CarouselPrincipal from "../../components/CarouselPrincipal/CarouselPrinci
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   document.title = "Inicio";
 
   const { t } = useTranslation();
+  const [offer, setOffer] = useState([]);
 
   const beneficios = [
     t("contentTextBen1"),
@@ -31,9 +35,46 @@ export default function Home() {
     t("contentTextBen10"),
   ];
 
+  useEffect(() => {
+    async function fetchOffer() {
+      const response = await fetch(
+        `https://almartindev.online/api/product/offer/active`
+      );
+      const data = await response.json();
+      setOffer(data);
+    }
+    fetchOffer();
+  }, []);
+
+  console.log(offer);
+
   return (
     <Grid marginTop={4}>
       <CarouselPrincipal />
+      {offer.length > 0 && (
+        <Container
+          maxWidth="xl"
+          sx={{
+            marginTop: "24px",
+            paddingTop: { xs: 3, md: 10 },
+            paddingBottom: 0,
+          }}
+        >
+          <Grid container item xs={12} justifyContent="center">
+            {offer.map((image) => (
+              <Card key={image.id}>
+                <CardMedia
+                  component="img"
+                  height={{ xs: 250, md: 550 }}
+                  image={`https://almartindev.online/api${image.path}`}
+                  alt="img"
+                  sx={{ objectFit: "cover" }}
+                />
+              </Card>
+            ))}
+          </Grid>
+        </Container>
+      )}
 
       <Container
         maxWidth="xl"
@@ -69,7 +110,7 @@ export default function Home() {
             boxShadow="3px 4px 5px 2px #727272"
             marginTop={{ xs: 5, md: 0 }}
           >
-            <Typography color="white" p={4}>
+            <Grid color="white" p={4}>
               {t("contentTextVent")}
               <br />
               <br />{" "}
@@ -77,7 +118,7 @@ export default function Home() {
               <br />
               <li>{t("contentTextVent3")}</li>
               <li>{t("contentTextVent4")}</li>
-            </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
@@ -119,13 +160,13 @@ export default function Home() {
             boxShadow="3px 4px 5px 2px #727272"
             marginTop={{ xs: 5, md: 0 }}
           >
-            <Typography color="white" p={4}>
+            <Grid color="white" p={4}>
               <ol>
-                {beneficios.map((beneficio) => (
-                  <li>{beneficio}</li>
+                {beneficios.map((beneficio, index) => (
+                  <li key={index}>{beneficio}</li>
                 ))}
               </ol>
-            </Typography>
+            </Grid>
           </Grid>
           <Grid
             item
@@ -303,7 +344,7 @@ export default function Home() {
             >
               {t("textTittleContact")}
             </Typography>
-            <Grid md={0} xs={12} mt={8}>
+            <Grid item md={0} xs={12} mt={8}>
               <Link className="epilepsy-button" to="/contacto">
                 {t("textButtonClick")}
               </Link>

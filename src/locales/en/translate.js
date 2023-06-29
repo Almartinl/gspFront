@@ -309,6 +309,9 @@ export const translateEn = {
     "You will shortly receive an e-mail with the verification link. Remember that without verifying you will not be able to access your account.",
   textAlertRegisterError: "User already registered",
   textAlertRegisterError2: "Check all fields",
+  textAlertLoginError1: "Please enter a valid email",
+  textAlertLoginError2: "Incorrect email or password",
+  textAlertLoginError3: "Inactive user. Please contact the administrator",
 
   //Cookies
   textCookies:

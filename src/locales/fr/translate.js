@@ -313,6 +313,10 @@ export const translateFr = {
     "Vous recevrez sous peu un e-mail avec le lien de vérification. N'oubliez pas que sans vérification, vous ne pourrez pas accéder à votre compte.",
   textAlertRegisterError: "Utilisateur déjà inscrit",
   textAlertRegisterError2: "Vérifier tous les champs",
+  textAlertLoginError1: "Veuillez entrer une adresse e-mail valide",
+  textAlertLoginError2: "E-mail ou mot de passe incorrect",
+  textAlertLoginError3:
+    "Utilisateur inactif. Veuillez contacter l'administrateur",
 
   //Cookies
   textCookies:
