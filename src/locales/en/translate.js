@@ -192,6 +192,7 @@ export const translateEn = {
     mixto: "mixed",
     wc: "toilet",
     almacen: "storage",
+    vestuario: "changing room",
   },
   bungalowa: {
     diafano: "open-plan",

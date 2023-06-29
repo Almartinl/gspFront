@@ -194,6 +194,7 @@ export const translateFr = {
     mixto: "mixte",
     wc: "toilettes",
     almacen: "stockage",
+    vestuario: "vestiaire",
   },
   bungalowa: {
     oficina: "bureau",

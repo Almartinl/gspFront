@@ -191,6 +191,7 @@ export const translateEs = {
     mixto: "mixto",
     wc: "wc",
     almacen: "almacen",
+    vestuario: "vestuario",
   },
   bungalowa: {
     diafano: "diafano",
