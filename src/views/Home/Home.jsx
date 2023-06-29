@@ -43,7 +43,14 @@ export default function Home() {
       const data = await response.json();
       setOffer(data);
     }
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
     fetchOffer();
+    scrollToTop();
   }, []);
 
   console.log(offer);

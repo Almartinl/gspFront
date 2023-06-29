@@ -46,8 +46,6 @@ export default function Proyectos() {
     }
     fetchObras();
   }, []);
-  console.log(obras);
-  console.log(arrayCarousel);
   return (
     <Grid marginY={10}>
       <Container maxWidth="xl">

@@ -16,7 +16,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
@@ -52,6 +52,13 @@ export default function Contact() {
     };
     setNewContact(newRegistro);
   }
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scroll(0, 0);
+    };
+    scrollToTop();
+  }, []);
 
   function registrar(e) {
     e.preventDefault();

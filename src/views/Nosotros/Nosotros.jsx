@@ -1,10 +1,19 @@
 import { Container, Grid, Typography } from "@mui/material";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 export default function Nosotros() {
   document.title = "Sobre Nosotros";
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scroll(0, 0);
+    };
+    scrollToTop();
+  }, []);
+
   return (
     <Container maxWidth="md">
       <Grid>

@@ -65,6 +65,13 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function Account() {
   document.title = "Perfil";
 
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scroll(0, 0);
+    };
+    scrollToTop();
+  }, []);
+
   const { t } = useTranslation();
 
   const { dataToken, logout } = useAuthContext();
