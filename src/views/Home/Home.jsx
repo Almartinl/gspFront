@@ -72,7 +72,7 @@ export default function Home() {
               <Card key={image.id}>
                 <CardMedia
                   component="img"
-                  height={{ xs: 250, md: 550 }}
+                  height
                   image={`https://almartindev.online/api${image.path}`}
                   alt="img"
                   sx={{ objectFit: "cover" }}

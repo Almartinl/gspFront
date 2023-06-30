@@ -23,6 +23,7 @@ const initialUserState = {
   password: "",
   direccion: "",
   telefono: "",
+  passwordOk: "",
 };
 
 const theme = createTheme();
@@ -37,36 +38,44 @@ export default function FormRegister({ vista, estado }) {
     setNewUsuario(newRegistro);
   }
 
+  // function handleChangePassword2(e) {
+  //   e.preventDefault();
+  //   setPasswordOk(passwordOk);
+  // }
+
+  // const [passwordOk, setPasswordOk] = useState("");
+
   function registrar(e) {
     e.preventDefault();
-
-    fetch("https://almartindev.online/api/user/", {
-      method: "POST",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify(newUsuario),
-    }).then((response) => {
-      console.log(response.status);
-      if (response.status == 400) {
-        Swal.fire({
-          position: "center",
-          icon: "error",
-          title: t("textAlertRegisterError2"),
-        });
-      } else if (response.status == 200) {
-        Swal.fire(
-          t("textAlertRegisterOk"),
-          t("textAlertRegisterOk2"),
-          "success"
-        );
-        setNewUsuario(initialUserState);
-      } else if (response.status == 409) {
-        Swal.fire({
-          position: "center",
-          icon: "error",
-          title: t("textAlertRegisterError"),
-        });
-      }
-    });
+    if (newUsuario.password === newUsuario.passwordOk) {
+      fetch("https://almartindev.online/api/user/", {
+        method: "POST",
+        headers: { "content-Type": "application/json" },
+        body: JSON.stringify(newUsuario),
+      }).then((response) => {
+        console.log(response.status);
+        if (response.status == 400) {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: t("textAlertRegisterError2"),
+          });
+        } else if (response.status == 200) {
+          Swal.fire(
+            t("textAlertRegisterOk"),
+            t("textAlertRegisterOk2"),
+            "success"
+          );
+          setNewUsuario(initialUserState);
+        } else if (response.status == 409) {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: t("textAlertRegisterError"),
+          });
+        }
+      });
+    }
   }
 
   function handleChange() {
@@ -171,6 +180,28 @@ export default function FormRegister({ vista, estado }) {
                   id="password"
                   autoComplete="new-password"
                   value={newUsuario.password}
+                  onChange={handleInput}
+                  color="success"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  error={
+                    newUsuario.password === newUsuario.passwordOk ? false : true
+                  }
+                  helperText={
+                    newUsuario.password === newUsuario.passwordOk
+                      ? false
+                      : t("textPasswordError")
+                  }
+                  fullWidth
+                  name="passwordOk"
+                  label="Confirm Password"
+                  type="password"
+                  id="passwordOk"
+                  autoComplete="new-password"
+                  value={newUsuario.passwordOk}
                   onChange={handleInput}
                   color="success"
                 />

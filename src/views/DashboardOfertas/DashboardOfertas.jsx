@@ -23,6 +23,7 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import DeleteIcon from "@mui/icons-material/Delete";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -115,11 +116,18 @@ export default function DashboardOfertas() {
     }).then((response) => {
       if (response.status == 400) {
         alert("error al recibir el body");
-      } else if (response.status == 200) {
+      } else if (response.status == 200 && active == 1) {
         Swal.fire({
           position: "center",
           icon: "success",
           title: "Oferta Activada Correctamente",
+        });
+        setStateOferta(!stateOferta);
+      } else if (response.status == 200 && active == 0) {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Oferta Desactivada Correctamente",
         });
         setStateOferta(!stateOferta);
       } else if (response.status == 409) {
@@ -252,7 +260,7 @@ export default function DashboardOfertas() {
                   {row.activo == 0 ? (
                     <Grid container wrap="nowrap" justifyContent="center">
                       <IconButton color="error" disabled>
-                        <DeleteIcon />
+                        <HighlightOffIcon />
                       </IconButton>
                       <Tooltip title="Activar Oferta">
                         <IconButton
@@ -270,7 +278,7 @@ export default function DashboardOfertas() {
                           onClick={(e) => activeOffer(e, row.id, 0)}
                           color="error"
                         >
-                          <DeleteIcon />
+                          <HighlightOffIcon />
                         </IconButton>
                       </Tooltip>
                       <IconButton disabled>

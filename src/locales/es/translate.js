@@ -313,6 +313,7 @@ export const translateEs = {
   textAlertLoginError2: "Email o Contraseña incorrecta",
   textAlertLoginError3:
     "Usuario Inactivo, Por favor contacte con el administrador",
+  textPasswordError: "Las contraseñas deben de ser iguales",
 
   //Cookies
   textCookies:

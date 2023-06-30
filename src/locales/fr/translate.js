@@ -318,6 +318,7 @@ export const translateFr = {
   textAlertLoginError2: "E-mail ou mot de passe incorrect",
   textAlertLoginError3:
     "Utilisateur inactif. Veuillez contacter l'administrateur",
+  textPasswordError: "Les mots de passe doivent être les mêmes",
 
   //Cookies
   textCookies:

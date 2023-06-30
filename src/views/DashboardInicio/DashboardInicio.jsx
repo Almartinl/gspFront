@@ -21,6 +21,7 @@ export default function DashboardInicio() {
   const [countPresupuestos, setCountPresupuestos] = useState([]);
   const [countFormContact, setCountFormContact] = useState([]);
   const [countObras, setCountObras] = useState([]);
+  const [countOffer, setCountOffer] = useState([]);
 
   useEffect(() => {
     async function fetchCount() {
@@ -75,6 +76,17 @@ export default function DashboardInicio() {
       setCountObras(data);
     }
     fetchCount();
+  }, []);
+
+  useEffect(() => {
+    async function fetchProyectos() {
+      const response = await fetch(
+        "https://almartindev.online/api/product/offer"
+      );
+      const data = await response.json();
+      setCountOffer(data);
+    }
+    fetchProyectos();
   }, []);
 
   return (
@@ -260,7 +272,8 @@ export default function DashboardInicio() {
                   gap: "5%",
                 }}
               >
-                <LocalOfferIcon fontSize="large" />0
+                <LocalOfferIcon fontSize="large" />
+                {countOffer.length >= 0 && countOffer.length}
               </Typography>
             </Grid>
           </Paper>
