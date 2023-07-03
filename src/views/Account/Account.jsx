@@ -639,12 +639,12 @@ export default function Account() {
                       <Typography variant="h6">
                         Email: {user[0].email}
                       </Typography>
-                      <Button onClick={handleEditEmail}>
+                      {/* <Button onClick={handleEditEmail}>
                         <EditIcon />
-                      </Button>
+                      </Button> */}
                     </Grid>
                   </Grid>
-                  {editEmail && (
+                  {/* {editEmail && (
                     <Box
                       component="form"
                       onSubmit={registrarEmail}
@@ -676,7 +676,7 @@ export default function Account() {
                         </IconButton>
                       </Tooltip>
                     </Box>
-                  )}
+                  )} */}
                   <Grid container spacing={2}>
                     <Grid
                       item
