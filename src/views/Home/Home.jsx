@@ -123,8 +123,10 @@ export default function Home() {
               <br />{" "}
               <Typography fontWeight="bold">{t("contentTextVent2")}</Typography>
               <br />
-              <li>{t("contentTextVent3")}</li>
-              <li>{t("contentTextVent4")}</li>
+              <ul>
+                <li>{t("contentTextVent3")}</li>
+                <li>{t("contentTextVent4")}</li>
+              </ul>
             </Grid>
           </Grid>
         </Grid>

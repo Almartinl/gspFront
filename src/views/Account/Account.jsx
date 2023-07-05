@@ -217,29 +217,30 @@ export default function Account() {
       }
     });
   }
-  function registrarEmail(e) {
-    e.preventDefault();
-    setStateChange(!stateChange);
-    fetch(`https://almartindev.online/api/user/${dataToken.id}`, {
-      method: "PATCH",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify(newEmail),
-    }).then((response) => {
-      console.log(response.status);
-      if (response.status == 400) {
-        alert("error al recibir el body");
-      } else if (response.status == 200) {
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: t("textAlertCambioEmailCuenta"),
-        });
-        setNewApellido({ apellido: "" });
-      } else if (response.status == 409) {
-        alert("usuario ya registrado");
-      }
-    });
-  }
+  // function registrarEmail(e) {
+  //   e.preventDefault();
+  //   setStateChange(!stateChange);
+  //   fetch(`https://almartindev.online/api/user/${dataToken.id}`, {
+  //     method: "PATCH",
+  //     headers: { "content-Type": "application/json" },
+  //     body: JSON.stringify(newEmail),
+  //   }).then((response) => {
+  //     console.log(response.status);
+  //     if (response.status == 400) {
+  //       alert("error al recibir el body");
+  //     } else if (response.status == 200) {
+  //       Swal.fire({
+  //         position: "center",
+  //         icon: "success",
+  //         title: t("textAlertCambioEmailCuenta"),
+  //       });
+  //       setNewApellido({ apellido: "" });
+  //     } else if (response.status == 409) {
+  //       alert("usuario ya registrado");
+  //     }
+  //   });
+  // }
+
   function registrarPassword(e) {
     e.preventDefault();
     setStateChange(!stateChange);

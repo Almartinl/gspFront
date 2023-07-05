@@ -5,6 +5,7 @@ export const translateEs = {
   button3d: "Vista 3d",
   buttonBorrarCampo: "Borrar Campo",
   buttonAceptar: "Aceptar",
+  textTittleMenuFooter: "Menu de Navegacion",
 
   //NavBar
   buttonIni: "Inicio",
@@ -26,7 +27,7 @@ export const translateEs = {
   subTittle3Carousel: "Estructuras Metálicas en Bungalows",
   textTittleVent: "Nuestras <br /> Ventajas",
   contentTextVent:
-    "Apoyamos a empresas de construcción, construcción, ingeniería civil, contratistas, microempresas (pymes y VSEs) y particulares ofreciéndoles instalaciones prefabricadas llave en mano y amedida, permitiéndoles alojar a sus equipos técnicos en óptimas condiciones de confort y trabajo para alcanzar sus objetivos estratégicos",
+    "Apoyamos a empresas de construcción, ingeniería civil, contratistas, microempresas (pymes y VSEs) y particulares ofreciéndoles instalaciones prefabricadas llave en mano y amedida, permitiéndoles alojar a sus equipos técnicos en óptimas condiciones de confort y trabajo para alcanzar sus objetivos estratégicos",
   contentTextVent2: "Nuestras instalaciones prefabricadas le permiten:",
   contentTextVent3:
     "Mejorar la imagen de marca de su empresa a los ojos de sus clientes.",

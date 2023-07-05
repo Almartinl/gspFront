@@ -5,6 +5,7 @@ export const translateEn = {
   button3d: "3D View",
   buttonBorrarCampo: "Delete Field",
   buttonAceptar: "Accept",
+  textTittleMenuFooter: "Navigation menu",
 
   //NavBar
   buttonIni: "Home",

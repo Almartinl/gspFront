@@ -136,10 +136,6 @@ export default function Contact() {
                 alignItems="center"
                 gap={1}
               >
-                {/* <Typography variant="h6" textAlign="center" color="white">
-                No dude en ponerse en contacto con nosotros para obtener más
-                información:
-              </Typography> */}
                 <Grid
                   container
                   flexDirection="column"
