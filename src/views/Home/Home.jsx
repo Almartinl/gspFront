@@ -53,8 +53,6 @@ export default function Home() {
     scrollToTop();
   }, []);
 
-  console.log(offer);
-
   return (
     <Grid marginTop={4}>
       <CarouselPrincipal />
@@ -72,7 +70,6 @@ export default function Home() {
               <Card key={image.id}>
                 <CardMedia
                   component="img"
-                  height
                   image={`https://almartindev.online/api${image.path}`}
                   alt="img"
                   sx={{ objectFit: "cover" }}

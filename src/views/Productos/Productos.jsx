@@ -58,6 +58,7 @@ export default function Productos() {
   const [vistaDiafano1, setVistaDiafano1] = useState(false);
   const [vistaDiafano2, setVistaDiafano2] = useState(false);
   const [vistaDiafano3, setVistaDiafano3] = useState(false);
+  const [vistaDiafano4, setVistaDiafano4] = useState(false);
   const [vistaBungalowWc, setVistaBungalowWc] = useState(false);
   const [buttonWc, setButtonWc] = useState(false);
   const [vistaWc1, setVistaWc1] = useState(false);
@@ -71,6 +72,7 @@ export default function Productos() {
   const [vistaEdificios, setVistaEdificios] = useState(false);
   const [vistaNaves, setVistaNaves] = useState(false);
   const [vistaMaritimos, setVistaMaritimos] = useState(false);
+  const [vistaPaneles, setVistaPaneles] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [clickBungalowsObras, setClickBungalowsObras] = useState(false);
   const [bungalowObras, setBungalowObras] = useState([]);
@@ -114,6 +116,7 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setVistaPaneles(false);
     setButtonCaseta(false);
     setVistaGarita1(false);
     setVistaGarita2(false);
@@ -604,6 +607,7 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setVistaPaneles(false);
     setButtonCaseta(false);
     setVistaGarita1(false);
     setVistaGarita2(false);
@@ -635,6 +639,7 @@ export default function Productos() {
     setVistaEdificios(true);
     setVistaNaves(false);
     setVistaMaritimos(false);
+    setVistaPaneles(false);
     setButtonCaseta(false);
     setVistaGarita1(false);
     setVistaGarita2(false);
@@ -666,6 +671,7 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(true);
     setVistaMaritimos(false);
+    setVistaPaneles(false);
     setButtonCaseta(false);
     setVistaGarita1(false);
     setVistaGarita2(false);
@@ -697,6 +703,39 @@ export default function Productos() {
     setVistaEdificios(false);
     setVistaNaves(false);
     setVistaMaritimos(true);
+    setVistaPaneles(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setButtonWc(false);
+    setVistaWcDoble(false);
+    setVistaWc1(false);
+    setVistaWc2(false);
+    setVistaWc3(false);
+    setVistaWc4(false);
+    setVistaWc5(false);
+    setFotoSeleccionada("");
+  }
+
+  function panelesClick(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(false);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setVistaEstructuras(false);
+    setVistaEdificios(false);
+    setVistaNaves(false);
+    setVistaMaritimos(false);
+    setVistaPaneles(true);
     setButtonCaseta(false);
     setVistaGarita1(false);
     setVistaGarita2(false);
@@ -756,130 +795,6 @@ export default function Productos() {
               {t("textTittleTipos")}
             </Typography>
             <Grid container gap={2}>
-              {/* Boton de Almacen */}
-              <Button
-                variant={vistaBungalowAlmacen ? "contained" : "outlined"}
-                fullWidth
-                color="success"
-                sx={
-                  vistaBungalowAlmacen
-                    ? {
-                        color: "white",
-                        fontWeight: "bold",
-                        backgroundColor: "#3b8f1e",
-                      }
-                    : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
-                        fontWeight: "bold",
-                      }
-                }
-                onClick={bungalowAlmacenClick}
-              >
-                {t("textButtonAlmacen")}
-              </Button>
-              {/* Boton desplegado de Caseta */}
-              {vistaBungalowCaseta ? (
-                <Accordion
-                  expanded
-                  sx={
-                    vistaBungalowCaseta && {
-                      color: "#3b8f1e",
-                      borderColor: "#3b8f1e",
-                      fontWeight: "bold",
-                      backgroundColor: "#d3b72a",
-                      border: 1,
-                    }
-                  }
-                >
-                  <AccordionSummary
-                    sx={{
-                      display: "flex",
-                      flexDirection: "column",
-                      color: "white",
-                      fontWeight: "bold",
-                      backgroundColor: "#3b8f1e",
-                    }}
-                  >
-                    <Typography textTransform="uppercase" fontWeight="bold">
-                      {t("textButtonCaseta")}
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails sx={{ textAlign: "center" }}>
-                    <Button
-                      variant={vistaGarita1 ? "contained" : "outlined"}
-                      fullWidth
-                      color="success"
-                      sx={
-                        vistaGarita1
-                          ? {
-                              color: "white",
-                              fontWeight: "bold",
-                              backgroundColor: "#3b8f1e",
-                              textTransform: "none",
-                            }
-                          : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
-                              fontWeight: "bold",
-                              textTransform: "none",
-                            }
-                      }
-                      onClick={garita1Click}
-                    >
-                      {t("textButtonGarita1")}
-                    </Button>
-                    <Button
-                      variant={vistaGarita2 ? "contained" : "outlined"}
-                      fullWidth
-                      color="success"
-                      sx={
-                        vistaGarita2
-                          ? {
-                              color: "white",
-                              fontWeight: "bold",
-                              backgroundColor: "#3b8f1e",
-                              textTransform: "none",
-                            }
-                          : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
-                              fontWeight: "bold",
-                              textTransform: "none",
-                            }
-                      }
-                      onClick={garita2Click}
-                    >
-                      {t("textButtonGarita2")}
-                    </Button>
-                  </AccordionDetails>
-                </Accordion>
-              ) : (
-                //Boton sin desplegar de Caseta
-                <Button
-                  variant={vistaBungalowCaseta ? "contained" : "outlined"}
-                  fullWidth
-                  color="success"
-                  endIcon={<ExpandMoreIcon />}
-                  sx={
-                    vistaBungalowCaseta
-                      ? {
-                          color: "white",
-                          fontWeight: "bold",
-                          backgroundColor: "#3b8f1e",
-                        }
-                      : {
-                          color: "#3b8f1e",
-                          borderColor: "#3b8f1e",
-                          fontWeight: "bold",
-                        }
-                  }
-                  onClick={bungalowCasetaClick}
-                >
-                  {t("textButtonCaseta")}
-                </Button>
-              )}
-
               {/* Boton desplegado de Oficinas */}
 
               {vistaBungalowDiafano ? (
@@ -1221,6 +1136,130 @@ export default function Productos() {
               >
                 {t("textButtonVestuarios")}
               </Button>
+
+              {/* Boton desplegado de Caseta */}
+              {vistaBungalowCaseta ? (
+                <Accordion
+                  expanded
+                  sx={
+                    vistaBungalowCaseta && {
+                      color: "#3b8f1e",
+                      borderColor: "#3b8f1e",
+                      fontWeight: "bold",
+                      backgroundColor: "#d3b72a",
+                      border: 1,
+                    }
+                  }
+                >
+                  <AccordionSummary
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      color: "white",
+                      fontWeight: "bold",
+                      backgroundColor: "#3b8f1e",
+                    }}
+                  >
+                    <Typography textTransform="uppercase" fontWeight="bold">
+                      {t("textButtonCaseta")}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails sx={{ textAlign: "center" }}>
+                    <Button
+                      variant={vistaGarita1 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaGarita1
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
+                      }
+                      onClick={garita1Click}
+                    >
+                      {t("textButtonGarita1")}
+                    </Button>
+                    <Button
+                      variant={vistaGarita2 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaGarita2
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
+                      }
+                      onClick={garita2Click}
+                    >
+                      {t("textButtonGarita2")}
+                    </Button>
+                  </AccordionDetails>
+                </Accordion>
+              ) : (
+                //Boton sin desplegar de Caseta
+                <Button
+                  variant={vistaBungalowCaseta ? "contained" : "outlined"}
+                  fullWidth
+                  color="success"
+                  endIcon={<ExpandMoreIcon />}
+                  sx={
+                    vistaBungalowCaseta
+                      ? {
+                          color: "white",
+                          fontWeight: "bold",
+                          backgroundColor: "#3b8f1e",
+                        }
+                      : {
+                          color: "#3b8f1e",
+                          borderColor: "#3b8f1e",
+                          fontWeight: "bold",
+                        }
+                  }
+                  onClick={bungalowCasetaClick}
+                >
+                  {t("textButtonCaseta")}
+                </Button>
+              )}
+              {/* Boton de Almacen */}
+              <Button
+                variant={vistaBungalowAlmacen ? "contained" : "outlined"}
+                fullWidth
+                color="success"
+                sx={
+                  vistaBungalowAlmacen
+                    ? {
+                        color: "white",
+                        fontWeight: "bold",
+                        backgroundColor: "#3b8f1e",
+                      }
+                    : {
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
+                        fontWeight: "bold",
+                      }
+                }
+                onClick={bungalowAlmacenClick}
+              >
+                {t("textButtonAlmacen")}
+              </Button>
               {/* Boton Volver */}
               <Button
                 variant="outlined"
@@ -1357,6 +1396,28 @@ export default function Productos() {
               >
                 {" "}
                 {t("textCarouselContenedores")}
+              </Button>
+              <Button
+                variant={vistaPaneles ? "contained" : "outlined"}
+                fullWidth
+                disabled
+                color="success"
+                sx={
+                  vistaPaneles
+                    ? {
+                        color: "white",
+                        fontWeight: "bold",
+                        backgroundColor: "#3b8f1e",
+                      }
+                    : {
+                        color: "#3b8f1e",
+                        borderColor: "#3b8f1e",
+                        fontWeight: "bold",
+                      }
+                }
+                onClick={panelesClick}
+              >
+                {t("textCarouselPaneles")}
               </Button>
             </Grid>
           </Grid>
@@ -6288,6 +6349,61 @@ export default function Productos() {
               </Grid>
             </Grid>
           )}
+
+          {/* {vistaPaneles && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title={t("textCarouselPaneles")}
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image="../../contenedor-maritimo.jpg"
+                    alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
+                  />
+                  <CardContent>
+                    <Typography
+                      variant="body2"
+                      color="#3b8f1e"
+                      fontWeight="bold"
+                    >
+                      {t("textCarouselPaneles")}
+                    </Typography>
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      {t("textTittleDescripcion")}
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography variant="body1" p={1}>
+                          {t("textContenedoresDescripcion1")}
+                        </Typography>
+                        <Typography variant="body1" p={1}>
+                          {t("textContenedoresDescripcion2")}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )} */}
         </Grid>
       </Grid>
       <ScrollToTopButton />

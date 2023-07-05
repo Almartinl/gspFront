@@ -58,6 +58,7 @@ export const translateFr = {
   textCarouselEdificios: "Bâtiments Préfabriqués",
   textCarouselNaves: "Entrepôts Industriels",
   textCarouselContenedores: "Conteneurs Maritimes",
+  textCarouselPaneles: "Panneaux Sandwich",
   textTittleProductos: "Catégories de Produits",
   textTittleTipos: "Types de Bungalows de Chantier",
   textButtonAlmacen: "Stockage",

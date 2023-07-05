@@ -112,16 +112,15 @@ export default function AppBarMenu() {
                 <Link
                   key={index}
                   to={page.ruta}
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", color: "#3b8f1e" }}
                 >
                   <MenuItem
                     key={index}
                     onClick={handleCloseNavMenu}
+                    color="#3b8f1e"
                     sx={{ ":hover": { bgcolor: "#3b8f1e", color: "white" } }}
                   >
-                    <Typography textAlign="center" color="#3b8f1e">
-                      {page.nombre}
-                    </Typography>
+                    <Typography textAlign="center">{page.nombre}</Typography>
                   </MenuItem>
                 </Link>
               ))}
