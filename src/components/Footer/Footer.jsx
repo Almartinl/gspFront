@@ -26,9 +26,9 @@ export default function Footer() {
 
   function Copyright(props) {
     return (
-      <Typography variant="body2" color="white" align="center" {...props}>
+      <Typography variant="body2" color="white" align="left" {...props}>
         {"Copyright © "}
-        Global Solutions Prefabriquee {new Date().getFullYear()}
+        Global Solutions Prefabriquees {new Date().getFullYear()}
         {"."}
       </Typography>
     );
@@ -45,7 +45,7 @@ export default function Footer() {
           py: 2,
         }}
       >
-        <Grid container>
+        <Grid container my={2} justifyContent="center">
           <Grid item xs={12} md={4}>
             <Typography variant="h5" fontWeight="bold" color="white" mb={2}>
               {t("textTittleMenuFooter")}
@@ -155,17 +155,16 @@ export default function Footer() {
               >
                 <WhatsAppIcon fontSize="large" sx={{ color: "white" }} />
               </IconButton>
+              <Grid
+                container
+                justifyContent="center"
+                alignItems="center"
+                mt={2}
+              >
+                <Copyright />
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid
-          container
-          spacing={2}
-          justifyContent="center"
-          alignItems="center"
-          mt={0}
-        >
-          <Copyright />
         </Grid>
       </Container>
     </Grid>

@@ -242,7 +242,7 @@ export const translateFr = {
     "Vulgariser et rendre totalement accessible toutes les techniques et systèmes de construction préfabriquées d’abord en Côte d'Ivoire, ensuite au Sénégal et enfin en Afrique de l'Ouest. Participer à la formation et à l’emploi des jeunes en Afrique. Notre ambition est de devenir d’ici 2025 le LEADER de la construction Préfabriquée et Métallique en Afrique de l’Ouest, et surtout en Côte d’Ivoire où nous comptons ouvrir d’autres ateliers de fabrication de nos installations préfabriquées, comme celui que nous avons actuellement à Abidjan. Notre équipe est principalement composée de jeunes Ivoiriens et Africains, et nous faisons tout notre possible pour leur transmettre le savoir-faire nécessaire et l'état d'esprit afin qu'ils puissent participer demain au développement et au rayonnement de l’Afrique.",
 
   //Contact
-  tittleTextDatosContacto: "Coordonnées de Contact",
+  tittleTextDatosContacto: "Informations de Contact",
   textMovil: "Portable",
   textFijo: "Fixe",
   textContactRedes: "Suivez-nous",
