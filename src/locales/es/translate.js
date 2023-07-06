@@ -76,6 +76,7 @@ export const translateEs = {
   textButtonOficina1: "Bungalow Polivalente",
   textButtonOficina2: "Sala de Reunion doble",
   textButtonOficina3: "Sala de Reunion triple",
+  textButtonOficina4: "Bungalow Comedor",
   textButtonSanitarioDoble: "Sanitario Doble",
   textButtonSanitario1: "Sanitario tipo 1",
   textButtonSanitario2: "Sanitario tipo 2",
@@ -172,6 +173,7 @@ export const translateEs = {
     "Nuestros contenedores marítimos equipados son capaces de soportar todas las difíciles condiciones de sus sitios de construcción más remotos, además, le permiten colocar sus equipos y su equipo en un lugar seguro, por lo tanto, protegido de robos, incendios y mal tiempo.",
   textContenedoresDescripcion2:
     "Te ayudamos a tomar el control de tu proyecto: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
+  textVentanasOficina4: "2 Ventana de aluminio de 100 x 100 cm",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",

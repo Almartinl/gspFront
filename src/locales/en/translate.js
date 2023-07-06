@@ -76,6 +76,7 @@ export const translateEn = {
   textButtonOficina1: "Multipurpose Bungalow",
   textButtonOficina2: "Double Meeting Room",
   textButtonOficina3: "Triple Meeting Room",
+  textButtonOficina4: "Refectory Bungalow",
   textButtonSanitarioDoble: "Double Sanitary",
   textButtonSanitario1: "Sanitary Type 1",
   textButtonSanitario2: "Sanitary Type 2",

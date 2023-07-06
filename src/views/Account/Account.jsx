@@ -495,6 +495,7 @@ export default function Account() {
   console.log(listaPresupuesto);
   console.log(presupuesto);
   console.log(bungalow);
+  console.log(user);
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h2" fontWeight="bold" component="h1" gutterBottom>

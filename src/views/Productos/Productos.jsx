@@ -124,6 +124,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -151,6 +152,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -178,6 +180,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -205,6 +208,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -232,6 +236,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -259,6 +264,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -286,6 +292,7 @@ export default function Productos() {
     setVistaDiafano1(true);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -313,6 +320,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(true);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -340,6 +348,35 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(true);
+    setVistaDiafano4(false);
+    setButtonWc(false);
+    setVistaWcDoble(false);
+    setVistaWc1(false);
+    setVistaWc2(false);
+    setVistaWc3(false);
+    setVistaWc4(false);
+    setVistaWc5(false);
+    setFotoSeleccionada("");
+  }
+
+  function Oficina4Click(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(true);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setVistaDiafano4(true);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -367,6 +404,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(true);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -394,6 +432,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(true);
     setVistaWc1(false);
@@ -421,6 +460,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(true);
@@ -448,6 +488,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -475,6 +516,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -502,6 +544,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -529,6 +572,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -556,6 +600,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -583,6 +628,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -615,6 +661,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -647,6 +694,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -679,6 +727,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -711,6 +760,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -743,6 +793,7 @@ export default function Productos() {
     setVistaDiafano1(false);
     setVistaDiafano2(false);
     setVistaDiafano3(false);
+    setVistaDiafano4(false);
     setButtonWc(false);
     setVistaWcDoble(false);
     setVistaWc1(false);
@@ -846,6 +897,29 @@ export default function Productos() {
                       onClick={Oficina1Click}
                     >
                       {t("textButtonOficina1")}
+                    </Button>
+                    <Button
+                      variant={vistaDiafano4 ? "contained" : "outlined"}
+                      fullWidth
+                      color="success"
+                      sx={
+                        vistaDiafano4
+                          ? {
+                              color: "white",
+                              fontWeight: "bold",
+                              backgroundColor: "#3b8f1e",
+                              textTransform: "none",
+                            }
+                          : {
+                              color: "#3b8f1e",
+                              borderColor: "#3b8f1e",
+                              fontWeight: "bold",
+                              textTransform: "none",
+                            }
+                      }
+                      onClick={Oficina4Click}
+                    >
+                      {t("textButtonOficina4")}
                     </Button>
                     <Button
                       variant={vistaDiafano2 ? "contained" : "outlined"}
@@ -1439,17 +1513,8 @@ export default function Productos() {
               <Grid item sm={12}>
                 <Card>
                   {bungalowObras.length > 0 && (
-                    <>
+                    <Card>
                       <CardHeader
-                        // action={
-                        //   <Typography
-                        //     color="#3b8f1e"
-                        //     fontWeight="bold"
-                        //     variant="h6"
-                        //   >
-                        //     Ref: 123
-                        //   </Typography>
-                        // }
                         title={t(
                           `textContentProductObras.${bungalowObras[0].nombre}`
                         )}
@@ -1477,7 +1542,7 @@ export default function Productos() {
                           )}
                         </Typography>
                       </CardContent>
-                    </>
+                    </Card>
                   )}
                 </Card>
               </Grid>
@@ -2944,6 +3009,375 @@ export default function Productos() {
                               component="img"
                               height="500"
                               image="../../plano-polivalente.png"
+                              alt="img"
+                              sx={{ objectFit: "contain" }}
+                            />
+                          </AccordionDetails>
+                        </Accordion>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaDiafano4 && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title={t("textButtonOficina4")}
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../refectoire1.jpeg"
+                    }
+                    alt="img"
+                    sx={{ objectFit: "contain" }}
+                  />
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../refectoire1.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../refectoire1.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../refectoire2.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../refectoire2.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../refectoire3.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../refectoire3.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../refectoire4.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../refectoire4.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                  </CardContent>
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      {t("textTittleDescripcion")}
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Accordion
+                          expanded={expanded === "panel1"}
+                          onChange={handleChange("panel1")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              {t("textTittleCaracteristicas")}
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <TableContainer component={Paper}>
+                              <Table
+                                sx={{ minWidth: 500 }}
+                                aria-label="custom pagination table"
+                              >
+                                <TableBody>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textLongitud")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      594.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textAncho")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      240.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textAlturaTotal")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      280.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textAltura")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      250.0 cm
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textPeso")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      1300 kg
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textEstructura")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textEstructuraGeneral")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textPaneles")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textPanelesGeneral")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textSuelo")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textSuelosGeneral")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textPuertas")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textPuertasOficina1")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textVentanas")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textVentanasOficina4")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textAire")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textAireGeneral1")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textElectricidad")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textElectricidadGeneral")}
+                                    </TableCell>
+                                  </TableRow>
+                                  <TableRow>
+                                    <TableCell
+                                      style={{ width: "25%" }}
+                                      align="left"
+                                    >
+                                      {t("textOtros")}
+                                    </TableCell>
+                                    <TableCell
+                                      style={{ maxWidth: "75%" }}
+                                      align="left"
+                                    >
+                                      {t("textOtrosOficina1")}
+                                    </TableCell>
+                                  </TableRow>
+                                </TableBody>
+                                <TableFooter></TableFooter>
+                              </Table>
+                            </TableContainer>
+                          </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                          expanded={expanded === "panel2"}
+                          onChange={handleChange("panel2")}
+                        >
+                          <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                          >
+                            <Typography
+                              variant="h5"
+                              sx={{ textDecoration: "underline" }}
+                            >
+                              {t("textTittleDimensiones")}
+                            </Typography>
+                          </AccordionSummary>
+                          <AccordionDetails>
+                            <CardMedia
+                              component="img"
+                              height="500"
+                              image="../../plano-refectoire.png"
                               alt="img"
                               sx={{ objectFit: "contain" }}
                             />
@@ -6310,18 +6744,118 @@ export default function Productos() {
                   <CardMedia
                     component="img"
                     height="500"
-                    image="../../contenedor-maritimo.jpg"
+                    image={
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../contenedor-maritimo.jpg"
+                    }
                     alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
+                    sx={{ objectFit: "contain" }}
                   />
-                  <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {t("textCarouselContenedores")}
-                    </Typography>
+                  <Container xs={12}>
+                    <Divider
+                      sx={{
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                        my: 3,
+                        opacity: "initial",
+                      }}
+                    />
+                  </Container>
+
+                  <CardContent
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: 1,
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../contenedor-maritimo.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../contenedor-maritimo.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../contenedor-maritimo2.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../contenedor-maritimo2.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../contenedor-maritimo4.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../contenedor-maritimo4.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../contenedor-maritimo5.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../contenedor-maritimo5.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../contenedor-maritimo3.jpeg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../contenedor-maritimo3.jpeg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
