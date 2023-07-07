@@ -86,10 +86,15 @@ export default function Account() {
   const [editTelefono, setEditTelefono] = useState(false);
   const [bungalow, setBungalow] = useState([]);
   const [listaPresupuesto, setListaPresupuesto] = useState([]);
+  const [planta, setPlanta] = useState([]);
   const presupuesto = {
     usuario: dataToken.id,
     email: dataToken.email,
     descripcion: listaPresupuesto,
+    apellidos: user.length > 0 && user[0].apellidos,
+    telefono: user.length > 0 && user[0].telefono,
+    nombre: user.length > 0 && user[0].nombre,
+    plantaImg: planta,
   };
   const [disableButton, setDisableButton] = useState([]);
   const [counters, setCounters] = useState({});
@@ -350,12 +355,13 @@ export default function Account() {
     });
   }
 
-  function addPresupuesto(e, nombre, nombreModelo, id) {
+  function addPresupuesto(e, nombre, nombreModelo, plantaImg, id) {
     e.preventDefault();
     setListaPresupuesto([
       ...listaPresupuesto,
       { nombre: nombre, modelo: nombreModelo, id: id },
     ]);
+    setPlanta([...planta, { name: plantaImg.split("/").pop(), id: id }]);
     setDisableButton([...disableButton, id]);
   }
 
@@ -365,6 +371,8 @@ export default function Account() {
       (item, index) => item.id !== indexList
     );
     setListaPresupuesto(newList);
+    const newListPlanta = planta.filter((item, index) => item.id !== indexList);
+    setPlanta(newListPlanta);
     setDisableButton(disableButton.filter((number) => number != indexList));
   }
 
@@ -453,6 +461,7 @@ export default function Account() {
           title: t("textAlertPresupuestoCuenta"),
         });
         setListaPresupuesto([]);
+        setPlanta([]);
       }
     });
     setDisableButton([]);
@@ -492,10 +501,11 @@ export default function Account() {
     });
   }
 
-  console.log(listaPresupuesto);
-  console.log(presupuesto);
-  console.log(bungalow);
-  console.log(user);
+  console.log("listaPresupuesto", listaPresupuesto);
+  console.log("presupuesto", presupuesto);
+  console.log("bungalow", bungalow);
+  console.log("usuario", user);
+  console.log("planta", planta);
   return (
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h2" fontWeight="bold" component="h1" gutterBottom>
@@ -943,6 +953,7 @@ export default function Account() {
                                               e,
                                               row.nombre,
                                               row.nombrebungalow,
+                                              row.planta,
                                               row.id
                                             )
                                           }
