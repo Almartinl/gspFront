@@ -56,6 +56,7 @@ export default function Configurador() {
   const [bungalowc, setBungalowc] = useState([]);
   const [bungalowcValue, setBungalowcValue] = useState("");
   const [nombreProyecto, setNombreProyecto] = useState("");
+  const [fotoInicio, setFotoInicio] = useState("../../introConf.png");
 
   const [planta, setPlanta] = useState([]);
   const [modelo3d, setModelo3d] = useState([]);
@@ -564,6 +565,7 @@ export default function Configurador() {
   console.log(bungalowcValue);
   console.log(planta);
   console.log(modelo3d);
+
   return (
     <Container
       maxWidth="xl"
@@ -881,7 +883,16 @@ export default function Configurador() {
                 justifyContent: "center",
                 height: "60vh",
                 objectFit: "cover",
-                backgroundImage: `url(../../introConf.png)`,
+                backgroundImage:
+                  modeloValue == 4
+                    ? `url(../../vertical.png)`
+                    : orientacionValue == 2
+                    ? `url(../../horizontal.png)`
+                    : modeloValue == 3
+                    ? `url(../../a-b.png)`
+                    : modeloValue == 5
+                    ? `url(../../a-b-c.png)`
+                    : `url(${fotoInicio})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "top center",
                 backgroundSize: "contain",
