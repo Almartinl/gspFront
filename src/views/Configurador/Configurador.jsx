@@ -840,7 +840,8 @@ export default function Configurador() {
                 onClick={handleClickOpenInfo}
                 sx={{ fontSize: { xs: "small", md: "large" } }}
               >
-                <InfoOutlinedIcon />
+                {/* <InfoOutlinedIcon /> */}
+                Info
               </Button>
             </Grid>
           </Grid>
@@ -850,6 +851,7 @@ export default function Configurador() {
               item
               xs={12}
               md={8}
+              mt={{ xs: 4, md: 0 }}
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -878,6 +880,7 @@ export default function Configurador() {
               item
               xs={12}
               md={8}
+              mt={{ xs: 4, md: 0 }}
               sx={{
                 display: "flex",
                 justifyContent: "center",
