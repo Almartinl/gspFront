@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@floating-ui/react": "^0.24.6",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
@@ -29,6 +30,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "12.3.1",
     "react-router-dom": "6.8.0",
+    "react-shepherd": "^4.2.0",
     "sweetalert2": "^11.7.2",
     "three": "0.127.0"
   },
