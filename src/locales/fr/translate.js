@@ -232,6 +232,24 @@ export const translateFr = {
     "Inscrivez-vous ou connectez-vous pour enregistrer le modèle dans votre compte",
   textButtonAlertLoginConfig: "Aller à la Login/Register",
   tittleTextAlertConfig: "Modèle enregistré avec succès",
+  tittleTextStep1TourConfig: "Bienvenue dans le guide du configurateur",
+  textStep1TourConfig:
+    "Maintenant, nous allons configurer un bungalow de test et la première chose que nous devons faire est de sélectionner le nombre de bungalows que nous voulons.<br/> <br/> <b>Dans ce cas, nous avons choisi 1 Bungalow</b>",
+  textStep2TourConfig:
+    "Comme dans l'étape précédente, la sélection a été de 1 Bungalow, les options que nous avons maintenant disponibles seront différentes de celles que nous aurions eues si nous avions sélectionné un autre nombre de bungalows <br/> <br/> <b>Par exemple maintenant nous allons sélectionner Vertical</b>",
+  textStep3TourConfig:
+    "Maintenant, nous sommes arrivés au point où nous sélectionnons le type de bungalow que nous voulons.<br/> <br/> <b>Par exemple Stockage</b>",
+  textStep4TourConfig:
+    "<b>Ici est le résultat en vue de plan des choix du configurateur</b>",
+  textStep5TourConfig:
+    "<b>Lorsque ce bouton est pressé, le configurateur est réinitialisé et vous devez recommencer</b>",
+  textStep6TourConfig:
+    "<b>Lorsque ce bouton est pressé, une fenêtre contextuelle apparaît vous demandant de donner un nom au Bungalow configuré afin que vous puissiez l'enregistrer dans votre compte et plus tard dans votre compte vous pouvez envoyer un devis pour ce Bungalow</b>",
+  textStep7TourConfig:
+    "<b>Lorsque ce bouton est pressé, une fenêtre contextuelle apparaît dans laquelle vous pouvez voir le Bungalow configuré en 3D </b>",
+  tittleTextStep8TourConfig: "<b>Fin du tutoriel</b>",
+  textStep8TourConfig:
+    "Maintenant, vous pouvez configurer le bungalow que vous préférez",
 
   //Projects
   tittleTextProjects: "Nos Projets",

@@ -231,6 +231,23 @@ export const translateEn = {
     "Register or log in to save the model to your account",
   textButtonAlertLoginConfig: "Go to Login/Register",
   tittleTextAlertConfig: "Model Saved Successfully",
+  tittleTextStep1TourConfig: "Welcome to the Configurator Guide",
+  textStep1TourConfig:
+    "Now we are going to configure a test Bungalow and the first thing we must do is select the number of Bungalows we want.<br/> <br/> <b>In this case we have chosen 1 Bungalow</b>",
+  textStep2TourConfig:
+    "As in the previous step the selection has been 1 Bungalow, the options that we have now available will be different from those that we would have had if we had selected another number of bungalows <br/> <br/> <b>For example now we are going to select Vertical</b>",
+  textStep3TourConfig:
+    "Now we have reached the point where we select what type of bungalow we want.<br/> <br/> <b>For example Storage</b>",
+  textStep4TourConfig:
+    "<b>Here is the result in plan view of the configurator's choices</b>",
+  textStep5TourConfig:
+    "<b>When this button is pressed, the configurator is reset and you have to start again</b>",
+  textStep6TourConfig:
+    "<b>When this button is pressed, a pop-up window appears asking you to give a name to the configured Bungalow so that you can save it in your account and later within your account you can send a quote for this Bungalow</b>",
+  textStep7TourConfig:
+    "<b>When this button is pressed, a pop-up window appears in which you can see the configured Bungalow in 3D </b>",
+  tittleTextStep8TourConfig: "<b>End Of Tutorial</b>",
+  textStep8TourConfig: "Now you can configure the bungalow you prefer",
 
   //Projects
   tittleTextProjects: "Our Projects",

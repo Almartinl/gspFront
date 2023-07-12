@@ -230,6 +230,23 @@ export const translateEs = {
     "Registrate o inicia sesion para poder guardar el modelo en tu cuenta",
   textButtonAlertLoginConfig: "Ir al login/Register",
   tittleTextAlertConfig: "Model Guardado Correctamente",
+  tittleTextStep1TourConfig: "Bienvenido a la Guia del configurador",
+  textStep1TourConfig:
+    "Ahora vamos a Configurar un Bungalow de prueba y lo primero que debemos hacer es seleccionar la cantidad de Bungalows que queremos.<br/> <br/> <b>En este caso hemos elegido 1 Bungalow</b>",
+  textStep2TourConfig:
+    "Como en el paso anterior la seleccion ha sido de 1 Bungalow, las opciones que tenemos ahora diponibles seran distintas a las que hubiesemos tenido si hubiesemos seleccionado otra cantidad de bungalows <br/> <br/> <b>Por ejemplo ahora vamos aseleccionar Vertical</b>",
+  textStep3TourConfig:
+    "Ahora hemos llegado al punto el cual seleccionamos que tipo de bungalow queremos.<br/> <br/> <b>Por ejemplo Almacen</b>",
+  textStep4TourConfig:
+    "<b>Aquí se muestra el resultado en vista de planta de las elecciones del configurador</b>",
+  textStep5TourConfig:
+    "<b>Cuando se pulsa este Boton se resetea el configurador y se tiene que empezar de nuevo</b>",
+  textStep6TourConfig:
+    "<b>Cuando se pulsa este Boton sale una ventana emergente que te pide que le des un nombre al Bungalow configurado para así poder guardarlo en tu cuenta y posteriormente dentro de su cuenta poder enviar un presupuesto de este Bungalow</b>",
+  textStep7TourConfig:
+    "<b>Cuando se pulsa este Boton sale una ventana emergente en la cual puedes ver el Bungalow configurado en 3D </b>",
+  tittleTextStep8TourConfig: "<b>Fin Del Tutorial</b>",
+  textStep8TourConfig: "Ahora puede configurar el bungalow que prefiera",
 
   //Projects
   tittleTextProjects: "Nuestros Proyectos",

@@ -83,6 +83,7 @@ export default function Configurador() {
         variant="contained"
         color="info"
         onClick={tour.start}
+        className="pulsate-fwd"
         sx={{ fontSize: { xs: "small", md: "large" } }}
       >
         <HelpOutlineIcon />
@@ -585,8 +586,8 @@ export default function Configurador() {
     {
       id: "disposicion-select",
       attachTo: { element: "#disposicion-select", on: "right" },
-      title: "<b>Bienvenido a la Guia del configurador</b>",
-      text: `Ahora vamos a Configurar un Bungalow de prueba y lo primero que debemos hacer es seleccionar la cantidad de Bungalows que queremos.<br/> <br/> <b>En este caso hemos elegido 1 Bungalow</b>`,
+      title: `<b>${t("tittleTextStep1TourConfig")}</b>`,
+      text: t("textStep1TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -609,7 +610,7 @@ export default function Configurador() {
     {
       id: "orientacion-select",
       attachTo: { element: "#orientacion-select", on: "right" },
-      text: "Como en el paso anterior la seleccion ha sido de 1 Bungalow, las opciones que tenemos ahora diponibles seran distintas a las que hubiesemos tenido si hubiesemos seleccionado otra cantidad de bungalows <br/> <br/> <b>Por ejemplo ahora vamos aseleccionar Vertical</b>",
+      text: t("textStep2TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -636,7 +637,7 @@ export default function Configurador() {
     {
       id: "tipo-select",
       attachTo: { element: "#tipo-select", on: "right" },
-      text: "Ahora hemos llegado al punto el cual seleccionamos que tipo de bungalow queremos.<br/> <br/> <b>Por ejemplo Wc</b>",
+      text: t("textStep3TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -653,7 +654,7 @@ export default function Configurador() {
       canClickTarget: false,
       when: {
         show: () => {
-          setTipoValue("15");
+          setTipoValue("16");
         },
         cancel: () => {
           reset();
@@ -663,7 +664,7 @@ export default function Configurador() {
     {
       id: "foto-selected",
       attachTo: { element: "#foto-selected", on: "top" },
-      text: `<b>Aquí se muestra el resultado en vista de planta de las elecciones del configurador</b>`,
+      text: t("textStep4TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -686,8 +687,8 @@ export default function Configurador() {
     },
     {
       id: "boton-reset",
-      attachTo: { element: "#boton-reset", on: "top" },
-      text: `<b>Cuando se pulsa este Boton se resetea el configurador y se tiene que empezar de nuevo</b>`,
+      attachTo: { element: "#boton-reset", on: "bottom" },
+      text: t("textStep5TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -710,8 +711,8 @@ export default function Configurador() {
     },
     {
       id: "boton-guardar",
-      attachTo: { element: "#boton-guardar", on: "top" },
-      text: `<b>Cuando se pulsa este Boton sale una ventana emergente que te pide que le des un nombre al Bungalow configurado para así poder guardarlo en tu cuenta y posteriormente dentro de su cuenta poder enviar un presupuesto de este Bungalow</b>`,
+      attachTo: { element: "#boton-guardar", on: "bottom" },
+      text: t("textStep6TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -734,8 +735,8 @@ export default function Configurador() {
     },
     {
       id: "boton-vista3d",
-      attachTo: { element: "#boton-vista3d", on: "top" },
-      text: `<b>Cuando se pulsa este Boton sale una ventana emergente en la cual puedes ver el Bungalow configurado en 3D </b>`,
+      attachTo: { element: "#boton-vista3d", on: "bottom" },
+      text: t("textStep7TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -759,8 +760,8 @@ export default function Configurador() {
     {
       id: "fin-tour",
       attachTo: { element: "#fin-tour", on: "auto" },
-      title: "<b>Fin Del Tutorial</b>",
-      text: "Ahora configure el bungalow como prefiera.",
+      title: t("tittleTextStep8TourConfig"),
+      text: t("textStep8TourConfig"),
       floatingUIOptions: { middleware: [offset(10)] },
       buttons: [
         {
@@ -777,16 +778,16 @@ export default function Configurador() {
       },
     },
   ];
-  console.log(bungalowa);
-  console.log("disposicion", disposicionValue);
-  console.log("orientacion", orientacionValue);
-  console.log("modelo", modeloValue);
-  console.log("tipo", tipoValue);
-  console.log("bungalowa", bungalowaValue);
-  console.log("bungalowb", bungalowbValue);
-  console.log("bungalowc", bungalowcValue);
-  console.log(planta);
-  console.log(modelo3d);
+  // console.log(bungalowa);
+  // console.log("disposicion", disposicionValue);
+  // console.log("orientacion", orientacionValue);
+  // console.log("modelo", modeloValue);
+  // console.log("tipo", tipoValue);
+  // console.log("bungalowa", bungalowaValue);
+  // console.log("bungalowb", bungalowbValue);
+  // console.log("bungalowc", bungalowcValue);
+  // console.log(planta);
+  // console.log(modelo3d);
 
   return (
     <>

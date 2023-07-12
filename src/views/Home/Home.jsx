@@ -14,13 +14,15 @@ import CarouselPrincipal from "../../components/CarouselPrincipal/CarouselPrinci
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   document.title = "Inicio";
 
   const { t } = useTranslation();
   const [offer, setOffer] = useState([]);
+  const containerRef = useRef(null);
+  const containerRef2 = useRef(null);
 
   const beneficios = [
     t("contentTextBen1"),
@@ -51,6 +53,28 @@ export default function Home() {
     };
     fetchOffer();
     scrollToTop();
+  }, []);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const handleScroll = () => {
+      if (container.getBoundingClientRect().top < window.innerHeight) {
+        container.classList.add("slide-in-fwd-left");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const container2 = containerRef2.current;
+    const handleScroll2 = () => {
+      if (container2.getBoundingClientRect().top < window.innerHeight) {
+        container2.classList.add("slide-in-fwd-right");
+      }
+    };
+    window.addEventListener("scroll", handleScroll2);
+    return () => window.removeEventListener("scroll", handleScroll2);
   }, []);
 
   return (
@@ -88,6 +112,7 @@ export default function Home() {
           paddingTop: 10,
           paddingBottom: 0,
         }}
+        ref={containerRef}
       >
         <Grid
           container
@@ -136,6 +161,7 @@ export default function Home() {
           paddingTop: 10,
           paddingBottom: 0,
         }}
+        ref={containerRef2}
       >
         <Grid
           container
