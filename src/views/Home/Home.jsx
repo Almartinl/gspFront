@@ -63,10 +63,6 @@ export default function Home() {
       }
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
     const container2 = containerRef2.current;
     const handleScroll2 = () => {
       if (container2.getBoundingClientRect().top < window.innerHeight) {
@@ -74,7 +70,10 @@ export default function Home() {
       }
     };
     window.addEventListener("scroll", handleScroll2);
-    return () => window.removeEventListener("scroll", handleScroll2);
+    return (
+      () => window.removeEventListener("scroll", handleScroll),
+      () => window.removeEventListener("scroll", handleScroll2)
+    );
   }, []);
 
   return (
