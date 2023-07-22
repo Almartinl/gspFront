@@ -250,6 +250,7 @@ export const translateFr = {
   tittleTextStep8TourConfig: "<b>Fin du tutoriel</b>",
   textStep8TourConfig:
     "Maintenant, vous pouvez configurer le bungalow que vous préférez",
+  tittleTextTime3D: "Temps d'attente approximatif 10 secondes",
 
   //Projects
   tittleTextProjects: "Nos Projets",

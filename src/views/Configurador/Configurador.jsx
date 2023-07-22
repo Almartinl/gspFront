@@ -546,13 +546,20 @@ export default function Configurador() {
   }
 
   function Loader() {
-    const { progress } = useProgress();
+    //const { progress } = useProgress();
     return (
-      <Html center scale={5}>
-        <Grid width="100%">
-          <Typography variant="h4" textAlign="center" color="#3b8f1e">
-            {Math.floor(progress * 1)} % Cargado
+      <Html
+        center
+        scale={5}
+        style={{
+          position: "initial",
+        }}
+      >
+        <Grid container item flexDirection="column" alignItems="center" gap={2}>
+          <Typography color="#3b8f1e" variant="h5">
+            {t("tittleTextTime3D")}
           </Typography>
+          <CircularProgress color="success" />
         </Grid>
       </Html>
     );

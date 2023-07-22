@@ -247,6 +247,7 @@ export const translateEs = {
     "<b>Cuando se pulsa este Boton sale una ventana emergente en la cual puedes ver el Bungalow configurado en 3D </b>",
   tittleTextStep8TourConfig: "<b>Fin Del Tutorial</b>",
   textStep8TourConfig: "Ahora puede configurar el bungalow que prefiera",
+  tittleTextTime3D: "Tiempo aproximado de espera 10 segundos",
 
   //Projects
   tittleTextProjects: "Nuestros Proyectos",

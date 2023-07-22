@@ -248,6 +248,7 @@ export const translateEn = {
     "<b>When this button is pressed, a pop-up window appears in which you can see the configured Bungalow in 3D </b>",
   tittleTextStep8TourConfig: "<b>End Of Tutorial</b>",
   textStep8TourConfig: "Now you can configure the bungalow you prefer",
+  tittleTextTime3D: "Approximate wait time 10 seconds",
 
   //Projects
   tittleTextProjects: "Our Projects",
