@@ -29,6 +29,7 @@ import CarouselProductos from "../../components/CarouselProductos/CarouselProduc
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { alignProperty } from "@mui/material/styles/cssUtils";
 import { useTranslation } from "react-i18next";
+import CarouselSplider from "../../components/CarouselSplider/CarouselSplider";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -1524,13 +1525,13 @@ export default function Productos() {
                           fontWeight: "bold",
                         }}
                       />
-                      <CardMedia
-                        component="img"
+
+                      <Grid
                         height={{ xs: "200", md: "500" }}
-                        image={`https://almartindev.online/api${bungalowObras[0].foto}`}
-                        alt="img"
                         sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                      />
+                      >
+                        <CarouselSplider img={bungalowObras[0].foto} />
+                      </Grid>
                       <CardContent>
                         <Typography
                           variant="body2"
