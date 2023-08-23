@@ -17,23 +17,34 @@ export const translateFr = {
   buttonProfile: "Profil",
 
   //Home
-  tittleCarousel: "Accueillir",
+  tittleCarousel: "Construction préfabriquée, modulaire et métalliques",
   subTittleCarousel:
     "Améliorez votre image de marque grâce à nos installations préfabriquées confortables, fiables et garanties.",
   tittle2Carousel: "Bungalows sur mesure",
   subTittle2Carousel:
-    "Nous livrons vos installations préfabriquées dans des délais très courts !",
+    "Bénéficiez de l’offre la plus complète du marché, et faites-vous livrer votre projet sur mesure avec une satisfaction garantie.",
   tittle3Carousel: "Structures métalliques",
   subTittle3Carousel:
-    "Nous avons une boutique en ligne où vous pouvez acheter vos installations.",
+    "Nous installons tous les types de bungalows de chantier préfabriqués dans des délais très courts.",
   textTittleVent: "Nos <br /> Avantages",
   contentTextVent:
-    "Nous soutenons les entreprises de construction, de génie civil, d'ingénierie, les entrepreneurs, les micro-entreprises (PME et TPE) ainsi que les particuliers en leur proposant des installations préfabriquées clés en main et sur mesure, leur permettant d'accueillir leurs équipes techniques dans des conditions optimales de confort et de travail pour atteindre leurs objectifs stratégiques.",
+    "Nous maitrisons la chaine de création de valeur, depuis l’étude, la conception, la fabrication, l’assemblage jusqu’à la livraison de vos produits, sans oublier notre SAV de très grande qualité, capable d’intervenir sur l’ensemble du territoire Ivoirien en 72H et la garantie de 06 mois sur chaque produit achetés.",
+  contentTextVent1:
+    "Nous vous faisons bénéficiez de l’offre la plus complète du marché, avec un service clés en main incluant :",
+  contentTextVent1_1:
+    "La possibilité de personnaliser vos installations préfabriquées sur mesure.",
+  contentTextVent1_2: "La livraison gratuite sur Abidjan",
+  contentTextVent1_3: "La climatisation",
+  contentTextVent1_4: "Les grilles antivol",
+  contentTextVent1_5: "Les plots en béton armés",
+  contentTextVent1_6: "Un excellent rapport qualité-prix.",
   contentTextVent2: "Nos installations préfabriquées vous permettent de :",
   contentTextVent3:
     "Améliorer l'image de marque de votre entreprise aux yeux de vos clients.",
   contentTextVent4:
-    "Augmenter la productivité de vos équipes techniques sur vos différents projets en les plaçant dans des conditions de travail et de confort optimales.",
+    "Mettre vos équipes techniques dans des conditions de travail et de confort optimales afin d’atteindre vos objectifs stratégiques.",
+  contentTextVent5:
+    "Nous vous aidons à prendre le contrôle de votre projet très rapidement: avec des solutions préfabriquées efficaces et innovantes qui impactent significativement vos performances quotidiennes.",
   textTittleBen: "Nos avantages des installations préfabriquées",
   contentTextBen1: "Rapidité de montage",
   contentTextBen2: "Délais de livraison très courts",
@@ -49,7 +60,7 @@ export const translateFr = {
   contentTextServ1: "Concevez votre bungalow",
   contentTextServ2: "Produits",
   contentTextServ3: "Projets réalisés",
-  textTittleContact: "Contactez-nous et demandez un budget!!!",
+  textTittleContact: "Contactez-nous et demandez un devis!!!",
   textButtonClick: "Cliquez ici",
 
   //Products

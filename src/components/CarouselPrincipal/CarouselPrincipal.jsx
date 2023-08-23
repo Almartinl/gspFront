@@ -36,9 +36,9 @@ export default function CarouselPrincipal() {
         <div className="carousel-item active">
           <img src="../../22.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
-            <h3 className="shadow-text display-2 fw-bold">
+            <h4 className="shadow-text display-4 fw-bold">
               {t("tittleCarousel")}
-            </h3>
+            </h4>
             <h4 className="shadow-text fw-bold">
               {t("subTittleCarousel")}
               {/* Bungalows y Edificios prefabricados */}
@@ -60,6 +60,7 @@ export default function CarouselPrincipal() {
             <h4 className="shadow-text display-4 fw-bold">
               {t("tittle3Carousel")}
             </h4>
+            <h4 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h4>
           </div>
         </div>
       </div>

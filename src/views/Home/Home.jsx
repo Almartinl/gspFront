@@ -141,12 +141,24 @@ export default function Home() {
             <Grid color="white" p={4}>
               {t("contentTextVent")}
               <br />
-              <br />{" "}
+              <br />
+              <Typography fontWeight="bold">{t("contentTextVent1")}</Typography>
+              <br />
+              <ol>
+                <li>{t("contentTextVent1_1")}</li>
+                <li>{t("contentTextVent1_2")}</li>
+                <li>{t("contentTextVent1_3")}</li>
+                <li>{t("contentTextVent1_4")}</li>
+                <li>{t("contentTextVent1_5")}</li>
+                <li>{t("contentTextVent1_6")}</li>
+              </ol>
+              <br />
               <Typography fontWeight="bold">{t("contentTextVent2")}</Typography>
               <br />
               <ul>
                 <li>{t("contentTextVent3")}</li>
                 <li>{t("contentTextVent4")}</li>
+                <li>{t("contentTextVent5")}</li>
               </ul>
             </Grid>
           </Grid>

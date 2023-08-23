@@ -17,22 +17,34 @@ export const translateEs = {
   buttonProfile: "Perfil",
 
   //Home
-  tittleCarousel: "Bienvenido",
+  tittleCarousel: "Construcción prefabricada, modular y metálica.",
   subTittleCarousel:
     "Mejore su imagen de marca con nuestras instalaciones prefabricadas cómodas, fiables y garantizadas.",
   tittle2Carousel: "Bungalows a Medida",
   subTittle2Carousel:
-    "Le entregamos sus instalaciones prefabricas en plazos muy cortos!",
+    "Benefíciate de la oferta más completa del mercado y recibe tu proyecto a medida con satisfacción garantizada.",
   tittle3Carousel: "Estructuras Metálicas",
-  subTittle3Carousel: "Estructuras Metálicas en Bungalows",
+  subTittle3Carousel:
+    "Instalamos todo tipo de bungalows prefabricados de obra en plazos muy reducidos.",
   textTittleVent: "Nuestras <br /> Ventajas",
   contentTextVent:
-    "Apoyamos a empresas de construcción, ingeniería civil, contratistas, microempresas (pymes y VSEs) y particulares ofreciéndoles instalaciones prefabricadas llave en mano y amedida, permitiéndoles alojar a sus equipos técnicos en óptimas condiciones de confort y trabajo para alcanzar sus objetivos estratégicos",
+    "Dominamos la cadena de creación de valor, desde el estudio, el diseño, la fabricación, el montaje hasta la entrega de sus productos, sin olvidar nuestro servicio postventa de altísima calidad, capaz de intervenir en todo el territorio de Costa de Marfil en 72 horas y la garantía de 06. meses en cada producto adquirido.",
+  contentTextVent1:
+    "Ponemos a tu disposición la oferta más completa del mercado, con un servicio llave en mano que incluye:",
+  contentTextVent1_1:
+    "La posibilidad de personalizar tus instalaciones prefabricadas a medida.",
+  contentTextVent1_2: "Entrega gratuita en Abiyán",
+  contentTextVent1_3: "La climatización",
+  contentTextVent1_4: "Rejillas antirrobo",
+  contentTextVent1_5: "Plataformas de hormigón armado",
+  contentTextVent1_6: "Excelente relación calidad-precio.",
   contentTextVent2: "Nuestras instalaciones prefabricadas le permiten:",
   contentTextVent3:
     "Mejorar la imagen de marca de su empresa a los ojos de sus clientes.",
   contentTextVent4:
-    "Aumente la productividad de sus equipos técnicos en sus diversos proyectos poniéndolos en condiciones óptimas de trabajo y comodidad.",
+    "Pon a tus equipos técnicos en óptimas condiciones de trabajo y comodidad para lograr tus objetivos estratégicos.",
+  contentTextVent5:
+    "Te ayudamos a tomar el control de tu proyecto muy rápidamente: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
   textTittleBen: "Nuestros Beneficios de las instalaciones prefabricadas",
   contentTextBen1: "La velocidad de montaje",
   contentTextBen2: "Plazos de entrega muy cortos",

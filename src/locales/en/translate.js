@@ -17,22 +17,34 @@ export const translateEn = {
   buttonProfile: "Profile",
 
   //Home
-  tittleCarousel: "Welcome",
+  tittleCarousel: "Prefabricated, modular and metal construction",
   subTittleCarousel:
     "Enhance your brand image with our comfortable, reliable, and guaranteed prefabricated facilities.",
   tittle2Carousel: "Custom Bungalows",
   subTittle2Carousel:
-    "We deliver your prefabricated facilities in very short deadlines!",
+    "Benefit from the most complete offer on the market, and have your tailor-made project delivered with guaranteed satisfaction.",
   tittle3Carousel: "Metal Structures",
-  subTittle3Carousel: "Metal Structures in Bungalows",
+  subTittle3Carousel:
+    "We install all types of prefabricated site bungalows within very short deadlines.",
   textTittleVent: "Our <br /> Advantages",
   contentTextVent:
-    "We support construction companies, civil engineering firms, contractors, micro-enterprises (SMEs and VSEs), and individuals by offering them turnkey and custom-made prefabricated facilities, allowing them to accommodate their technical teams in optimal conditions of comfort and work to achieve their strategic objectives.",
+    "We master the value creation chain, from the study, design, manufacture, assembly to the delivery of your products, not to mention our very high quality after-sales service, capable of intervening throughout the Ivorian territory in 72 hours and the guarantee of 06 months on each product purchased.",
+  contentTextVent1:
+    "We provide you with the most complete offer on the market, with a turnkey service including:",
+  contentTextVent1_1:
+    "The possibility of customizing your custom prefabricated installations.",
+  contentTextVent1_2: "Free delivery in Abidjan",
+  contentTextVent1_3: "The air conditioning",
+  contentTextVent1_4: "Anti-theft grids",
+  contentTextVent1_5: "Reinforced concrete pads",
+  contentTextVent1_6: "Excellent value for money.",
   contentTextVent2: "Our prefabricated facilities allow you to:",
   contentTextVent3:
     "Improve your company's brand image in the eyes of your customers.",
   contentTextVent4:
-    "Increase the productivity of your technical teams in various projects by putting them in optimal working and comfortable conditions.",
+    "Put your technical teams in optimal working conditions and comfort in order to achieve your strategic objectives.",
+  contentTextVent5:
+    "We help you take control of your project very quickly: with efficient and innovative prefabricated solutions that significantly impact your daily performance.",
   textTittleBen: "Our Benefits of Prefabricated Facilities",
   contentTextBen1: "Fast assembly speed",
   contentTextBen2: "Very short delivery times",
