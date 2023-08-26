@@ -79,10 +79,26 @@ export const translateFr = {
   textButtonVestuarios: "Vestiaires",
   textButtonVolverCat: "Retour aux catégories",
   textContentProductObras: { "Bungalows de Obras": "Bungalows de chantier" },
-  textContentProductObrasDesc: {
-    "La solución perfecta para sus despliegues de obras":
-      "La solution parfaite pour vos déploiements de chantier",
-  },
+  textContentProductObrasDesc: `
+  <h3>Fonctionnalité, Design et Confort</h3>
+  <p>Nos bungalows de chantier sont polyvalents ; ils peuvent être conçus sur mesure selon les plans fournis ou proposés au client en fonction de ses besoins. Il est également possible d'incorporer des cabines sanitaires à l'intérieur (toilette avec bidet, urinoir, receveur de douche + lavabo et accessoires, plomberie, etc.).</p>
+  <p>Pour optimiser l'espace disponible, ils peuvent être juxtaposés ou superposés dans des salles de réunion, des espaces de restauration, des dortoirs, etc., pour une utilisation efficace de l'espace, parfois en fonction des contraintes et de la nature du chantier.</p>
+  <p>Utilisations possibles :</p>
+  <ul>
+      <li>Bureau de chantier</li>
+      <li>Vestiaire</li>
+      <li>Salle de réunion</li>
+      <li>Installations sanitaires (toilette - douche - urinoir)</li>
+      <li>Dortoirs</li>
+      <li>Infirmerie</li>
+  </ul>
+  <p>Accessoires :</p>
+  <ul>
+      <li>Câblage réseau</li>
+      <li>Télévision</li>
+      <li>Équipement informatique</li>
+  </ul>
+  `,
   textButtonGarita1: "Guérite (1.5m x 1.1m)",
   textButtonGarita2: "Guérite (2.5m x 2.0m)",
   textButtonOficina1: "Bungalow Polyvalent",
@@ -112,13 +128,22 @@ export const translateFr = {
   textTittleDimensiones: "Dimensions",
   textAire: "Climatisation",
   textEqSanitario: "Équipement Sanitaire",
-  textAlmacenDescripcionCorta:
-    "Ce bungalow est parfait pour stocker toutes sortes d'ustensiles et de matériaux",
+  textAlmacenDescripcionCorta: `
+  <p>Nos bungalows de stockage sont polyvalents, ils peuvent être conçus sur mesure selon les plans fournis ou proposés au client en fonction de ses besoins, on peut aussi intégrer à l'intérieur :</p>
+  <p>Des étagères métalliques importées ou préfabriquées et sont parfaitement adaptées pour le stockage sur vos chantiers :</p>
+  <p>Les EPI, les matériaux et consommables de valeur et tous autres produits qu'on doit protéger des intempéries ou dont le stock nécessite un suivi quotidien très rigoureux.</p>
+  <p>Afin d'optimiser l'espace disponible, ils peuvent être juxtaposés, superposés ou démontables pour une utilisation rationnelle de l'espace, parfois en fonction des contraintes et de la nature du chantier, etc.</p>  
+  `,
   textAlmacenDescripcion1:
     "Nos bungalows de stockage sur site sont parfaitement adaptés pour servir d'entrepôt sur votre camp de base, les projets militaires ou civils afin de fournir à vos équipes techniques des conditions optimales de confort et de travail, pour une meilleure productivité et des performances quotidiennes",
   textAlmacenDescripcion2:
     "Ils sont conçus avec des dimensions standard de 6,00 X 2,40 m avec une hauteur extérieure de 2,60 m, ou 12 X 2,40 m parmi les nombreux avantages qu'ils ont : le fait qu'ils peuvent être personnalisés selon les couleurs et les besoins du client en termes de dimensions et de cloisons intérieures.",
-  textCasetaDescripcionCorta: "La Cabane Idéale pour Vos Projets",
+  textCasetaDescripcionCorta: `
+  <p>Parfaitement adaptés pour protéger vos agents de sécurité des intempéries (pluies, vents, soleil, etc.).</p>
+  <p>Ce sont des modules à dimensions variables en fonction des besoins du client et de leur utilisation ; ils peuvent servir de guérites de gardiennage, poste de garde, point de surveillance des chantiers, kiosque, point de vente, boutique, check-point, etc.</p>
+  <p>On peut les fabriquer sur mesures, ou avec des dimensions standards de : 1,50 x 1,30 m, 1,50 x 1,50 m, 2,00 x 2,00 m, 3,00 x 2,40 m, 3,00 x 3,00 m, etc. La hauteur extérieure reste toujours la même à savoir : 2,60 m. Ils sont faits en acier galvanisé léger et peints au pistolet.</p>
+  <p>Les modules de guérites et de postes de garde peuvent être déplacés d'une extrémité d'un chantier à l'autre à l'aide d'un camion grue d'une capacité minimale de 2 tonnes, en utilisant les crochets de levage soudés à la structure à chaque coin du module. Ils sont conçus pour résister aux conditions souvent imprévisibles et exigeantes des chantiers les plus complexes et ont démontré leur adaptabilité et leur durabilité en fonction du type de projet.</p>  
+  `,
   textEstructuraGeneral: "Structure métallique galvanisée",
   textPanelesGeneral:
     "Panneaux sandwich galvanisés avec mousse de polyuréthane expansé de 50 mm",
@@ -141,7 +166,18 @@ export const translateFr = {
   textOtrosOficina2:
     "Crochets de levage à chaque extrémité du toit, Empilable en R+1, R+2",
   textVentanasOficina3: "5 Fenêtres en aluminium de 100 x 100 cm",
-  textWcDescripcionCorta: "La solution sanitaire idéale pour vos déploiements",
+  textWcDescripcionCorta: ` 
+  <h3>Hygiène, Salubrité et Fonctionnalité</h3>
+  <p>Nos bungalows de chantier destinés à un usage sanitaire ou de toilettes sont parfaitement adaptés à vos chantiers et respectent pleinement les normes d'hygiène et de salubrité pour offrir à vos équipes techniques des conditions idéales.</p>
+  <p>Ils peuvent être raccordés au réseau d'assainissement local ou à une fosse septique selon vos besoins.</p>
+  <p>Ils sont conçus avec des dimensions standard de 6,00 x 2,40 m avec une hauteur extérieure de 2,60 m, ou de 12 x 2,40 m, ou dans des tailles moyennes de 3 x 3 m, 2,50 x 2,50 m, 2 x 2 m, ou dans des cabines individuelles de 1,00 x 1,00 m, etc. Parmi les nombreux avantages qu'ils offrent, vous avez la possibilité de les utiliser comme toilettes pour les hommes et les femmes, ou séparés par des cloisons pour avoir des installations mixtes.</p>
+  <p>Utilisations possibles :</p>
+  <ul>
+      <li>Toilettes sur le chantier : Superviseurs et travailleurs</li>
+      <li>Toilettes pour les visiteurs</li>
+      <li>Toilettes publiques, etc.</li>
+  </ul>
+  `,
   textPuertasWcDoble: "2 Portes en aluminium de 70 x 200 cm",
   textVentanasWcDoble: "2 Fenêtres en aluminium de 40 x 40 cm",
   textEqSanitarioWcDoble: "2 Toilettes, 2 Lavabos",
@@ -172,19 +208,38 @@ export const translateFr = {
   textEstructuraDescripcionCorta:
     "La structure est la partie la plus importante de toute construction",
   textEstructuraDescripcion1:
-    "Nos structures métalliques, hangars et bâtiments industriels sont de très haute qualité et peuvent être personnalisés selon vos besoins, la taille du site et l'envergure à des prix imbattables.",
+    "Forte d'une très grande expertise dans le domaine de la construction métallique en Côte d'Ivoire depuis 5 ans, nous fabriquons et montons tous types de structures métalliques et charpentes dans des délais très courts.",
   textEstructuraDescripcion2:
-    "En d'autres termes, nous pouvons réaliser des projets clé en main sur mesure pour répondre parfaitement à tous vos besoins et objectifs stratégiques.",
+    "Par ailleurs, pour tous vos besoins en couverture métallique avec tolebac aluzinc ou en panneaux sandwich, nous pouvons vous accompagner dans l'étude, la conception et le montage, en mettant à votre disposition une équipe de techniciens très compétents.",
   textEdificiosDescripcionCorta: "Bâtiments spéciaux préfabriqués",
   textEdificiosDescripcion1:
     "Nos bâtiments préfabriqués sont composés de structures légères en acier galvanisé, avec des parois et un toit en panneaux sandwich d'épaisseurs variables selon le projet, avec de la mousse de polyuréthane expansé comme isolant. Ils comprennent également des escaliers et des couloirs pour les bâtiments préfabriqués.",
   textEdificiosDescripcion2:
     "Leur montage ne nécessite pas de fondations spéciales ; dans la plupart des cas, une dalle de 15 ou 20 cm suffit pour installer les poteaux et les accessoires d'assemblage des panneaux sandwich.",
   textNavesDescripcionCorta: "Bâtiments industriels et hangars",
-  textNavesDescripcion1:
-    "Nos structures métalliques, hangars et bâtiments industriels sont de très haute qualité et peuvent être personnalisés selon vos besoins, la taille du site et l'envergure à des prix imbattables.",
-  textContenedoresDescripcion1:
-    "Nos conteneurs maritimes équipés sont capables de résister à toutes les conditions difficiles de vos chantiers les plus éloignés. Ils vous permettent de placer votre équipement et votre équipe dans un endroit sûr, protégé contre le vol, l'incendie et les intempéries.",
+  textNavesDescripcion1: `
+  <p>Nos structures métalliques, hangars et entrepôts industriels sont de très grande qualité et peuvent être personnalisés selon vos besoins. Leur taille et leur envergure sont adaptées à l'ampleur de votre projet, le tout à des prix défiant toute concurrence.</p>
+  <p>En d'autres termes, pour vos besoins en entrepôts de stockage, matières premières, agrégats (ciment, gravier, béton, fer à béton, sable, etc.), contactez-nous sans attendre et faites un pas significatif dans la réalisation de votre projet.</p>
+  <p>Nous pouvons réaliser des projets sur mesure, clés en main, dans le but de répondre parfaitement à toutes vos exigences et objectifs stratégiques avec nos entrepôts et bâtiments industriels spécialement conçus pour être facilement montés et démontés en des délais très courts.</p>
+  <p>Les structures métalliques sont réalisées avec des profils en acier galvanisé, selon le type de projet, et recouvertes de tôle galvanisée ou de panneaux sandwich de toiture qui se révèlent très efficaces pour l'isolation thermique et acoustique des entrepôts industriels, unités de production et autres activités similaires.</p>  
+  `,
+  textContenedoresDescripcion1: `
+  <h3>Robuste, étanche et polyvalent.</h3>
+  <p>Une gamme complète de conteneurs maritimes aménagés sur mesure.</p>
+  <p>Nos conteneurs maritimes aménagés sont capables de résister à toutes les conditions difficiles de vos chantiers les plus reculés, de plus, ils vous permettent de mettre vos équipes et vos équipements en sécurité, à l'abri des vols, des incendies et des intempéries.</p>
+  <p>Utilisations possibles :</p>
+  <ul>
+      <li>Bureaux de chantier</li>
+      <li>Vestiaires</li>
+      <li>Sanitaires avec toilettes et douches</li>
+      <li>Magasins de stockage de matériaux</li>
+      <li>Salles de réunion</li>
+      <li>Réfectoires</li>
+      <li>Infirmerie</li>
+  </ul>
+  <p>Nous pouvons vous fournir une offre de service clé en main, adaptée à tout type d'activité. En bonus, elle comprend la climatisation, des grilles antivol aux fenêtres, des fondations en béton armé et la mise à disposition d'un technicien qui se chargera de la livraison, du nivellement et du bon déroulement des opérations, répondant à toutes vos exigences, n'importe où en Côte d'Ivoire.</p>
+  
+  `,
   textContenedoresDescripcion2:
     "Nous vous aidons à prendre le contrôle de votre projet grâce à des solutions préfabriquées efficaces et innovantes qui ont un impact significatif sur votre performance quotidienne.",
 

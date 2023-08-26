@@ -79,10 +79,26 @@ export const translateEs = {
   textButtonVestuarios: "Vestuarios",
   textButtonVolverCat: "Volver A las Categorias",
   textContentProductObras: { "Bungalows de Obras": "Bungalows de Obras" },
-  textContentProductObrasDesc: {
-    "La solución perfecta para sus despliegues de obras":
-      "La solución perfecta para sus despliegues de obras",
-  },
+  textContentProductObrasDesc: `
+  <h3>Funcionalidad, Diseño y Confort</h3>
+  <p>Nuestros bungalows de obra son versátiles; pueden ser diseñados a medida según los planos proporcionados o las sugerencias del cliente en función de sus necesidades. También es posible incorporar cabinas de baño en el interior (inodoro con bidé, urinario, plato de ducha + lavabo y accesorios, fontanería, etc.).</p>
+  <p>Para optimizar el espacio disponible, se pueden yuxtaponer o apilar en salas de reuniones, comedores, dormitorios, etc., para una utilización eficiente del espacio, a veces en función de limitaciones y la naturaleza del sitio de construcción.</p>
+  <p>Usos posibles:</p>
+  <ul>
+      <li>Oficina en el sitio de construcción</li>
+      <li>Vestuario</li>
+      <li>Sala de reuniones</li>
+      <li>Instalaciones sanitarias (inodoro - ducha - urinario)</li>
+      <li>Dormitorios</li>
+      <li>Enfermería</li>
+  </ul>
+  <p>Accesorios:</p>
+  <ul>
+      <li>Cableado de red</li>
+      <li>Televisión</li>
+      <li>Equipo informático</li>
+  </ul>
+  `,
   textButtonGarita1: "Garita de (1.5m x 1.1m)",
   textButtonGarita2: "Garita de (2.5m x 2.0m)",
   textButtonOficina1: "Bungalow Polivalente",
@@ -112,13 +128,22 @@ export const translateEs = {
   textTittleDimensiones: "Dimensiones",
   textAire: "Aire Acondicionado",
   textEqSanitario: "Equipamiento Sanitario",
-  textAlmacenDescripcionCorta:
-    "Este bungalow es perfecto para poder almacenar todo tipo de utensilios y materiales",
+  textAlmacenDescripcionCorta: `
+  <p>Nuestros bungalows de almacenamiento son versátiles; pueden ser diseñados a medida según los planos proporcionados o las sugerencias del cliente en función de sus necesidades. En el interior, también podemos integrar:</p>
+  <p>Estantes de metal importados o prefabricados que son perfectamente adecuados para almacenar en sus sitios de construcción:</p>
+  <p>EPP, materiales valiosos y consumibles, y cualquier otro producto que deba protegerse de los elementos o requiera un seguimiento diario riguroso del stock.</p>
+  <p>Para optimizar el espacio disponible, pueden ser yuxtaponidos, apilados o desmontados para una utilización eficiente del espacio, a veces en función de las limitaciones y la naturaleza del sitio de construcción.</p>  
+  `,
   textAlmacenDescripcion1:
     "Nuestros bungalows de sitio para uso como Almacenes están perfectamente adaptados para servir como Almacen en su campamento base, proyectos militares o civiles con el fin de poner a sus equipos técnicos en condiciones óptimas de comodidad y trabajo, para una mejor tasa de productividad y desempeño diario",
   textAlmacenDescripcion2:
     "Están diseñadas con unas dimensiones estándar de 6,00 X 2,40 m con una altura exterior de 2,60 m, o 12 X 2,40 m entre las muchas ventajas que tienen tienes: el hecho de que se pueden personalizar según los colores y las necesidades del cliente en cuanto a dimensiones y tabiques interiores.",
-  textCasetaDescripcionCorta: "La Caseta Ideal para tus Proyectos",
+  textCasetaDescripcionCorta: `
+  <p>Perfectamente adaptados para proteger a sus agentes de seguridad de los elementos climáticos (lluvia, viento, sol, etc.).</p>
+  <p>Estos son módulos con dimensiones variables según las necesidades del cliente y su uso; pueden servir como garitas de vigilancia, puestos de guardia, puntos de vigilancia en sitios de construcción, quioscos, puntos de venta, tiendas, puntos de control, etc.</p>
+  <p>Pueden ser personalizados o tener dimensiones estándar de: 1.50 x 1.30 m, 1.50 x 1.50 m, 2.00 x 2.00 m, 3.00 x 2.40 m, 3.00 x 3.00 m, etc. La altura exterior siempre permanece la misma, es decir, 2.60 m. Están hechos de acero galvanizado ligero y pintados con una pistola de pulverización.</p>
+  <p>Los módulos de garita y puesto de guardia se pueden mover de un extremo de un sitio de construcción a otro utilizando un camión grúa con una capacidad mínima de 2 toneladas, utilizando los ganchos de elevación que están soldados a la estructura en cada esquina del módulo. Están diseñados para resistir las condiciones a menudo impredecibles y desafiantes de los sitios de construcción más complejos y han demostrado su adaptabilidad y durabilidad según el tipo de proyecto.</p>  
+  `,
   textEstructuraGeneral: "Estructura de metal galvanizado",
   textPanelesGeneral:
     "Cerramiento en paneles sándwich Galvanizados con espuma de poliuretano expandido de 50mm",
@@ -141,7 +166,18 @@ export const translateEs = {
   textOtrosOficina2:
     "Ganchos de elevación en cada extremo del techo, Apilable en R+1, R+2",
   textVentanasOficina3: "5 Ventanas de aluminio de 100 x 100 cm",
-  textWcDescripcionCorta: "El sanitario ideal para tus despliegues",
+  textWcDescripcionCorta: ` 
+  <h3>Higiene, Salubridad y Funcionalidad</h3>
+  <p>Nuestros bungalows de obra para uso sanitario o de baños están perfectamente adaptados para sus proyectos y cumplen completamente con las normas de higiene y salubridad para proporcionar condiciones ideales a sus equipos técnicos.</p>
+  <p>Pueden estar conectados a la red de alcantarillado local o a un tanque séptico según sus necesidades.</p>
+  <p>Están diseñados con dimensiones estándar de 6.00 x 2.40 m con una altura externa de 2.60 m, o 12 x 2.40 m, o en tamaños medianos de 3 x 3 m, 2.50 x 2.50 m, 2 x 2 m, o en cabinas individuales de 1.00 x 1.00 m, etc. Entre las muchas ventajas que ofrecen, tiene la opción de usarlos como baños tanto para hombres como para mujeres, o separados por particiones para tener instalaciones mixtas.</p>
+  <p>Usos posibles:</p>
+  <ul>
+      <li>Baños en el sitio de construcción: Supervisores y trabajadores</li>
+      <li>Baños para visitantes</li>
+      <li>Baños públicos, etc.</li>
+  </ul>
+  `,
   textPuertasWcDoble: "2 Puertas de aluminio de 70 x 200 cm",
   textVentanasWcDoble: "2 Ventanas de aluminio de 40 x 40 cm",
   textEqSanitarioWcDoble: "2 Váter , 2 Lavabos",
@@ -170,19 +206,37 @@ export const translateEs = {
   textEstructuraDescripcionCorta:
     "La estructura es lo mas importante de toda obra",
   textEstructuraDescripcion1:
-    "Nuestras estructuras metálicas, hangares, naves industriales son de muy alta calidad, y son personalizables según sus necesidades, el tamaño y el alcance del sitio a precios imbatibles.",
+    "Con una gran experiencia en el campo de la construcción metálica en Costa de Marfil durante los últimos 5 años, fabricamos y montamos todo tipo de estructuras metálicas y armazones en plazos muy cortos.",
   textEstructuraDescripcion2:
-    "Es decir, podemos realizar sus proyectos llave en mano a medida para cubrir perfectamente todas sus necesidades y objetivos estratégicos.",
+    "Además, para todas sus necesidades en techos metálicos con tolebac aluzinc o paneles sándwich, podemos asistirlo en el estudio, diseño y montaje, proporcionándole un equipo de técnicos altamente capacitados.",
   textEdificiosDescripcionCorta: "Edificios especiales prefabricados",
   textEdificiosDescripcion1:
-    "Nuestras naves prefabricadas están compuestas por estructuras ligeras de acero galvanizado, las paredes y la cubierta son de paneles sándwich de varios espesores según el proyecto con espuma de poliuretano expandido como aislante, a esto se suman las escaleras, los pasillos de las naves prefabricadas.",
+    "Nuestros Edificios prefabricados están compuestos por estructuras ligeras de acero galvanizado, las paredes y la cubierta son de paneles sándwich de varios espesores según el proyecto con espuma de poliuretano expandido como aislante, a esto se suman las escaleras, los pasillos de los edificios prefabricados.",
   textEdificiosDescripcion2:
-    "Su montaje no requiere cimentaciones especiales, en la mayoría de los casos una losa de 15 o 20 cm es suficiente para instalar los postes y accesorios de montaje de los paneles sándwich.",
+    "Encontrarán nuestros edificios en todos los sitios de desarrollo en Costa de Marfil, brindando la máxima satisfacción a las principales empresas de construcción inmobiliaria y vial con proyectos prestigiosos en Abiyán, como: La Tour F en el distrito de Plateau, el Parque de Exposiciones, el Metro de Abiyán, los intercambiadores de Cocody y Abobo, y más.",
   textNavesDescripcionCorta: "Naves Industriales y Hangares",
-  textNavesDescripcion1:
-    "Nuestras estructuras metálicas, hangares, naves industriales son de muy alta calidad, y son personalizables según sus necesidades, el tamaño y el alcance del sitio a precios imbatibles.",
-  textContenedoresDescripcion1:
-    "Nuestros contenedores marítimos equipados son capaces de soportar todas las difíciles condiciones de sus sitios de construcción más remotos, además, le permiten colocar sus equipos y su equipo en un lugar seguro, por lo tanto, protegido de robos, incendios y mal tiempo.",
+  textNavesDescripcion1: `
+  <p>Nuestras estructuras metálicas, hangares y almacenes industriales son de muy alta calidad y pueden personalizarse según sus necesidades. Su tamaño y alcance se adaptan a la magnitud de su proyecto, todo a precios que desafían a la competencia.</p>
+  <p>En otras palabras, para sus necesidades de almacén de almacenamiento, materias primas, agregados (cemento, grava, concreto, varillas de refuerzo, arena, etc.), contáctenos sin demora y dé un paso significativo en la realización de su proyecto.</p>
+  <p>Podemos crear proyectos a medida y llave en mano con el objetivo de satisfacer perfectamente todas sus necesidades y objetivos estratégicos con nuestros almacenes y edificios industriales diseñados especialmente para ser fácilmente ensamblados y desmontados en plazos muy cortos.</p>
+  <p>Las estructuras metálicas se realizan con perfiles de acero galvanizado, según el tipo de proyecto, y se cubren con láminas galvanizadas o paneles de techo tipo sandwich que resultan altamente efectivos para el aislamiento térmico y acústico de almacenes industriales, unidades de producción y actividades similares.</p>  
+  `,
+  textContenedoresDescripcion1: `
+  <h3>Robusto, hermético y versátil.</h3>
+  <p>Una gama completa de contenedores marítimos adaptados a medida.</p>
+  <p>Nuestros contenedores marítimos adaptados son capaces de resistir todas las condiciones desafiantes de sus sitios de construcción más remotos. Además, le permiten mantener a salvo a sus equipos y equipos, protegidos contra robos, incendios e inclemencias climáticas.</p>
+  <p>Usos posibles:</p>
+  <ul>
+      <li>Oficinas en el sitio de construcción</li>
+      <li>Vestuarios</li>
+      <li>Instalaciones sanitarias con baños y duchas</li>
+      <li>Tiendas de almacenamiento de materiales</li>
+      <li>Sala de reuniones</li>
+      <li>Áreas de comedor</li>
+      <li>Enfermería</li>
+  </ul>
+  <p>Podemos ofrecerle una oferta de servicio llave en mano, adaptada a cualquier tipo de actividad. Como extra, incluye aire acondicionado, rejillas antirrobo en las ventanas, cimientos de hormigón armado y la provisión de un técnico que se encargará de la entrega, el nivelado y el desarrollo sin problemas de las operaciones, cumpliendo con todos sus requisitos, en cualquier lugar de Costa de Marfil.</p>
+  `,
   textContenedoresDescripcion2:
     "Te ayudamos a tomar el control de tu proyecto: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
   textVentanasOficina4: "2 Ventana de aluminio de 100 x 100 cm",

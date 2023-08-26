@@ -1537,11 +1537,10 @@ export default function Productos() {
                           variant="body2"
                           color="#3b8f1e"
                           fontWeight="bold"
-                        >
-                          {t(
-                            `textContentProductObrasDesc.${bungalowObras[0].descripcioncorta}`
-                          )}
-                        </Typography>
+                          dangerouslySetInnerHTML={{
+                            __html: t("textContentProductObrasDesc"),
+                          }}
+                        ></Typography>
                       </CardContent>
                     </Card>
                   )}
@@ -1657,12 +1656,19 @@ export default function Productos() {
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textAlmacenDescripcionCorta"),
+                          }}
+                          p={1}
+                        ></Typography>
+                        {/* <Typography variant="body1" p={1}>
                           {t("textAlmacenDescripcion1")}
-                        </Typography>
-                        <Typography variant="body1" p={1}>
+                        </Typography> */}
+                        {/* <Typography variant="body1" p={1}>
                           {t("textAlmacenDescripcion2")}
-                        </Typography>
+                        </Typography> */}
                       </Grid>
                       <Grid item xs={12}>
                         <Accordion
@@ -1934,9 +1940,10 @@ export default function Productos() {
                       variant="body2"
                       color="#3b8f1e"
                       fontWeight="bold"
-                    >
-                      {t("textCasetaDescripcionCorta")}
-                    </Typography>
+                      dangerouslySetInnerHTML={{
+                        __html: t("textCasetaDescripcionCorta"),
+                      }}
+                    ></Typography>
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -4122,9 +4129,10 @@ export default function Productos() {
                       variant="body2"
                       color="#3b8f1e"
                       fontWeight="bold"
-                    >
-                      {t("textWcDescripcionCorta")}
-                    </Typography>
+                      dangerouslySetInnerHTML={{
+                        __html: t("textWcDescripcionCorta"),
+                      }}
+                    ></Typography>
                   </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -6716,12 +6724,16 @@ export default function Productos() {
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          {t("textNavesDescripcion1")}.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textNavesDescripcion1"),
+                          }}
+                          p={1}
+                        ></Typography>
+                        {/* <Typography variant="body1" p={1}>
                           {t("textEstructuraDescripcion2")}.
-                        </Typography>
+                        </Typography> */}
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -6871,12 +6883,16 @@ export default function Productos() {
                     </Typography>
                     <Grid container>
                       <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion1")}
-                        </Typography>
-                        <Typography variant="body1" p={1}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textContenedoresDescripcion1"),
+                          }}
+                          p={1}
+                        ></Typography>
+                        {/* <Typography variant="body1" p={1}>
                           {t("textContenedoresDescripcion2")}
-                        </Typography>
+                        </Typography> */}
                       </Grid>
                     </Grid>
                   </CardContent>

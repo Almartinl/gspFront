@@ -79,10 +79,26 @@ export const translateEn = {
   textButtonVestuarios: "Changing Rooms",
   textButtonVolverCat: "Back to Categories",
   textContentProductObras: { "Bungalows de Obras": "Construction Bungalows" },
-  textContentProductObrasDesc: {
-    "La solución perfecta para sus despliegues de obras":
-      "The perfect solution for your construction deployments",
-  },
+  textContentProductObrasDesc: `
+  <h3>Functionality, Design, and Comfort</h3>
+  <p>Our construction site bungalows are versatile; they can be custom designed according to provided plans or suggestions from the client based on their needs. It's also possible to incorporate restroom cabins inside (toilet with bidet, urinal, shower tray + sink, and accessories, plumbing, etc.).</p>
+  <p>To optimize the available space, they can be juxtaposed or stacked in meeting rooms, dining areas, dormitories, etc., for efficient space utilization, sometimes based on constraints and the nature of the construction site.</p>
+  <p>Possible uses:</p>
+  <ul>
+      <li>Construction site office</li>
+      <li>Changing room</li>
+      <li>Meeting room</li>
+      <li>Sanitary facilities (toilet - shower - urinal)</li>
+      <li>Dormitories</li>
+      <li>Infirmary</li>
+  </ul>
+  <p>Accessories:</p>
+  <ul>
+      <li>Network cabling</li>
+      <li>TV</li>
+      <li>Computer equipment</li>
+  </ul>
+  `,
   textButtonGarita1: "Guardhouse (1.5m x 1.1m)",
   textButtonGarita2: "Guardhouse (2.5m x 2.0m)",
   textButtonOficina1: "Multipurpose Bungalow",
@@ -112,13 +128,22 @@ export const translateEn = {
   textTittleDimensiones: "Dimensions",
   textAire: "Air Conditioning",
   textEqSanitario: "Sanitary Equipment",
-  textAlmacenDescripcionCorta:
-    "This bungalow is perfect for storing all kinds of utensils and materials",
+  textAlmacenDescripcionCorta: `
+  <p>Our storage bungalows are versatile; they can be custom designed according to provided plans or suggestions from the client based on their needs. Inside, we can also integrate:</p>
+  <p>Imported or prefabricated metal shelves that are perfectly suited to store on your construction sites:</p>
+  <p>PPE, valuable materials and consumables, and any other products that need to be protected from the elements or require rigorous daily monitoring of stock.</p>
+  <p>To optimize the available space, they can be juxtaposed, stacked, or dismantled for efficient space utilization, sometimes based on constraints and the nature of the construction site.</p>  
+  `,
   textAlmacenDescripcion1:
     "Our storage site bungalows are perfectly adapted to serve as a warehouse at your base camp, military or civilian projects in order to provide your technical teams with optimal conditions of comfort and work, for better productivity and daily performance",
   textAlmacenDescripcion2:
     "They are designed with standard dimensions of 6.00 X 2.40 m with an external height of 2.60 m, or 12 X 2.40 m among the many advantages they have: the fact that they can be customized according to the colors and needs of the customer in terms of dimensions and interior partitions.",
-  textCasetaDescripcionCorta: "The Ideal Hut for Your Projects",
+  textCasetaDescripcionCorta: `
+  <p>Perfectly suited to protect your security agents from the elements (rain, wind, sun, etc.).</p>
+  <p>These are modules with variable dimensions based on the client's needs and their usage; they can serve as guard booths, guard posts, construction site surveillance points, kiosks, sales points, shops, checkpoints, etc.</p>
+  <p>They can be custom-made or have standard dimensions of: 1.50 x 1.30m, 1.50 x 1.50m, 2.00 x 2.00m, 3.00 x 2.40m, 3.00 x 3.00m, etc. The exterior height always remains the same, namely: 2.60m. They are made of lightweight galvanized steel and painted using a spray gun.</p>
+  <p>The guard booth and guard post modules can be moved from the end of one construction site to another using a crane truck with a minimum capacity of 2 tons, using the lifting hooks that are welded to the structure at each corner of the module. They are designed to withstand the often unpredictable and challenging conditions of the most complex construction sites and have demonstrated their adaptability and durability according to the type of project.</p>  
+  `,
   textEstructuraGeneral: "Galvanized metal structure",
   textPanelesGeneral:
     "Galvanized sandwich panels with expanded polyurethane foam of 50mm",
@@ -141,7 +166,18 @@ export const translateEn = {
   textOtrosOficina2:
     "Lifting hooks at each end of the roof, Stackable in R+1, R+2",
   textVentanasOficina3: "5 Aluminum windows of 100 x 100 cm",
-  textWcDescripcionCorta: "The ideal sanitary solution for your deployments",
+  textWcDescripcionCorta: ` 
+  <h3>Hygiene, Cleanliness, and Functionality</h3>
+  <p>Our construction site bungalows for sanitary or restroom use are perfectly suited for your projects and fully comply with hygiene and cleanliness standards to provide your technical teams with ideal conditions.</p>
+  <p>They can be connected to the local sewage network or a septic tank according to your needs.</p>
+  <p>They are designed with standard dimensions of 6.00 x 2.40m with an external height of 2.60m, or 12 x 2.40m, or in medium sizes of 3 x 3m, 2.50 x 2.50m, 2 x 2m, or in individual cabins of 1.00 x 1.00m, etc. Among the many advantages they offer, you have the option to use them as restrooms for both men and women, or separated by partitions to have mixed facilities.</p>
+  <p>Possible uses:</p>
+  <ul>
+      <li>Construction site toilets: Supervisors and workers</li>
+      <li>Visitor restrooms</li>
+      <li>Public restrooms, etc.</li>
+  </ul>
+  `,
   textPuertasWcDoble: "2 Aluminum doors of 70 x 200 cm",
   textVentanasWcDoble: "2 Aluminum windows of 40 x 40 cm",
   textEqSanitarioWcDoble: "2 Toilets, 2 Washbasins",
@@ -171,19 +207,37 @@ export const translateEn = {
   textEstructuraDescripcionCorta:
     "Structure is the most important part of any construction",
   textEstructuraDescripcion1:
-    "Our metal structures, hangars, and industrial buildings are of very high quality and can be customized according to your needs, site size, and scope at unbeatable prices.",
+    "With a vast expertise in the field of metal construction in Ivory Coast for the past 5 years, we manufacture and assemble all types of metal structures and frameworks within very short deadlines.",
   textEstructuraDescripcion2:
-    "In other words, we can provide tailor-made turnkey projects to perfectly meet all your needs and strategic objectives.",
+    "Furthermore, for all your needs in metal roofing with tolebac aluzinc or sandwich panels, we can assist you in the study, design, and assembly, by providing you with a team of highly skilled technicians.",
   textEdificiosDescripcionCorta: "Prefabricated Special Buildings",
   textEdificiosDescripcion1:
     "Our prefabricated buildings are made of lightweight galvanized steel structures, with walls and roof made of sandwich panels of various thicknesses depending on the project, with expanded polyurethane foam as insulation. They also include stairs and corridors for the prefabricated buildings.",
   textEdificiosDescripcion2:
     "Their assembly does not require special foundations; in most cases, a 15 or 20 cm slab is sufficient to install the posts and assembly accessories of the sandwich panels.",
   textNavesDescripcionCorta: "Industrial Buildings and Hangars",
-  textNavesDescripcion1:
-    "Our metal structures, hangars, and industrial buildings are of very high quality and can be customized according to your needs, site size, and scope at unbeatable prices.",
-  textContenedoresDescripcion1:
-    "Our equipped shipping containers are capable of withstanding all the harsh conditions of your most remote construction sites. They allow you to place your equipment and team in a safe place, protected from theft, fire, and bad weather.",
+  textNavesDescripcion1: `
+  <p>Our metal structures, hangars, and industrial warehouses are of very high quality and can be customized to your needs. Their size and scope are tailored to the scale of your project, all at prices that defy competition.</p>
+  <p>In other words, for your storage warehouse needs, raw materials, aggregates (cement, gravel, concrete, rebar, sand, etc.), contact us without delay and take a significant step forward in realizing your project.</p>
+  <p>We can create tailor-made, turnkey projects with the aim of perfectly meeting all your needs and strategic objectives with our warehouses and industrial buildings specially designed to be easily assembled and disassembled within very short timeframes.</p>
+  <p>The metal structures are made using galvanized steel profiles, according to the project type, and covered with galvanized sheet metal or sandwich roof panels that prove highly effective for the thermal and acoustic insulation of industrial warehouses, production units, and similar activities.</p>  
+  `,
+  textContenedoresDescripcion1: `
+  <h3>Robust, watertight, and versatile.</h3>
+  <p>A complete range of custom-fitted maritime containers.</p>
+  <p>Our customized maritime containers are capable of withstanding all the challenging conditions of your most remote construction sites. Furthermore, they allow you to keep your teams and equipment safe, secure from theft, fires, and adverse weather.</p>
+  <p>Possible uses:</p>
+  <ul>
+      <li>Construction site offices</li>
+      <li>Changing rooms</li>
+      <li>Sanitary facilities with toilets and showers</li>
+      <li>Material storage shops</li>
+      <li>Meeting rooms</li>
+      <li>Dining areas</li>
+      <li>Infirmary</li>
+  </ul>
+  <p>We can provide you with a turnkey service offer, tailored to any type of activity. As a bonus, it includes air conditioning, anti-theft grids on windows, reinforced concrete foundations, and the provision of a technician who will handle delivery, leveling, and smooth operations, meeting all your requirements, anywhere across Ivory Coast.</p>
+  `,
   textContenedoresDescripcion2:
     "We help you take control of your project with efficient and innovative prefabricated solutions that significantly impact your daily performance.",
 

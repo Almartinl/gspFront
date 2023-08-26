@@ -68,7 +68,7 @@ export default function CarouselSplider({ img }) {
         aria-labelledby="thumbnail-slider-example"
       >
         {images.map((image) => (
-          <SplideSlide key={image.src}>
+          <SplideSlide key={image.id}>
             <img src={image.src} alt={image.alt} />
           </SplideSlide>
         ))}
@@ -80,11 +80,11 @@ export default function CarouselSplider({ img }) {
         ref={thumbsRef}
         aria-label="The carousel with thumbnails. Selecting a thumbnail will change the main carousel"
       >
-        {images.map((image) => (
+        {images.map((image, index) => (
           <SplideSlide
             className="splide__slide"
             style={{ border: "none" }}
-            key={image.src}
+            key={image.id}
           >
             <img src={image.src} alt={image.alt} />
           </SplideSlide>
