@@ -22,7 +22,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { useEffect, useState, Suspense, useContext } from "react";
 import { Canvas, render, useThree } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Html, useProgress } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useAuthContext } from "../../contexts/AuthContext";
@@ -69,6 +69,11 @@ export default function Configurador() {
   const [bungalowcValue, setBungalowcValue] = useState("");
   const [nombreProyecto, setNombreProyecto] = useState("");
   const fotoInicio = "../../introConf.png";
+  const [randomCamera, setRandomCamera] = useState({
+    value: [-1.8, 1.5, 2.5],
+    fov: 60,
+    target: [0, 0, 0],
+  });
 
   const [planta, setPlanta] = useState([]);
   const [modelo3d, setModelo3d] = useState([]);
@@ -102,6 +107,12 @@ export default function Configurador() {
   };
   const handleCloseView3d = () => {
     setOpen3d(false);
+    setVerInterior(false);
+    setRandomCamera({
+      value: [-1.8, 1.5, 2.5],
+      fov: 60,
+      target: [0, 0, 0],
+    });
   };
   const handleClickOpenInfo = () => {
     setOpenInfo(true);
@@ -565,6 +576,66 @@ export default function Configurador() {
     );
   }
 
+  function changeView(id) {
+    if (disposicionValue == "1") {
+      if (id == 1) {
+        setRandomCamera({
+          value: [0, 0.7, 0],
+          fov: 75,
+          target: [0, 0.7, 0],
+        });
+      } else if (id == 2) {
+        setRandomCamera({
+          value: [-1.8, 1.5, 2.5],
+          fov: 60,
+          target: [0, 0, 0],
+        });
+      }
+    }
+    if (disposicionValue == "2") {
+      if (id == 3) {
+        setRandomCamera({
+          value: [0.8, 0.7, 0],
+          fov: 75,
+          target: [0.7, 0.7, 0],
+        });
+      } else if (id == 4) {
+        setRandomCamera({
+          value: [-0.8, 0.7, 0],
+          fov: 60,
+          target: [-0.7, 0.7, 0],
+        });
+      } else if (id == 2) {
+        setRandomCamera({
+          value: [-1.8, 1.5, 2.5],
+          fov: 60,
+          target: [0, 0, 0],
+        });
+      }
+    }
+    if (disposicionValue == "3") {
+      if (id == 3) {
+        setRandomCamera({
+          value: [0.8, 0.7, 0],
+          fov: 75,
+          target: [0.7, 0.7, 0],
+        });
+      } else if (id == 4) {
+        setRandomCamera({
+          value: [-0.8, 0.7, 0],
+          fov: 60,
+          target: [-0.7, 0.7, 0],
+        });
+      } else if (id == 2) {
+        setRandomCamera({
+          value: [-1.8, 1.5, 2.5],
+          fov: 60,
+          target: [0, 0, 0],
+        });
+      }
+    }
+  }
+
   function View3d() {
     const Model = () => {
       const gltf = useLoader(
@@ -579,12 +650,17 @@ export default function Configurador() {
     };
 
     return (
-      <Canvas camera={{ position: [-1.8, 1.5, 2.5], fov: 60 }}>
+      <Canvas>
+        <PerspectiveCamera
+          makeDefault
+          position={randomCamera.value}
+          fov={randomCamera.fov}
+        />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={0.4} />
         <Suspense fallback={<Loader />}>
           <Model />
-          <OrbitControls />
+          <OrbitControls target={randomCamera.target} />
         </Suspense>
       </Canvas>
     );
@@ -1157,9 +1233,35 @@ export default function Configurador() {
                   </Grid>
                 </DialogContent>
                 <DialogActions>
-                  <Button onClick={handleCloseView3d} variant="contained">
-                    {t("buttonCerrar")}
-                  </Button>
+                  {disposicionValue == "1" && (
+                    <>
+                      <Button onClick={() => changeView(1)}>
+                        Vista Interior
+                      </Button>
+                      <Button onClick={() => changeView(2)}>
+                        Vista Exterior
+                      </Button>
+                      <Button onClick={handleCloseView3d} variant="contained">
+                        {t("buttonCerrar")}
+                      </Button>
+                    </>
+                  )}
+                  {(disposicionValue == "2" || disposicionValue == "3") && (
+                    <>
+                      <Button onClick={() => changeView(3)}>
+                        Vista Interior 1
+                      </Button>
+                      <Button onClick={() => changeView(4)}>
+                        Vista Interior 2
+                      </Button>
+                      <Button onClick={() => changeView(2)}>
+                        Vista Exterior
+                      </Button>
+                      <Button onClick={handleCloseView3d} variant="contained">
+                        {t("buttonCerrar")}
+                      </Button>
+                    </>
+                  )}
                 </DialogActions>
               </Dialog>
               <Dialog
