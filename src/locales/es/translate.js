@@ -314,6 +314,10 @@ export const translateEs = {
   tittleTextStep8TourConfig: "<b>Fin Del Tutorial</b>",
   textStep8TourConfig: "Ahora puede configurar el bungalow que prefiera",
   tittleTextTime3D: "Tiempo aproximado de espera 10 segundos",
+  textViewInt1: "Vista Interior 1",
+  textViewInt: "Vista Interior",
+  textViewInt2: "Vista Interior 2",
+  textViewExt: "Vista Exterior",
 
   //Projects
   tittleTextProjects: "Nuestros Proyectos",

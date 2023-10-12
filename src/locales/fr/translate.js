@@ -317,6 +317,10 @@ export const translateFr = {
   textStep8TourConfig:
     "Maintenant, vous pouvez configurer le bungalow que vous préférez",
   tittleTextTime3D: "Temps d'attente approximatif 10 secondes",
+  textViewInt1: "Vue intérieure 1",
+  textViewInt: "Vue intérieure",
+  textViewInt2: "Vue intérieure 2",
+  textViewExt: "Vue extérieure",
 
   //Projects
   tittleTextProjects: "Nos Projets",

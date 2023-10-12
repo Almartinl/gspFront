@@ -36,31 +36,29 @@ export default function CarouselPrincipal() {
         <div className="carousel-item active">
           <img src="../../22.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-4 fw-bold">
-              {t("tittleCarousel")}
-            </h4>
-            <h4 className="shadow-text fw-bold">
+            <h2 className="shadow-text fw-bold">{t("tittleCarousel")}</h2>
+            <h6 className="shadow-text fw-bold">
               {t("subTittleCarousel")}
               {/* Bungalows y Edificios prefabricados */}
-            </h4>
+            </h6>
           </div>
         </div>
         <div className="carousel-item">
           <img src="../../44.jpg" className="d-block w-100 " alt="carrusel" />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-4 fw-bold">
+            <h4 className="shadow-text display-6 fw-bold">
               {t("tittle2Carousel")}
             </h4>
-            <h4 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h4>
+            <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5>
           </div>
         </div>
         <div className="carousel-item">
           <img src="../../16box.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-4 fw-bold">
+            <h4 className="shadow-text display-6 fw-bold">
               {t("tittle3Carousel")}
             </h4>
-            <h4 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h4>
+            <h5 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h5>
           </div>
         </div>
       </div>

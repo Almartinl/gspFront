@@ -315,6 +315,10 @@ export const translateEn = {
   tittleTextStep8TourConfig: "<b>End Of Tutorial</b>",
   textStep8TourConfig: "Now you can configure the bungalow you prefer",
   tittleTextTime3D: "Approximate wait time 10 seconds",
+  textViewInt1: "Interior View 1",
+  textViewInt: "Interior View",
+  textViewInt2: "Interior View 2",
+  textViewExt: "Exterior View",
 
   //Projects
   tittleTextProjects: "Our Projects",

@@ -1236,10 +1236,10 @@ export default function Configurador() {
                   {disposicionValue == "1" && (
                     <>
                       <Button onClick={() => changeView(1)}>
-                        Vista Interior
+                        {t("textViewInt")}
                       </Button>
                       <Button onClick={() => changeView(2)}>
-                        Vista Exterior
+                        {t("textViewExt")}
                       </Button>
                       <Button onClick={handleCloseView3d} variant="contained">
                         {t("buttonCerrar")}
@@ -1249,13 +1249,13 @@ export default function Configurador() {
                   {(disposicionValue == "2" || disposicionValue == "3") && (
                     <>
                       <Button onClick={() => changeView(3)}>
-                        Vista Interior 1
+                        {t("textViewInt1")}
                       </Button>
                       <Button onClick={() => changeView(4)}>
-                        Vista Interior 2
+                        {t("textViewInt2")}
                       </Button>
                       <Button onClick={() => changeView(2)}>
-                        Vista Exterior
+                        {t("textViewExt")}
                       </Button>
                       <Button onClick={handleCloseView3d} variant="contained">
                         {t("buttonCerrar")}
