@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 
 const theme = createTheme();
 
-export default function FormLogin({
+export default function FormEmailResendPass({
   estado,
   vista,
   vistaResendPass,
@@ -46,11 +46,7 @@ export default function FormLogin({
 
   function handleChange() {
     estado(!vista);
-  }
-
-  function handleChangeResendPass() {
-    estadoResendPass(true);
-    estado(!vista);
+    estadoResendPass(false);
   }
 
   return (
@@ -71,11 +67,11 @@ export default function FormLogin({
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            {t("textTittleLogin")}
+            Email De Recuperacion
           </Typography>
           <Box
             component="form"
-            onSubmit={(e) => login(e, user)}
+            //onSubmit={(e) => login(e, user)}
             noValidate
             sx={{ mt: 1 }}
           >
@@ -92,49 +88,27 @@ export default function FormLogin({
               value={user.email}
               color="success"
             />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              onChange={handleInput}
-              value={user.password}
-              color="success"
-            />
             {/* <FormControlLabel
               control={<Checkbox value="remember" color="success" />}
               label="Recuerdame"
             /> */}
             <Button
-              type="submit"
+              //type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               color="success"
             >
-              {t("textTittleLogin")}
+              Recuperar Contraseña
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link
-                  sx={{ cursor: "pointer" }}
-                  onClick={() => handleChangeResendPass()}
-                  variant="body2"
-                >
-                  {t("textRecPass")}
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link
-                  variant="body2"
-                  sx={{ cursor: "pointer" }}
                   onClick={() => handleChange()}
+                  sx={{ cursor: "pointer" }}
+                  variant="body2"
                 >
-                  {t("textSinRegister")}
+                  Volver al Login
                 </Link>
               </Grid>
             </Grid>
