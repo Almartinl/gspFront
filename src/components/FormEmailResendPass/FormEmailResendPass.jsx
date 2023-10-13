@@ -24,7 +24,6 @@ const theme = createTheme();
 export default function FormEmailResendPass({
   estado,
   vista,
-  vistaResendPass,
   estadoResendPass,
 }) {
   const { t } = useTranslation();
@@ -122,10 +121,6 @@ export default function FormEmailResendPass({
               value={email}
               color="success"
             />
-            {/* <FormControlLabel
-              control={<Checkbox value="remember" color="success" />}
-              label="Recuerdame"
-            /> */}
             <Button
               type="submit"
               fullWidth

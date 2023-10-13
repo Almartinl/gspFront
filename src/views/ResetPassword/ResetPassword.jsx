@@ -5,7 +5,7 @@ import jwtDecode from "jwt-decode";
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
-function ResetPassword() {
+export default function ResetPassword() {
   const location = useLocation();
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -87,5 +87,3 @@ function ResetPassword() {
     </Container>
   );
 }
-
-export default ResetPassword;
