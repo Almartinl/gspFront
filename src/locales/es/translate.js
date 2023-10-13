@@ -406,6 +406,11 @@ export const translateEs = {
   textAlertLoginError3:
     "Usuario Inactivo, Por favor contacte con el administrador",
   textPasswordError: "Las contraseñas deben de ser iguales",
+  textTitleRecoverPass: "Email De Recuperacion",
+  textButtonRecoveryPass: "Restablecer Contraseña",
+  textReturnLogin: "Volver al Login",
+  textNewPass: "Nueva Contraseña",
+  textConfPass: "Confirmar Contraseña",
 
   //Cookies
   textCookies:

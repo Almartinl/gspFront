@@ -58,7 +58,7 @@ function ResetPassword() {
         }}
       >
         <TextField
-          label="Nueva Contraseña"
+          label={t("textNewPass")}
           type="password"
           fullWidth
           value={newPassword}
@@ -66,7 +66,7 @@ function ResetPassword() {
           color="success"
         />
         <TextField
-          label="Confirmar Contraseña"
+          label={t("textConfPass")}
           type="password"
           fullWidth
           value={confirmPassword}
@@ -80,7 +80,7 @@ function ResetPassword() {
             onClick={handleSubmit}
             disabled={!newPassword || newPassword !== confirmPassword}
           >
-            Restablecer Contraseña
+            {t("textButtonRecoveryPass")}
           </Button>
         </Grid>
       </Box>

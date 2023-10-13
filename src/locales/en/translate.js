@@ -405,6 +405,11 @@ export const translateEn = {
   textAlertLoginError2: "Incorrect email or password",
   textAlertLoginError3: "Inactive user. Please contact the administrator",
   textPasswordError: "Passwords must be the same",
+  textTitleRecoverPass: "Recovery Email",
+  textButtonRecoveryPass: "Reset Password",
+  textReturnLogin: "Return to Login",
+  textNewPass: "New Password",
+  textConfPass: "Confirm Password",
 
   //Cookies
   textCookies:

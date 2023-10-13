@@ -411,6 +411,11 @@ export const translateFr = {
   textAlertLoginError3:
     "Utilisateur inactif. Veuillez contacter l'administrateur",
   textPasswordError: "Les mots de passe doivent être les mêmes",
+  textTitleRecoverPass: "E-mail de récupération",
+  textButtonRecoveryPass: "Réinitialiser le mot de passe",
+  textReturnLogin: "Retour à la connexion",
+  textNewPass: "Nouveau mot de passe",
+  textConfPass: "Confirmer le mot de passe",
 
   //Cookies
   textCookies:

@@ -101,7 +101,7 @@ export default function FormEmailResendPass({
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Email De Recuperacion
+            {t("textTitleRecoverPass")}
           </Typography>
           <Box
             component="form"
@@ -133,7 +133,7 @@ export default function FormEmailResendPass({
               sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}
               color="success"
             >
-              Recuperar Contraseña
+              {t("textButtonRecoveryPass")}
             </Button>
             <Grid container>
               <Grid item xs>
@@ -142,7 +142,7 @@ export default function FormEmailResendPass({
                   sx={{ cursor: "pointer" }}
                   variant="body2"
                 >
-                  Volver al Login
+                  {t("textReturnLogin")}
                 </Link>
               </Grid>
             </Grid>
