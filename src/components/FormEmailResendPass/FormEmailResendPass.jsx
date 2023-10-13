@@ -17,6 +17,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Swal from "sweetalert2";
 
 const theme = createTheme();
 
@@ -28,14 +29,47 @@ export default function FormEmailResendPass({
 }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { login, authorization } = useAuthContext();
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-  });
+  const { authorization } = useAuthContext();
+  const [email, setEmail] = useState("");
 
+  async function resetPassword(e, email) {
+    e.preventDefault();
+    await fetch("https://almartindev.online/api/user/reset-password", {
+      method: "POST",
+      headers: { "content-Type": "application/json" },
+      body: JSON.stringify({ email: email }),
+    }).then((response) => {
+      //console.log(response.status);
+      if (response.status == 400) {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: t("textAlertLoginError1"),
+        });
+      } else if (response.status == 200) {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Email Enviado Correctamente",
+        });
+        navigate("/");
+      } else if (response.status == 404 || response.status == 401) {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: t("textAlertLoginError1"),
+        });
+      } else if (response.status == 403) {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: t("textAlertLoginError1"),
+        });
+      }
+    });
+  }
   function handleInput(e) {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setEmail(e.target.value);
   }
 
   useEffect(() => {
@@ -71,7 +105,7 @@ export default function FormEmailResendPass({
           </Typography>
           <Box
             component="form"
-            //onSubmit={(e) => login(e, user)}
+            onSubmit={(e) => resetPassword(e, email)}
             noValidate
             sx={{ mt: 1 }}
           >
@@ -85,7 +119,7 @@ export default function FormEmailResendPass({
               autoComplete="email"
               autoFocus
               onChange={handleInput}
-              value={user.email}
+              value={email}
               color="success"
             />
             {/* <FormControlLabel
@@ -93,7 +127,7 @@ export default function FormEmailResendPass({
               label="Recuerdame"
             /> */}
             <Button
-              //type="submit"
+              type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2, backgroundColor: "#3b8f1e" }}

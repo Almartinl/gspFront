@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./views/Home/Home";
@@ -26,6 +26,7 @@ import DashboardProyectos from "./views/DashboardProyectos/DashboardProyectos";
 import Cookies from "./components/Cookies/Cookies";
 import Policity from "./views/policity/Policity";
 import DashboardOfertas from "./views/DashboardOfertas/DashboardOfertas";
+import ResetPassword from "./views/ResetPassword/ResetPassword";
 
 function App() {
   const [showCookieNotification, setShowCookieNotification] = useState(
@@ -39,6 +40,14 @@ function App() {
   const handleCookieClose = () => {
     setShowCookieNotification(false);
   };
+
+  function ResetPasswordWithToken() {
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+    const token = searchParams.get("token");
+
+    return <ResetPassword token={token} />;
+  }
   return (
     <AuthContextProvider>
       <BrowserRouter>
@@ -51,6 +60,10 @@ function App() {
             <Route path="productos" element={<Productos />} />
             <Route path="proyectos" element={<Proyectos />} />
             <Route path="nosotros" element={<Nosotros />} />
+            <Route
+              path="/reset-password"
+              element={<ResetPasswordWithToken />}
+            />
           </Route>
           <Route element={<PrivateRoute allowedRoles={[ROLES.User]} />}>
             <Route path="/account" element={<Account />} />
@@ -63,10 +76,6 @@ function App() {
               element={<DashboardPresupuestos />}
             />
             <Route path="/dashboard/contacto" element={<DashboardContacto />} />
-            {/* <Route
-              path="/dashboard/productos"
-              element={<DashboardProductos />}
-            /> */}
             <Route path="/dashboard/publi" element={<DashboardOfertas />} />
             <Route
               path="/dashboard/proyectos"

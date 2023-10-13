@@ -37,10 +37,7 @@ export default function CarouselPrincipal() {
           <img src="../../22.jpg" className="d-block w-100" alt="carrusel" />
           <div className="carousel-caption carousel-text">
             <h2 className="shadow-text fw-bold">{t("tittleCarousel")}</h2>
-            <h6 className="shadow-text fw-bold">
-              {t("subTittleCarousel")}
-              {/* Bungalows y Edificios prefabricados */}
-            </h6>
+            <h6 className="shadow-text fw-bold">{t("subTittleCarousel")}</h6>
           </div>
         </div>
         <div className="carousel-item">
