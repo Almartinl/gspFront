@@ -5322,7 +5322,7 @@ export default function Productos() {
                             <CardMedia
                               component="img"
                               height="500"
-                              image="../../plano-wc-tipo1.png"
+                              image="../../plano-wc-tipo2.png"
                               alt="img"
                               sx={{ objectFit: "contain" }}
                             />
