@@ -34,14 +34,24 @@ export default function CarouselPrincipal() {
       </div>
       <div className="carousel-inner con">
         <div className="carousel-item active">
-          <img src="../../22.jpg" className="d-block w-100" alt="carrusel" />
+          {/* <img src="../../22.jpg" className="d-block w-100" alt="carrusel" /> */}
+          <img
+            src="../../besix-abobo.jpeg"
+            className="d-block w-100"
+            alt="carrusel"
+          />
           <div className="carousel-caption carousel-text">
             <h2 className="shadow-text fw-bold">{t("tittleCarousel")}</h2>
             <h6 className="shadow-text fw-bold">{t("subTittleCarousel")}</h6>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="../../44.jpg" className="d-block w-100 " alt="carrusel" />
+          {/* <img src="../../44.jpg" className="d-block w-100 " alt="carrusel" /> */}
+          <img
+            src="../../carousel_2.jpeg"
+            className="d-block w-100 "
+            alt="carrusel"
+          />
           <div className="carousel-caption carousel-text">
             <h4 className="shadow-text display-6 fw-bold">
               {t("tittle2Carousel")}
@@ -50,7 +60,12 @@ export default function CarouselPrincipal() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="../../16box.jpg" className="d-block w-100" alt="carrusel" />
+          {/* <img src="../../16box.jpg" className="d-block w-100" alt="carrusel" /> */}
+          <img
+            src="../../carousel_3.jpeg"
+            className="d-block w-100"
+            alt="carrusel"
+          />
           <div className="carousel-caption carousel-text">
             <h4 className="shadow-text display-6 fw-bold">
               {t("tittle3Carousel")}

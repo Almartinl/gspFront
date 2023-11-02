@@ -64,6 +64,7 @@ export const translateEs = {
   textButtonClick: "Click Aquí",
 
   //Products
+  textCarouselBaseVida: "Base de Vida",
   textCarouselObras: "Bungalows de Obras",
   textCarouselEstructura: "Estructuras Metálicas",
   textCarouselEdificios: "Edificios Prefabricados",
@@ -240,6 +241,11 @@ export const translateEs = {
   textContenedoresDescripcion2:
     "Te ayudamos a tomar el control de tu proyecto: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
   textVentanasOficina4: "2 Ventana de aluminio de 100 x 100 cm",
+  textPuertasWc5:
+    "1 Puerta de aluminio de 85 x 200 cm, 3 Puertas de aluminio de 70 x 200 cm",
+  textVentanasWc5:
+    "2 Ventanas de aluminio de 80x100cm, 3 Ventanas de aluminio de 35 x 33.5 cm",
+  textEqSanitarioWc5: "3 Váter, 1 Lavabo, Accesorios y jaboneras",
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",

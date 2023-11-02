@@ -64,6 +64,7 @@ export const translateFr = {
   textButtonClick: "Cliquez ici",
 
   //Products
+  textCarouselBaseVida: "Base de vie",
   textCarouselObras: "Bungalows de Chantier",
   textCarouselEstructura: "Structures Métalliques",
   textCarouselEdificios: "Bâtiments Préfabriqués",
@@ -242,6 +243,11 @@ export const translateFr = {
   `,
   textContenedoresDescripcion2:
     "Nous vous aidons à prendre le contrôle de votre projet grâce à des solutions préfabriquées efficaces et innovantes qui ont un impact significatif sur votre performance quotidienne.",
+  textPuertasWc5:
+    "1 ​Porte en aluminium de 85 x 200 cm, 3 portes en aluminium de 70 x 200 cm",
+  textVentanasWc5: "2 Fenêtres alu de 80x100cm, 3 fenêtres alu de 35 x 33,5 cm",
+  textEqSanitarioWc5:
+    "3 Chaises Anglaises, 1 Lavabo, Accessoires et porte-savons",
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

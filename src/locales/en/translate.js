@@ -64,6 +64,7 @@ export const translateEn = {
   textButtonClick: "Click Here",
 
   //Products
+  textCarouselBaseVida: "Life Base",
   textCarouselObras: "Construction Bungalows",
   textCarouselEstructura: "Metal Structures",
   textCarouselEdificios: "Prefabricated Buildings",
@@ -240,6 +241,11 @@ export const translateEn = {
   `,
   textContenedoresDescripcion2:
     "We help you take control of your project with efficient and innovative prefabricated solutions that significantly impact your daily performance.",
+  textPuertasWc5:
+    "1 Aluminum Door of 85 x 200 cm, 3 Aluminum Doors of 70 x 200 cm",
+  textVentanasWc5:
+    "2 Aluminum windows of 80x100cm, 3 aluminum windows of 35 x 33.5 cm",
+  textEqSanitarioWc5: "3 Toilets, 1 Sink, Accessories and soap dishes",
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",
