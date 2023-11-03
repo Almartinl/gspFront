@@ -6274,7 +6274,7 @@ export default function Productos() {
                         fontWeight="bold"
                         variant="h6"
                       >
-                        Ref: GSPSAN01
+                        Ref: GSPSAN05
                       </Typography>
                     }
                     title={t("textButtonSanitario5")}
