@@ -64,7 +64,7 @@ export const translateEs = {
   textButtonClick: "Click Aquí",
 
   //Products
-  textCarouselBaseVida: "Base de Vida",
+  textCarouselBaseVida: "Base de vida equipada",
   textCarouselObras: "Bungalows de Obras",
   textCarouselEstructura: "Estructuras Metálicas",
   textCarouselEdificios: "Edificios Prefabricados",
@@ -246,6 +246,19 @@ export const translateEs = {
   textVentanasWc5:
     "2 Ventanas de aluminio de 80x100cm, 3 Ventanas de aluminio de 35 x 33.5 cm",
   textEqSanitarioWc5: "3 Váter, 1 Lavabo, Accesorios y jaboneras",
+  textBaseVidaDescripcion: `<h3>Proyecto de Construcción</h3>
+  <p>Todas las grandes empresas de construcción están unanimemente de acuerdo en que un proyecto exitoso siempre comienza con instalaciones de obra debidamente establecidas.</p>
+  <p>Por eso, en Global Soluciones Prefabricadas, le ofrecemos bases de vida que cumplen con las normas y estándares más altos.</p>
+  <p>Ponemos a su disposición bases de vida completas que incluyen:</p>
+  <ul>
+      <li>Bungalows de oficina equipados con tomas RJ45 y RJ11, etc.</li>
+      <li>Bungalows sanitarios: inodoros ingleses o turcos, urinarios, lavabos, duchas y accesorios.</li>
+      <li>Vestuarios con taquillas de metal, bancos y percheros.</li>
+      <li>Dormitorios, enfermerías y áreas de comedor.</li>
+      <li>Casetas de vigilancia y más.</li>
+  </ul>
+  <p>No espere más, contáctenos ahora y dé un paso hacia la realización de sus proyectos.</p>
+`,
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",

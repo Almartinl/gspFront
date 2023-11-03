@@ -64,7 +64,7 @@ export const translateFr = {
   textButtonClick: "Cliquez ici",
 
   //Products
-  textCarouselBaseVida: "Base de vie",
+  textCarouselBaseVida: "Base de vie équipée",
   textCarouselObras: "Bungalows de Chantier",
   textCarouselEstructura: "Structures Métalliques",
   textCarouselEdificios: "Bâtiments Préfabriqués",
@@ -248,6 +248,19 @@ export const translateFr = {
   textVentanasWc5: "2 Fenêtres alu de 80x100cm, 3 fenêtres alu de 35 x 33,5 cm",
   textEqSanitarioWc5:
     "3 Chaises Anglaises, 1 Lavabo, Accessoires et porte-savons",
+  textBaseVidaDescripcion: `<h3>Projet de Construction</h3>
+  <p>Toutes les grandes entreprises de construction sont unanimement d'accord sur le fait : qu'un projet réussi commence toujours par des installations de chantier en bonne due forme !</p>
+  <p>C'est pourquoi chez Global Solutions Préfabriquées, nous vous proposons des bases de vie répondant aux normes et aux standards les plus élevés.</p>
+  <p>Nous mettons à votre disposition des bases de vie complètes composées de :</p>
+  <ul>
+      <li>Bungalows bureaux équipés avec des prises RJ45 et RJ11, etc.</li>
+      <li>Bungalows sanitaires : wc chaises anglaises ou turques, urinoirs, lavabos, douches et accessoires.</li>
+      <li>Des vestiaires équipés de casiers métalliques, bancs et porte-manteau.</li>
+      <li>Des dortoirs, infirmeries et réfectoires.</li>
+      <li>Des guérites ou poste de surveillance, etc.</li>
+  </ul>
+  <p>N'attendez plus, contactez-nous dès maintenant et faites un pas vers la réalisation de vos projets.</p>
+`,
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

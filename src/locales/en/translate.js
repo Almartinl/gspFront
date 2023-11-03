@@ -64,7 +64,7 @@ export const translateEn = {
   textButtonClick: "Click Here",
 
   //Products
-  textCarouselBaseVida: "Life Base",
+  textCarouselBaseVida: "Equipped living base",
   textCarouselObras: "Construction Bungalows",
   textCarouselEstructura: "Metal Structures",
   textCarouselEdificios: "Prefabricated Buildings",
@@ -246,6 +246,19 @@ export const translateEn = {
   textVentanasWc5:
     "2 Aluminum windows of 80x100cm, 3 aluminum windows of 35 x 33.5 cm",
   textEqSanitarioWc5: "3 Toilets, 1 Sink, Accessories and soap dishes",
+  textBaseVidaDescripcion: `<h3>Construction Project</h3>
+  <p>All major construction companies unanimously agree that a successful project always begins with properly established construction site facilities!</p>
+  <p>That's why at Global Prefabricated Solutions, we offer you living bases that meet the highest standards and norms.</p>
+  <p>We provide complete living bases that include:</p>
+  <ul>
+      <li>Equipped office bungalows with RJ45 and RJ11 outlets, etc.</li>
+      <li>Sanitary bungalows: English or Turkish toilets, urinals, sinks, showers, and accessories.</li>
+      <li>Locker rooms with metal lockers, benches, and coat racks.</li>
+      <li>Dormitories, infirmaries, and dining areas.</li>
+      <li>Guard booths or surveillance posts, and more.</li>
+  </ul>
+  <p>Don't wait any longer, contact us now and take a step towards realizing your projects.</p>
+`,
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

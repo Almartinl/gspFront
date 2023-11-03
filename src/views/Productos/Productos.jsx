@@ -1572,6 +1572,65 @@ export default function Productos() {
         >
           {vistaInicio && <CarouselProductos />}
 
+          {vistaBaseVida && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title={t("textCarouselBaseVida")}
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="500"
+                    image="../../carouselBaseVida.jpg"
+                    alt="img"
+                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
+                  />
+                  {/* <CardContent>
+                    <Typography
+                      variant="body2"
+                      color="#3b8f1e"
+                      fontWeight="bold"
+                    >
+                      {t("textCarouselPaneles")}
+                    </Typography>
+                  </CardContent> */}
+                  <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      {t("textTittleDescripcion")}
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textBaseVidaDescripcion"),
+                          }}
+                          p={1}
+                        ></Typography>
+                        {/* <Typography variant="body1" p={1}>
+                          {t("textContenedoresDescripcion2")}
+                        </Typography> */}
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
           {vistaBungalowsObras && (
             <Grid container item xs={12} spacing={2} p={3}>
               <Grid item sm={12}>
@@ -1597,9 +1656,7 @@ export default function Productos() {
                       </Grid>
                       <CardContent>
                         <Typography
-                          variant="body2"
-                          color="#3b8f1e"
-                          fontWeight="bold"
+                          variant="body1"
                           dangerouslySetInnerHTML={{
                             __html: t("textContentProductObrasDesc"),
                           }}
@@ -1994,7 +2051,7 @@ export default function Productos() {
                   <CardMedia
                     component="img"
                     height="500"
-                    image="../../caseta.jpg"
+                    image="../../garita1.jpeg"
                     alt="img"
                     sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
@@ -2032,7 +2089,9 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../garita1.png"
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../garita-simple.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -2059,10 +2118,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../garita1.png"
+                      image="../../garita-simple.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../garita1.png");
+                        setFotoSeleccionada("../../garita-simple.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -2080,6 +2139,23 @@ export default function Productos() {
                       onClick={(e) => {
                         e.preventDefault();
                         setFotoSeleccionada("../../garita3.jpg");
+                      }}
+                      alt="img"
+                      sx={{
+                        objectFit: "contain",
+                        maxWidth: "100px",
+                        cursor: "pointer",
+                        border: 1,
+                        borderColor: "#3b8f1e",
+                      }}
+                    />
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image="../../garita-simple2.jpg"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setFotoSeleccionada("../../garita-simple2.jpg");
                       }}
                       alt="img"
                       sx={{
@@ -4206,15 +4282,6 @@ export default function Productos() {
               <Grid item xs={12}>
                 <Card>
                   <CardHeader
-                    // action={
-                    //   <Typography
-                    //     color="#3b8f1e"
-                    //     fontWeight="bold"
-                    //     variant="h6"
-                    //   >
-                    //     Ref: GSPSANXX
-                    //   </Typography>
-                    // }
                     title={t("textButtonSanitarioDoble")}
                     titleTypographyProps={{
                       color: "#3b8f1e",
@@ -4228,7 +4295,7 @@ export default function Productos() {
                     image={
                       fotoSeleccionada
                         ? fotoSeleccionada
-                        : "../../bungalow-sanitario-doble.png"
+                        : "../../sanitario-doble.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -4255,12 +4322,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../bungalow-sanitario-doble.png"
+                      image="../../sanitario-doble.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada(
-                          "../../bungalow-sanitario-doble.png"
-                        );
+                        setFotoSeleccionada("../../sanitario-doble.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -4274,10 +4339,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../wc-doble2.jpeg"
+                      image="../../sanitario-doble1.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../wc-doble2.jpeg");
+                        setFotoSeleccionada("../../sanitario-doble1.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -5012,7 +5077,7 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo2.png"
+                      fotoSeleccionada ? fotoSeleccionada : "../../caseta.jpg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -5036,23 +5101,6 @@ export default function Productos() {
                       flexWrap: "wrap",
                     }}
                   >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc-tipo2.png"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc-tipo2.png");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
                     <CardMedia
                       component="img"
                       height="100"
@@ -5420,7 +5468,9 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo3.png"
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../sanitario-tipo3.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -5447,10 +5497,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../wc-tipo3.png"
+                      image="../../sanitario-tipo3.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../wc-tipo3.png");
+                        setFotoSeleccionada("../../sanitario-tipo3.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -5845,7 +5895,9 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo4.png"
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../wc1-tipo4.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -5869,23 +5921,6 @@ export default function Productos() {
                       flexWrap: "wrap",
                     }}
                   >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc-tipo4.png"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc-tipo4.png");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
                     <CardMedia
                       component="img"
                       height="100"
@@ -6638,7 +6673,7 @@ export default function Productos() {
                     image={
                       fotoSeleccionada
                         ? fotoSeleccionada
-                        : "../../vestuario.png"
+                        : "../../vestuario.jpg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -6665,10 +6700,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../vestuario.png"
+                      image="../../vestuario.jpg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../vestuario.png");
+                        setFotoSeleccionada("../../vestuario.jpg");
                       }}
                       alt="img"
                       sx={{
@@ -7368,61 +7403,6 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image="../../panelSandwich.png"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
-                  {/* <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {t("textCarouselPaneles")}
-                    </Typography>
-                  </CardContent> */}
-                  <CardContent
-                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                  >
-                    <Typography
-                      variant="h4"
-                      bgcolor="#3b8f1e"
-                      color="white"
-                      p={1}
-                    >
-                      {t("textTittleDescripcion")}
-                    </Typography>
-                    {/* <Grid container>
-                      <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion1")}
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion2")}
-                        </Typography>
-                      </Grid>
-                    </Grid> */}
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
-          )}
-
-          {vistaBaseVida && (
-            <Grid container item xs={12} spacing={2} p={3}>
-              <Grid item xs={12}>
-                <Card>
-                  <CardHeader
-                    title={t("textCarouselBaseVida")}
-                    titleTypographyProps={{
-                      color: "#3b8f1e",
-                      align: "left",
-                      fontWeight: "bold",
-                    }}
-                  />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../carouselBaseVida.jpg"
                     alt="img"
                     sx={{ objectFit: { xs: "contain", md: "cover" } }}
                   />
