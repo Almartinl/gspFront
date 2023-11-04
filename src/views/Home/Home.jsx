@@ -77,8 +77,17 @@ export default function Home() {
   }, []);
 
   return (
-    <Grid marginTop={4}>
-      <CarouselPrincipal />
+    <Grid marginTop={2}>
+      <Container
+        maxWidth="xl"
+        sx={{
+          marginTop: "0px",
+          paddingTop: { xs: 0, md: 0 },
+          paddingBottom: 0,
+        }}
+      >
+        <CarouselPrincipal />
+      </Container>
       {offer.length > 0 && (
         <Container
           maxWidth="xl"

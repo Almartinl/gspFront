@@ -22,7 +22,7 @@
 @media (min-width: 992px) {
   .carousel-inner.con .carousel-item img {
     filter: brightness(50%);
-    max-height: 550px;
+    max-height: 750px;
     object-fit: cover;
   }
 }

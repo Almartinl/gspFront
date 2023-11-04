@@ -2834,7 +2834,7 @@ export default function Productos() {
                     image={
                       fotoSeleccionada
                         ? fotoSeleccionada
-                        : "../../bungalow-polivalente.png"
+                        : "../../bungalow-simple.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -2861,10 +2861,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../bungalow-polivalente.png"
+                      image="../../bungalow-simple.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../bungalow-polivalente.png");
+                        setFotoSeleccionada("../../bungalow-simple.jpeg");
                       }}
                       alt="img"
                       sx={{
@@ -2905,24 +2905,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -4686,7 +4668,9 @@ export default function Productos() {
                     component="img"
                     height="500"
                     image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../wc-tipo1.png"
+                      fotoSeleccionada
+                        ? fotoSeleccionada
+                        : "../../sanitario-tipo1.jpeg"
                     }
                     alt="img"
                     sx={{ objectFit: "contain" }}
@@ -4713,10 +4697,10 @@ export default function Productos() {
                     <CardMedia
                       component="img"
                       height="100"
-                      image="../../wc-tipo1.png"
+                      image="../../sanitario-tipo1.jpeg"
                       onClick={(e) => {
                         e.preventDefault();
-                        setFotoSeleccionada("../../wc-tipo1.png");
+                        setFotoSeleccionada("../../sanitario-tipo1.jpeg");
                       }}
                       alt="img"
                       sx={{
