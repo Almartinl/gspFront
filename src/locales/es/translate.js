@@ -26,7 +26,7 @@ export const translateEs = {
   tittle3Carousel: "Estructuras Metálicas",
   subTittle3Carousel:
     "Instalamos todo tipo de bungalows prefabricados de obra en plazos muy reducidos.",
-  textTittleVent: "Nuestras <br /> Ventajas",
+  textTittleVent: "Nuestras <br /> ventajas",
   contentTextVent:
     "Dominamos la cadena de creación de valor, desde el estudio, el diseño, la fabricación, el montaje hasta la entrega de sus productos, sin olvidar nuestro servicio postventa de altísima calidad, capaz de intervenir en todo el territorio de Costa de Marfil en 72 horas y la garantía de 06. meses en cada producto adquirido.",
   contentTextVent1:
@@ -45,7 +45,7 @@ export const translateEs = {
     "Pon a tus equipos técnicos en óptimas condiciones de trabajo y comodidad para lograr tus objetivos estratégicos.",
   contentTextVent5:
     "Te ayudamos a tomar el control de tu proyecto muy rápidamente: con soluciones prefabricadas eficientes e innovadoras que impactan significativamente en tu desempeño diario.",
-  textTittleBen: "Nuestros Beneficios de las instalaciones prefabricadas",
+  textTittleBen: "Nuestras ventajas competitivas",
   contentTextBen1: "La velocidad de montaje",
   contentTextBen2: "Plazos de entrega muy cortos",
   contentTextBen3: "Facilidad de instalación",

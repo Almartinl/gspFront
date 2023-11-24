@@ -26,7 +26,7 @@ export const translateEn = {
   tittle3Carousel: "Metal Structures",
   subTittle3Carousel:
     "We install all types of prefabricated site bungalows within very short deadlines.",
-  textTittleVent: "Our <br /> Advantages",
+  textTittleVent: "Our <br /> advantages",
   contentTextVent:
     "We master the value creation chain, from the study, design, manufacture, assembly to the delivery of your products, not to mention our very high quality after-sales service, capable of intervening throughout the Ivorian territory in 72 hours and the guarantee of 06 months on each product purchased.",
   contentTextVent1:
@@ -45,7 +45,7 @@ export const translateEn = {
     "Put your technical teams in optimal working conditions and comfort in order to achieve your strategic objectives.",
   contentTextVent5:
     "We help you take control of your project very quickly: with efficient and innovative prefabricated solutions that significantly impact your daily performance.",
-  textTittleBen: "Our Benefits of Prefabricated Facilities",
+  textTittleBen: "Our competitive advantages",
   contentTextBen1: "Fast assembly speed",
   contentTextBen2: "Very short delivery times",
   contentTextBen3: "Ease of installation",

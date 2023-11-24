@@ -26,7 +26,7 @@ export const translateFr = {
   tittle3Carousel: "Structures métalliques",
   subTittle3Carousel:
     "Nous installons tous les types de bungalows de chantier préfabriqués dans des délais très courts.",
-  textTittleVent: "Nos <br /> Avantages",
+  textTittleVent: "Nos <br /> avantages",
   contentTextVent:
     "Nous maitrisons la chaine de création de valeur, depuis l’étude, la conception, la fabrication, l’assemblage jusqu’à la livraison de vos produits, sans oublier notre SAV de très grande qualité, capable d’intervenir sur l’ensemble du territoire Ivoirien en 72H et la garantie de 06 mois sur chaque produit achetés.",
   contentTextVent1:
@@ -45,7 +45,7 @@ export const translateFr = {
     "Mettre vos équipes techniques dans des conditions de travail et de confort optimales afin d’atteindre vos objectifs stratégiques.",
   contentTextVent5:
     "Nous vous aidons à prendre le contrôle de votre projet très rapidement: avec des solutions préfabriquées efficaces et innovantes qui impactent significativement vos performances quotidiennes.",
-  textTittleBen: "Nos avantages des installations préfabriquées",
+  textTittleBen: "Nos advantages concurrentiels",
   contentTextBen1: "Rapidité de montage",
   contentTextBen2: "Délais de livraison très courts",
   contentTextBen3: "Facilité d'installation",

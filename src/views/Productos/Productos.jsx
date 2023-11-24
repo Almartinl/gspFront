@@ -30,6 +30,7 @@ import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopBut
 import { alignProperty } from "@mui/material/styles/cssUtils";
 import { useTranslation } from "react-i18next";
 import CarouselSplider from "../../components/CarouselSplider/CarouselSplider";
+import CardMediaCarousel from "../../components/CardMediaCarousel/CardMediaCarousel";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -883,11 +884,11 @@ export default function Productos() {
             xs={12}
             sm={3}
             gap={10}
-            bgcolor="#d3b72a"
+            bgcolor="#07004e"
             p={5}
             alignContent="flex-start"
           >
-            <Typography variant="h4" fontWeight="800" color="#3b8f1e">
+            <Typography variant="h4" fontWeight="800" color="white">
               {t("textTittleTipos")}
             </Typography>
             <Grid container gap={2}>
@@ -901,7 +902,7 @@ export default function Productos() {
                       color: "#3b8f1e",
                       borderColor: "#3b8f1e",
                       fontWeight: "bold",
-                      backgroundColor: "#d3b72a",
+                      backgroundColor: "#07004e",
                       border: 1,
                     }
                   }
@@ -933,8 +934,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -956,8 +957,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -979,8 +980,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1002,8 +1003,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1029,8 +1030,8 @@ export default function Productos() {
                           backgroundColor: "#3b8f1e",
                         }
                       : {
-                          color: "#3b8f1e",
-                          borderColor: "#3b8f1e",
+                          color: "white",
+                          borderColor: "white",
                           fontWeight: "bold",
                         }
                   }
@@ -1048,7 +1049,7 @@ export default function Productos() {
                       color: "#3b8f1e",
                       borderColor: "#3b8f1e",
                       fontWeight: "bold",
-                      backgroundColor: "#d3b72a",
+                      backgroundColor: "#07004e",
                       border: 1,
                     }
                   }
@@ -1080,8 +1081,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1103,8 +1104,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1126,8 +1127,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1149,8 +1150,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1172,8 +1173,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1195,8 +1196,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1222,8 +1223,8 @@ export default function Productos() {
                           backgroundColor: "#3b8f1e",
                         }
                       : {
-                          color: "#3b8f1e",
-                          borderColor: "#3b8f1e",
+                          color: "white",
+                          borderColor: "white",
                           fontWeight: "bold",
                         }
                   }
@@ -1245,8 +1246,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1264,7 +1265,7 @@ export default function Productos() {
                       color: "#3b8f1e",
                       borderColor: "#3b8f1e",
                       fontWeight: "bold",
-                      backgroundColor: "#d3b72a",
+                      backgroundColor: "#07004e",
                       border: 1,
                     }
                   }
@@ -1296,8 +1297,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1319,8 +1320,8 @@ export default function Productos() {
                               textTransform: "none",
                             }
                           : {
-                              color: "#3b8f1e",
-                              borderColor: "#3b8f1e",
+                              color: "white",
+                              borderColor: "white",
                               fontWeight: "bold",
                               textTransform: "none",
                             }
@@ -1346,8 +1347,8 @@ export default function Productos() {
                           backgroundColor: "#3b8f1e",
                         }
                       : {
-                          color: "#3b8f1e",
-                          borderColor: "#3b8f1e",
+                          color: "white",
+                          borderColor: "white",
                           fontWeight: "bold",
                         }
                   }
@@ -1369,8 +1370,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1400,11 +1401,11 @@ export default function Productos() {
             xs={12}
             sm={3}
             gap={4}
-            bgcolor="#d3b72a"
+            bgcolor="#07004e"
             p={5}
             alignContent="flex-start"
           >
-            <Typography variant="h4" fontWeight="800" color="#3b8f1e">
+            <Typography variant="h4" fontWeight="800" color="white">
               {t("textTittleProductos")}
             </Typography>
             <Grid container gap={2}>
@@ -1420,8 +1421,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1441,8 +1442,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1462,8 +1463,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1483,8 +1484,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1504,8 +1505,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1526,8 +1527,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1548,8 +1549,8 @@ export default function Productos() {
                         backgroundColor: "#3b8f1e",
                       }
                     : {
-                        color: "#3b8f1e",
-                        borderColor: "#3b8f1e",
+                        color: "white",
+                        borderColor: "white",
                         fontWeight: "bold",
                       }
                 }
@@ -1584,22 +1585,9 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../carouselBaseVida.jpg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
+                  <CardMediaCarousel
+                    imgArray={["../../carouselBaseVida.jpg"]}
                   />
-                  {/* <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {t("textCarouselPaneles")}
-                    </Typography>
-                  </CardContent> */}
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -1681,88 +1669,13 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../bungalowsalmacen.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../bungalowsalmacen.jpeg",
+                      "../../almacen1.jpeg",
+                      "../../almacen2.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../bungalowsalmacen.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../bungalowsalmacen.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../almacen1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../almacen1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../almacen2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../almacen2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -2048,13 +1961,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../garita1.jpeg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../garita1.jpeg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -2085,88 +1992,14 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../garita-simple.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../garita1.jpeg",
+                      "../../garita-simple.jpeg",
+                      "../../garita3.jpg",
+                      "../../garita-simple2.jpg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../garita-simple.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../garita-simple.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../garita3.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../garita3.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../garita-simple2.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../garita-simple2.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -2179,24 +2012,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -2441,69 +2256,9 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../caseta1.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={["../../caseta1.jpeg", "../../garita2.jpeg"]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../caseta1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../caseta1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../garita2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../garita2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -2516,24 +2271,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -2792,13 +2529,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../oficina.jpeg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../oficina.jpeg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -2828,71 +2559,12 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../bungalow-simple.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../bungalow-simple.jpeg",
+                      "../../bungalow-polivalente1.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../bungalow-simple.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../bungalow-simple.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../bungalow-polivalente1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../bungalow-polivalente1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
