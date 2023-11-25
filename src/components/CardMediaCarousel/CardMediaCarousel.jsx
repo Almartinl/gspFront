@@ -11,7 +11,7 @@ export default function CardMediaCarousel({ imgArray }) {
         <CardMedia
           component="img"
           height="500"
-          image={fotoSeleccionada ? fotoSeleccionada : imgArray[0]}
+          image={imgArray[0]}
           alt="img"
           sx={{ objectFit: { xs: "contain", md: "cover" } }}
         />

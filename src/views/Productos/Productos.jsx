@@ -1608,9 +1608,6 @@ export default function Productos() {
                           }}
                           p={1}
                         ></Typography>
-                        {/* <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion2")}
-                        </Typography> */}
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -1994,7 +1991,6 @@ export default function Productos() {
                   />
                   <CardMediaCarousel
                     imgArray={[
-                      "../../garita1.jpeg",
                       "../../garita-simple.jpeg",
                       "../../garita3.jpg",
                       "../../garita-simple2.jpg",
@@ -2835,105 +2831,14 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../refectoire1.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../refectoire1.jpeg",
+                      "../../refectoire2.jpeg",
+                      "../../refectoire3.jpeg",
+                      "../../refectoire4.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../refectoire1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../refectoire1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../refectoire2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../refectoire2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../refectoire3.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../refectoire3.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../refectoire4.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../refectoire4.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -3204,69 +3109,9 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../doble1.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={["../../doble1.jpeg", "../../doble2.jpeg"]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../doble1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../doble1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../doble2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../doble2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -3279,24 +3124,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -3555,69 +3382,9 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../triple1.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={["../../triple1.jpeg", "../../triple2.jpeg"]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../triple1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../triple1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../triple2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../triple2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -3630,24 +3397,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -3906,13 +3655,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../wc.jpeg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../wc.jpeg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -3943,88 +3686,13 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../sanitario-doble.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../sanitario-doble.jpeg",
+                      "../../sanitario-doble1.jpeg",
+                      "../../wc-doble1.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../sanitario-doble.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../sanitario-doble.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../sanitario-doble1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../sanitario-doble1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc-doble1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc-doble1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -4037,24 +3705,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -4336,88 +3986,13 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../sanitario-tipo1.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../sanitario-tipo1.jpeg",
+                      "../../wc1-tipo1.jpg",
+                      "../../wc2-tipo1.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../sanitario-tipo1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../sanitario-tipo1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc1-tipo1.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc1-tipo1.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -4430,24 +4005,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -4729,86 +4286,13 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada ? fotoSeleccionada : "../../caseta.jpg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../caseta.jpg",
+                      "../../wc2-tipo2.jpeg",
+                      "../../wc1-tipo2.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../caseta.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../caseta.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc1-tipo2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc1-tipo2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -4821,24 +4305,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -5120,122 +4586,15 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../sanitario-tipo3.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../sanitario-tipo3.jpeg",
+                      "../../wc1-tipo3.jpg",
+                      "../../wc2-tipo2.jpeg",
+                      "../../wc2-tipo3.jpeg",
+                      "../../wc2-tipo1.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../sanitario-tipo3.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../sanitario-tipo3.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc1-tipo3.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc1-tipo3.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo3.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo3.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo1.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo1.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -5248,24 +4607,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -5547,88 +4888,13 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../wc1-tipo4.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../wc1-tipo4.jpeg",
+                      "../../wc2-tipo2.jpeg",
+                      "../../wc1-tipo2.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc1-tipo4.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc1-tipo4.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc1-tipo2.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc1-tipo2.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -5641,24 +4907,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -5940,105 +5188,14 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../obrasAmarillo.jpeg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../obrasAmarillo.jpeg",
+                      "../../wc-tipo5.jpeg",
+                      "../../wc2-tipo5.jpeg",
+                      "../../wc3-tipo5.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../obrasAmarillo.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../obrasAmarillo.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc-tipo5.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc-tipo5.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc2-tipo5.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc2-tipo5.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../wc3-tipo5.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../wc3-tipo5.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -6323,122 +5480,15 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../vestuario.jpg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../vestuario.jpg",
+                      "../../vestuario.jpeg",
+                      "../../vestuario1.jpg",
+                      "../../vestuario2.jpg",
+                      "../../vestuario3.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../vestuario.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../vestuario.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../vestuario.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../vestuario.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../vestuario1.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../vestuario1.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../vestuario2.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../vestuario2.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../vestuario3.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../vestuario3.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -6451,24 +5501,6 @@ export default function Productos() {
                       {t("textTittleDescripcion")}
                     </Typography>
                     <Grid container>
-                      {/* <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          Nuestros bungalows de sitio para uso como Almacenes
-                          están perfectamente adaptados para servir como Almacen
-                          en su campamento base, proyectos militares o civiles
-                          con el fin de poner a sus equipos técnicos en
-                          condiciones óptimas de comodidad y trabajo, para una
-                          mejor tasa de productividad y desempeño diario.
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          Están diseñadas con unas dimensiones estándar de 6,00
-                          X 2,40 m con una altura exterior de 2,60 m, o 12 X
-                          2,40 m entre las muchas ventajas que tienen tienes: el
-                          hecho de que se pueden personalizar según los colores
-                          y las necesidades del cliente en cuanto a de
-                          dimensiones y tabiques interiores.
-                        </Typography>
-                      </Grid> */}
                       <Grid item xs={12}>
                         <Accordion
                           expanded={expanded === "panel1"}
@@ -6727,13 +5759,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../32.jpg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../32.jpg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -6782,13 +5808,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../edificio.jpeg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../edificio.jpeg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -6837,13 +5857,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../hangar2.jpg"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
+                  <CardMediaCarousel imgArray={["../../hangar2.jpg"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -6896,122 +5910,15 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image={
-                      fotoSeleccionada
-                        ? fotoSeleccionada
-                        : "../../contenedor-maritimo.jpg"
-                    }
-                    alt="img"
-                    sx={{ objectFit: "contain" }}
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../contenedor-maritimo.jpg",
+                      "../../contenedor-maritimo2.jpg",
+                      "../../contenedor-maritimo4.jpeg",
+                      "../../contenedor-maritimo5.jpeg",
+                      "../../contenedor-maritimo3.jpeg",
+                    ]}
                   />
-                  <Container xs={12}>
-                    <Divider
-                      sx={{
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                        my: 3,
-                        opacity: "initial",
-                      }}
-                    />
-                  </Container>
-
-                  <CardContent
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: 1,
-                      flexWrap: "wrap",
-                    }}
-                  >
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../contenedor-maritimo.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../contenedor-maritimo.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../contenedor-maritimo2.jpg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../contenedor-maritimo2.jpg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../contenedor-maritimo4.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../contenedor-maritimo4.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../contenedor-maritimo5.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../contenedor-maritimo5.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                    <CardMedia
-                      component="img"
-                      height="100"
-                      image="../../contenedor-maritimo3.jpeg"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setFotoSeleccionada("../../contenedor-maritimo3.jpeg");
-                      }}
-                      alt="img"
-                      sx={{
-                        objectFit: "contain",
-                        maxWidth: "100px",
-                        cursor: "pointer",
-                        border: 1,
-                        borderColor: "#3b8f1e",
-                      }}
-                    />
-                  </CardContent>
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -7055,22 +5962,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMedia
-                    component="img"
-                    height="500"
-                    image="../../panelSandwich.png"
-                    alt="img"
-                    sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                  />
-                  {/* <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="#3b8f1e"
-                      fontWeight="bold"
-                    >
-                      {t("textCarouselPaneles")}
-                    </Typography>
-                  </CardContent> */}
+                  <CardMediaCarousel imgArray={["../../panelSandwich.png"]} />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
@@ -7082,16 +5974,6 @@ export default function Productos() {
                     >
                       {t("textTittleDescripcion")}
                     </Typography>
-                    {/* <Grid container>
-                      <Grid item xs={12}>
-                        <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion1")}
-                        </Typography>
-                        <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion2")}
-                        </Typography>
-                      </Grid>
-                    </Grid> */}
                   </CardContent>
                 </Card>
               </Grid>

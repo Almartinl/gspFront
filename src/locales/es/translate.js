@@ -112,7 +112,7 @@ export const translateEs = {
   textButtonSanitario3: "Sanitario tipo 3",
   textButtonSanitario4: "Sanitario tipo 4",
   textButtonSanitario5: "Sanitario tipo 5",
-  textTittleDescripcion: "Descripcion",
+  textTittleDescripcion: "Descripción",
   textTittleCaracteristicas: "Carasteristicas Tecnicas",
   textLongitud: "Longitud",
   textAncho: "Ancho",
