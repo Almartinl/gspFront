@@ -284,7 +284,12 @@ export default function Home() {
           </Grid>
           <Grid item md={4}>
             <Grid sx={{ boxShadow: "7px 5px 8px 0px #727272" }}>
-              <img src="../../boxVerde.jpg" width="100%" alt="img" />
+              <img
+                src="../../boxVerde.jpg"
+                loading="lazy"
+                width="100%"
+                alt="img"
+              />
             </Grid>
           </Grid>
 
@@ -309,7 +314,7 @@ export default function Home() {
 
           <Grid item md={4}>
             <Grid sx={{ boxShadow: "-7px 5px 8px 0px #727272" }}>
-              <img src="../../44.jpg" width="100%" alt="img" />
+              <img src="../../44.jpg" loading="lazy" width="100%" alt="img" />
             </Grid>
           </Grid>
           <Grid
@@ -343,7 +348,7 @@ export default function Home() {
           </Grid>
           <Grid item md={4}>
             <Grid sx={{ boxShadow: "0px -4px 8px 2px #727272" }}>
-              <img src="../../exp1.jpg" width="100%" alt="img" />
+              <img src="../../exp1.jpg" loading="lazy" width="100%" alt="img" />
             </Grid>
           </Grid>
           <Grid container item md={4} textAlign="center" alignItems="center">

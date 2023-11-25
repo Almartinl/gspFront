@@ -1636,9 +1636,16 @@ export default function Productos() {
                       <Grid
                         height={{ xs: "200", md: "500" }}
                         sx={{ objectFit: { xs: "contain", md: "cover" } }}
-                      >
-                        <CarouselSplider img={bungalowObras[0].foto} />
-                      </Grid>
+                      ></Grid>
+                      <CardMediaCarousel
+                        imgArray={[
+                          "../../base-vida-akouedo.jpeg",
+                          "../../obarsRojo.jpeg",
+                          "obrasAmarillo.jpeg",
+                          "obrasAzul.jpeg",
+                          "boxVerde.jpg",
+                        ]}
+                      />
                       <CardContent>
                         <Typography
                           variant="body1"
