@@ -89,7 +89,7 @@ export default function CarouselPrincipal() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="../../44.jpg" className="d-block w-100 " alt="carrusel" />
+          <img src="../../44.webp" className="d-block w-100 " alt="carrusel" />
           <div className="carousel-caption carousel-text">
             <h4 className="shadow-text display-6 fw-bold">
               {t("tittle2Carousel")}

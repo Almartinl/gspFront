@@ -1586,7 +1586,7 @@ export default function Productos() {
                     }}
                   />
                   <CardMediaCarousel
-                    imgArray={["../../carouselBaseVida.jpg"]}
+                    imgArray={["../../carouselBaseVida.webp"]}
                   />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -1999,8 +1999,8 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../garita-simple.jpeg",
-                      "../../garita3.jpg",
-                      "../../garita-simple2.jpg",
+                      "../../garita3.webp",
+                      "../../garita-simple2.webp",
                     ]}
                   />
                   <CardContent
@@ -3996,7 +3996,7 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../sanitario-tipo1.jpeg",
-                      "../../wc1-tipo1.jpg",
+                      "../../wc1-tipo1.webp",
                       "../../wc2-tipo1.jpeg",
                     ]}
                   />
@@ -4295,7 +4295,7 @@ export default function Productos() {
                   />
                   <CardMediaCarousel
                     imgArray={[
-                      "../../caseta.jpg",
+                      "../../caseta.webp",
                       "../../wc2-tipo2.jpeg",
                       "../../wc1-tipo2.jpeg",
                     ]}
@@ -4596,7 +4596,7 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../sanitario-tipo3.jpeg",
-                      "../../wc1-tipo3.jpg",
+                      "../../wc1-tipo3.webp",
                       "../../wc2-tipo2.jpeg",
                       "../../wc2-tipo3.jpeg",
                       "../../wc2-tipo1.jpeg",
@@ -5489,10 +5489,10 @@ export default function Productos() {
                   />
                   <CardMediaCarousel
                     imgArray={[
-                      "../../vestuario.jpg",
+                      "../../vestuario.webp",
                       "../../vestuario.jpeg",
-                      "../../vestuario1.jpg",
-                      "../../vestuario2.jpg",
+                      "../../vestuario1.webp",
+                      "../../vestuario2.webp",
                       "../../vestuario3.jpeg",
                     ]}
                   />
@@ -5766,7 +5766,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMediaCarousel imgArray={["../../32.jpg"]} />
+                  <CardMediaCarousel imgArray={["../../32.webp"]} />
                   <CardContent>
                     <Typography
                       variant="body2"
@@ -5969,7 +5969,7 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMediaCarousel imgArray={["../../panelSandwich.png"]} />
+                  <CardMediaCarousel imgArray={["../../panelSandwich.webp"]} />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >

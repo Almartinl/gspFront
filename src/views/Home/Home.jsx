@@ -314,7 +314,7 @@ export default function Home() {
 
           <Grid item md={4}>
             <Grid sx={{ boxShadow: "-7px 5px 8px 0px #727272" }}>
-              <img src="../../44.jpg" loading="lazy" width="100%" alt="img" />
+              <img src="../../44.webp" loading="lazy" width="100%" alt="img" />
             </Grid>
           </Grid>
           <Grid
