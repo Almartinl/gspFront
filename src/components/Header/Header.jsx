@@ -15,7 +15,7 @@ export default function Header() {
           }}
         >
           <Link to="/">
-            <img src="../../globallogo.png" alt="foto" width="400px" />
+            <img src="../../globallogo.webp" alt="foto" width="400px" />
           </Link>
         </Grid>
         <Grid
@@ -26,7 +26,7 @@ export default function Header() {
           }}
         >
           <Link to="/">
-            <img src="../../globallogo.png" width="180px" alt="foto" />
+            <img src="../../globallogo.webp" width="180px" alt="foto" />
           </Link>
         </Grid>
       </Grid>
