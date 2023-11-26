@@ -319,7 +319,7 @@ export const translateEs = {
   textStep1TourConfig:
     "Ahora vamos a Configurar un Bungalow de prueba y lo primero que debemos hacer es seleccionar la cantidad de Bungalows que queremos.<br/> <br/> <b>En este caso hemos elegido 1 Bungalow</b>",
   textStep2TourConfig:
-    "Como en el paso anterior la seleccion ha sido de 1 Bungalow, las opciones que tenemos ahora diponibles seran distintas a las que hubiesemos tenido si hubiesemos seleccionado otra cantidad de bungalows <br/> <br/> <b>Por ejemplo ahora vamos aseleccionar Vertical</b>",
+    "Como en el paso anterior la seleccion ha sido de 1 Bungalow, las opciones que tenemos ahora diponibles seran distintas a las que hubiesemos tenido si hubiesemos seleccionado otra cantidad de bungalows <br/> <br/> <b>Por ejemplo ahora vamos a seleccionar Vertical</b>",
   textStep3TourConfig:
     "Ahora hemos llegado al punto el cual seleccionamos que tipo de bungalow queremos.<br/> <br/> <b>Por ejemplo Almacen</b>",
   textStep4TourConfig:

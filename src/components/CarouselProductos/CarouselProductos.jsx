@@ -96,7 +96,12 @@ export default function CarouselProductos() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="../../44.webp" className="d-block w-100" alt="carrusel" />
+          <img
+            src="../../44.webp"
+            className="d-block w-100"
+            alt="carrusel"
+            height="550px"
+          />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
               {t("textCarouselEdificios")}
@@ -108,6 +113,7 @@ export default function CarouselProductos() {
             src="../../hangar2.jpg"
             className="d-block w-100"
             alt="carrusel"
+            height="550px"
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
@@ -120,6 +126,7 @@ export default function CarouselProductos() {
             src="../../contenedor-maritimo.jpg"
             className="d-block w-100"
             alt="carrusel"
+            height="550px"
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
@@ -132,6 +139,7 @@ export default function CarouselProductos() {
             src="../../panelSandwich.webp"
             className="d-block w-100"
             alt="carrusel"
+            height="550px"
           />
           <div className="carousel-caption carousel-text">
             <h3 className="shadow-text display-4 fw-bold">
