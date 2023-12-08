@@ -18,14 +18,23 @@ export const translateEs = {
 
   //Home
   tittleCarousel: "Construcción prefabricada, modular y metálica.",
-  subTittleCarousel:
-    "Mejore su imagen de marca con nuestras instalaciones prefabricadas cómodas, fiables y garantizadas.",
   tittle2Carousel: "Bungalows a Medida",
-  subTittle2Carousel:
-    "Benefíciate de la oferta más completa del mercado y recibe tu proyecto a medida con satisfacción garantizada.",
   tittle3Carousel: "Estructuras Metálicas",
-  subTittle3Carousel:
-    "Instalamos todo tipo de bungalows prefabricados de obra en plazos muy reducidos.",
+  titleProp1: "Construcción Prefabricada, Modular y Metálica",
+  subTitleProp1:
+    "Mejora tu imagen de marca con nuestras instalaciones prefabricadas cómodas, confiables y garantizadas.",
+  titleProp2: "Nuestras Instalaciones de Obra",
+  subTitleProp2:
+    "Benefíciate de la oferta más completa del mercado y haz que entreguemos tu proyecto a medida con un servicio llave en mano.",
+  titleProp3: "Nuestros Bungalows Apilados",
+  subTitleProp3:
+    "Cuando la estética se encuentra con la eficiencia y la funcionalidad, obtenemos edificaciones prefabricadas que cumplen perfectamente con tus requisitos.",
+  titleProp4: "Servicio Postventa Muy Dinámico y Garantía de 6 Meses",
+  subTitleProp4:
+    "Servicio al cliente excepcional para acompañarte durante todo el proceso de compra y entrega, con una garantía de 6 meses en todos nuestros productos.",
+  titleProp5: "Calidad, Fiabilidad y Garantía",
+  subTitleProp5:
+    "Instalamos todo tipo de bungalows prefabricados para obras en plazos muy cortos en toda Costa de Marfil.",
   textTittleVent: "Nuestras <br /> ventajas",
   contentTextVent:
     "Dominamos la cadena de creación de valor, desde el estudio, el diseño, la fabricación, el montaje hasta la entrega de sus productos, sin olvidar nuestro servicio postventa de altísima calidad, capaz de intervenir en todo el territorio de Costa de Marfil en 72 horas y la garantía de 06. meses en cada producto adquirido.",

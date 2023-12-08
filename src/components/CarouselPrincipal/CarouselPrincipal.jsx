@@ -43,80 +43,63 @@ export default function CarouselPrincipal() {
           data-bs-slide-to="4"
           aria-label="Slide 5"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="5"
-          aria-label="Slide 6"
-        ></button>
       </div>
       <div className="carousel-inner con">
         <div className="carousel-item active">
           <img
-            src="../../besix-abobo.jpeg"
-            className="d-block w-100"
+            src="../../besix-abobo.webp"
+            className="d-block w-100 border rounded"
             alt="carrusel"
           />
           <div className="carousel-caption carousel-text">
-            <h2 className="shadow-text fw-bold">{t("tittleCarousel")}</h2>
-            <h6 className="shadow-text fw-bold">{t("subTittleCarousel")}</h6>
+            <h2 className="shadow-text display-6 fw-bold">
+              {t("tittleCarousel")}
+            </h2>
+            {/* <h6 className="shadow-text fw-bold">{t("subTittleCarousel")}</h6> */}
           </div>
         </div>
         <div className="carousel-item">
           <img
-            src="../../carousel-2.jpeg"
-            className="d-block w-100"
+            src="../../carousel2.webp"
+            className="d-block w-100 border rounded"
             alt="carrusel"
           />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-6 fw-bold">
-              {t("tittle2Carousel")}
-            </h4>
-            <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5>
+            <h4 className="shadow-text display-6 fw-bold">{t("titleProp2")}</h4>
+            {/* <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5> */}
           </div>
         </div>
         <div className="carousel-item">
           <img
-            src="../../carousel-3.jpeg"
-            className="d-block w-100 "
+            src="../../carousel3.webp"
+            className="d-block w-100 border rounded"
             alt="carrusel"
           />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-6 fw-bold">
-              {t("tittle2Carousel")}
-            </h4>
-            <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <img src="../../44.webp" className="d-block w-100 " alt="carrusel" />
-          <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-6 fw-bold">
-              {t("tittle2Carousel")}
-            </h4>
-            <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5>
+            <h4 className="shadow-text display-6 fw-bold">{t("titleProp3")}</h4>
+            {/* <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5> */}
           </div>
         </div>
         <div className="carousel-item">
           <img
-            src="../../carousel_3.jpeg"
-            className="d-block w-100"
+            src="../../carousel_2.jpeg"
+            className="d-block w-100 border rounded"
             alt="carrusel"
           />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-6 fw-bold">
-              {t("tittle3Carousel")}
-            </h4>
-            <h5 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h5>
+            <h4 className="shadow-text display-6 fw-bold">{t("titleProp4")}</h4>
+            {/* <h5 className="shadow-text fw-bold">{t("subTittle2Carousel")}</h5> */}
           </div>
         </div>
         <div className="carousel-item">
-          <img src="../../16box.jpg" className="d-block w-100" alt="carrusel" />
+          <img
+            src="../../carousel_3.webp"
+            className="d-block w-100 border rounded"
+            alt="carrusel"
+          />
           <div className="carousel-caption carousel-text">
-            <h4 className="shadow-text display-6 fw-bold">
-              {t("tittle3Carousel")}
-            </h4>
-            <h5 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h5>
+            <h4 className="shadow-text display-6 fw-bold">{t("titleProp5")}</h4>
+            {/* <h5 className="shadow-text fw-bold">{t("subTittle3Carousel")}</h5> */}
           </div>
         </div>
       </div>

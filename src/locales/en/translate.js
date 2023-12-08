@@ -18,14 +18,23 @@ export const translateEn = {
 
   //Home
   tittleCarousel: "Prefabricated, modular and metal construction",
-  subTittleCarousel:
-    "Enhance your brand image with our comfortable, reliable, and guaranteed prefabricated facilities.",
   tittle2Carousel: "Custom Bungalows",
-  subTittle2Carousel:
-    "Benefit from the most complete offer on the market, and have your tailor-made project delivered with guaranteed satisfaction.",
   tittle3Carousel: "Metal Structures",
-  subTittle3Carousel:
-    "We install all types of prefabricated site bungalows within very short deadlines.",
+  titleProp1: "Prefab, Modular, and Metal Construction",
+  subTitleProp1:
+    "Enhance your brand image with our comfortable, reliable, and guaranteed prefab facilities.",
+  titleProp2: "Our Construction Site Facilities",
+  subTitleProp2:
+    "Benefit from the most comprehensive offer on the market and have your tailor-made project delivered with a turnkey service.",
+  titleProp3: "Our Stacked Bungalows",
+  subTitleProp3:
+    "When aesthetics meet efficiency and functionality, you get prefab buildings that perfectly meet your requirements.",
+  titleProp4: "Very Dynamic After-Sales Service and 6-Month Warranty",
+  subTitleProp4:
+    "Exceptional customer service to accompany you throughout the purchase and delivery process, and a 6-month warranty on all our products.",
+  titleProp5: "Quality, Reliability, and Guarantee",
+  subTitleProp5:
+    "We install all types of prefab construction site bungalows in very short periods throughout Cote d'Ivoire.",
   textTittleVent: "Our <br /> advantages",
   contentTextVent:
     "We master the value creation chain, from the study, design, manufacture, assembly to the delivery of your products, not to mention our very high quality after-sales service, capable of intervening throughout the Ivorian territory in 72 hours and the guarantee of 06 months on each product purchased.",

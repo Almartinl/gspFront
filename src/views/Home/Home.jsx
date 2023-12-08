@@ -2,6 +2,7 @@ import "./home.css";
 import {
   Button,
   Card,
+  CardContent,
   CardMedia,
   Container,
   Divider,
@@ -15,6 +16,11 @@ import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
+import StoreMallDirectoryOutlinedIcon from "@mui/icons-material/StoreMallDirectoryOutlined";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
+import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
+import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
+import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
 
 export default function Home() {
   document.title = "Inicio";
@@ -88,6 +94,180 @@ export default function Home() {
       >
         <CarouselPrincipal />
       </Container>
+      <Grid marginY={10}>
+        <Container maxWidth="lg">
+          <Grid container spacing={10}>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <StoreMallDirectoryOutlinedIcon
+                  className="neonSvg"
+                  sx={{
+                    fontSize: 80,
+                    color: "green",
+                  }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp1")}
+                  </Typography>
+                  <Typography gutterBottom paragraph component="div">
+                    {t("subTitleProp1")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <LocalShippingOutlinedIcon
+                  className="neonSvg"
+                  sx={{ fontSize: 80, color: "green" }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp2")}
+                  </Typography>
+                  <Typography gutterBottom paragraph component="div">
+                    {t("subTitleProp2")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <ApartmentOutlinedIcon
+                  className="neonSvg"
+                  sx={{ fontSize: 80, color: "green" }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp3")}
+                  </Typography>
+                  <Typography gutterBottom paragraph component="div">
+                    {t("subTitleProp3")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid
+              item
+              md={2}
+              sx={{ display: { xs: "none", md: "block" } }}
+            ></Grid>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <VerifiedUserOutlinedIcon
+                  className="neonSvg"
+                  sx={{ fontSize: 80, color: "green" }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp4")}
+                  </Typography>
+                  <Typography gutterBottom paragraph component="div">
+                    {t("subTitleProp4")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <SpeedOutlinedIcon
+                  className="neonSvg"
+                  sx={{ fontSize: 80, color: "green" }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp5")}
+                  </Typography>
+                  <Typography gutterBottom paragraph component="div">
+                    {t("subTitleProp5")}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid
+              item
+              md={2}
+              sx={{ display: { xs: "none", md: "block" } }}
+            ></Grid>
+          </Grid>
+        </Container>
+      </Grid>
       {offer.length > 0 && (
         <Container
           maxWidth="xl"

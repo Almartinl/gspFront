@@ -18,14 +18,23 @@ export const translateFr = {
 
   //Home
   tittleCarousel: "Construction préfabriquée, modulaire et métalliques",
-  subTittleCarousel:
-    "Améliorez votre image de marque grâce à nos installations préfabriquées confortables, fiables et garanties.",
   tittle2Carousel: "Bungalows sur mesure",
-  subTittle2Carousel:
-    "Bénéficiez de l’offre la plus complète du marché, et faites-vous livrer votre projet sur mesure avec une satisfaction garantie.",
   tittle3Carousel: "Structures métalliques",
-  subTittle3Carousel:
-    "Nous installons tous les types de bungalows de chantier préfabriqués dans des délais très courts.",
+  titleProp1: "Construction préfabriquée, modulaire et métalliques",
+  subTitleProp1:
+    "Améliorez votre image de marque grâce à nos installations préfabriquées confortables, fiables et garanties.",
+  titleProp2: "Nos installations de chantier",
+  subTitleProp2:
+    "Bénéficiez de l’offre la plus complète du marché, et faites-vous livrer votre projet sur mesure avec un service clés en main.",
+  titleProp3: "Nos bungalows superposés en étage",
+  subTitleProp3:
+    "Quand l’esthétique rencontre l’efficacité et la fonctionnalité, cela donne des bâtiments préfabriqués qui répondent parfaitement à vos exigences.",
+  titleProp4: "Un SAV très dynamique et une garantie de 6 mois",
+  subTitleProp4:
+    "Un service clientèle exceptionnel pour vous accompagner tout au long du processus d’achat, de livraison et une garantie de 6 moins sur l’ensemble de nos produits.",
+  titleProp5: "Qualité, fiabilité et garantie",
+  subTitleProp5:
+    "Nous installons tous les types de bungalows de chantier préfabriqués dans des délais très courts et partout a travers la Cote d’Ivoire.",
   textTittleVent: "Nos <br /> avantages",
   contentTextVent:
     "Nous maitrisons la chaine de création de valeur, depuis l’étude, la conception, la fabrication, l’assemblage jusqu’à la livraison de vos produits, sans oublier notre SAV de très grande qualité, capable d’intervenir sur l’ensemble du territoire Ivoirien en 72H et la garantie de 06 mois sur chaque produit achetés.",
