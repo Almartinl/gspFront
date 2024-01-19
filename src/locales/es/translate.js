@@ -268,6 +268,14 @@ export const translateEs = {
   </ul>
   <p>No espere más, contáctenos ahora y dé un paso hacia la realización de sus proyectos.</p>
 `,
+  textPanelSandwichDescripcion: `<h3>Venta De Panel Sandwich Aislante</h3>
+  <p>¿Cuáles son las características específicas de los paneles sandwich?</p>
+  <p>Los paneles sandwich son paneles metálicos compuestos por una doble capa de chapa de acero galvanizado cocida al horno, separada por un material aislante que puede ser: espuma de poliuretano expandido (PUR) con resistencia al fuego tipo M1 y M2, poliestireno, lana de vidrio, etc.</p>
+  <p>Las dimensiones estándar son 11,90 m de longitud y 1 m de ancho.</p>
+  <p>Los paneles sandwich se utilizan con frecuencia para la aislación acústica y térmica de edificios modulares y prefabricados, así como para combatir eficazmente la pérdida de calor, contribuyendo significativamente al ahorro de energía.</p>
+  <p>Existen diferentes tipos de paneles sandwich, marcas y grosores disponibles, pero hemos optado por comercializar únicamente paneles sandwich de revestimiento y paneles sandwich de techo con grosores de 40 mm y 50 mm.</p>
+  <p>Entre las ventajas que ofrecen los paneles sandwich se encuentra su versatilidad, ya que se adaptan fácilmente a diversos tipos de construcción y proyectos.</p>
+  `,
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",

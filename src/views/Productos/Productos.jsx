@@ -5946,9 +5946,6 @@ export default function Productos() {
                           }}
                           p={1}
                         ></Typography>
-                        {/* <Typography variant="body1" p={1}>
-                          {t("textContenedoresDescripcion2")}
-                        </Typography> */}
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -5981,6 +5978,17 @@ export default function Productos() {
                     >
                       {t("textTittleDescripcion")}
                     </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textPanelSandwichDescripcion"),
+                          }}
+                          p={1}
+                        ></Typography>
+                      </Grid>
+                    </Grid>
                   </CardContent>
                 </Card>
               </Grid>

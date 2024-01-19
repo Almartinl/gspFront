@@ -268,6 +268,14 @@ export const translateEn = {
   </ul>
   <p>Don't wait any longer, contact us now and take a step towards realizing your projects.</p>
 `,
+  textPanelSandwichDescripcion: `<h3>Sale Of Insulating Sandwich Panels</h3>
+  <p>What are the specific features of sandwich panels:</p>
+  <p>Sandwich panels are metal panels consisting of a double layer of oven-baked galvanized steel sheet, separated by insulation which can be: expanded polyurethane foam (PUR) with fire resistance of type M1 and M2, polystyrene, glass wool, etc.</p>
+  <p>The standard dimensions are 11.90m in length and 1m in width.</p>
+  <p>Sandwich panels are often used for acoustic and thermal insulation of modular and prefabricated buildings, as well as for effective thermal loss prevention, thus contributing significantly to energy savings.</p>
+  <p>There are different types of sandwich panels, brands, and thicknesses available, but we have chosen to market only cladding sandwich panels and roof sandwich panels with thicknesses of 40mm and 50mm.</p>
+  <p>Among other advantages offered by sandwich panels is their versatility; they easily adapt to various types of construction and projects.</p>
+`,
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

@@ -270,6 +270,14 @@ export const translateFr = {
   </ul>
   <p>N'attendez plus, contactez-nous dès maintenant et faites un pas vers la réalisation de vos projets.</p>
 `,
+  textPanelSandwichDescripcion: `<h3>Vente De Panneaux Sandwich Isolants</h3>
+  <p>Quelles sont les spécificités des panneaux sandwich :</p>
+  <p>Les panneaux sandwich sont des panneaux métalliques constitués d'un double revêtement de tôle en acier galvanisé, laquée au four, séparé par un isolant qui peut être : la mousse de polyuréthane expansée (PUR) avec une résistance au feu de type M1 et M2, du polystyrène, de la laine de verre, etc.</p>
+  <p>Les dimensions standards sont 11,90 m pour la longueur et 1 m pour la largeur.</p>
+  <p>On utilise les panneaux sandwich très souvent pour l'isolation acoustique et thermique des bâtiments modulaires et préfabriqués, mais aussi pour lutter efficacement contre la déperdition thermique, en ce sens, il aide beaucoup à l'épargne énergétique.</p>
+  <p>Il existe différents types de panneaux sandwich, de marques et d'épaisseurs, toutefois nous avons choisi de ne commercialiser que les panneaux sandwich de bardage et les panneaux sandwich de toiture avec uniquement les épaisseurs 40 mm et de 50 mm.</p>
+  <p>Entre autres avantages que comportent les panneaux sandwich, vous avez la polyvalence, en effet, ils s'adaptent à tout type de construction et de projet très facilement.</p>
+`,
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

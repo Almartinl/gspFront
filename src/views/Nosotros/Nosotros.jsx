@@ -43,7 +43,7 @@ export default function Nosotros() {
         <Grid container justifyContent="center" my={5}>
           <img
             loading="lazy"
-            src="https://almartindev.online/api/images/products/nosotros.jpeg"
+            src="https://almartindev.online/api/images/products/nous.jpeg"
             alt="imagen"
             width="100%"
           />
