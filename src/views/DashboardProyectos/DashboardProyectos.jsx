@@ -14,6 +14,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  Tooltip,
 } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { useEffect, useState } from "react";
@@ -21,7 +22,10 @@ import { styled } from "@mui/material/styles";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import DeleteIcon from "@mui/icons-material/Delete";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export default function DashboardProyectos() {
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -180,13 +184,66 @@ export default function DashboardProyectos() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch("https://almartindev.online/api/obras/");
+      const response = await fetch("https://almartindev.online/api/obras/all");
       const data = await response.json();
       setProyectos(data);
       console.log(data);
     }
     fetchProyectos();
   }, [stateProyecto]);
+
+  function hideObra(e, hide, idObra) {
+    e.preventDefault();
+
+    // Invertir el valor de 'hide' para realizar la acción opuesta
+    const nuevaAccion = hide === 1 ? 0 : 1;
+
+    // Definir los mensajes según la acción a realizar
+    const accion = nuevaAccion === 1 ? "Publicar" : "Ocultar";
+    const textoConfirmacion = `¿Quieres ${accion} este Proyecto?`;
+    const textoExito = `Proyecto ${
+      accion === "Publicar" ? "publicado" : "ocultado"
+    } correctamente`;
+
+    const realizarFetch = () => {
+      fetch(`https://almartindev.online/api/obras/update/${idObra}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          public: nuevaAccion,
+        }),
+      }).then((response) => {
+        if (response.status == 400) {
+          alert("Error al recibir el body");
+        } else if (response.status == 200) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: textoExito,
+          });
+          setStateProyecto(!stateProyecto);
+        } else if (response.status == 409) {
+          alert("Obra ya registrada");
+        }
+      });
+    };
+
+    Swal.fire({
+      title: `${accion} Proyecto`,
+      text: textoConfirmacion,
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: accion,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        realizarFetch();
+      }
+    });
+  }
 
   console.log(portada);
   console.log(vistaPortada);
@@ -673,12 +730,25 @@ export default function DashboardProyectos() {
                   </List>
                 </StyledTableCell>
                 <StyledTableCell align="center">
-                  <IconButton
-                    color="error"
-                    //onClick={(e) => deleteFormulario(e, row.id)}
-                  >
-                    <DeleteIcon />
-                  </IconButton>
+                  {row.public == 1 ? (
+                    <Tooltip title="Ocultar Proyecto">
+                      <IconButton
+                        color="success"
+                        onClick={(e) => hideObra(e, row.public, row.id)}
+                      >
+                        <VisibilityIcon />
+                      </IconButton>
+                    </Tooltip>
+                  ) : (
+                    <Tooltip title="Publicar Proyecto">
+                      <IconButton
+                        color="error"
+                        onClick={(e) => hideObra(e, row.public, row.id)}
+                      >
+                        <VisibilityOffIcon />
+                      </IconButton>
+                    </Tooltip>
+                  )}
                 </StyledTableCell>
               </StyledTableRow>
             ))}
