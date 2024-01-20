@@ -60,7 +60,7 @@ export default function CarouselPrincipal() {
         </div>
         <div className="carousel-item">
           <img
-            src="../../carousel2.webp"
+            src="../../carousel-prin-2.webp"
             className="d-block w-100 border rounded"
             alt="carrusel"
           />

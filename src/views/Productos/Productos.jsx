@@ -1586,7 +1586,13 @@ export default function Productos() {
                     }}
                   />
                   <CardMediaCarousel
-                    imgArray={["../../carouselBaseVida.webp"]}
+                    imgArray={[
+                      "../../carouselBaseVida.webp",
+                      "../../base1.jpeg",
+                      "../../base2.jpeg",
+                      "../../base3.jpeg",
+                      "../../base4.jpeg",
+                    ]}
                   />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -1676,6 +1682,7 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../bungalowsalmacen.jpeg",
+                      "../../almacen3.jpeg",
                       "../../almacen1.jpeg",
                       "../../almacen2.jpeg",
                     ]}
@@ -2000,6 +2007,7 @@ export default function Productos() {
                     imgArray={[
                       "../../garita-simple.jpeg",
                       "../../garita3.webp",
+                      "../../garita3.jpeg",
                       "../../garita-simple2.webp",
                     ]}
                   />
@@ -2260,7 +2268,13 @@ export default function Productos() {
                     }}
                   />
                   <CardMediaCarousel
-                    imgArray={["../../caseta1.jpeg", "../../garita2.jpeg"]}
+                    imgArray={[
+                      "../../caseta1.jpeg",
+                      "../../garita2-1.jpeg",
+                      "../../garita2-2.jpeg",
+                      "../../garita2-3.jpeg",
+                      "../../garita2-4.jpeg",
+                    ]}
                   />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -2565,6 +2579,9 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../bungalow-simple.jpeg",
+                      "../../polivalente1.jpeg",
+                      "../../polivalente2.webp",
+                      "../../polivalente4.jpeg",
                       "../../bungalow-polivalente1.jpeg",
                     ]}
                   />
@@ -3117,7 +3134,14 @@ export default function Productos() {
                     }}
                   />
                   <CardMediaCarousel
-                    imgArray={["../../doble1.jpeg", "../../doble2.jpeg"]}
+                    imgArray={[
+                      "../../sala-doble-prin.jpeg",
+                      "../../doble1.jpeg",
+                      "../../doble2.jpeg",
+                      "../../sala-doble1.jpeg",
+                      "../../sala-doble2.jpeg",
+                      "../../sala-doble3.jpeg",
+                    ]}
                   />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -3390,7 +3414,13 @@ export default function Productos() {
                     }}
                   />
                   <CardMediaCarousel
-                    imgArray={["../../triple1.jpeg", "../../triple2.jpeg"]}
+                    imgArray={[
+                      "../../triple1.jpeg",
+                      "../../triple5.jpeg",
+                      "../../triple3.jpeg",
+                      "../../triple4.jpeg",
+                      "../../triple2.jpeg",
+                    ]}
                   />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -4295,7 +4325,9 @@ export default function Productos() {
                   />
                   <CardMediaCarousel
                     imgArray={[
-                      "../../caseta.webp",
+                      "../../wc3-tipo2.jpeg",
+                      "../../wc4-tipo2.jpeg",
+                      "../../wc5-tipo2.jpeg",
                       "../../wc2-tipo2.jpeg",
                       "../../wc1-tipo2.jpeg",
                     ]}
@@ -4898,6 +4930,9 @@ export default function Productos() {
                   <CardMediaCarousel
                     imgArray={[
                       "../../wc1-tipo4.jpeg",
+                      "../../wc2-tipo4.jpeg",
+                      "../../wc3-tipo4.jpeg",
+                      "../../wc4-tipo4.jpeg",
                       "../../wc2-tipo2.jpeg",
                       "../../wc1-tipo2.jpeg",
                     ]}
@@ -5491,6 +5526,9 @@ export default function Productos() {
                     imgArray={[
                       "../../vestuario.webp",
                       "../../vestuario.jpeg",
+                      "../../vestuario1.jpeg",
+                      "../../vestuario2.jpeg",
+                      "../../vestuario4.jpeg",
                       "../../vestuario1.webp",
                       "../../vestuario2.webp",
                       "../../vestuario3.jpeg",
@@ -5894,9 +5932,6 @@ export default function Productos() {
                           }}
                           p={1}
                         ></Typography>
-                        {/* <Typography variant="body1" p={1}>
-                          {t("textEstructuraDescripcion2")}.
-                        </Typography> */}
                       </Grid>
                     </Grid>
                   </CardContent>
@@ -5966,7 +6001,14 @@ export default function Productos() {
                       fontWeight: "bold",
                     }}
                   />
-                  <CardMediaCarousel imgArray={["../../panelSandwich.webp"]} />
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../panelSandwich.webp",
+                      "../../panel1.jpg",
+                      "../../panel2.jpg",
+                      "../../panel3.jpg",
+                    ]}
+                  />
                   <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
