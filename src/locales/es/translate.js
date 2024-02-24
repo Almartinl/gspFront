@@ -35,6 +35,13 @@ export const translateEs = {
   titleProp5: "Calidad, Fiabilidad y Garantía",
   subTitleProp5:
     "Instalamos todo tipo de bungalows prefabricados para obras en plazos muy cortos en toda Costa de Marfil.",
+  titleProp6: "Global solutions préfabriquées en cifras desde 2020",
+  subTitleProp6: `
+  <ul>
+    <li>+ 150 proyectos realizados en Costa de Marfil.</li>
+    <li>+ 5.750m2 de construcciones prefabricadas terminadas.</li>
+    <li>+ 95,5% de clientes satisfechos y fidelizados.</li>
+  </ul>`,
   textTittleVent: "Nuestras <br /> ventajas",
   contentTextVent:
     "Dominamos la cadena de creación de valor, desde el estudio, el diseño, la fabricación, el montaje hasta la entrega de sus productos, sin olvidar nuestro servicio postventa de altísima calidad, capaz de intervenir en todo el territorio de Costa de Marfil en 72 horas y la garantía de 06. meses en cada producto adquirido.",

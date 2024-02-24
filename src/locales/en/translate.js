@@ -35,6 +35,13 @@ export const translateEn = {
   titleProp5: "Quality, Reliability, and Guarantee",
   subTitleProp5:
     "We install all types of prefab construction site bungalows in very short periods throughout Cote d'Ivoire.",
+  titleProp6: "Global solutions préfabriquées in numbers since 2020",
+  subTitleProp6: `
+    <ul>
+      <li>+ 150 projects carried out across Ivory Coast.</li>
+      <li>+ 5,750m2 of prefabricated buildings completed.</li>
+      <li>+ De 95.5% des clients satisfaits et fidélisés.</li>
+    </ul>`,
   textTittleVent: "Our <br /> advantages",
   contentTextVent:
     "We master the value creation chain, from the study, design, manufacture, assembly to the delivery of your products, not to mention our very high quality after-sales service, capable of intervening throughout the Ivorian territory in 72 hours and the guarantee of 06 months on each product purchased.",

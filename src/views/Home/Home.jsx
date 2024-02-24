@@ -21,6 +21,8 @@ import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import SpeedOutlinedIcon from "@mui/icons-material/SpeedOutlined";
+import UpdateOutlinedIcon from "@mui/icons-material/UpdateOutlined";
+import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
 
 export default function Home() {
   document.title = "Inicio";
@@ -193,11 +195,11 @@ export default function Home() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid
+            {/* <Grid
               item
               md={2}
               sx={{ display: { xs: "none", md: "block" } }}
-            ></Grid>
+            ></Grid> */}
             <Grid item xs={12} md={4}>
               <Card
                 sx={{
@@ -257,6 +259,40 @@ export default function Home() {
                   <Typography gutterBottom paragraph component="div">
                     {t("subTitleProp5")}
                   </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <Card
+                sx={{
+                  maxWidth: 500,
+                  p: 4,
+                  border: 1,
+                  borderColor: "green",
+                  borderRadius: 5,
+                  height: 450,
+                  boxShadow: "0 0 10px 5px green",
+                }}
+              >
+                <ShowChartOutlinedIcon
+                  className="neonSvg"
+                  sx={{ fontSize: 80, color: "green" }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    fontWeight="bold"
+                  >
+                    {t("titleProp6")}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    paragraph
+                    component="div"
+                    dangerouslySetInnerHTML={{ __html: t("subTitleProp6") }}
+                  ></Typography>
                 </CardContent>
               </Card>
             </Grid>

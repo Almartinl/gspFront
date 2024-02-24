@@ -35,6 +35,13 @@ export const translateFr = {
   titleProp5: "Qualité, fiabilité et garantie",
   subTitleProp5:
     "Nous installons tous les types de bungalows de chantier préfabriqués dans des délais très courts et partout a travers la Cote d’Ivoire.",
+  titleProp6: "Global solutions préfabriquées en chiffres depuis 2020",
+  subTitleProp6: `
+    <ul>
+      <li>+ De 150 projets réalisés à travers la Cote d’Ivoire.</li>
+      <li>+ De 5.750m2 de bâtiment préfabriqués réalisés.</li>
+      <li>+ De 95.5% des clients satisfaits et fidélisés.</li>
+    </ul>`,
   textTittleVent: "Nos <br /> avantages",
   contentTextVent:
     "Nous maitrisons la chaine de création de valeur, depuis l’étude, la conception, la fabrication, l’assemblage jusqu’à la livraison de vos produits, sans oublier notre SAV de très grande qualité, capable d’intervenir sur l’ensemble du territoire Ivoirien en 72H et la garantie de 06 mois sur chaque produit achetés.",
