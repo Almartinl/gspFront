@@ -43,7 +43,7 @@ export default function DashboardPresupuestos() {
   useEffect(() => {
     async function fetchPresupuesto() {
       const response = await fetch(
-        "https://almartindev.online/api/bungalows/getallpresupuesto"
+        "https://almartindev.com/api/bungalows/getallpresupuesto"
       );
       const data = await response.json();
       setPresupuestos(data);
@@ -58,7 +58,7 @@ export default function DashboardPresupuestos() {
       (item, index) => item.id !== idPresupuesto
     );
     setPresupuestos(newList);
-    fetch("https://almartindev.online/api/bungalows/deletepresupuesto", {
+    fetch("https://almartindev.com/api/bungalows/deletepresupuesto", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

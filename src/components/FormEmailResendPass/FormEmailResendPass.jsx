@@ -33,7 +33,7 @@ export default function FormEmailResendPass({
 
   async function resetPassword(e, email) {
     e.preventDefault();
-    await fetch("https://almartindev.online/api/user/reset-password", {
+    await fetch("https://almartindev.com/api/user/reset-password", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({ email: email }),

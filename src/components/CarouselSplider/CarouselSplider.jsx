@@ -7,27 +7,27 @@ export default function CarouselSplider({ img }) {
   const images = [
     {
       id: 1,
-      src: `https://almartindev.online/api${img}`,
+      src: `https://almartindev.com/api${img}`,
       alt: "Image1",
     },
     {
       id: 2,
-      src: `https://almartindev.online/api/images/products/obarsRojo.jpeg`,
+      src: `https://almartindev.com/api/images/products/obarsRojo.jpeg`,
       alt: "Image2",
     },
     {
       id: 3,
-      src: `https://almartindev.online/api/images/products/obrasAmarillo.jpeg`,
+      src: `https://almartindev.com/api/images/products/obrasAmarillo.jpeg`,
       alt: "Image3",
     },
     {
       id: 4,
-      src: `https://almartindev.online/api/images/products/obrasAzul.jpeg`,
+      src: `https://almartindev.com/api/images/products/obrasAzul.jpeg`,
       alt: "Image4",
     },
     {
       id: 5,
-      src: `https://almartindev.online/api/images/products/boxVerde.jpg`,
+      src: `https://almartindev.com/api/images/products/boxVerde.jpg`,
       alt: "Image5",
     },
     // Add other image objects here...

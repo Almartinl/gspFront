@@ -43,7 +43,7 @@ export default function DashboardContacto() {
   useEffect(() => {
     async function fetchPresupuesto() {
       const response = await fetch(
-        "https://almartindev.online/api/user/contact/all"
+        "https://almartindev.com/api/user/contact/all"
       );
       const data = await response.json();
       setFormularios(data);
@@ -58,7 +58,7 @@ export default function DashboardContacto() {
       (item, index) => item.id !== idFormulario
     );
     setFormularios(newList);
-    fetch("https://almartindev.online/api/user/delete/contact", {
+    fetch("https://almartindev.com/api/user/delete/contact", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

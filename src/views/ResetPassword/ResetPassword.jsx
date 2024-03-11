@@ -24,7 +24,7 @@ export default function ResetPassword() {
   function registrarPassword(e, jwt) {
     e.preventDefault();
     console.log(jwt);
-    fetch(`https://almartindev.online/api/user/${jwt.id}`, {
+    fetch(`https://almartindev.com/api/user/${jwt.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({ password: newPassword }),

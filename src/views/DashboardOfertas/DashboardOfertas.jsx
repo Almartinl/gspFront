@@ -71,7 +71,7 @@ export default function DashboardOfertas() {
 
     async function fetchUpload() {
       const response = await fetch(
-        "https://almartindev.online/api/product/add_offer",
+        "https://almartindev.com/api/product/add_offer",
         {
           method: "POST",
           body: formData,
@@ -92,9 +92,7 @@ export default function DashboardOfertas() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch(
-        "https://almartindev.online/api/product/offer"
-      );
+      const response = await fetch("https://almartindev.com/api/product/offer");
       const data = await response.json();
       setOfertas(data);
       console.log(data);
@@ -105,7 +103,7 @@ export default function DashboardOfertas() {
   function activeOffer(e, idOffer, active) {
     e.preventDefault();
 
-    fetch(`https://almartindev.online/api/product/offer/${idOffer}`, {
+    fetch(`https://almartindev.com/api/product/offer/${idOffer}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -250,7 +248,7 @@ export default function DashboardOfertas() {
                 <StyledTableCell align="center">
                   <Link
                     target="_blank"
-                    to={"https://almartindev.online/api" + row.path}
+                    to={"https://almartindev.com/api" + row.path}
                   >
                     <ListItemText primary={row.path.split("/").pop()} />
                   </Link>

@@ -48,7 +48,7 @@ export default function FormRegister({ vista, estado }) {
   function registrar(e) {
     e.preventDefault();
     if (newUsuario.password === newUsuario.passwordOk) {
-      fetch("https://almartindev.online/api/user/", {
+      fetch("https://almartindev.com/api/user/", {
         method: "POST",
         headers: { "content-Type": "application/json" },
         body: JSON.stringify(newUsuario),

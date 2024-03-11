@@ -149,7 +149,7 @@ export default function DashboardProyectos() {
       formData.append("imagen", carouselOcho);
     }
     async function fetchUpload() {
-      const response = await fetch("https://almartindev.online/api/obras/add", {
+      const response = await fetch("https://almartindev.com/api/obras/add", {
         method: "POST",
         body: formData,
       });
@@ -184,7 +184,7 @@ export default function DashboardProyectos() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch("https://almartindev.online/api/obras/all");
+      const response = await fetch("https://almartindev.com/api/obras/all");
       const data = await response.json();
       setProyectos(data);
       console.log(data);
@@ -206,7 +206,7 @@ export default function DashboardProyectos() {
     } correctamente`;
 
     const realizarFetch = () => {
-      fetch(`https://almartindev.online/api/obras/update/${idObra}`, {
+      fetch(`https://almartindev.com/api/obras/update/${idObra}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -707,7 +707,7 @@ export default function DashboardProyectos() {
                 <StyledTableCell align="left">
                   <Link
                     target="_blank"
-                    to={"https://almartindev.online/api/" + row.imagen}
+                    to={"https://almartindev.com/api/" + row.imagen}
                   >
                     <ListItemText primary={row.imagen.split("/").pop()} />
                   </Link>
@@ -721,7 +721,7 @@ export default function DashboardProyectos() {
                       <ListItem key={index}>
                         <Link
                           target="_blank"
-                          to={"https://almartindev.online/api/" + img}
+                          to={"https://almartindev.com/api/" + img}
                         >
                           <ListItemText primary={img.split("/").pop()} />
                         </Link>

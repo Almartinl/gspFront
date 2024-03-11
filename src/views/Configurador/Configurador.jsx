@@ -124,7 +124,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/disposicion`
+        `https://almartindev.com/api/config/disposicion`
       );
       const selector = await response.json();
       setDisposicion(selector);
@@ -135,7 +135,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/orientacion`,
+        `https://almartindev.com/api/config/orientacion`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -153,7 +153,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelo`,
+        `https://almartindev.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -171,7 +171,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelo`,
+        `https://almartindev.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -192,7 +192,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelo`,
+        `https://almartindev.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -212,14 +212,11 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(
-        `https://almartindev.online/api/config/tipo`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ modelo: modeloValue }),
-        }
-      );
+      const response = await fetch(`https://almartindev.com/api/config/tipo`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ modelo: modeloValue }),
+      });
       const selector = await response.json();
       setTipo(selector);
     }
@@ -230,14 +227,11 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(
-        `https://almartindev.online/api/config/tipo`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ modelo: "4" }),
-        }
-      );
+      const response = await fetch(`https://almartindev.com/api/config/tipo`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ modelo: "4" }),
+      });
       const selector = await response.json();
       setTipo(selector);
       setModeloValue("4");
@@ -252,7 +246,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/bungalowa`,
+        `https://almartindev.com/api/config/bungalowa`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -270,7 +264,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/bungalowb`,
+        `https://almartindev.com/api/config/bungalowb`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -288,7 +282,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/bungalowc`,
+        `https://almartindev.com/api/config/bungalowc`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -306,7 +300,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelosimple`,
+        `https://almartindev.com/api/config/modelosimple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -331,7 +325,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelodoble`,
+        `https://almartindev.com/api/config/modelodoble`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -358,7 +352,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.online/api/config/modelotriple`,
+        `https://almartindev.com/api/config/modelotriple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -413,7 +407,7 @@ export default function Configurador() {
 
   function handleSubmitGuardar(event) {
     event.preventDefault();
-    fetch("https://almartindev.online/api/bungalows/save", {
+    fetch("https://almartindev.com/api/bungalows/save", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({
@@ -640,7 +634,7 @@ export default function Configurador() {
     const Model = () => {
       const gltf = useLoader(
         GLTFLoader,
-        `https://almartindev.online/api/${modelo3d}`
+        `https://almartindev.com/api/${modelo3d}`
       );
       return (
         <>
@@ -1172,7 +1166,7 @@ export default function Configurador() {
                     justifyContent: "center",
                     height: "70vh",
                     objectFit: "contain",
-                    backgroundImage: `url(${`https://almartindev.online/api/${planta[0].planta}`})`,
+                    backgroundImage: `url(${`https://almartindev.com/api/${planta[0].planta}`})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: {
                       xs: "center center",

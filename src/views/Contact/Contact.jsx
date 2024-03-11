@@ -71,7 +71,7 @@ export default function Contact() {
     formData.append("descripcion", newContact.descripcion);
     formData.append("apellidos", newContact.apellidos);
     formData.append("telefono", newContact.telefono);
-    fetch("https://almartindev.online/api/user/contact", {
+    fetch("https://almartindev.com/api/user/contact", {
       method: "POST",
       body: formData,
     }).then((response) => {
