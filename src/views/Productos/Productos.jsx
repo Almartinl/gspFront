@@ -76,6 +76,7 @@ export default function Productos() {
   const [vistaMaritimos, setVistaMaritimos] = useState(false);
   const [vistaPaneles, setVistaPaneles] = useState(false);
   const [vistaBaseVida, setVistaBaseVida] = useState(false);
+  const [vistaTaquillas, setVistaTaquillas] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [clickBungalowsObras, setClickBungalowsObras] = useState(false);
   const [bungalowObras, setBungalowObras] = useState([]);
@@ -136,6 +137,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -641,6 +643,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -675,6 +678,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -709,6 +713,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -743,6 +748,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -777,6 +783,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -811,6 +818,7 @@ export default function Productos() {
     setVistaWc3(false);
     setVistaWc4(false);
     setVistaWc5(false);
+    setVistaTaquillas(false);
     setFotoSeleccionada("");
   }
 
@@ -818,6 +826,42 @@ export default function Productos() {
     e.preventDefault();
     setVistaInicio(false);
     setVistaBaseVida(true);
+    setClickBungalowsObras(false);
+    setVistaBungalowsObras(false);
+    setVistaBungalowAlmacen(false);
+    setVistaBungalowCaseta(false);
+    setVistaBungalowDiafano(false);
+    setVistaBungalowVestuario(false);
+    setVistaBungalowWc(false);
+    setVistaEstructuras(false);
+    setVistaEdificios(false);
+    setVistaNaves(false);
+    setVistaMaritimos(false);
+    setVistaPaneles(false);
+    setButtonCaseta(false);
+    setVistaGarita1(false);
+    setVistaGarita2(false);
+    setButtonDiafano(false);
+    setVistaDiafano1(false);
+    setVistaDiafano2(false);
+    setVistaDiafano3(false);
+    setVistaDiafano4(false);
+    setButtonWc(false);
+    setVistaWcDoble(false);
+    setVistaWc1(false);
+    setVistaWc2(false);
+    setVistaWc3(false);
+    setVistaWc4(false);
+    setVistaWc5(false);
+    setVistaTaquillas(false);
+    setFotoSeleccionada("");
+  }
+
+  function taquillas(e) {
+    e.preventDefault();
+    setVistaInicio(false);
+    setVistaBaseVida(false);
+    setVistaTaquillas(true);
     setClickBungalowsObras(false);
     setVistaBungalowsObras(false);
     setVistaBungalowAlmacen(false);
@@ -866,6 +910,7 @@ export default function Productos() {
     vistaGarita2,
     vistaBaseVida,
     vistaPaneles,
+    vistaTaquillas,
   ]);
 
   return (
@@ -1557,6 +1602,27 @@ export default function Productos() {
                 onClick={panelesClick}
               >
                 {t("textCarouselPaneles")}
+              </Button>
+              <Button
+                variant={vistaTaquillas ? "contained" : "outlined"}
+                fullWidth
+                color="success"
+                sx={
+                  vistaTaquillas
+                    ? {
+                        color: "white",
+                        fontWeight: "bold",
+                        backgroundColor: "#3b8f1e",
+                      }
+                    : {
+                        color: "white",
+                        borderColor: "white",
+                        fontWeight: "bold",
+                      }
+                }
+                onClick={taquillas}
+              >
+                {t("textCarouselTaquillas")}
               </Button>
             </Grid>
           </Grid>
@@ -6032,6 +6098,56 @@ export default function Productos() {
                       </Grid>
                     </Grid>
                   </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          )}
+
+          {vistaTaquillas && (
+            <Grid container item xs={12} spacing={2} p={3}>
+              <Grid item xs={12}>
+                <Card>
+                  <CardHeader
+                    title={t("textCarouselTaquillas")}
+                    titleTypographyProps={{
+                      color: "#3b8f1e",
+                      align: "left",
+                      fontWeight: "bold",
+                    }}
+                  />
+                  <CardMediaCarousel
+                    imgArray={[
+                      "../../taquillasPortada.jpg",
+                      "../../taquillas1.jpg",
+                      "../../taquillas2.jpg",
+                      "../../taquillas3.jpg",
+                      "../../taquillas4.jpg",
+                      "../../taquillas5.jpg",
+                    ]}
+                  />
+                  {/* <CardContent
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
+                    <Typography
+                      variant="h4"
+                      bgcolor="#3b8f1e"
+                      color="white"
+                      p={1}
+                    >
+                      {t("textTittleDescripcion")}
+                    </Typography>
+                    <Grid container>
+                      <Grid item xs={12}>
+                        <Typography
+                          variant="body1"
+                          dangerouslySetInnerHTML={{
+                            __html: t("textPanelSandwichDescripcion"),
+                          }}
+                          p={1}
+                        ></Typography>
+                      </Grid>
+                    </Grid>
+                  </CardContent> */}
                 </Card>
               </Grid>
             </Grid>

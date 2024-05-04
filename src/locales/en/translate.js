@@ -87,6 +87,7 @@ export const translateEn = {
   textCarouselNaves: "Industrial Warehouses",
   textCarouselContenedores: "Shipping Containers",
   textCarouselPaneles: "Sandwich Panels",
+  textCarouselTaquillas: "Metal Lockers",
   textTittleProductos: "Product Categories",
   textTittleTipos: "Types of Construction Bungalows",
   textButtonAlmacen: "Storage",
@@ -283,6 +284,7 @@ export const translateEn = {
   <p>There are different types of sandwich panels, brands, and thicknesses available, but we have chosen to market only cladding sandwich panels and roof sandwich panels with thicknesses of 40mm and 50mm.</p>
   <p>Among other advantages offered by sandwich panels is their versatility; they easily adapt to various types of construction and projects.</p>
 `,
+  textTaquillaMetalicaDescripcion: ``,
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

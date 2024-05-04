@@ -87,6 +87,7 @@ export const translateFr = {
   textCarouselNaves: "Entrepôts Industriels",
   textCarouselContenedores: "Conteneurs Maritimes",
   textCarouselPaneles: "Panneaux Sandwich",
+  textCarouselTaquillas: "Casiers Métalliques",
   textTittleProductos: "Catégories de Produits",
   textTittleTipos: "Types de Bungalows de Chantier",
   textButtonAlmacen: "Stockage",
@@ -285,6 +286,7 @@ export const translateFr = {
   <p>Il existe différents types de panneaux sandwich, de marques et d'épaisseurs, toutefois nous avons choisi de ne commercialiser que les panneaux sandwich de bardage et les panneaux sandwich de toiture avec uniquement les épaisseurs 40 mm et de 50 mm.</p>
   <p>Entre autres avantages que comportent les panneaux sandwich, vous avez la polyvalence, en effet, ils s'adaptent à tout type de construction et de projet très facilement.</p>
 `,
+  textTaquillaMetalicaDescripcion: ``,
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

@@ -27,6 +27,7 @@ import Cookies from "./components/Cookies/Cookies";
 import Policity from "./views/policity/Policity";
 import DashboardOfertas from "./views/DashboardOfertas/DashboardOfertas";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
+import ShowRoom from "./views/ShowRoom/ShowRoom";
 
 function App() {
   const [showCookieNotification, setShowCookieNotification] = useState(
@@ -63,6 +64,10 @@ function App() {
             <Route
               path="/reset-password"
               element={<ResetPasswordWithToken />}
+            />
+            <Route
+              path="showroom"
+              element={<ShowRoom allowedRoles={[ROLES.Admin]} />}
             />
           </Route>
           <Route element={<PrivateRoute allowedRoles={[ROLES.User]} />}>

@@ -87,6 +87,7 @@ export const translateEs = {
   textCarouselNaves: "Naves Industriales",
   textCarouselContenedores: "Contenedores marítimos",
   textCarouselPaneles: "Paneles Sandwich",
+  textCarouselTaquillas: "Taquillas Metálicas",
   textTittleProductos: "Categorias de Productos",
   textTittleTipos: "Tipos de Bungalows de Obras",
   textButtonAlmacen: "Almacen",
@@ -283,6 +284,7 @@ export const translateEs = {
   <p>Existen diferentes tipos de paneles sandwich, marcas y grosores disponibles, pero hemos optado por comercializar únicamente paneles sandwich de revestimiento y paneles sandwich de techo con grosores de 40 mm y 50 mm.</p>
   <p>Entre las ventajas que ofrecen los paneles sandwich se encuentra su versatilidad, ya que se adaptan fácilmente a diversos tipos de construcción y proyectos.</p>
   `,
+  textTaquillaMetalicaDescripcion: ``,
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",
