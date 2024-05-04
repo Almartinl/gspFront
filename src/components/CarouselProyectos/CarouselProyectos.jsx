@@ -19,8 +19,7 @@ export default function CarouselProyectos({ fotos }) {
             src={`https://almartindev.com/api/${firstImage}`}
             className="d-block w-100"
             alt="carrusel"
-            height="600px"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
         </div>
         {rest.map((item, index) => (
@@ -29,8 +28,7 @@ export default function CarouselProyectos({ fotos }) {
               src={`https://almartindev.com/api/${item}`}
               className="d-block w-100 "
               alt="carrusel"
-              height="600px"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
           </div>
         ))}

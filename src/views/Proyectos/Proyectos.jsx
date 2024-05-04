@@ -82,6 +82,7 @@ export default function Proyectos() {
             {arrayCarousel.length > 0 && (
               <Dialog
                 fullWidth
+                maxWidth="lg"
                 open={openCarousel}
                 onClose={handleCloseCarousel}
               >
@@ -93,6 +94,7 @@ export default function Proyectos() {
                     width="100%"
                     height="100%"
                     marginTop="24px"
+                    sx={{ backgroundColor: "#0000007d" }}
                   >
                     <CarouselProyectos fotos={arrayCarousel} />
                   </Grid>
