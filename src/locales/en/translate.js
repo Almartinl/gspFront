@@ -284,7 +284,10 @@ export const translateEn = {
   <p>There are different types of sandwich panels, brands, and thicknesses available, but we have chosen to market only cladding sandwich panels and roof sandwich panels with thicknesses of 40mm and 50mm.</p>
   <p>Among other advantages offered by sandwich panels is their versatility; they easily adapt to various types of construction and projects.</p>
 `,
-  textTaquillaMetalicaDescripcion: ``,
+  textTaquillaMetalicaDescripcion: `<h3>Sale of Metal Storage Lockers</h3>
+  <p>Discover our metal storage lockers, the ideal solution for optimizing organization at your construction sites in Ivory Coast. Made with high-quality materials, our lockers offer optimal security and durability for efficiently storing tools, equipment, and personal belongings of workers.</p>
+  <p>Designed to withstand tough environmental conditions, our lockers are equipped with secure metal locks to ensure the protection of goods; they fit perfectly in any type of space, providing a practical and economical storage solution for your site. Provide your teams with an organized and secure working environment with our metal storage lockers.</p>
+  `,
 
   //Config
   textTittleConfig: "Create your Bungalow in a few clicks",

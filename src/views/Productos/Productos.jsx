@@ -2042,7 +2042,6 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="#3b8f1e"
                       fontWeight="bold"
                       dangerouslySetInnerHTML={{
                         __html: t("textCasetaDescripcionCorta"),
@@ -3762,7 +3761,6 @@ export default function Productos() {
                   <CardContent>
                     <Typography
                       variant="body2"
-                      color="#3b8f1e"
                       fontWeight="bold"
                       dangerouslySetInnerHTML={{
                         __html: t("textWcDescripcionCorta"),
@@ -6125,7 +6123,7 @@ export default function Productos() {
                       "../../taquillas5.jpg",
                     ]}
                   />
-                  {/* <CardContent
+                  <CardContent
                     sx={{ display: "flex", flexDirection: "column", gap: 2 }}
                   >
                     <Typography
@@ -6141,13 +6139,13 @@ export default function Productos() {
                         <Typography
                           variant="body1"
                           dangerouslySetInnerHTML={{
-                            __html: t("textPanelSandwichDescripcion"),
+                            __html: t("textTaquillaMetalicaDescripcion"),
                           }}
                           p={1}
                         ></Typography>
                       </Grid>
                     </Grid>
-                  </CardContent> */}
+                  </CardContent>
                 </Card>
               </Grid>
             </Grid>

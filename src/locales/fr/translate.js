@@ -286,7 +286,10 @@ export const translateFr = {
   <p>Il existe différents types de panneaux sandwich, de marques et d'épaisseurs, toutefois nous avons choisi de ne commercialiser que les panneaux sandwich de bardage et les panneaux sandwich de toiture avec uniquement les épaisseurs 40 mm et de 50 mm.</p>
   <p>Entre autres avantages que comportent les panneaux sandwich, vous avez la polyvalence, en effet, ils s'adaptent à tout type de construction et de projet très facilement.</p>
 `,
-  textTaquillaMetalicaDescripcion: ``,
+  textTaquillaMetalicaDescripcion: `<h3>Vente De Metalliques De Rangement</h3>
+  <p>Découvrez nos casiers métalliques de rangement, la solution idéale pour optimiser l'organisation sur vos chantiers de construction en Côte d'Ivoire. Fabriqués avec des matériaux de haute qualité, nos casiers offrent une sécurité et une durabilité optimales pour stocker efficacement les outils, les équipements et les effets personnels des ouvriers.</p>
+  <p>Conçus pour résister aux conditions environnementales difficiles, nos casiers sont dotés de serrures métalliques sécurisées pour garantir la protection des biens, ils s'intègrent parfaitement dans tout type d'espace, offrant une solution de rangement pratique et économique pour votre chantier. Offrez à vos équipes un environnement de travail organisé et sécurisé avec nos casiers métalliques de rangement.</p>
+`,
 
   //Config
   textTittleConfig: "Créez votre bungalow en quelques clics",

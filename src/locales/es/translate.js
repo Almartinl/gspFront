@@ -284,7 +284,10 @@ export const translateEs = {
   <p>Existen diferentes tipos de paneles sandwich, marcas y grosores disponibles, pero hemos optado por comercializar únicamente paneles sandwich de revestimiento y paneles sandwich de techo con grosores de 40 mm y 50 mm.</p>
   <p>Entre las ventajas que ofrecen los paneles sandwich se encuentra su versatilidad, ya que se adaptan fácilmente a diversos tipos de construcción y proyectos.</p>
   `,
-  textTaquillaMetalicaDescripcion: ``,
+  textTaquillaMetalicaDescripcion: `<h3>Venta de Taquillas Metálicas de Almacenamiento</h3>
+  <p>Descubre nuestras taquillas metálicas de almacenamiento, la solución ideal para optimizar la organización en tus obras de construcción en Costa de Marfil. Fabricadas con materiales de alta calidad, nuestras taquillas ofrecen seguridad y durabilidad óptimas para almacenar eficazmente herramientas, equipos y pertenencias personales de los trabajadores.</p>
+  <p>Diseñadas para resistir condiciones ambientales adversas, nuestras taquillas están equipadas con cerraduras metálicas seguras para garantizar la protección de los bienes; se integran perfectamente en cualquier tipo de espacio, ofreciendo una solución de almacenamiento práctica y económica para tu obra. Ofrece a tus equipos un ambiente de trabajo organizado y seguro con nuestras taquillas metálicas de almacenamiento.</p>
+  `,
 
   //Config
   textTittleConfig: "Crea tu Bungalow en unos Clicks",
