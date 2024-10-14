@@ -56,29 +56,31 @@ export default function Proyectos() {
         </Grid>
         {obras.length > 0 && (
           <Grid container spacing={2}>
-            {obras.map((obra) => (
-              <Grid key={obra.id} item xs={12} md={4}>
-                <Card sx={{ maxWidth: 500 }}>
-                  <CardActionArea
-                    onClick={() =>
-                      handleOpenCarousel(obra.nombre, obra.imagenes)
-                    }
-                  >
-                    <CardMedia
-                      component="img"
-                      height="400"
-                      image={`https://almartindev.com/api/${obra.imagen}`}
-                      alt="img"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        {obra.nombre}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
-              </Grid>
-            ))}
+            {obras
+              .sort((a, b) => a.position - b.position)
+              .map((obra) => (
+                <Grid key={obra.id} item xs={12} md={4}>
+                  <Card sx={{ maxWidth: 500 }}>
+                    <CardActionArea
+                      onClick={() =>
+                        handleOpenCarousel(obra.nombre, obra.imagenes)
+                      }
+                    >
+                      <CardMedia
+                        component="img"
+                        height="400"
+                        image={`https://almartindev.com/api/${obra.imagen}`}
+                        alt="img"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          {obra.nombre}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+              ))}
             {arrayCarousel.length > 0 && (
               <Dialog
                 fullWidth
