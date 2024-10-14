@@ -73,7 +73,12 @@ export default function Proyectos() {
                         alt="img"
                       />
                       <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography
+                          gutterBottom
+                          variant="body"
+                          sx={{ fontWeight: "bold" }}
+                          component="div"
+                        >
                           {obra.nombre}
                         </Typography>
                       </CardContent>
@@ -88,7 +93,9 @@ export default function Proyectos() {
                 open={openCarousel}
                 onClose={handleCloseCarousel}
               >
-                <DialogTitle>{nombreObra}</DialogTitle>
+                <DialogTitle sx={{ fontWeight: "bold" }}>
+                  {nombreObra}
+                </DialogTitle>
                 <DialogContent>
                   <Grid
                     item
