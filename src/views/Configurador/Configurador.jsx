@@ -124,7 +124,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/disposicion`
+        `https://globalsolutionsprefabriquees.com/api/config/disposicion`
       );
       const selector = await response.json();
       setDisposicion(selector);
@@ -135,7 +135,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/orientacion`,
+        `https://globalsolutionsprefabriquees.com/api/config/orientacion`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -153,7 +153,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelo`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -171,7 +171,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelo`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -192,7 +192,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelo`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelo`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -212,11 +212,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`https://almartindev.com/api/config/tipo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelo: modeloValue }),
-      });
+      const response = await fetch(
+        `https://globalsolutionsprefabriquees.com/api/config/tipo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ modelo: modeloValue }),
+        }
+      );
       const selector = await response.json();
       setTipo(selector);
     }
@@ -227,11 +230,14 @@ export default function Configurador() {
 
   useEffect(() => {
     async function fetchSelector() {
-      const response = await fetch(`https://almartindev.com/api/config/tipo`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelo: "4" }),
-      });
+      const response = await fetch(
+        `https://globalsolutionsprefabriquees.com/api/config/tipo`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ modelo: "4" }),
+        }
+      );
       const selector = await response.json();
       setTipo(selector);
       setModeloValue("4");
@@ -246,7 +252,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/bungalowa`,
+        `https://globalsolutionsprefabriquees.com/api/config/bungalowa`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -264,7 +270,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/bungalowb`,
+        `https://globalsolutionsprefabriquees.com/api/config/bungalowb`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -282,7 +288,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/bungalowc`,
+        `https://globalsolutionsprefabriquees.com/api/config/bungalowc`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -300,7 +306,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelosimple`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelosimple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -325,7 +331,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelodoble`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelodoble`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -352,7 +358,7 @@ export default function Configurador() {
   useEffect(() => {
     async function fetchSelector() {
       const response = await fetch(
-        `https://almartindev.com/api/config/modelotriple`,
+        `https://globalsolutionsprefabriquees.com/api/config/modelotriple`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -407,7 +413,7 @@ export default function Configurador() {
 
   function handleSubmitGuardar(event) {
     event.preventDefault();
-    fetch("https://almartindev.com/api/bungalows/save", {
+    fetch("https://globalsolutionsprefabriquees.com/api/bungalows/save", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({
@@ -634,7 +640,7 @@ export default function Configurador() {
     const Model = () => {
       const gltf = useLoader(
         GLTFLoader,
-        `https://almartindev.com/api/${modelo3d}`
+        `https://globalsolutionsprefabriquees.com/api/${modelo3d}`
       );
       return (
         <>
@@ -1166,7 +1172,7 @@ export default function Configurador() {
                     justifyContent: "center",
                     height: "70vh",
                     objectFit: "contain",
-                    backgroundImage: `url(${`https://almartindev.com/api/${planta[0].planta}`})`,
+                    backgroundImage: `url(${`https://globalsolutionsprefabriquees.com/api/${planta[0].planta}`})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: {
                       xs: "center center",

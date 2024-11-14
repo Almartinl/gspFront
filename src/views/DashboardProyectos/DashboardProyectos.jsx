@@ -149,10 +149,13 @@ export default function DashboardProyectos() {
       formData.append("imagen", carouselOcho);
     }
     async function fetchUpload() {
-      const response = await fetch("https://almartindev.com/api/obras/add", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/obras/add",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       if (response.ok) {
         alert("proyecto subido");
         setPortada(null);
@@ -184,7 +187,9 @@ export default function DashboardProyectos() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch("https://almartindev.com/api/obras/all");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/obras/all"
+      );
       const data = await response.json();
       setProyectos(data);
       console.log(data);
@@ -206,15 +211,18 @@ export default function DashboardProyectos() {
     } correctamente`;
 
     const realizarFetch = () => {
-      fetch(`https://almartindev.com/api/obras/update/${idObra}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          public: nuevaAccion,
-        }),
-      }).then((response) => {
+      fetch(
+        `https://globalsolutionsprefabriquees.com/api/obras/update/${idObra}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            public: nuevaAccion,
+          }),
+        }
+      ).then((response) => {
         if (response.status == 400) {
           alert("Error al recibir el body");
         } else if (response.status == 200) {
@@ -707,7 +715,10 @@ export default function DashboardProyectos() {
                 <StyledTableCell align="left">
                   <Link
                     target="_blank"
-                    to={"https://almartindev.com/api/" + row.imagen}
+                    to={
+                      "https://globalsolutionsprefabriquees.com/api/" +
+                      row.imagen
+                    }
                   >
                     <ListItemText primary={row.imagen.split("/").pop()} />
                   </Link>
@@ -721,7 +732,10 @@ export default function DashboardProyectos() {
                       <ListItem key={index}>
                         <Link
                           target="_blank"
-                          to={"https://almartindev.com/api/" + img}
+                          to={
+                            "https://globalsolutionsprefabriquees.com/api/" +
+                            img
+                          }
                         >
                           <ListItemText primary={img.split("/").pop()} />
                         </Link>

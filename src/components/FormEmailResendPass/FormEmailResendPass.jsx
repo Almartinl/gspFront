@@ -33,11 +33,14 @@ export default function FormEmailResendPass({
 
   async function resetPassword(e, email) {
     e.preventDefault();
-    await fetch("https://almartindev.com/api/user/reset-password", {
-      method: "POST",
-      headers: { "content-Type": "application/json" },
-      body: JSON.stringify({ email: email }),
-    }).then((response) => {
+    await fetch(
+      "https://globalsolutionsprefabriquees.com/api/user/reset-password",
+      {
+        method: "POST",
+        headers: { "content-Type": "application/json" },
+        body: JSON.stringify({ email: email }),
+      }
+    ).then((response) => {
       //console.log(response.status);
       if (response.status == 400) {
         Swal.fire({

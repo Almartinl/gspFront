@@ -43,7 +43,7 @@ export default function DashboardPresupuestos() {
   useEffect(() => {
     async function fetchPresupuesto() {
       const response = await fetch(
-        "https://almartindev.com/api/bungalows/getallpresupuesto"
+        "https://globalsolutionsprefabriquees.com/api/bungalows/getallpresupuesto"
       );
       const data = await response.json();
       setPresupuestos(data);
@@ -58,15 +58,18 @@ export default function DashboardPresupuestos() {
       (item, index) => item.id !== idPresupuesto
     );
     setPresupuestos(newList);
-    fetch("https://almartindev.com/api/bungalows/deletepresupuesto", {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: idPresupuesto,
-      }),
-    }).then((response) => {
+    fetch(
+      "https://globalsolutionsprefabriquees.com/api/bungalows/deletepresupuesto",
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: idPresupuesto,
+        }),
+      }
+    ).then((response) => {
       if (response.status == 400) {
         alert("error al recibir el body");
       } else if (response.status == 200) {

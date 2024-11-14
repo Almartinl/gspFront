@@ -179,7 +179,7 @@ export default function Account() {
     e.preventDefault();
     setStateChange(!stateChange);
 
-    fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newName),
@@ -202,7 +202,7 @@ export default function Account() {
   function registrarApellido(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newApellido),
@@ -225,7 +225,7 @@ export default function Account() {
   // function registrarEmail(e) {
   //   e.preventDefault();
   //   setStateChange(!stateChange);
-  //   fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+  //   fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
   //     method: "PATCH",
   //     headers: { "content-Type": "application/json" },
   //     body: JSON.stringify(newEmail),
@@ -249,7 +249,7 @@ export default function Account() {
   function registrarPassword(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newPassword),
@@ -272,7 +272,7 @@ export default function Account() {
   function registrarDireccion(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newDireccion),
@@ -295,7 +295,7 @@ export default function Account() {
   function registrarTelefono(e) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`https://almartindev.com/api/user/${dataToken.id}`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/user/${dataToken.id}`, {
       method: "PATCH",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(newTelefono),
@@ -337,7 +337,7 @@ export default function Account() {
   function handleDeleteBungalow(e, id) {
     e.preventDefault();
     setStateChange(!stateChange);
-    fetch(`https://almartindev.com/api/bungalows/delete`, {
+    fetch(`https://globalsolutionsprefabriquees.com/api/bungalows/delete`, {
       method: "DELETE",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify({ id: id }),
@@ -378,15 +378,18 @@ export default function Account() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("https://almartindev.com/api/user/email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: dataToken.email,
-        }),
-      });
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/user/email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: dataToken.email,
+          }),
+        }
+      );
       const data = await response.json();
       setUser(data);
     }
@@ -395,15 +398,18 @@ export default function Account() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("https://almartindev.com/api/bungalows", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          usuario: dataToken.id,
-        }),
-      });
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/bungalows",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            usuario: dataToken.id,
+          }),
+        }
+      );
       const data = await response.json();
       setBungalow(data);
       console.log(data);
@@ -414,7 +420,7 @@ export default function Account() {
   function downloadImg(e, url, nombre) {
     e.preventDefault();
 
-    fetch(`https://almartindev.com/api/${url}`)
+    fetch(`https://globalsolutionsprefabriquees.com/api/${url}`)
       .then((respuesta) => respuesta.blob())
       .then((blob) => {
         const imagenUrl = URL.createObjectURL(blob);
@@ -441,13 +447,16 @@ export default function Account() {
     if (listaPresupuesto.length < 1) {
       return;
     }
-    fetch(`https://almartindev.com/api/bungalows/addpresupuesto`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(presupuesto),
-    }).then((response) => {
+    fetch(
+      `https://globalsolutionsprefabriquees.com/api/bungalows/addpresupuesto`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(presupuesto),
+      }
+    ).then((response) => {
       console.log(response.status);
       if (response.status == 400) {
         alert("error al recibir el body");
@@ -475,12 +484,15 @@ export default function Account() {
       confirmButtonText: t("textAlertButtonYesBorrarCuenta"),
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://almartindev.com/api/user/delete/${dataToken.id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }).then((response) => {
+        fetch(
+          `https://globalsolutionsprefabriquees.com/api/user/delete/${dataToken.id}`,
+          {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        ).then((response) => {
           if (response.status == 400) {
             alert("error al recibir el body");
           } else if (response.status == 200) {

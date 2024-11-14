@@ -94,7 +94,7 @@ export default function Productos() {
     e.preventDefault();
     async function fetchProducto() {
       const response = await fetch(
-        "https://almartindev.com/api/product/category",
+        "https://globalsolutionsprefabriquees.com/api/product/category",
         {
           method: "POST",
           headers: { "content-Type": "application/json" },

@@ -48,7 +48,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchOffer() {
       const response = await fetch(
-        `https://almartindev.com/api/product/offer/active`
+        `https://globalsolutionsprefabriquees.com/api/product/offer/active`
       );
       const data = await response.json();
       setOffer(data);
@@ -318,7 +318,7 @@ export default function Home() {
               <Card key={image.id}>
                 <CardMedia
                   component="img"
-                  image={`https://almartindev.com/api${image.path}`}
+                  image={`https://globalsolutionsprefabriquees.com/api${image.path}`}
                   alt="img"
                   sx={{ objectFit: "cover" }}
                 />

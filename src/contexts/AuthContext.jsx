@@ -36,7 +36,7 @@ export function AuthContextProvider({ children }) {
     e.preventDefault();
     // console.log(user);
 
-    await fetch("https://almartindev.com/api/user/login", {
+    await fetch("https://globalsolutionsprefabriquees.com/api/user/login", {
       method: "POST",
       headers: { "content-Type": "application/json" },
       body: JSON.stringify(user),

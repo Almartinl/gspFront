@@ -16,7 +16,7 @@ export default function CarouselProyectos({ fotos }) {
       <div className="carousel-inner sin">
         <div className="carousel-item active">
           <img
-            src={`https://almartindev.com/api/${firstImage}`}
+            src={`https://globalsolutionsprefabriquees.com/api/${firstImage}`}
             className="d-block w-100"
             alt="carrusel"
             style={{ objectFit: "contain" }}
@@ -25,7 +25,7 @@ export default function CarouselProyectos({ fotos }) {
         {rest.map((item, index) => (
           <div key={index} className="carousel-item">
             <img
-              src={`https://almartindev.com/api/${item}`}
+              src={`https://globalsolutionsprefabriquees.com/api/${item}`}
               className="d-block w-100 "
               alt="carrusel"
               style={{ objectFit: "contain" }}

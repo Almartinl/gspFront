@@ -77,7 +77,7 @@ export default function Configurador() {
   function saveBungalowFinal() {
     if (authorization) {
       function fetchSelecto2() {
-        fetch(`https://almartindev.com/api/bungalows/save`, {
+        fetch(`https://globalsolutionsprefabriquees.com/api/bungalows/save`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

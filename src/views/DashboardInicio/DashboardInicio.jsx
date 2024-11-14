@@ -25,7 +25,9 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("https://almartindev.com/api/user/count");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/user/count"
+      );
       const data = await response.json();
       setCountUser(data);
       console.log(data);
@@ -35,7 +37,9 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("https://almartindev.com/api/config/");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/config/"
+      );
       const data = await response.json();
       setCountModels(data);
       console.log(data);
@@ -46,7 +50,7 @@ export default function DashboardInicio() {
   useEffect(() => {
     async function fetchCount() {
       const response = await fetch(
-        "https://almartindev.com/api/user/count/contact"
+        "https://globalsolutionsprefabriquees.com/api/user/count/contact"
       );
       const data = await response.json();
       setCountFormContact(data);
@@ -58,7 +62,7 @@ export default function DashboardInicio() {
   useEffect(() => {
     async function fetchCount() {
       const response = await fetch(
-        "https://almartindev.com/api/bungalows/count/presupuestos"
+        "https://globalsolutionsprefabriquees.com/api/bungalows/count/presupuestos"
       );
       const data = await response.json();
       setCountPresupuestos(data);
@@ -69,7 +73,9 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchCount() {
-      const response = await fetch("https://almartindev.com/api/obras/count");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/obras/count"
+      );
       const data = await response.json();
       setCountObras(data);
     }
@@ -78,7 +84,9 @@ export default function DashboardInicio() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch("https://almartindev.com/api/product/offer");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/product/offer"
+      );
       const data = await response.json();
       setCountOffer(data);
     }

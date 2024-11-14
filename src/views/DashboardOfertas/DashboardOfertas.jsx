@@ -71,7 +71,7 @@ export default function DashboardOfertas() {
 
     async function fetchUpload() {
       const response = await fetch(
-        "https://almartindev.com/api/product/add_offer",
+        "https://globalsolutionsprefabriquees.com/api/product/add_offer",
         {
           method: "POST",
           body: formData,
@@ -92,7 +92,9 @@ export default function DashboardOfertas() {
 
   useEffect(() => {
     async function fetchProyectos() {
-      const response = await fetch("https://almartindev.com/api/product/offer");
+      const response = await fetch(
+        "https://globalsolutionsprefabriquees.com/api/product/offer"
+      );
       const data = await response.json();
       setOfertas(data);
       console.log(data);
@@ -103,15 +105,18 @@ export default function DashboardOfertas() {
   function activeOffer(e, idOffer, active) {
     e.preventDefault();
 
-    fetch(`https://almartindev.com/api/product/offer/${idOffer}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        activo: active,
-      }),
-    }).then((response) => {
+    fetch(
+      `https://globalsolutionsprefabriquees.com/api/product/offer/${idOffer}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          activo: active,
+        }),
+      }
+    ).then((response) => {
       if (response.status == 400) {
         alert("error al recibir el body");
       } else if (response.status == 200 && active == 1) {
@@ -248,7 +253,9 @@ export default function DashboardOfertas() {
                 <StyledTableCell align="center">
                   <Link
                     target="_blank"
-                    to={"https://almartindev.com/api" + row.path}
+                    to={
+                      "https://globalsolutionsprefabriquees.com/api" + row.path
+                    }
                   >
                     <ListItemText primary={row.path.split("/").pop()} />
                   </Link>
