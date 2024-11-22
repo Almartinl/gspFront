@@ -136,7 +136,7 @@ export default function Footer() {
             <Grid>
               <IconButton
                 target="_blank"
-                href="https://www.facebook.com/Global-Solutions-Pr%C3%A9fabriqu%C3%A9es-115355516956606"
+                href="https://www.facebook.com/people/Global-Solutions-Pr%C3%A9fabriqu%C3%A9es-SARL/61561089293853/"
               >
                 <FacebookOutlinedIcon
                   fontSize="large"
@@ -145,7 +145,7 @@ export default function Footer() {
               </IconButton>
               <IconButton
                 target="_blank"
-                href="https://www.linkedin.com/company/global-solutions-pr%C3%A9fabriqu%C3%A9es/"
+                href="https://www.linkedin.com/company/global-solutions-pr%C3%A9fabriqu%C3%A9es-sarl/"
               >
                 <LinkedInIcon fontSize="large" sx={{ color: "white" }} />
               </IconButton>
