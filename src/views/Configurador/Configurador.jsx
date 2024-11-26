@@ -44,9 +44,9 @@ const tourOptions = {
 };
 
 export default function Configurador() {
-  document.title = "Configurador";
-
   const { t } = useTranslation();
+
+  document.title = t("buttonConf");
 
   const { dataToken } = useAuthContext();
 

@@ -4,8 +4,9 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
 export default function Nosotros() {
-  document.title = "Sobre Nosotros";
   const { t } = useTranslation();
+
+  document.title = t("buttonAbout");
 
   useEffect(() => {
     const scrollToTop = () => {

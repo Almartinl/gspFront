@@ -25,9 +25,10 @@ import UpdateOutlinedIcon from "@mui/icons-material/UpdateOutlined";
 import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
 
 export default function Home() {
-  document.title = "Inicio";
-
   const { t } = useTranslation();
+
+  document.title = t("buttonIni");
+
   const [offer, setOffer] = useState([]);
   const containerRef = useRef(null);
   const containerRef2 = useRef(null);
@@ -511,7 +512,7 @@ export default function Home() {
 
           <Grid container md={4} item textAlign="center" alignItems="center">
             <Link
-              to="/configurador"
+              to="/configurateur"
               style={{ textDecoration: "none", height: "100%" }}
             >
               <Button
@@ -541,7 +542,7 @@ export default function Home() {
             justifyContent="center"
           >
             <Link
-              to="/productos"
+              to="/produits"
               style={{
                 textDecoration: "none",
                 height: "100%",
@@ -569,7 +570,7 @@ export default function Home() {
           </Grid>
           <Grid container item md={4} textAlign="center" alignItems="center">
             <Link
-              to="/proyectos"
+              to="/projets"
               style={{ textDecoration: "none", height: "100%" }}
             >
               <Button
@@ -618,7 +619,7 @@ export default function Home() {
               {t("textTittleContact")}
             </Typography>
             <Grid item md={0} xs={12} mt={8}>
-              <Link className="epilepsy-button" to="/contacto">
+              <Link className="epilepsy-button" to="/contact">
                 {t("textButtonClick")}
               </Link>
             </Grid>

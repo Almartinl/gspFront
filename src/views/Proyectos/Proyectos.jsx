@@ -18,14 +18,14 @@ import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopBut
 import { useTranslation } from "react-i18next";
 
 export default function Proyectos() {
-  document.title = "Nuestros Proyectos";
+  const { t } = useTranslation();
+
+  document.title = t("buttonProy");
 
   const [obras, setObras] = useState([]);
   const [arrayCarousel, setArrayCarousel] = useState([]);
   const [nombreObra, setNombreObra] = useState("");
   const [openCarousel, setOpenCarousel] = useState(false);
-
-  const { t } = useTranslation();
 
   function handleCloseCarousel() {
     setOpenCarousel(false);

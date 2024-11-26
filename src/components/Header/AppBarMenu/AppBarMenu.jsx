@@ -28,11 +28,11 @@ export default function AppBarMenu() {
 
   const pages = [
     { nombre: t("buttonIni"), ruta: "/" },
-    { nombre: t("buttonProduct"), ruta: "/productos" },
-    { nombre: t("buttonConf"), ruta: "/configurador" },
-    { nombre: t("buttonProy"), ruta: "/proyectos" },
-    { nombre: t("buttonAbout"), ruta: "/nosotros" },
-    { nombre: t("buttonContact"), ruta: "/contacto" },
+    { nombre: t("buttonProduct"), ruta: "/produits" },
+    { nombre: t("buttonConf"), ruta: "/configurateur" },
+    { nombre: t("buttonProy"), ruta: "/projets" },
+    { nombre: t("buttonAbout"), ruta: "/nous" },
+    { nombre: t("buttonContact"), ruta: "/contact" },
   ];
   const settings = [{ nombre: t("buttonProfile"), ruta: "/account" }];
   const settingsAdmin = [{ nombre: "Dashboard", ruta: "/dashboard" }];

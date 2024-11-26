@@ -28,6 +28,7 @@ import Policity from "./views/policity/Policity";
 import DashboardOfertas from "./views/DashboardOfertas/DashboardOfertas";
 import ResetPassword from "./views/ResetPassword/ResetPassword";
 import ShowRoom from "./views/ShowRoom/ShowRoom";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [showCookieNotification, setShowCookieNotification] = useState(
@@ -42,6 +43,8 @@ function App() {
     setShowCookieNotification(false);
   };
 
+  const { t } = useTranslation();
+
   function ResetPasswordWithToken() {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
@@ -55,12 +58,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="configurador" element={<Configurador />} />
+            <Route path="configurateur" element={<Configurador />} />
             <Route path="unauthorized" element={<Unauthorized />} />
-            <Route path="contacto" element={<Contact />} />
-            <Route path="productos" element={<Productos />} />
-            <Route path="proyectos" element={<Proyectos />} />
-            <Route path="nosotros" element={<Nosotros />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="produits" element={<Productos />} />
+            <Route path="projets" element={<Proyectos />} />
+            <Route path="nous" element={<Nosotros />} />
             <Route
               path="/reset-password"
               element={<ResetPasswordWithToken />}

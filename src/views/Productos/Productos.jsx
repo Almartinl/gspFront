@@ -43,9 +43,9 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function Productos() {
-  document.title = "Productos";
-
   const { t } = useTranslation();
+
+  document.title = t("buttonProduct");
 
   const [expandedCard, setExpandedCard] = useState(false);
   const [vistaInicio, setVistaInicio] = useState(true);

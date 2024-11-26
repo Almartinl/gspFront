@@ -34,9 +34,9 @@ const initialContactState = {
 };
 
 export default function Contact() {
-  document.title = "Contacto";
-
   const { t } = useTranslation();
+
+  document.title = t("buttonContact");
 
   const [newContact, setNewContact] = useState(initialContactState);
   const [photo, setPhoto] = useState("");
