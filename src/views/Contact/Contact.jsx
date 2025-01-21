@@ -148,7 +148,7 @@ export default function Contact() {
                       {t("textMovil")}: +225 07 79 10 88 02
                     </Typography>
                     <Typography variant="h5" textAlign="center" color="white">
-                      {t("textFijo")}: +225 27 21 38 19 58
+                      {t("textFijo")}: +225 27 22 28 75 80
                     </Typography>
                     <Typography variant="h5" textAlign="center" color="white">
                       WhatsApp: +221 77 226 05 77

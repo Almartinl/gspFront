@@ -90,7 +90,7 @@ export default function Footer() {
                 </Typography>
                 <Typography variant="body2" textAlign="left" color="white">
                   {/* {t("textFijo")} */}
-                  <PhoneIcon />: +225 27 21 38 19 58
+                  <PhoneIcon />: +225 27 22 28 75 80
                 </Typography>
                 <Typography variant="body2" textAlign="left" color="white">
                   {/* WhatsApp */}
