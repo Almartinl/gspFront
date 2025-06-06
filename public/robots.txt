@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://globalsolutionsprefabriquees.com/sitemap.xml
