@@ -20,7 +20,7 @@ export const translateEn = {
   tittleCarousel: "Prefabricated, modular and metal construction",
   tittle2Carousel: "Custom Bungalows",
   tittle3Carousel: "Metal Structures",
-  titleProp1: "Prefab, Modular, and Metal Construction",
+  titleProp1: "Prefab, Modular, and Metal Container",
   subTitleProp1:
     "Enhance your brand image with our comfortable, reliable, and guaranteed prefab facilities.",
   titleProp2: "Our Construction Site Facilities",

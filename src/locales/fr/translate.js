@@ -20,7 +20,7 @@ export const translateFr = {
   tittleCarousel: "Construction préfabriquée, modulaire et métalliques",
   tittle2Carousel: "Bungalows sur mesure",
   tittle3Carousel: "Structures métalliques",
-  titleProp1: "Construction préfabriquée, modulaire et métalliques",
+  titleProp1: "Conteneurs préfabriquées, modulaire et métalliques",
   subTitleProp1:
     "Améliorez votre image de marque grâce à nos installations préfabriquées confortables, fiables et garanties.",
   titleProp2: "Nos installations de chantier",

@@ -20,7 +20,7 @@ export const translateEs = {
   tittleCarousel: "Construcción prefabricada, modular y metálica.",
   tittle2Carousel: "Bungalows a Medida",
   tittle3Carousel: "Estructuras Metálicas",
-  titleProp1: "Construcción Prefabricada, Modular y Metálica",
+  titleProp1: "Contenedores Prefabricados, Modular y Metálicos",
   subTitleProp1:
     "Mejora tu imagen de marca con nuestras instalaciones prefabricadas cómodas, confiables y garantizadas.",
   titleProp2: "Nuestras Instalaciones de Obra",
